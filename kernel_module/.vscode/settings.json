@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "random.h": "c",
+        "msr.h": "c",
+        "new_futex.h": "c"
+    }
+}

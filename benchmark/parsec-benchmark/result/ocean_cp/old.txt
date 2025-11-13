@@ -1,0 +1,430 @@
+[PARSEC] Benchmarks to run:  splash2x.ocean_cp
+
+[PARSEC] [========== Running benchmark splash2x.ocean_cp [1] ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] No archive for input 'native' available, skipping input setup.
+[PARSEC] Running 'time /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/ocean_cp/inst/amd64-linux.gcc/bin/run.sh 64 native':
+[PARSEC] [---------- Beginning of output ----------]
+Generating input file ...
+Running  /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/ocean_cp/inst/amd64-linux.gcc/bin/ocean_cp -n4098 -p64 -e1e-07 -r10000 -t14400:
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 64
+    Grid size                          : 4098 x 4098
+    Grid resolution (meters)           : 10000.00
+    Time between relaxations (seconds) : 14400
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0          16581726           12023150             0.725
+
+                       TIMING INFORMATION
+Start time                        : 1763043283654411
+Initialization finish time        : 1763043285486923
+Overall finish time               : 1763043302069475
+Total time with initialization    :         18415064
+Total time without initialization :         16582552
+    (excludes first timestep)
+
+
+real	0m18.687s
+user	11m56.308s
+sys	0m52.978s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC]
+[PARSEC] BIBLIOGRAPHY
+[PARSEC]
+[PARSEC] [1] Woo et al. The SPLASH-2 Programs: Characterization and Methodological Considerations. ISCA, 1995.
+[PARSEC]
+[PARSEC] Done.
+[PARSEC] Benchmarks to run:  splash2x.ocean_cp
+
+[PARSEC] [========== Running benchmark splash2x.ocean_cp [1] ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] No archive for input 'native' available, skipping input setup.
+[PARSEC] Running 'time /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/ocean_cp/inst/amd64-linux.gcc/bin/run.sh 64 native':
+[PARSEC] [---------- Beginning of output ----------]
+Generating input file ...
+Running  /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/ocean_cp/inst/amd64-linux.gcc/bin/ocean_cp -n4098 -p64 -e1e-07 -r10000 -t14400:
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 64
+    Grid size                          : 4098 x 4098
+    Grid resolution (meters)           : 10000.00
+    Time between relaxations (seconds) : 14400
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0          16667554           12023431             0.721
+
+                       TIMING INFORMATION
+Start time                        : 1763043305205486
+Initialization finish time        : 1763043307048625
+Overall finish time               : 1763043323717995
+Total time with initialization    :         18512509
+Total time without initialization :         16669370
+    (excludes first timestep)
+
+
+real	0m18.791s
+user	11m56.725s
+sys	0m49.985s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC]
+[PARSEC] BIBLIOGRAPHY
+[PARSEC]
+[PARSEC] [1] Woo et al. The SPLASH-2 Programs: Characterization and Methodological Considerations. ISCA, 1995.
+[PARSEC]
+[PARSEC] Done.
+[PARSEC] Benchmarks to run:  splash2x.ocean_cp
+
+[PARSEC] [========== Running benchmark splash2x.ocean_cp [1] ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] No archive for input 'native' available, skipping input setup.
+[PARSEC] Running 'time /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/ocean_cp/inst/amd64-linux.gcc/bin/run.sh 64 native':
+[PARSEC] [---------- Beginning of output ----------]
+Generating input file ...
+Running  /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/ocean_cp/inst/amd64-linux.gcc/bin/ocean_cp -n4098 -p64 -e1e-07 -r10000 -t14400:
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 64
+    Grid size                          : 4098 x 4098
+    Grid resolution (meters)           : 10000.00
+    Time between relaxations (seconds) : 14400
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0          16667469           12165048             0.730
+
+                       TIMING INFORMATION
+Start time                        : 1763043326856170
+Initialization finish time        : 1763043328682774
+Overall finish time               : 1763043345354397
+Total time with initialization    :         18498227
+Total time without initialization :         16671623
+    (excludes first timestep)
+
+
+real	0m18.773s
+user	12m2.875s
+sys	0m48.998s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC]
+[PARSEC] BIBLIOGRAPHY
+[PARSEC]
+[PARSEC] [1] Woo et al. The SPLASH-2 Programs: Characterization and Methodological Considerations. ISCA, 1995.
+[PARSEC]
+[PARSEC] Done.
+[PARSEC] Benchmarks to run:  splash2x.ocean_cp
+
+[PARSEC] [========== Running benchmark splash2x.ocean_cp [1] ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] No archive for input 'native' available, skipping input setup.
+[PARSEC] Running 'time /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/ocean_cp/inst/amd64-linux.gcc/bin/run.sh 64 native':
+[PARSEC] [---------- Beginning of output ----------]
+Generating input file ...
+Running  /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/ocean_cp/inst/amd64-linux.gcc/bin/ocean_cp -n4098 -p64 -e1e-07 -r10000 -t14400:
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 64
+    Grid size                          : 4098 x 4098
+    Grid resolution (meters)           : 10000.00
+    Time between relaxations (seconds) : 14400
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0          16674437           12055829             0.723
+
+                       TIMING INFORMATION
+Start time                        : 1763043348500135
+Initialization finish time        : 1763043350326495
+Overall finish time               : 1763043367004305
+Total time with initialization    :         18504170
+Total time without initialization :         16677810
+    (excludes first timestep)
+
+
+real	0m18.783s
+user	12m3.608s
+sys	0m52.247s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC]
+[PARSEC] BIBLIOGRAPHY
+[PARSEC]
+[PARSEC] [1] Woo et al. The SPLASH-2 Programs: Characterization and Methodological Considerations. ISCA, 1995.
+[PARSEC]
+[PARSEC] Done.
+[PARSEC] Benchmarks to run:  splash2x.ocean_cp
+
+[PARSEC] [========== Running benchmark splash2x.ocean_cp [1] ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] No archive for input 'native' available, skipping input setup.
+[PARSEC] Running 'time /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/ocean_cp/inst/amd64-linux.gcc/bin/run.sh 64 native':
+[PARSEC] [---------- Beginning of output ----------]
+Generating input file ...
+Running  /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/ocean_cp/inst/amd64-linux.gcc/bin/ocean_cp -n4098 -p64 -e1e-07 -r10000 -t14400:
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 64
+    Grid size                          : 4098 x 4098
+    Grid resolution (meters)           : 10000.00
+    Time between relaxations (seconds) : 14400
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0          16516187           11961354             0.724
+
+                       TIMING INFORMATION
+Start time                        : 1763043370160091
+Initialization finish time        : 1763043372001427
+Overall finish time               : 1763043388518547
+Total time with initialization    :         18358456
+Total time without initialization :         16517120
+    (excludes first timestep)
+
+
+real	0m18.637s
+user	11m54.607s
+sys	0m50.090s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC]
+[PARSEC] BIBLIOGRAPHY
+[PARSEC]
+[PARSEC] [1] Woo et al. The SPLASH-2 Programs: Characterization and Methodological Considerations. ISCA, 1995.
+[PARSEC]
+[PARSEC] Done.
+[PARSEC] Benchmarks to run:  splash2x.ocean_cp
+
+[PARSEC] [========== Running benchmark splash2x.ocean_cp [1] ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] No archive for input 'native' available, skipping input setup.
+[PARSEC] Running 'time /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/ocean_cp/inst/amd64-linux.gcc/bin/run.sh 64 native':
+[PARSEC] [---------- Beginning of output ----------]
+Generating input file ...
+Running  /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/ocean_cp/inst/amd64-linux.gcc/bin/ocean_cp -n4098 -p64 -e1e-07 -r10000 -t14400:
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 64
+    Grid size                          : 4098 x 4098
+    Grid resolution (meters)           : 10000.00
+    Time between relaxations (seconds) : 14400
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0          16723115           12105504             0.724
+
+                       TIMING INFORMATION
+Start time                        : 1763043391655300
+Initialization finish time        : 1763043393458260
+Overall finish time               : 1763043410184638
+Total time with initialization    :         18529338
+Total time without initialization :         16726378
+    (excludes first timestep)
+
+
+real	0m18.797s
+user	12m6.564s
+sys	0m48.412s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC]
+[PARSEC] BIBLIOGRAPHY
+[PARSEC]
+[PARSEC] [1] Woo et al. The SPLASH-2 Programs: Characterization and Methodological Considerations. ISCA, 1995.
+[PARSEC]
+[PARSEC] Done.
+[PARSEC] Benchmarks to run:  splash2x.ocean_cp
+
+[PARSEC] [========== Running benchmark splash2x.ocean_cp [1] ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] No archive for input 'native' available, skipping input setup.
+[PARSEC] Running 'time /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/ocean_cp/inst/amd64-linux.gcc/bin/run.sh 64 native':
+[PARSEC] [---------- Beginning of output ----------]
+Generating input file ...
+Running  /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/ocean_cp/inst/amd64-linux.gcc/bin/ocean_cp -n4098 -p64 -e1e-07 -r10000 -t14400:
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 64
+    Grid size                          : 4098 x 4098
+    Grid resolution (meters)           : 10000.00
+    Time between relaxations (seconds) : 14400
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0          16567059           12028038             0.726
+
+                       TIMING INFORMATION
+Start time                        : 1763043413327685
+Initialization finish time        : 1763043415158093
+Overall finish time               : 1763043431728128
+Total time with initialization    :         18400443
+Total time without initialization :         16570035
+    (excludes first timestep)
+
+
+real	0m18.678s
+user	12m0.263s
+sys	0m49.450s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC]
+[PARSEC] BIBLIOGRAPHY
+[PARSEC]
+[PARSEC] [1] Woo et al. The SPLASH-2 Programs: Characterization and Methodological Considerations. ISCA, 1995.
+[PARSEC]
+[PARSEC] Done.
+[PARSEC] Benchmarks to run:  splash2x.ocean_cp
+
+[PARSEC] [========== Running benchmark splash2x.ocean_cp [1] ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] No archive for input 'native' available, skipping input setup.
+[PARSEC] Running 'time /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/ocean_cp/inst/amd64-linux.gcc/bin/run.sh 64 native':
+[PARSEC] [---------- Beginning of output ----------]
+Generating input file ...
+Running  /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/ocean_cp/inst/amd64-linux.gcc/bin/ocean_cp -n4098 -p64 -e1e-07 -r10000 -t14400:
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 64
+    Grid size                          : 4098 x 4098
+    Grid resolution (meters)           : 10000.00
+    Time between relaxations (seconds) : 14400
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0          16654473           12021607             0.722
+
+                       TIMING INFORMATION
+Start time                        : 1763043434866321
+Initialization finish time        : 1763043436685172
+Overall finish time               : 1763043453342513
+Total time with initialization    :         18476192
+Total time without initialization :         16657341
+    (excludes first timestep)
+
+
+real	0m18.762s
+user	11m59.668s
+sys	0m52.796s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC]
+[PARSEC] BIBLIOGRAPHY
+[PARSEC]
+[PARSEC] [1] Woo et al. The SPLASH-2 Programs: Characterization and Methodological Considerations. ISCA, 1995.
+[PARSEC]
+[PARSEC] Done.
+[PARSEC] Benchmarks to run:  splash2x.ocean_cp
+
+[PARSEC] [========== Running benchmark splash2x.ocean_cp [1] ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] No archive for input 'native' available, skipping input setup.
+[PARSEC] Running 'time /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/ocean_cp/inst/amd64-linux.gcc/bin/run.sh 64 native':
+[PARSEC] [---------- Beginning of output ----------]
+Generating input file ...
+Running  /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/ocean_cp/inst/amd64-linux.gcc/bin/ocean_cp -n4098 -p64 -e1e-07 -r10000 -t14400:
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 64
+    Grid size                          : 4098 x 4098
+    Grid resolution (meters)           : 10000.00
+    Time between relaxations (seconds) : 14400
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0          16534151           11937187             0.722
+
+                       TIMING INFORMATION
+Start time                        : 1763043456484715
+Initialization finish time        : 1763043458267036
+Overall finish time               : 1763043474802914
+Total time with initialization    :         18318199
+Total time without initialization :         16535878
+    (excludes first timestep)
+
+
+real	0m18.598s
+user	11m49.979s
+sys	0m55.165s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC]
+[PARSEC] BIBLIOGRAPHY
+[PARSEC]
+[PARSEC] [1] Woo et al. The SPLASH-2 Programs: Characterization and Methodological Considerations. ISCA, 1995.
+[PARSEC]
+[PARSEC] Done.
+[PARSEC] Benchmarks to run:  splash2x.ocean_cp
+
+[PARSEC] [========== Running benchmark splash2x.ocean_cp [1] ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] No archive for input 'native' available, skipping input setup.
+[PARSEC] Running 'time /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/ocean_cp/inst/amd64-linux.gcc/bin/run.sh 64 native':
+[PARSEC] [---------- Beginning of output ----------]
+Generating input file ...
+Running  /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/ocean_cp/inst/amd64-linux.gcc/bin/ocean_cp -n4098 -p64 -e1e-07 -r10000 -t14400:
+
+Ocean simulation with W-cycle multigrid solver
+    Processors                         : 64
+    Grid size                          : 4098 x 4098
+    Grid resolution (meters)           : 10000.00
+    Time between relaxations (seconds) : 14400
+    Error tolerance                    : 1e-07
+
+
+                       PROCESS STATISTICS
+                  Total          Multigrid         Multigrid
+ Proc             Time             Time            Fraction
+    0          16714614           12097629             0.724
+
+                       TIMING INFORMATION
+Start time                        : 1763043477934842
+Initialization finish time        : 1763043479757560
+Overall finish time               : 1763043496475183
+Total time with initialization    :         18540341
+Total time without initialization :         16717623
+    (excludes first timestep)
+
+
+real	0m18.814s
+user	12m6.104s
+sys	0m51.628s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC]
+[PARSEC] BIBLIOGRAPHY
+[PARSEC]
+[PARSEC] [1] Woo et al. The SPLASH-2 Programs: Characterization and Methodological Considerations. ISCA, 1995.
+[PARSEC]
+[PARSEC] Done.

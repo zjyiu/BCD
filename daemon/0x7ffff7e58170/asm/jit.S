@@ -1,0 +1,15508 @@
+MOV     R11, 0
+JMP     loc_7ffff7e58170
+/*
+loc_555555556380
+ENDBR64    
+REPNE JMP        QWORD PTR [RIP + 0x1FB0D]
+ */ 
+loc_555555556380:
+MOVABS          R14, 0x555555556380
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+NOP
+MOVABS          R15, 0x55555555638b
+MOV             R14, QWORD PTR [R15 + 0x1FB0D]
+JMP             ij_55555555638b
+
+
+/*
+loc_5555555563b0
+ENDBR64    
+REPNE JMP        QWORD PTR [RIP + 0x1FAF5]
+ */ 
+loc_5555555563b0:
+MOVABS          R14, 0x5555555563b0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+NOP
+MOVABS          R15, 0x5555555563bb
+MOV             R14, QWORD PTR [R15 + 0x1FAF5]
+JMP             ij_5555555563bb
+
+
+/*
+loc_5555555563f0
+ENDBR64    
+REPNE JMP        QWORD PTR [RIP + 0x1FAD5]
+ */ 
+loc_5555555563f0:
+MOVABS          R14, 0x5555555563f0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+NOP
+MOVABS          R15, 0x5555555563fb
+MOV             R14, QWORD PTR [R15 + 0x1FAD5]
+JMP             ij_5555555563fb
+
+
+/*
+loc_5555555564b0
+ENDBR64    
+REPNE JMP        QWORD PTR [RIP + 0x1FA75]
+ */ 
+loc_5555555564b0:
+MOVABS          R14, 0x5555555564b0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+NOP
+MOVABS          R15, 0x5555555564bb
+MOV             R14, QWORD PTR [R15 + 0x1FA75]
+JMP             ij_5555555564bb
+
+
+/*
+loc_5555555570b1
+CDQE       
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF60], RAX
+CMP        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF60], 0x0
+JZ         loc_5555555570da
+->	c_next:loc_5555555570c4 	c_to:loc_5555555570da 
+ */ 
+loc_5555555570b1:
+MOVABS          R14, 0x5555555570b1
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CDQE            
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF60], RAX
+CMP             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF60], 0x0
+JZ              loc_5555555570da
+
+
+/*
+loc_5555555570c4
+LEA        RDI, QWORD PTR [RIP + 0x16F45]
+CALL       loc_555555556390
+->	c_next:loc_5555555570d0 
+ */ 
+loc_5555555570c4:
+MOVABS          R14, 0x5555555570cb
+LEA             RDI, QWORD PTR [R14 + 0x16F45]
+MOVABS          R14, 0x5555555570D0
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_555555556390
+
+
+/*
+loc_5555555570d0
+MOV        EDI, 0xFFFFFFFF
+CALL       loc_5555555565b0
+->	c_next:loc_5555555570da 
+ */ 
+loc_5555555570d0:
+MOV             EDI, 0xFFFFFFFF
+MOVABS          R14, 0x5555555570DA
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555565b0
+
+
+/*
+loc_5555555570da
+MOV        RAX, QWORD PTR [RIP + 0x42057]
+MOV        RAX, QWORD PTR [RAX + 0x2008D8]
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF68], RAX
+MOV        RAX, QWORD PTR [RIP + 0x42042]
+MOV        RDX, QWORD PTR [RAX + 0x2008D0]
+ADD        RDX, 0x1
+MOV        QWORD PTR [RAX + 0x2008D0], RDX
+MOV        RAX, QWORD PTR [RAX + 0x2008D0]
+MOV        RDX, QWORD PTR [RIP + 0x4419A]
+CMP        RAX, RDX
+JZ         loc_55555555719a
+->	c_next:loc_55555555711b 	c_to:loc_55555555719a 
+ */ 
+loc_5555555570da:
+MOVABS          R14, 0x5555555570da
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x5555555570e1
+MOV             RAX, QWORD PTR [R14 + 0x42057]
+MOV             RAX, QWORD PTR [RAX + 0x2008D8]
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF68], RAX
+MOVABS          R14, 0x5555555570f6
+MOV             RAX, QWORD PTR [R14 + 0x42042]
+MOV             RDX, QWORD PTR [RAX + 0x2008D0]
+ADD             RDX, 0x1
+MOV             QWORD PTR [RAX + 0x2008D0], RDX
+MOV             RAX, QWORD PTR [RAX + 0x2008D0]
+MOVABS          R14, 0x555555557116
+MOV             RDX, QWORD PTR [R14 + 0x4419A]
+CMP             RAX, RDX
+JZ              loc_55555555719a
+
+
+/*
+loc_55555555711b
+LEA        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF48]
+MOV        RSI, RAX
+MOV        EDI, 0x1
+CALL       loc_5555555563f0
+->	c_next:loc_55555555712f 
+ */ 
+loc_55555555711b:
+LEA             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF48]
+MOV             RSI, RAX
+MOV             EDI, 0x1
+MOVABS          R14, 0x55555555712F
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555563f0
+
+
+/*
+loc_55555555712f
+JMP        loc_55555555716a
+->	c_to:loc_55555555716a 
+ */ 
+loc_55555555712f:
+MOVABS          R14, 0x55555555712f
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_55555555716a
+
+
+/*
+loc_555555557131
+MOV        RAX, QWORD PTR [RIP + 0x42000]
+LEA        RDX, QWORD PTR [RAX + 0x200878]
+MOV        RAX, QWORD PTR [RIP + 0x41FF2]
+ADD        RAX, 0x2008A0
+MOV        RSI, RDX
+MOV        RDI, RAX
+CALL       loc_5555555563b0
+->	c_next:loc_555555557157 
+ */ 
+loc_555555557131:
+MOVABS          R14, 0x555555557138
+MOV             RAX, QWORD PTR [R14 + 0x42000]
+LEA             RDX, QWORD PTR [RAX + 0x200878]
+MOVABS          R14, 0x555555557146
+MOV             RAX, QWORD PTR [R14 + 0x41FF2]
+ADD             RAX, 0x2008A0
+MOV             RSI, RDX
+MOV             RDI, RAX
+MOVABS          R14, 0x555555557157
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555563b0
+
+
+/*
+loc_555555557157
+CDQE       
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF60], RAX
+CMP        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF60], 0x0
+JNZ        loc_555555557183
+->	c_next:loc_55555555716a 	c_to:loc_555555557183 
+ */ 
+loc_555555557157:
+MOVABS          R14, 0x555555557157
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CDQE            
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF60], RAX
+CMP             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF60], 0x0
+JNZ             loc_555555557183
+
+
+/*
+loc_55555555716a
+MOV        RAX, QWORD PTR [RIP + 0x41FC7]
+MOV        RAX, QWORD PTR [RAX + 0x2008D8]
+CMP        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF68], RAX
+JZ         loc_555555557131
+->	c_next:loc_555555557181 	c_to:loc_555555557131 
+ */ 
+loc_55555555716a:
+MOVABS          R14, 0x55555555716a
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x555555557171
+MOV             RAX, QWORD PTR [R14 + 0x41FC7]
+MOV             RAX, QWORD PTR [RAX + 0x2008D8]
+CMP             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF68], RAX
+JZ              loc_555555557131
+
+
+/*
+loc_555555557181
+JMP        loc_555555557184
+->	c_to:loc_555555557184 
+ */ 
+loc_555555557181:
+MOVABS          R14, 0x555555557181
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_555555557184
+
+
+/*
+loc_555555557183
+NOP        
+->	c_next:loc_555555557184 
+ */ 
+loc_555555557183:
+NOP
+
+
+/*
+loc_555555557184
+MOV        EAX, DWORD PTR [RBP + 0xFFFFFFFFFFFFFF48]
+LEA        RDX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFFE0]
+MOV        RSI, RDX
+MOV        EDI, EAX
+CALL       loc_5555555563f0
+->	c_next:loc_555555557198 
+ */ 
+loc_555555557184:
+MOV             EAX, DWORD PTR [R12 + 0xFFFFFFFFFFFFFF48]
+LEA             RDX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFFE0]
+MOV             RSI, RDX
+MOV             EDI, EAX
+MOVABS          R14, 0x555555557198
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555563f0
+
+
+/*
+loc_555555557198
+JMP        loc_5555555571ef
+->	c_to:loc_5555555571ef 
+ */ 
+loc_555555557198:
+MOVABS          R14, 0x555555557198
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_5555555571ef
+
+
+/*
+loc_55555555719a
+MOV        RAX, QWORD PTR [RIP + 0x41F97]
+MOV        RAX, QWORD PTR [RAX + 0x2008D8]
+TEST       RAX, RAX
+SETZ       DL
+MOV        RAX, QWORD PTR [RIP + 0x41F83]
+MOVZX      EDX, DL
+MOV        QWORD PTR [RAX + 0x2008D8], RDX
+MOV        RAX, QWORD PTR [RIP + 0x41F72]
+MOV        QWORD PTR [RAX + 0x2008D0], 0x0
+MOV        RAX, QWORD PTR [RIP + 0x41F60]
+ADD        RAX, 0x2008A0
+MOV        RDI, RAX
+CALL       loc_555555556380
+->	c_next:loc_5555555571e6 
+ */ 
+loc_55555555719a:
+MOVABS          R14, 0x5555555571a1
+MOV             RAX, QWORD PTR [R14 + 0x41F97]
+MOV             RAX, QWORD PTR [RAX + 0x2008D8]
+TEST            RAX, RAX
+SETZ            DL
+MOVABS          R14, 0x5555555571b5
+MOV             RAX, QWORD PTR [R14 + 0x41F83]
+MOVZX           EDX, DL
+MOV             QWORD PTR [RAX + 0x2008D8], RDX
+MOVABS          R14, 0x5555555571c6
+MOV             RAX, QWORD PTR [R14 + 0x41F72]
+MOV             QWORD PTR [RAX + 0x2008D0], 0x0
+MOVABS          R14, 0x5555555571d8
+MOV             RAX, QWORD PTR [R14 + 0x41F60]
+ADD             RAX, 0x2008A0
+MOV             RDI, RAX
+MOVABS          R14, 0x5555555571E6
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_555555556380
+
+
+/*
+loc_5555555571e6
+CDQE       
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF60], RAX
+->	c_next:loc_5555555571ef 
+ */ 
+loc_5555555571e6:
+CDQE            
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF60], RAX
+
+
+/*
+loc_5555555571ef
+MOV        RAX, QWORD PTR [RIP + 0x41F42]
+ADD        RAX, 0x200878
+MOV        RDI, RAX
+CALL       loc_5555555564b0
+->	c_next:loc_555555557204 
+ */ 
+loc_5555555571ef:
+MOVABS          R14, 0x5555555571f6
+MOV             RAX, QWORD PTR [R14 + 0x41F42]
+ADD             RAX, 0x200878
+MOV             RDI, RAX
+MOVABS          R14, 0x555555557204
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555564b0
+
+
+/*
+loc_555555557204
+LEA        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFFE0]
+MOV        ESI, 0x0
+MOV        RDI, RAX
+CALL       loc_555555556430
+->	c_next:loc_555555557215 
+ */ 
+loc_555555557204:
+LEA             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFFE0]
+MOV             ESI, 0x0
+MOV             RDI, RAX
+MOVABS          R14, 0x555555557215
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_555555556430
+
+
+/*
+loc_555555557215
+MOV        RDX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFFE8]
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFFE0]
+IMUL       RAX, RAX, 0xF4240
+ADD        RAX, RDX
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF70], RAX
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF38]
+MOV        RDI, RAX
+CALL       loc_555555560db1
+->	c_next:loc_55555555723d 
+ */ 
+loc_555555557215:
+MOV             RDX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFFE8]
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFFE0]
+IMUL            RAX, RAX, 0xF4240
+ADD             RAX, RDX
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF70], RAX
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF38]
+MOV             RDI, RAX
+MOVABS          R14, 0x55555555723D
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_555555560db1
+
+
+/*
+loc_55555555723d
+MOV        RAX, QWORD PTR [RIP + 0x41EF4]
+ADD        RAX, 0x200908
+MOV        RDI, RAX
+CALL       loc_5555555565f0
+->	c_next:loc_555555557252 
+ */ 
+loc_55555555723d:
+MOVABS          R14, 0x555555557244
+MOV             RAX, QWORD PTR [R14 + 0x41EF4]
+ADD             RAX, 0x200908
+MOV             RDI, RAX
+MOVABS          R14, 0x555555557252
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555565f0
+
+
+/*
+loc_555555557252
+MOV        RAX, QWORD PTR [RIP + 0x41EDF]
+MOV        RDX, QWORD PTR [RAX + 0x8]
+SUB        RDX, 0x1
+MOV        QWORD PTR [RAX + 0x8], RDX
+MOV        RAX, QWORD PTR [RIP + 0x41ECC]
+ADD        RAX, 0x200908
+MOV        RDI, RAX
+CALL       loc_5555555564b0
+->	c_next:loc_55555555727a 
+ */ 
+loc_555555557252:
+MOVABS          R14, 0x555555557259
+MOV             RAX, QWORD PTR [R14 + 0x41EDF]
+MOV             RDX, QWORD PTR [RAX + 0x8]
+SUB             RDX, 0x1
+MOV             QWORD PTR [RAX + 0x8], RDX
+MOVABS          R14, 0x55555555726c
+MOV             RAX, QWORD PTR [R14 + 0x41ECC]
+ADD             RAX, 0x200908
+MOV             RDI, RAX
+MOVABS          R14, 0x55555555727A
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555564b0
+
+
+/*
+loc_55555555727a
+NOP        
+->	c_next:loc_55555555727b 
+ */ 
+loc_55555555727a:
+NOP
+
+
+/*
+loc_55555555727b
+MOV        RAX, QWORD PTR [RIP + 0x41EB6]
+MOV        RAX, QWORD PTR [RAX + 0x8]
+TEST       RAX, RAX
+JNZ        loc_55555555727b
+->	c_next:loc_55555555728b 	c_to:loc_55555555727b 
+ */ 
+loc_55555555727b:
+MOVABS          R14, 0x55555555727b
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x555555557282
+MOV             RAX, QWORD PTR [R14 + 0x41EB6]
+MOV             RAX, QWORD PTR [RAX + 0x8]
+TEST            RAX, RAX
+JNZ             loc_55555555727b
+
+
+/*
+loc_55555555728b
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF38]
+MOV        RDI, RAX
+CALL       loc_555555558162
+->	c_next:loc_55555555729a 
+ */ 
+loc_55555555728b:
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF38]
+MOV             RDI, RAX
+MOVABS          R14, 0x55555555729A
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_555555558162
+
+
+/*
+loc_55555555729a
+LEA        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFFE0]
+MOV        ESI, 0x0
+MOV        RDI, RAX
+CALL       loc_555555556430
+->	c_next:loc_5555555572ab 
+ */ 
+loc_55555555729a:
+LEA             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFFE0]
+MOV             ESI, 0x0
+MOV             RDI, RAX
+MOVABS          R14, 0x5555555572AB
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_555555556430
+
+
+/*
+loc_5555555572ab
+MOV        RDX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFFE8]
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFFE0]
+IMUL       RAX, RAX, 0xF4240
+ADD        RAX, RDX
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF78], RAX
+MOV        RAX, QWORD PTR [RIP + 0x41E6D]
+ADD        RAX, 0x200878
+MOV        RDI, RAX
+CALL       loc_5555555565f0
+->	c_next:loc_5555555572d9 
+ */ 
+loc_5555555572ab:
+MOV             RDX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFFE8]
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFFE0]
+IMUL            RAX, RAX, 0xF4240
+ADD             RAX, RDX
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF78], RAX
+MOVABS          R14, 0x5555555572cb
+MOV             RAX, QWORD PTR [R14 + 0x41E6D]
+ADD             RAX, 0x200878
+MOV             RDI, RAX
+MOVABS          R14, 0x5555555572D9
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555565f0
+
+
+/*
+loc_5555555572d9
+CDQE       
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF80], RAX
+CMP        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF80], 0x0
+JZ         loc_5555555572fc
+->	c_next:loc_5555555572e6 	c_to:loc_5555555572fc 
+ */ 
+loc_5555555572d9:
+MOVABS          R14, 0x5555555572d9
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CDQE            
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF80], RAX
+CMP             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF80], 0x0
+JZ              loc_5555555572fc
+
+
+/*
+loc_5555555572e6
+LEA        RDI, QWORD PTR [RIP + 0x16D23]
+CALL       loc_555555556390
+->	c_next:loc_5555555572f2 
+ */ 
+loc_5555555572e6:
+MOVABS          R14, 0x5555555572ed
+LEA             RDI, QWORD PTR [R14 + 0x16D23]
+MOVABS          R14, 0x5555555572F2
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_555555556390
+
+
+/*
+loc_5555555572f2
+MOV        EDI, 0xFFFFFFFF
+CALL       loc_5555555565b0
+->	c_next:loc_5555555572fc 
+ */ 
+loc_5555555572f2:
+MOV             EDI, 0xFFFFFFFF
+MOVABS          R14, 0x5555555572FC
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555565b0
+
+
+/*
+loc_5555555572fc
+MOV        RAX, QWORD PTR [RIP + 0x41E35]
+MOV        RAX, QWORD PTR [RAX + 0x2008D8]
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF88], RAX
+MOV        RAX, QWORD PTR [RIP + 0x41E23]
+MOV        RDX, QWORD PTR [RAX + 0x2008D0]
+ADD        RDX, 0x1
+MOV        QWORD PTR [RAX + 0x2008D0], RDX
+MOV        RAX, QWORD PTR [RAX + 0x2008D0]
+MOV        RDX, QWORD PTR [RIP + 0x43F7B]
+CMP        RAX, RDX
+JZ         loc_5555555573b0
+->	c_next:loc_55555555733a 	c_to:loc_5555555573b0 
+ */ 
+loc_5555555572fc:
+MOVABS          R14, 0x5555555572fc
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x555555557303
+MOV             RAX, QWORD PTR [R14 + 0x41E35]
+MOV             RAX, QWORD PTR [RAX + 0x2008D8]
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF88], RAX
+MOVABS          R14, 0x555555557315
+MOV             RAX, QWORD PTR [R14 + 0x41E23]
+MOV             RDX, QWORD PTR [RAX + 0x2008D0]
+ADD             RDX, 0x1
+MOV             QWORD PTR [RAX + 0x2008D0], RDX
+MOV             RAX, QWORD PTR [RAX + 0x2008D0]
+MOVABS          R14, 0x555555557335
+MOV             RDX, QWORD PTR [R14 + 0x43F7B]
+CMP             RAX, RDX
+JZ              loc_5555555573b0
+
+
+/*
+loc_55555555733a
+LEA        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF48]
+MOV        RSI, RAX
+MOV        EDI, 0x1
+CALL       loc_5555555563f0
+->	c_next:loc_55555555734e 
+ */ 
+loc_55555555733a:
+LEA             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF48]
+MOV             RSI, RAX
+MOV             EDI, 0x1
+MOVABS          R14, 0x55555555734E
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555563f0
+
+
+/*
+loc_55555555734e
+JMP        loc_555555557383
+->	c_to:loc_555555557383 
+ */ 
+loc_55555555734e:
+MOVABS          R14, 0x55555555734e
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_555555557383
+
+
+/*
+loc_555555557350
+MOV        RAX, QWORD PTR [RIP + 0x41DE1]
+LEA        RDX, QWORD PTR [RAX + 0x200878]
+MOV        RAX, QWORD PTR [RIP + 0x41DD3]
+ADD        RAX, 0x2008A0
+MOV        RSI, RDX
+MOV        RDI, RAX
+CALL       loc_5555555563b0
+->	c_next:loc_555555557376 
+ */ 
+loc_555555557350:
+MOVABS          R14, 0x555555557357
+MOV             RAX, QWORD PTR [R14 + 0x41DE1]
+LEA             RDX, QWORD PTR [RAX + 0x200878]
+MOVABS          R14, 0x555555557365
+MOV             RAX, QWORD PTR [R14 + 0x41DD3]
+ADD             RAX, 0x2008A0
+MOV             RSI, RDX
+MOV             RDI, RAX
+MOVABS          R14, 0x555555557376
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555563b0
+
+
+/*
+loc_555555557376
+CDQE       
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF80], RAX
+CMP        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF80], 0x0
+JNZ        loc_555555557399
+->	c_next:loc_555555557383 	c_to:loc_555555557399 
+ */ 
+loc_555555557376:
+MOVABS          R14, 0x555555557376
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CDQE            
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF80], RAX
+CMP             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF80], 0x0
+JNZ             loc_555555557399
+
+
+/*
+loc_555555557383
+MOV        RAX, QWORD PTR [RIP + 0x41DAE]
+MOV        RAX, QWORD PTR [RAX + 0x2008D8]
+CMP        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF88], RAX
+JZ         loc_555555557350
+->	c_next:loc_555555557397 	c_to:loc_555555557350 
+ */ 
+loc_555555557383:
+MOVABS          R14, 0x555555557383
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x55555555738a
+MOV             RAX, QWORD PTR [R14 + 0x41DAE]
+MOV             RAX, QWORD PTR [RAX + 0x2008D8]
+CMP             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF88], RAX
+JZ              loc_555555557350
+
+
+/*
+loc_555555557397
+JMP        loc_55555555739a
+->	c_to:loc_55555555739a 
+ */ 
+loc_555555557397:
+MOVABS          R14, 0x555555557397
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_55555555739a
+
+
+/*
+loc_555555557399
+NOP        
+->	c_next:loc_55555555739a 
+ */ 
+loc_555555557399:
+NOP
+
+
+/*
+loc_55555555739a
+MOV        EAX, DWORD PTR [RBP + 0xFFFFFFFFFFFFFF48]
+LEA        RDX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFFE0]
+MOV        RSI, RDX
+MOV        EDI, EAX
+CALL       loc_5555555563f0
+->	c_next:loc_5555555573ae 
+ */ 
+loc_55555555739a:
+MOV             EAX, DWORD PTR [R12 + 0xFFFFFFFFFFFFFF48]
+LEA             RDX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFFE0]
+MOV             RSI, RDX
+MOV             EDI, EAX
+MOVABS          R14, 0x5555555573AE
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555563f0
+
+
+/*
+loc_5555555573ae
+JMP        loc_555555557402
+->	c_to:loc_555555557402 
+ */ 
+loc_5555555573ae:
+MOVABS          R14, 0x5555555573ae
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_555555557402
+
+
+/*
+loc_5555555573b0
+MOV        RAX, QWORD PTR [RIP + 0x41D81]
+MOV        RAX, QWORD PTR [RAX + 0x2008D8]
+TEST       RAX, RAX
+SETZ       DL
+MOV        RAX, QWORD PTR [RIP + 0x41D6D]
+MOVZX      EDX, DL
+MOV        QWORD PTR [RAX + 0x2008D8], RDX
+MOV        RAX, QWORD PTR [RIP + 0x41D5C]
+MOV        QWORD PTR [RAX + 0x2008D0], 0x0
+MOV        RAX, QWORD PTR [RIP + 0x41D4A]
+ADD        RAX, 0x2008A0
+MOV        RDI, RAX
+CALL       loc_555555556380
+->	c_next:loc_5555555573fc 
+ */ 
+loc_5555555573b0:
+MOVABS          R14, 0x5555555573b7
+MOV             RAX, QWORD PTR [R14 + 0x41D81]
+MOV             RAX, QWORD PTR [RAX + 0x2008D8]
+TEST            RAX, RAX
+SETZ            DL
+MOVABS          R14, 0x5555555573cb
+MOV             RAX, QWORD PTR [R14 + 0x41D6D]
+MOVZX           EDX, DL
+MOV             QWORD PTR [RAX + 0x2008D8], RDX
+MOVABS          R14, 0x5555555573dc
+MOV             RAX, QWORD PTR [R14 + 0x41D5C]
+MOV             QWORD PTR [RAX + 0x2008D0], 0x0
+MOVABS          R14, 0x5555555573ee
+MOV             RAX, QWORD PTR [R14 + 0x41D4A]
+ADD             RAX, 0x2008A0
+MOV             RDI, RAX
+MOVABS          R14, 0x5555555573FC
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_555555556380
+
+
+/*
+loc_5555555573fc
+CDQE       
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF80], RAX
+->	c_next:loc_555555557402 
+ */ 
+loc_5555555573fc:
+CDQE            
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF80], RAX
+
+
+/*
+loc_555555557402
+MOV        RAX, QWORD PTR [RIP + 0x41D2F]
+ADD        RAX, 0x200878
+MOV        RDI, RAX
+CALL       loc_5555555564b0
+->	c_next:loc_555555557417 
+ */ 
+loc_555555557402:
+MOVABS          R14, 0x555555557409
+MOV             RAX, QWORD PTR [R14 + 0x41D2F]
+ADD             RAX, 0x200878
+MOV             RDI, RAX
+MOVABS          R14, 0x555555557417
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555564b0
+
+
+/*
+loc_555555557417
+LEA        RDX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF48]
+MOV        RCX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF70]
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF78]
+MOV        RSI, RCX
+MOV        RDI, RAX
+CALL       loc_5555555594bc
+->	c_next:loc_555555557437 
+ */ 
+loc_555555557417:
+LEA             RDX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF48]
+MOV             RCX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF70]
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF78]
+MOV             RSI, RCX
+MOV             RDI, RAX
+MOVABS          R14, 0x555555557437
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555594bc
+
+
+/*
+loc_555555557437
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFFE0], 0x0
+MOV        RAX, QWORD PTR [RIP + 0x41CF2]
+ADD        RAX, 0x200908
+MOV        RDI, RAX
+CALL       loc_5555555565f0
+->	c_next:loc_555555557454 
+ */ 
+loc_555555557437:
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFFE0], 0x0
+MOVABS          R14, 0x555555557446
+MOV             RAX, QWORD PTR [R14 + 0x41CF2]
+ADD             RAX, 0x200908
+MOV             RDI, RAX
+MOVABS          R14, 0x555555557454
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555565f0
+
+
+/*
+loc_555555557454
+MOV        RAX, QWORD PTR [RIP + 0x41CDD]
+ADD        RAX, 0x200908
+MOV        RDI, RAX
+CALL       loc_5555555564b0
+->	c_next:loc_555555557469 
+ */ 
+loc_555555557454:
+MOVABS          R14, 0x55555555745b
+MOV             RAX, QWORD PTR [R14 + 0x41CDD]
+ADD             RAX, 0x200908
+MOV             RDI, RAX
+MOVABS          R14, 0x555555557469
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555564b0
+
+
+/*
+loc_555555557469
+MOV        RAX, QWORD PTR [RIP + 0x41CC8]
+ADD        RAX, 0x200878
+MOV        RDI, RAX
+CALL       loc_5555555565f0
+->	c_next:loc_55555555747e 
+ */ 
+loc_555555557469:
+MOVABS          R14, 0x555555557470
+MOV             RAX, QWORD PTR [R14 + 0x41CC8]
+ADD             RAX, 0x200878
+MOV             RDI, RAX
+MOVABS          R14, 0x55555555747E
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555565f0
+
+
+/*
+loc_55555555747e
+CDQE       
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFFD0], RAX
+CMP        QWORD PTR [RBP + 0xFFFFFFFFFFFFFFD0], 0x0
+JZ         loc_5555555574a1
+->	c_next:loc_55555555748b 	c_to:loc_5555555574a1 
+ */ 
+loc_55555555747e:
+MOVABS          R14, 0x55555555747e
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CDQE            
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFFD0], RAX
+CMP             QWORD PTR [R12 + 0xFFFFFFFFFFFFFFD0], 0x0
+JZ              loc_5555555574a1
+
+
+/*
+loc_55555555748b
+LEA        RDI, QWORD PTR [RIP + 0x16B7E]
+CALL       loc_555555556390
+->	c_next:loc_555555557497 
+ */ 
+loc_55555555748b:
+MOVABS          R14, 0x555555557492
+LEA             RDI, QWORD PTR [R14 + 0x16B7E]
+MOVABS          R14, 0x555555557497
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_555555556390
+
+
+/*
+loc_555555557497
+MOV        EDI, 0xFFFFFFFF
+CALL       loc_5555555565b0
+->	c_next:loc_5555555574a1 
+ */ 
+loc_555555557497:
+MOV             EDI, 0xFFFFFFFF
+MOVABS          R14, 0x5555555574A1
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555565b0
+
+
+/*
+loc_5555555574a1
+MOV        RAX, QWORD PTR [RIP + 0x41C90]
+MOV        RAX, QWORD PTR [RAX + 0x2008D8]
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFFD8], RAX
+MOV        RAX, QWORD PTR [RIP + 0x41C7E]
+MOV        RDX, QWORD PTR [RAX + 0x2008D0]
+ADD        RDX, 0x1
+MOV        QWORD PTR [RAX + 0x2008D0], RDX
+MOV        RAX, QWORD PTR [RAX + 0x2008D0]
+MOV        RDX, QWORD PTR [RIP + 0x43DD6]
+CMP        RAX, RDX
+JZ         loc_555555557558
+->	c_next:loc_5555555574df 	c_to:loc_555555557558 
+ */ 
+loc_5555555574a1:
+MOVABS          R14, 0x5555555574a1
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x5555555574a8
+MOV             RAX, QWORD PTR [R14 + 0x41C90]
+MOV             RAX, QWORD PTR [RAX + 0x2008D8]
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFFD8], RAX
+MOVABS          R14, 0x5555555574ba
+MOV             RAX, QWORD PTR [R14 + 0x41C7E]
+MOV             RDX, QWORD PTR [RAX + 0x2008D0]
+ADD             RDX, 0x1
+MOV             QWORD PTR [RAX + 0x2008D0], RDX
+MOV             RAX, QWORD PTR [RAX + 0x2008D0]
+MOVABS          R14, 0x5555555574da
+MOV             RDX, QWORD PTR [R14 + 0x43DD6]
+CMP             RAX, RDX
+JZ              loc_555555557558
+
+
+/*
+loc_5555555574df
+LEA        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF40]
+MOV        RSI, RAX
+MOV        EDI, 0x1
+CALL       loc_5555555563f0
+->	c_next:loc_5555555574f3 
+ */ 
+loc_5555555574df:
+LEA             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF40]
+MOV             RSI, RAX
+MOV             EDI, 0x1
+MOVABS          R14, 0x5555555574F3
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555563f0
+
+
+/*
+loc_5555555574f3
+JMP        loc_555555557528
+->	c_to:loc_555555557528 
+ */ 
+loc_5555555574f3:
+MOVABS          R14, 0x5555555574f3
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_555555557528
+
+
+/*
+loc_5555555574f5
+MOV        RAX, QWORD PTR [RIP + 0x41C3C]
+LEA        RDX, QWORD PTR [RAX + 0x200878]
+MOV        RAX, QWORD PTR [RIP + 0x41C2E]
+ADD        RAX, 0x2008A0
+MOV        RSI, RDX
+MOV        RDI, RAX
+CALL       loc_5555555563b0
+->	c_next:loc_55555555751b 
+ */ 
+loc_5555555574f5:
+MOVABS          R14, 0x5555555574fc
+MOV             RAX, QWORD PTR [R14 + 0x41C3C]
+LEA             RDX, QWORD PTR [RAX + 0x200878]
+MOVABS          R14, 0x55555555750a
+MOV             RAX, QWORD PTR [R14 + 0x41C2E]
+ADD             RAX, 0x2008A0
+MOV             RSI, RDX
+MOV             RDI, RAX
+MOVABS          R14, 0x55555555751B
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555563b0
+
+
+/*
+loc_55555555751b
+CDQE       
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFFD0], RAX
+CMP        QWORD PTR [RBP + 0xFFFFFFFFFFFFFFD0], 0x0
+JNZ        loc_55555555753e
+->	c_next:loc_555555557528 	c_to:loc_55555555753e 
+ */ 
+loc_55555555751b:
+MOVABS          R14, 0x55555555751b
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CDQE            
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFFD0], RAX
+CMP             QWORD PTR [R12 + 0xFFFFFFFFFFFFFFD0], 0x0
+JNZ             loc_55555555753e
+
+
+/*
+loc_555555557528
+MOV        RAX, QWORD PTR [RIP + 0x41C09]
+MOV        RAX, QWORD PTR [RAX + 0x2008D8]
+CMP        QWORD PTR [RBP + 0xFFFFFFFFFFFFFFD8], RAX
+JZ         loc_5555555574f5
+->	c_next:loc_55555555753c 	c_to:loc_5555555574f5 
+ */ 
+loc_555555557528:
+MOVABS          R14, 0x555555557528
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x55555555752f
+MOV             RAX, QWORD PTR [R14 + 0x41C09]
+MOV             RAX, QWORD PTR [RAX + 0x2008D8]
+CMP             QWORD PTR [R12 + 0xFFFFFFFFFFFFFFD8], RAX
+JZ              loc_5555555574f5
+
+
+/*
+loc_55555555753c
+JMP        loc_55555555753f
+->	c_to:loc_55555555753f 
+ */ 
+loc_55555555753c:
+MOVABS          R14, 0x55555555753c
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_55555555753f
+
+
+/*
+loc_55555555753e
+NOP        
+->	c_next:loc_55555555753f 
+ */ 
+loc_55555555753e:
+NOP
+
+
+/*
+loc_55555555753f
+MOV        EAX, DWORD PTR [RBP + 0xFFFFFFFFFFFFFF40]
+LEA        RDX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF44]
+MOV        RSI, RDX
+MOV        EDI, EAX
+CALL       loc_5555555563f0
+->	c_next:loc_555555557556 
+ */ 
+loc_55555555753f:
+MOV             EAX, DWORD PTR [R12 + 0xFFFFFFFFFFFFFF40]
+LEA             RDX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF44]
+MOV             RSI, RDX
+MOV             EDI, EAX
+MOVABS          R14, 0x555555557556
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555563f0
+
+
+/*
+loc_555555557556
+JMP        loc_5555555575aa
+->	c_to:loc_5555555575aa 
+ */ 
+loc_555555557556:
+MOVABS          R14, 0x555555557556
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_5555555575aa
+
+
+/*
+loc_555555557558
+MOV        RAX, QWORD PTR [RIP + 0x41BD9]
+MOV        RAX, QWORD PTR [RAX + 0x2008D8]
+TEST       RAX, RAX
+SETZ       DL
+MOV        RAX, QWORD PTR [RIP + 0x41BC5]
+MOVZX      EDX, DL
+MOV        QWORD PTR [RAX + 0x2008D8], RDX
+MOV        RAX, QWORD PTR [RIP + 0x41BB4]
+MOV        QWORD PTR [RAX + 0x2008D0], 0x0
+MOV        RAX, QWORD PTR [RIP + 0x41BA2]
+ADD        RAX, 0x2008A0
+MOV        RDI, RAX
+CALL       loc_555555556380
+->	c_next:loc_5555555575a4 
+ */ 
+loc_555555557558:
+MOVABS          R14, 0x55555555755f
+MOV             RAX, QWORD PTR [R14 + 0x41BD9]
+MOV             RAX, QWORD PTR [RAX + 0x2008D8]
+TEST            RAX, RAX
+SETZ            DL
+MOVABS          R14, 0x555555557573
+MOV             RAX, QWORD PTR [R14 + 0x41BC5]
+MOVZX           EDX, DL
+MOV             QWORD PTR [RAX + 0x2008D8], RDX
+MOVABS          R14, 0x555555557584
+MOV             RAX, QWORD PTR [R14 + 0x41BB4]
+MOV             QWORD PTR [RAX + 0x2008D0], 0x0
+MOVABS          R14, 0x555555557596
+MOV             RAX, QWORD PTR [R14 + 0x41BA2]
+ADD             RAX, 0x2008A0
+MOV             RDI, RAX
+MOVABS          R14, 0x5555555575A4
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_555555556380
+
+
+/*
+loc_5555555575a4
+CDQE       
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFFD0], RAX
+->	c_next:loc_5555555575aa 
+ */ 
+loc_5555555575a4:
+CDQE            
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFFD0], RAX
+
+
+/*
+loc_5555555575aa
+MOV        RAX, QWORD PTR [RIP + 0x41B87]
+ADD        RAX, 0x200878
+MOV        RDI, RAX
+CALL       loc_5555555564b0
+->	c_next:loc_5555555575bf 
+ */ 
+loc_5555555575aa:
+MOVABS          R14, 0x5555555575b1
+MOV             RAX, QWORD PTR [R14 + 0x41B87]
+ADD             RAX, 0x200878
+MOV             RDI, RAX
+MOVABS          R14, 0x5555555575BF
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555564b0
+
+
+/*
+loc_5555555575bf
+NOP        
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFFF8]
+XOR        RAX, QWORD PTR FS:[0x28]
+JZ         loc_5555555575d4
+->	c_next:loc_5555555575cf 	c_to:loc_5555555575d4 
+ */ 
+loc_5555555575bf:
+MOVABS          R14, 0x5555555575bf
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+NOP
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFFF8]
+MOV             R14, Stack_RFS
+XOR             RAX, QWORD PTR [R14 + 0x28]
+JZ              loc_5555555575d4
+
+
+/*
+loc_5555555575cf
+CALL       loc_5555555563d0
+->	c_next:loc_5555555575d4 
+ */ 
+loc_5555555575cf:
+MOVABS          R14, 0x5555555575D4
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555563d0
+
+
+/*
+loc_5555555575d4
+LEAVE      
+RET        
+ */ 
+loc_5555555575d4:
+MOV             R13, R12
+MOV             R12, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+JMP             ij_5555555575d6
+
+
+/*
+loc_5555555583ef
+MOV        RCX, QWORD PTR [RIP + 0x42ECA]
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF88]
+CQO        
+IDIV       RCX
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF98]
+IMUL       RAX, RDX
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFFC8], RAX
+MOV        RAX, QWORD PTR [RIP + 0x42E6E]
+MOV        RCX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFFC8]
+MOV        RDX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF98]
+ADD        RDX, RCX
+CMP        RAX, RDX
+CMOVG      RAX, RDX
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFFD0], RAX
+MOV        RSI, QWORD PTR [RIP + 0x42E91]
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF88]
+CQO        
+IDIV       RSI
+MOV        RDX, RAX
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFFA0]
+IMUL       RAX, RDX
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFFD8], RAX
+MOV        RAX, QWORD PTR [RIP + 0x42E3A]
+MOV        RCX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFFD8]
+MOV        RDX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFFA0]
+ADD        RDX, RCX
+CMP        RAX, RDX
+CMOVG      RAX, RDX
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFFE0], RAX
+MOV        RCX, QWORD PTR [RIP + 0x40CCD]
+MOV        RDX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF88]
+MOV        RAX, RDX
+SHL        RAX, 0x2
+ADD        RAX, RDX
+SHL        RAX, 0x3
+ADD        RAX, 0x200930
+ADD        RAX, RCX
+MOV        RDI, RAX
+CALL       loc_5555555565f0
+->	c_next:loc_55555555848e 
+ */ 
+loc_5555555583ef:
+MOVABS          R14, 0x5555555583f6
+MOV             RCX, QWORD PTR [R14 + 0x42ECA]
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF88]
+CQO             
+IDIV            RCX
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF98]
+IMUL            RAX, RDX
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFFC8], RAX
+MOVABS          R14, 0x555555558412
+MOV             RAX, QWORD PTR [R14 + 0x42E6E]
+MOV             RCX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFFC8]
+MOV             RDX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF98]
+ADD             RDX, RCX
+CMP             RAX, RDX
+CMOVG           RAX, RDX
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFFD0], RAX
+MOVABS          R14, 0x55555555842f
+MOV             RSI, QWORD PTR [R14 + 0x42E91]
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF88]
+CQO             
+IDIV            RSI
+MOV             RDX, RAX
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFFA0]
+IMUL            RAX, RDX
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFFD8], RAX
+MOVABS          R14, 0x55555555844e
+MOV             RAX, QWORD PTR [R14 + 0x42E3A]
+MOV             RCX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFFD8]
+MOV             RDX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFFA0]
+ADD             RDX, RCX
+CMP             RAX, RDX
+CMOVG           RAX, RDX
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFFE0], RAX
+MOVABS          R14, 0x55555555846b
+MOV             RCX, QWORD PTR [R14 + 0x40CCD]
+MOV             RDX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF88]
+MOV             RAX, RDX
+SHL             RAX, 0x2
+ADD             RAX, RDX
+SHL             RAX, 0x3
+ADD             RAX, 0x200930
+ADD             RAX, RCX
+MOV             RDI, RAX
+MOVABS          R14, 0x55555555848E
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555565f0
+
+
+/*
+loc_55555555848e
+MOV        RDX, QWORD PTR [RIP + 0x40CA3]
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF88]
+SHL        RAX, 0xB
+ADD        RAX, RDX
+ADD        RAX, 0x10
+MOV        RAX, QWORD PTR [RAX]
+LEA        RCX, QWORD PTR [RAX + 0x1]
+MOV        RSI, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF88]
+SHL        RSI, 0xB
+ADD        RDX, RSI
+ADD        RDX, 0x10
+MOV        QWORD PTR [RDX], RCX
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF90], RAX
+MOV        RCX, QWORD PTR [RIP + 0x40C70]
+MOV        RDX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF88]
+MOV        RAX, RDX
+SHL        RAX, 0x2
+ADD        RAX, RDX
+SHL        RAX, 0x3
+ADD        RAX, 0x200930
+ADD        RAX, RCX
+MOV        RDI, RAX
+CALL       loc_5555555564b0
+->	c_next:loc_5555555584eb 
+ */ 
+loc_55555555848e:
+MOVABS          R14, 0x555555558495
+MOV             RDX, QWORD PTR [R14 + 0x40CA3]
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF88]
+SHL             RAX, 0xB
+ADD             RAX, RDX
+ADD             RAX, 0x10
+MOV             RAX, QWORD PTR [RAX]
+LEA             RCX, QWORD PTR [RAX + 0x1]
+MOV             RSI, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF88]
+SHL             RSI, 0xB
+ADD             RDX, RSI
+ADD             RDX, 0x10
+MOV             QWORD PTR [RDX], RCX
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF90], RAX
+MOVABS          R14, 0x5555555584c8
+MOV             RCX, QWORD PTR [R14 + 0x40C70]
+MOV             RDX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF88]
+MOV             RAX, RDX
+SHL             RAX, 0x2
+ADD             RAX, RDX
+SHL             RAX, 0x3
+ADD             RAX, 0x200930
+ADD             RAX, RCX
+MOV             RDI, RAX
+MOVABS          R14, 0x5555555584EB
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555564b0
+
+
+/*
+loc_5555555584eb
+JMP        loc_55555555868d
+->	c_to:loc_55555555868d 
+ */ 
+loc_5555555584eb:
+MOVABS          R14, 0x5555555584eb
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_55555555868d
+
+
+/*
+loc_5555555584f0
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF90]
+CQO        
+IDIV       QWORD PTR [RBP + 0xFFFFFFFFFFFFFFB0]
+MOV        RAX, QWORD PTR [RIP + 0x43B3F]
+IMUL       RDX, RAX
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFFC8]
+ADD        RAX, RDX
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFFE8], RAX
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF90]
+CQO        
+IDIV       QWORD PTR [RBP + 0xFFFFFFFFFFFFFFB0]
+MOV        RDX, RAX
+MOV        RAX, QWORD PTR [RIP + 0x43ADC]
+IMUL       RDX, RAX
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFFD8]
+ADD        RAX, RDX
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFFF0], RAX
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFFF0]
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF80], RAX
+JMP        loc_5555555585e4
+->	c_to:loc_5555555585e4 
+ */ 
+loc_5555555584f0:
+MOVABS          R14, 0x5555555584f0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF90]
+CQO             
+IDIV            QWORD PTR [R12 + 0xFFFFFFFFFFFFFFB0]
+MOVABS          R14, 0x555555558501
+MOV             RAX, QWORD PTR [R14 + 0x43B3F]
+IMUL            RDX, RAX
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFFC8]
+ADD             RAX, RDX
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFFE8], RAX
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF90]
+CQO             
+IDIV            QWORD PTR [R12 + 0xFFFFFFFFFFFFFFB0]
+MOV             RDX, RAX
+MOVABS          R14, 0x555555558524
+MOV             RAX, QWORD PTR [R14 + 0x43ADC]
+IMUL            RDX, RAX
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFFD8]
+ADD             RAX, RDX
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFFF0], RAX
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFFF0]
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF80], RAX
+JMP             loc_5555555585e4
+
+
+/*
+loc_555555558540
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFFE8]
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF78], RAX
+JMP        loc_5555555585b7
+->	c_to:loc_5555555585b7 
+ */ 
+loc_555555558540:
+MOVABS          R14, 0x555555558540
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFFE8]
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF78], RAX
+JMP             loc_5555555585b7
+
+
+/*
+loc_55555555854d
+CVTSI2SS   XMM0, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF78]
+MOVSS      DWORD PTR [RBP + 0xFFFFFFFFFFFFFF70], XMM0
+CVTSI2SS   XMM0, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF80]
+MOVSS      DWORD PTR [RBP + 0xFFFFFFFFFFFFFF74], XMM0
+MOV        RDX, QWORD PTR [RIP + 0x40BCD]
+MOV        RAX, QWORD PTR [RIP + 0x42D06]
+IMUL       RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF80]
+MOV        RCX, RAX
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF78]
+ADD        RAX, RCX
+ADD        RAX, RDX
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFFF8], RAX
+CVTSS2SD   XMM1, DWORD PTR [RBP + 0xFFFFFFFFFFFFFF74]
+CVTSS2SD   XMM0, DWORD PTR [RBP + 0xFFFFFFFFFFFFFF70]
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFFF8]
+MOV        RDI, RAX
+CALL       loc_55555555f2d9
+->	c_next:loc_5555555585af 
+ */ 
+loc_55555555854d:
+CVTSI2SS        XMM0, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF78]
+MOVSS           DWORD PTR [R12 + 0xFFFFFFFFFFFFFF70], XMM0
+CVTSI2SS        XMM0, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF80]
+MOVSS           DWORD PTR [R12 + 0xFFFFFFFFFFFFFF74], XMM0
+MOVABS          R14, 0x555555558573
+MOV             RDX, QWORD PTR [R14 + 0x40BCD]
+MOVABS          R14, 0x55555555857a
+MOV             RAX, QWORD PTR [R14 + 0x42D06]
+IMUL            RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF80]
+MOV             RCX, RAX
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF78]
+ADD             RAX, RCX
+ADD             RAX, RDX
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFFF8], RAX
+CVTSS2SD        XMM1, DWORD PTR [R12 + 0xFFFFFFFFFFFFFF74]
+CVTSS2SD        XMM0, DWORD PTR [R12 + 0xFFFFFFFFFFFFFF70]
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFFF8]
+MOV             RDI, RAX
+MOVABS          R14, 0x5555555585AF
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_55555555f2d9
+
+
+/*
+loc_5555555585af
+ADD        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF78], 0x1
+->	c_next:loc_5555555585b7 
+ */ 
+loc_5555555585af:
+ADD             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF78], 0x1
+
+
+/*
+loc_5555555585b7
+MOV        RDX, QWORD PTR [RIP + 0x43A82]
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFFE8]
+ADD        RAX, RDX
+CMP        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF78], RAX
+JGE        loc_5555555585df
+->	c_next:loc_5555555585ce 	c_to:loc_5555555585df 
+ */ 
+loc_5555555585b7:
+MOVABS          R14, 0x5555555585b7
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x5555555585be
+MOV             RDX, QWORD PTR [R14 + 0x43A82]
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFFE8]
+ADD             RAX, RDX
+CMP             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF78], RAX
+JGE             loc_5555555585df
+
+
+/*
+loc_5555555585ce
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF78]
+CMP        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFFD0]
+JL         loc_55555555854d
+->	c_next:loc_5555555585df 	c_to:loc_55555555854d 
+ */ 
+loc_5555555585ce:
+MOVABS          R14, 0x5555555585ce
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF78]
+CMP             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFFD0]
+JL              loc_55555555854d
+
+
+/*
+loc_5555555585df
+ADD        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF80], 0x1
+->	c_next:loc_5555555585e4 
+ */ 
+loc_5555555585df:
+ADD             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF80], 0x1
+
+
+/*
+loc_5555555585e4
+MOV        RDX, QWORD PTR [RIP + 0x43A15]
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFFF0]
+ADD        RAX, RDX
+CMP        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF80], RAX
+JGE        loc_555555558606
+->	c_next:loc_5555555585f8 	c_to:loc_555555558606 
+ */ 
+loc_5555555585e4:
+MOVABS          R14, 0x5555555585e4
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x5555555585eb
+MOV             RDX, QWORD PTR [R14 + 0x43A15]
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFFF0]
+ADD             RAX, RDX
+CMP             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF80], RAX
+JGE             loc_555555558606
+
+
+/*
+loc_5555555585f8
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF80]
+CMP        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFFE0]
+JL         loc_555555558540
+->	c_next:loc_555555558606 	c_to:loc_555555558540 
+ */ 
+loc_5555555585f8:
+MOVABS          R14, 0x5555555585f8
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF80]
+CMP             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFFE0]
+JL              loc_555555558540
+
+
+/*
+loc_555555558606
+MOV        RCX, QWORD PTR [RIP + 0x40B2B]
+MOV        RDX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF88]
+MOV        RAX, RDX
+SHL        RAX, 0x2
+ADD        RAX, RDX
+SHL        RAX, 0x3
+ADD        RAX, 0x200930
+ADD        RAX, RCX
+MOV        RDI, RAX
+CALL       loc_5555555565f0
+->	c_next:loc_555555558630 
+ */ 
+loc_555555558606:
+MOVABS          R14, 0x55555555860d
+MOV             RCX, QWORD PTR [R14 + 0x40B2B]
+MOV             RDX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF88]
+MOV             RAX, RDX
+SHL             RAX, 0x2
+ADD             RAX, RDX
+SHL             RAX, 0x3
+ADD             RAX, 0x200930
+ADD             RAX, RCX
+MOV             RDI, RAX
+MOVABS          R14, 0x555555558630
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555565f0
+
+
+/*
+loc_555555558630
+MOV        RDX, QWORD PTR [RIP + 0x40B01]
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF88]
+SHL        RAX, 0xB
+ADD        RAX, RDX
+ADD        RAX, 0x10
+MOV        RAX, QWORD PTR [RAX]
+LEA        RCX, QWORD PTR [RAX + 0x1]
+MOV        RSI, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF88]
+SHL        RSI, 0xB
+ADD        RDX, RSI
+ADD        RDX, 0x10
+MOV        QWORD PTR [RDX], RCX
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF90], RAX
+MOV        RCX, QWORD PTR [RIP + 0x40ACE]
+MOV        RDX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF88]
+MOV        RAX, RDX
+SHL        RAX, 0x2
+ADD        RAX, RDX
+SHL        RAX, 0x3
+ADD        RAX, 0x200930
+ADD        RAX, RCX
+MOV        RDI, RAX
+CALL       loc_5555555564b0
+->	c_next:loc_55555555868d 
+ */ 
+loc_555555558630:
+MOVABS          R14, 0x555555558637
+MOV             RDX, QWORD PTR [R14 + 0x40B01]
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF88]
+SHL             RAX, 0xB
+ADD             RAX, RDX
+ADD             RAX, 0x10
+MOV             RAX, QWORD PTR [RAX]
+LEA             RCX, QWORD PTR [RAX + 0x1]
+MOV             RSI, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF88]
+SHL             RSI, 0xB
+ADD             RDX, RSI
+ADD             RDX, 0x10
+MOV             QWORD PTR [RDX], RCX
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF90], RAX
+MOVABS          R14, 0x55555555866a
+MOV             RCX, QWORD PTR [R14 + 0x40ACE]
+MOV             RDX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF88]
+MOV             RAX, RDX
+SHL             RAX, 0x2
+ADD             RAX, RDX
+SHL             RAX, 0x3
+ADD             RAX, 0x200930
+ADD             RAX, RCX
+MOV             RDI, RAX
+MOVABS          R14, 0x55555555868D
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555564b0
+
+
+/*
+loc_55555555868d
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF90]
+CMP        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFFC0]
+JL         loc_5555555584f0
+->	c_next:loc_55555555869b 	c_to:loc_5555555584f0 
+ */ 
+loc_55555555868d:
+MOVABS          R14, 0x55555555868d
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF90]
+CMP             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFFC0]
+JL              loc_5555555584f0
+
+
+/*
+loc_55555555869b
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF68]
+CMP        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF88]
+JNZ        loc_555555558737
+->	c_next:loc_5555555586ac 	c_to:loc_555555558737 
+ */ 
+loc_55555555869b:
+MOVABS          R14, 0x55555555869b
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF68]
+CMP             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF88]
+JNZ             loc_555555558737
+
+
+/*
+loc_5555555586ac
+MOV        RCX, QWORD PTR [RIP + 0x40A85]
+MOV        RDX, QWORD PTR [RIP + 0x42BF6]
+MOV        RAX, RDX
+SHL        RAX, 0x2
+ADD        RAX, RDX
+SHL        RAX, 0x3
+ADD        RAX, 0x200930
+ADD        RAX, RCX
+MOV        RDI, RAX
+CALL       loc_5555555565f0
+->	c_next:loc_5555555586d9 
+ */ 
+loc_5555555586ac:
+MOVABS          R14, 0x5555555586b3
+MOV             RCX, QWORD PTR [R14 + 0x40A85]
+MOVABS          R14, 0x5555555586ba
+MOV             RDX, QWORD PTR [R14 + 0x42BF6]
+MOV             RAX, RDX
+SHL             RAX, 0x2
+ADD             RAX, RDX
+SHL             RAX, 0x3
+ADD             RAX, 0x200930
+ADD             RAX, RCX
+MOV             RDI, RAX
+MOVABS          R14, 0x5555555586D9
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555565f0
+
+
+/*
+loc_5555555586d9
+MOV        RAX, QWORD PTR [RIP + 0x40A58]
+MOV        RDX, QWORD PTR [RIP + 0x42BC9]
+MOV        RCX, RDX
+SHL        RCX, 0xB
+ADD        RCX, RAX
+ADD        RCX, 0x10
+MOV        RCX, QWORD PTR [RCX]
+SUB        RCX, 0x1
+SHL        RDX, 0xB
+ADD        RAX, RDX
+ADD        RAX, 0x10
+MOV        QWORD PTR [RAX], RCX
+MOV        RCX, QWORD PTR [RIP + 0x40A27]
+MOV        RDX, QWORD PTR [RIP + 0x42B98]
+MOV        RAX, RDX
+SHL        RAX, 0x2
+ADD        RAX, RDX
+SHL        RAX, 0x3
+ADD        RAX, 0x200930
+ADD        RAX, RCX
+MOV        RDI, RAX
+CALL       loc_5555555564b0
+->	c_next:loc_555555558737 
+ */ 
+loc_5555555586d9:
+MOVABS          R14, 0x5555555586e0
+MOV             RAX, QWORD PTR [R14 + 0x40A58]
+MOVABS          R14, 0x5555555586e7
+MOV             RDX, QWORD PTR [R14 + 0x42BC9]
+MOV             RCX, RDX
+SHL             RCX, 0xB
+ADD             RCX, RAX
+ADD             RCX, 0x10
+MOV             RCX, QWORD PTR [RCX]
+SUB             RCX, 0x1
+SHL             RDX, 0xB
+ADD             RAX, RDX
+ADD             RAX, 0x10
+MOV             QWORD PTR [RAX], RCX
+MOVABS          R14, 0x555555558711
+MOV             RCX, QWORD PTR [R14 + 0x40A27]
+MOVABS          R14, 0x555555558718
+MOV             RDX, QWORD PTR [R14 + 0x42B98]
+MOV             RAX, RDX
+SHL             RAX, 0x2
+ADD             RAX, RDX
+SHL             RAX, 0x3
+ADD             RAX, 0x200930
+ADD             RAX, RCX
+MOV             RDI, RAX
+MOVABS          R14, 0x555555558737
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555564b0
+
+
+/*
+loc_555555558737
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF88]
+ADD        RAX, 0x1
+MOV        RCX, QWORD PTR [RIP + 0x42B6A]
+CQO        
+IDIV       RCX
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF88], RDX
+JMP        loc_555555558769
+->	c_to:loc_555555558769 
+ */ 
+loc_555555558737:
+MOVABS          R14, 0x555555558737
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF88]
+ADD             RAX, 0x1
+MOVABS          R14, 0x555555558746
+MOV             RCX, QWORD PTR [R14 + 0x42B6A]
+CQO             
+IDIV            RCX
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF88], RDX
+JMP             loc_555555558769
+
+
+/*
+loc_555555558751
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF88]
+ADD        RAX, 0x1
+MOV        RCX, QWORD PTR [RIP + 0x42B50]
+CQO        
+IDIV       RCX
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF88], RDX
+->	c_next:loc_555555558769 
+ */ 
+loc_555555558751:
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF88]
+ADD             RAX, 0x1
+MOVABS          R14, 0x555555558760
+MOV             RCX, QWORD PTR [R14 + 0x42B50]
+CQO             
+IDIV            RCX
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF88], RDX
+
+
+/*
+loc_555555558769
+MOV        RAX, QWORD PTR [RIP + 0x409C8]
+MOV        RDX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF88]
+SHL        RDX, 0xB
+ADD        RAX, RDX
+ADD        RAX, 0x10
+MOV        RAX, QWORD PTR [RAX]
+CMP        QWORD PTR [RBP + 0xFFFFFFFFFFFFFFC0], RAX
+JG         loc_5555555587a9
+->	c_next:loc_555555558788 	c_to:loc_5555555587a9 
+ */ 
+loc_555555558769:
+MOVABS          R14, 0x555555558769
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x555555558770
+MOV             RAX, QWORD PTR [R14 + 0x409C8]
+MOV             RDX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF88]
+SHL             RDX, 0xB
+ADD             RAX, RDX
+ADD             RAX, 0x10
+MOV             RAX, QWORD PTR [RAX]
+CMP             QWORD PTR [R12 + 0xFFFFFFFFFFFFFFC0], RAX
+JG              loc_5555555587a9
+
+
+/*
+loc_555555558788
+MOV        RAX, QWORD PTR [RIP + 0x409A9]
+MOV        RDX, QWORD PTR [RIP + 0x42B1A]
+SHL        RDX, 0xB
+ADD        RAX, RDX
+ADD        RAX, 0x10
+MOV        RAX, QWORD PTR [RAX]
+TEST       RAX, RAX
+JG         loc_555555558751
+->	c_next:loc_5555555587a9 	c_to:loc_555555558751 
+ */ 
+loc_555555558788:
+MOVABS          R14, 0x555555558788
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x55555555878f
+MOV             RAX, QWORD PTR [R14 + 0x409A9]
+MOVABS          R14, 0x555555558796
+MOV             RDX, QWORD PTR [R14 + 0x42B1A]
+SHL             RDX, 0xB
+ADD             RAX, RDX
+ADD             RAX, 0x10
+MOV             RAX, QWORD PTR [RAX]
+TEST            RAX, RAX
+JG              loc_555555558751
+
+
+/*
+loc_5555555587a9
+MOV        RAX, QWORD PTR [RIP + 0x40988]
+MOV        RDX, QWORD PTR [RIP + 0x42AF9]
+SHL        RDX, 0xB
+ADD        RAX, RDX
+ADD        RAX, 0x10
+MOV        RAX, QWORD PTR [RAX]
+TEST       RAX, RAX
+JG         loc_5555555583ef
+->	c_next:loc_5555555587ce 	c_to:loc_5555555583ef 
+ */ 
+loc_5555555587a9:
+MOVABS          R14, 0x5555555587a9
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x5555555587b0
+MOV             RAX, QWORD PTR [R14 + 0x40988]
+MOVABS          R14, 0x5555555587b7
+MOV             RDX, QWORD PTR [R14 + 0x42AF9]
+SHL             RDX, 0xB
+ADD             RAX, RDX
+ADD             RAX, 0x10
+MOV             RAX, QWORD PTR [RAX]
+TEST            RAX, RAX
+JG              loc_5555555583ef
+
+
+/*
+loc_5555555587ce
+NOP        
+NOP        
+LEAVE      
+RET        
+ */ 
+loc_5555555587ce:
+NOP
+NOP
+MOV             R13, R12
+MOV             R12, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+JMP             ij_5555555587d2
+
+
+/*
+loc_55555555a0c9
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFEC8], 0x0
+JMP        loc_55555555a6d2
+->	c_to:loc_55555555a6d2 
+ */ 
+loc_55555555a0c9:
+MOVABS          R14, 0x55555555a0c9
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFEC8], 0x0
+JMP             loc_55555555a6d2
+
+
+/*
+loc_55555555a0d9
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFEC8]
+MOV        QWORD PTR [RIP + 0x41099], RAX
+MOV        RDX, QWORD PTR [RIP + 0x3F052]
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFEF0]
+IMUL       RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFEE8]
+ADD        RAX, RDX
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFED8], RAX
+MOV        RDX, QWORD PTR [RIP + 0x3EFF2]
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFEF8]
+IMUL       RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFEE8]
+ADD        RAX, RDX
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFEE0], RAX
+MOV        RAX, QWORD PTR [RIP + 0x3F00A]
+ADD        RAX, 0x200810
+MOV        RDI, RAX
+CALL       loc_5555555565f0
+->	c_next:loc_55555555a13c 
+ */ 
+loc_55555555a0d9:
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFEC8]
+MOVABS          R14, 0x55555555a0e7
+MOV             QWORD PTR [R14 + 0x41099], RAX
+MOVABS          R14, 0x55555555a0ee
+MOV             RDX, QWORD PTR [R14 + 0x3F052]
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFEF0]
+IMUL            RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFEE8]
+ADD             RAX, RDX
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFED8], RAX
+MOVABS          R14, 0x55555555a10e
+MOV             RDX, QWORD PTR [R14 + 0x3EFF2]
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFEF8]
+IMUL            RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFEE8]
+ADD             RAX, RDX
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFEE0], RAX
+MOVABS          R14, 0x55555555a12e
+MOV             RAX, QWORD PTR [R14 + 0x3F00A]
+ADD             RAX, 0x200810
+MOV             RDI, RAX
+MOVABS          R14, 0x55555555A13C
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555565f0
+
+
+/*
+loc_55555555a13c
+CDQE       
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF00], RAX
+CMP        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF00], 0x0
+JZ         loc_55555555a165
+->	c_next:loc_55555555a14f 	c_to:loc_55555555a165 
+ */ 
+loc_55555555a13c:
+MOVABS          R14, 0x55555555a13c
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CDQE            
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF00], RAX
+CMP             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF00], 0x0
+JZ              loc_55555555a165
+
+
+/*
+loc_55555555a14f
+LEA        RDI, QWORD PTR [RIP + 0x141F2]
+CALL       loc_555555556390
+->	c_next:loc_55555555a15b 
+ */ 
+loc_55555555a14f:
+MOVABS          R14, 0x55555555a156
+LEA             RDI, QWORD PTR [R14 + 0x141F2]
+MOVABS          R14, 0x55555555A15B
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_555555556390
+
+
+/*
+loc_55555555a15b
+MOV        EDI, 0xFFFFFFFF
+CALL       loc_5555555565b0
+->	c_next:loc_55555555a165 
+ */ 
+loc_55555555a15b:
+MOV             EDI, 0xFFFFFFFF
+MOVABS          R14, 0x55555555A165
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555565b0
+
+
+/*
+loc_55555555a165
+MOV        RAX, QWORD PTR [RIP + 0x3EFCC]
+MOV        RAX, QWORD PTR [RAX + 0x200870]
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF08], RAX
+MOV        RAX, QWORD PTR [RIP + 0x3EFB7]
+MOV        RDX, QWORD PTR [RAX + 0x200868]
+ADD        RDX, 0x1
+MOV        QWORD PTR [RAX + 0x200868], RDX
+MOV        RAX, QWORD PTR [RAX + 0x200868]
+MOV        RDX, QWORD PTR [RIP + 0x4110F]
+CMP        RAX, RDX
+JZ         loc_55555555a22c
+->	c_next:loc_55555555a1aa 	c_to:loc_55555555a22c 
+ */ 
+loc_55555555a165:
+MOVABS          R14, 0x55555555a165
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x55555555a16c
+MOV             RAX, QWORD PTR [R14 + 0x3EFCC]
+MOV             RAX, QWORD PTR [RAX + 0x200870]
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF08], RAX
+MOVABS          R14, 0x55555555a181
+MOV             RAX, QWORD PTR [R14 + 0x3EFB7]
+MOV             RDX, QWORD PTR [RAX + 0x200868]
+ADD             RDX, 0x1
+MOV             QWORD PTR [RAX + 0x200868], RDX
+MOV             RAX, QWORD PTR [RAX + 0x200868]
+MOVABS          R14, 0x55555555a1a1
+MOV             RDX, QWORD PTR [R14 + 0x4110F]
+CMP             RAX, RDX
+JZ              loc_55555555a22c
+
+
+/*
+loc_55555555a1aa
+LEA        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFEB8]
+MOV        RSI, RAX
+MOV        EDI, 0x1
+CALL       loc_5555555563f0
+->	c_next:loc_55555555a1be 
+ */ 
+loc_55555555a1aa:
+LEA             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFEB8]
+MOV             RSI, RAX
+MOV             EDI, 0x1
+MOVABS          R14, 0x55555555A1BE
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555563f0
+
+
+/*
+loc_55555555a1be
+JMP        loc_55555555a1f9
+->	c_to:loc_55555555a1f9 
+ */ 
+loc_55555555a1be:
+MOVABS          R14, 0x55555555a1be
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_55555555a1f9
+
+
+/*
+loc_55555555a1c0
+MOV        RAX, QWORD PTR [RIP + 0x3EF71]
+LEA        RDX, QWORD PTR [RAX + 0x200810]
+MOV        RAX, QWORD PTR [RIP + 0x3EF63]
+ADD        RAX, 0x200838
+MOV        RSI, RDX
+MOV        RDI, RAX
+CALL       loc_5555555563b0
+->	c_next:loc_55555555a1e6 
+ */ 
+loc_55555555a1c0:
+MOVABS          R14, 0x55555555a1c7
+MOV             RAX, QWORD PTR [R14 + 0x3EF71]
+LEA             RDX, QWORD PTR [RAX + 0x200810]
+MOVABS          R14, 0x55555555a1d5
+MOV             RAX, QWORD PTR [R14 + 0x3EF63]
+ADD             RAX, 0x200838
+MOV             RSI, RDX
+MOV             RDI, RAX
+MOVABS          R14, 0x55555555A1E6
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555563b0
+
+
+/*
+loc_55555555a1e6
+CDQE       
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF00], RAX
+CMP        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF00], 0x0
+JNZ        loc_55555555a212
+->	c_next:loc_55555555a1f9 	c_to:loc_55555555a212 
+ */ 
+loc_55555555a1e6:
+MOVABS          R14, 0x55555555a1e6
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CDQE            
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF00], RAX
+CMP             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF00], 0x0
+JNZ             loc_55555555a212
+
+
+/*
+loc_55555555a1f9
+MOV        RAX, QWORD PTR [RIP + 0x3EF38]
+MOV        RAX, QWORD PTR [RAX + 0x200870]
+CMP        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF08], RAX
+JZ         loc_55555555a1c0
+->	c_next:loc_55555555a210 	c_to:loc_55555555a1c0 
+ */ 
+loc_55555555a1f9:
+MOVABS          R14, 0x55555555a1f9
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x55555555a200
+MOV             RAX, QWORD PTR [R14 + 0x3EF38]
+MOV             RAX, QWORD PTR [RAX + 0x200870]
+CMP             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF08], RAX
+JZ              loc_55555555a1c0
+
+
+/*
+loc_55555555a210
+JMP        loc_55555555a213
+->	c_to:loc_55555555a213 
+ */ 
+loc_55555555a210:
+MOVABS          R14, 0x55555555a210
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_55555555a213
+
+
+/*
+loc_55555555a212
+NOP        
+->	c_next:loc_55555555a213 
+ */ 
+loc_55555555a212:
+NOP
+
+
+/*
+loc_55555555a213
+MOV        EAX, DWORD PTR [RBP + 0xFFFFFFFFFFFFFEB8]
+LEA        RDX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFEBC]
+MOV        RSI, RDX
+MOV        EDI, EAX
+CALL       loc_5555555563f0
+->	c_next:loc_55555555a22a 
+ */ 
+loc_55555555a213:
+MOV             EAX, DWORD PTR [R12 + 0xFFFFFFFFFFFFFEB8]
+LEA             RDX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFEBC]
+MOV             RSI, RDX
+MOV             EDI, EAX
+MOVABS          R14, 0x55555555A22A
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555563f0
+
+
+/*
+loc_55555555a22a
+JMP        loc_55555555a281
+->	c_to:loc_55555555a281 
+ */ 
+loc_55555555a22a:
+MOVABS          R14, 0x55555555a22a
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_55555555a281
+
+
+/*
+loc_55555555a22c
+MOV        RAX, QWORD PTR [RIP + 0x3EF05]
+MOV        RAX, QWORD PTR [RAX + 0x200870]
+TEST       RAX, RAX
+SETZ       DL
+MOV        RAX, QWORD PTR [RIP + 0x3EEF1]
+MOVZX      EDX, DL
+MOV        QWORD PTR [RAX + 0x200870], RDX
+MOV        RAX, QWORD PTR [RIP + 0x3EEE0]
+MOV        QWORD PTR [RAX + 0x200868], 0x0
+MOV        RAX, QWORD PTR [RIP + 0x3EECE]
+ADD        RAX, 0x200838
+MOV        RDI, RAX
+CALL       loc_555555556380
+->	c_next:loc_55555555a278 
+ */ 
+loc_55555555a22c:
+MOVABS          R14, 0x55555555a233
+MOV             RAX, QWORD PTR [R14 + 0x3EF05]
+MOV             RAX, QWORD PTR [RAX + 0x200870]
+TEST            RAX, RAX
+SETZ            DL
+MOVABS          R14, 0x55555555a247
+MOV             RAX, QWORD PTR [R14 + 0x3EEF1]
+MOVZX           EDX, DL
+MOV             QWORD PTR [RAX + 0x200870], RDX
+MOVABS          R14, 0x55555555a258
+MOV             RAX, QWORD PTR [R14 + 0x3EEE0]
+MOV             QWORD PTR [RAX + 0x200868], 0x0
+MOVABS          R14, 0x55555555a26a
+MOV             RAX, QWORD PTR [R14 + 0x3EECE]
+ADD             RAX, 0x200838
+MOV             RDI, RAX
+MOVABS          R14, 0x55555555A278
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_555555556380
+
+
+/*
+loc_55555555a278
+CDQE       
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF00], RAX
+->	c_next:loc_55555555a281 
+ */ 
+loc_55555555a278:
+CDQE            
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF00], RAX
+
+
+/*
+loc_55555555a281
+MOV        RAX, QWORD PTR [RIP + 0x3EEB0]
+ADD        RAX, 0x200810
+MOV        RDI, RAX
+CALL       loc_5555555564b0
+->	c_next:loc_55555555a296 
+ */ 
+loc_55555555a281:
+MOVABS          R14, 0x55555555a288
+MOV             RAX, QWORD PTR [R14 + 0x3EEB0]
+ADD             RAX, 0x200810
+MOV             RDI, RAX
+MOVABS          R14, 0x55555555A296
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555564b0
+
+
+/*
+loc_55555555a296
+MOV        RAX, QWORD PTR [RIP + 0x41013]
+SUB        RAX, 0x1
+CMP        QWORD PTR [RBP + 0xFFFFFFFFFFFFFEE8], RAX
+JNZ        loc_55555555a354
+->	c_next:loc_55555555a2ae 	c_to:loc_55555555a354 
+ */ 
+loc_55555555a296:
+MOVABS          R14, 0x55555555a296
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x55555555a29d
+MOV             RAX, QWORD PTR [R14 + 0x41013]
+SUB             RAX, 0x1
+CMP             QWORD PTR [R12 + 0xFFFFFFFFFFFFFEE8], RAX
+JNZ             loc_55555555a354
+
+
+/*
+loc_55555555a2ae
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFEF0]
+IMUL       RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFEE8]
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFED0], RAX
+JMP        loc_55555555a2e9
+->	c_to:loc_55555555a2e9 
+ */ 
+loc_55555555a2ae:
+MOVABS          R14, 0x55555555a2ae
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFEF0]
+IMUL            RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFEE8]
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFED0], RAX
+JMP             loc_55555555a2e9
+
+
+/*
+loc_55555555a2c6
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFED8]
+LEA        RDX, QWORD PTR [RAX + 0x1]
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFED8], RDX
+MOVZX      EDX, BYTE PTR [RIP + 0x41D35]
+MOV        BYTE PTR [RAX], DL
+ADD        QWORD PTR [RBP + 0xFFFFFFFFFFFFFED0], 0x1
+->	c_next:loc_55555555a2e9 
+ */ 
+loc_55555555a2c6:
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFED8]
+LEA             RDX, QWORD PTR [RAX + 0x1]
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFED8], RDX
+MOVABS          R14, 0x55555555a2df
+MOVZX           EDX, BYTE PTR [R14 + 0x41D35]
+MOV             BYTE PTR [RAX], DL
+ADD             QWORD PTR [R12 + 0xFFFFFFFFFFFFFED0], 0x1
+
+
+/*
+loc_55555555a2e9
+MOV        EAX, DWORD PTR [RIP + 0x3EE71]
+CDQE       
+CMP        QWORD PTR [RBP + 0xFFFFFFFFFFFFFED0], RAX
+JL         loc_55555555a2c6
+->	c_next:loc_55555555a2fa 	c_to:loc_55555555a2c6 
+ */ 
+loc_55555555a2e9:
+MOVABS          R14, 0x55555555a2e9
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x55555555a2ef
+MOV             EAX, DWORD PTR [R14 + 0x3EE71]
+CDQE            
+CMP             QWORD PTR [R12 + 0xFFFFFFFFFFFFFED0], RAX
+JL              loc_55555555a2c6
+
+
+/*
+loc_55555555a2fa
+MOVZX      EAX, WORD PTR [RIP + 0x41D1B]
+TEST       AX, AX
+JZ         loc_55555555a3da
+->	c_next:loc_55555555a30a 	c_to:loc_55555555a3da 
+ */ 
+loc_55555555a2fa:
+MOVABS          R14, 0x55555555a2fa
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x55555555a301
+MOVZX           EAX, WORD PTR [R14 + 0x41D1B]
+TEST            AX, AX
+JZ              loc_55555555a3da
+
+
+/*
+loc_55555555a30a
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFEF8]
+IMUL       RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFEE8]
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFED0], RAX
+JMP        loc_55555555a33f
+->	c_to:loc_55555555a33f 
+ */ 
+loc_55555555a30a:
+MOVABS          R14, 0x55555555a30a
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFEF8]
+IMUL            RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFEE8]
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFED0], RAX
+JMP             loc_55555555a33f
+
+
+/*
+loc_55555555a322
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFEE0]
+LEA        RDX, QWORD PTR [RAX + 0x1]
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFEE0], RDX
+MOV        BYTE PTR [RAX], 0x0
+ADD        QWORD PTR [RBP + 0xFFFFFFFFFFFFFED0], 0x1
+->	c_next:loc_55555555a33f 
+ */ 
+loc_55555555a322:
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFEE0]
+LEA             RDX, QWORD PTR [RAX + 0x1]
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFEE0], RDX
+MOV             BYTE PTR [RAX], 0x0
+ADD             QWORD PTR [R12 + 0xFFFFFFFFFFFFFED0], 0x1
+
+
+/*
+loc_55555555a33f
+MOV        RAX, QWORD PTR [RIP + 0x3EDE2]
+CMP        QWORD PTR [RBP + 0xFFFFFFFFFFFFFED0], RAX
+JL         loc_55555555a322
+->	c_next:loc_55555555a34f 	c_to:loc_55555555a322 
+ */ 
+loc_55555555a33f:
+MOVABS          R14, 0x55555555a33f
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x55555555a346
+MOV             RAX, QWORD PTR [R14 + 0x3EDE2]
+CMP             QWORD PTR [R12 + 0xFFFFFFFFFFFFFED0], RAX
+JL              loc_55555555a322
+
+
+/*
+loc_55555555a34f
+JMP        loc_55555555a3da
+->	c_to:loc_55555555a3da 
+ */ 
+loc_55555555a34f:
+MOVABS          R14, 0x55555555a34f
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_55555555a3da
+
+
+/*
+loc_55555555a354
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFED0], 0x0
+JMP        loc_55555555a384
+->	c_to:loc_55555555a384 
+ */ 
+loc_55555555a354:
+MOVABS          R14, 0x55555555a354
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFED0], 0x0
+JMP             loc_55555555a384
+
+
+/*
+loc_55555555a361
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFED8]
+LEA        RDX, QWORD PTR [RAX + 0x1]
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFED8], RDX
+MOVZX      EDX, BYTE PTR [RIP + 0x41C9A]
+MOV        BYTE PTR [RAX], DL
+ADD        QWORD PTR [RBP + 0xFFFFFFFFFFFFFED0], 0x1
+->	c_next:loc_55555555a384 
+ */ 
+loc_55555555a361:
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFED8]
+LEA             RDX, QWORD PTR [RAX + 0x1]
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFED8], RDX
+MOVABS          R14, 0x55555555a37a
+MOVZX           EDX, BYTE PTR [R14 + 0x41C9A]
+MOV             BYTE PTR [RAX], DL
+ADD             QWORD PTR [R12 + 0xFFFFFFFFFFFFFED0], 0x1
+
+
+/*
+loc_55555555a384
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFED0]
+CMP        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFEF0]
+JL         loc_55555555a361
+->	c_next:loc_55555555a394 	c_to:loc_55555555a361 
+ */ 
+loc_55555555a384:
+MOVABS          R14, 0x55555555a384
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFED0]
+CMP             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFEF0]
+JL              loc_55555555a361
+
+
+/*
+loc_55555555a394
+MOVZX      EAX, WORD PTR [RIP + 0x41C81]
+TEST       AX, AX
+JZ         loc_55555555a3da
+->	c_next:loc_55555555a3a0 	c_to:loc_55555555a3da 
+ */ 
+loc_55555555a394:
+MOVABS          R14, 0x55555555a394
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x55555555a39b
+MOVZX           EAX, WORD PTR [R14 + 0x41C81]
+TEST            AX, AX
+JZ              loc_55555555a3da
+
+
+/*
+loc_55555555a3a0
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFED0], 0x0
+JMP        loc_55555555a3ca
+->	c_to:loc_55555555a3ca 
+ */ 
+loc_55555555a3a0:
+MOVABS          R14, 0x55555555a3a0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFED0], 0x0
+JMP             loc_55555555a3ca
+
+
+/*
+loc_55555555a3ad
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFEE0]
+LEA        RDX, QWORD PTR [RAX + 0x1]
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFEE0], RDX
+MOV        BYTE PTR [RAX], 0x0
+ADD        QWORD PTR [RBP + 0xFFFFFFFFFFFFFED0], 0x1
+->	c_next:loc_55555555a3ca 
+ */ 
+loc_55555555a3ad:
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFEE0]
+LEA             RDX, QWORD PTR [RAX + 0x1]
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFEE0], RDX
+MOV             BYTE PTR [RAX], 0x0
+ADD             QWORD PTR [R12 + 0xFFFFFFFFFFFFFED0], 0x1
+
+
+/*
+loc_55555555a3ca
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFED0]
+CMP        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFEF8]
+JL         loc_55555555a3ad
+->	c_next:loc_55555555a3da 	c_to:loc_55555555a3ad 
+ */ 
+loc_55555555a3ca:
+MOVABS          R14, 0x55555555a3ca
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFED0]
+CMP             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFEF8]
+JL              loc_55555555a3ad
+
+
+/*
+loc_55555555a3da
+CMP        QWORD PTR [RBP + 0xFFFFFFFFFFFFFEE8], 0x0
+JNZ        loc_55555555a401
+->	c_next:loc_55555555a3e4 	c_to:loc_55555555a401 
+ */ 
+loc_55555555a3da:
+MOVABS          R14, 0x55555555a3da
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             QWORD PTR [R12 + 0xFFFFFFFFFFFFFEE8], 0x0
+JNZ             loc_55555555a401
+
+
+/*
+loc_55555555a3e4
+MOV        EAX, DWORD PTR [RBP + 0xFFFFFFFFFFFFFEC0]
+MOVSXD     RDX, EAX
+MOV        RAX, QWORD PTR [RIP + 0x14044]
+MOV        RDI, RDX
+MOVQ       XMM0, RAX
+CALL       loc_5555555619d2
+->	c_next:loc_55555555a401 
+ */ 
+loc_55555555a3e4:
+MOV             EAX, DWORD PTR [R12 + 0xFFFFFFFFFFFFFEC0]
+MOVSXD          RDX, EAX
+MOVABS          R14, 0x55555555a3f4
+MOV             RAX, QWORD PTR [R14 + 0x14044]
+MOV             RDI, RDX
+MOVQ            XMM0, RAX
+MOVABS          R14, 0x55555555A401
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555619d2
+
+
+/*
+loc_55555555a401
+MOV        RAX, QWORD PTR [RIP + 0x3ED30]
+ADD        RAX, 0x200810
+MOV        RDI, RAX
+CALL       loc_5555555565f0
+->	c_next:loc_55555555a416 
+ */ 
+loc_55555555a401:
+MOVABS          R14, 0x55555555a408
+MOV             RAX, QWORD PTR [R14 + 0x3ED30]
+ADD             RAX, 0x200810
+MOV             RDI, RAX
+MOVABS          R14, 0x55555555A416
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555565f0
+
+
+/*
+loc_55555555a416
+CDQE       
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF10], RAX
+CMP        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF10], 0x0
+JZ         loc_55555555a43f
+->	c_next:loc_55555555a429 	c_to:loc_55555555a43f 
+ */ 
+loc_55555555a416:
+MOVABS          R14, 0x55555555a416
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CDQE            
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF10], RAX
+CMP             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF10], 0x0
+JZ              loc_55555555a43f
+
+
+/*
+loc_55555555a429
+LEA        RDI, QWORD PTR [RIP + 0x13F18]
+CALL       loc_555555556390
+->	c_next:loc_55555555a435 
+ */ 
+loc_55555555a429:
+MOVABS          R14, 0x55555555a430
+LEA             RDI, QWORD PTR [R14 + 0x13F18]
+MOVABS          R14, 0x55555555A435
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_555555556390
+
+
+/*
+loc_55555555a435
+MOV        EDI, 0xFFFFFFFF
+CALL       loc_5555555565b0
+->	c_next:loc_55555555a43f 
+ */ 
+loc_55555555a435:
+MOV             EDI, 0xFFFFFFFF
+MOVABS          R14, 0x55555555A43F
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555565b0
+
+
+/*
+loc_55555555a43f
+MOV        RAX, QWORD PTR [RIP + 0x3ECF2]
+MOV        RAX, QWORD PTR [RAX + 0x200870]
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF18], RAX
+MOV        RAX, QWORD PTR [RIP + 0x3ECDD]
+MOV        RDX, QWORD PTR [RAX + 0x200868]
+ADD        RDX, 0x1
+MOV        QWORD PTR [RAX + 0x200868], RDX
+MOV        RAX, QWORD PTR [RAX + 0x200868]
+MOV        RDX, QWORD PTR [RIP + 0x40E35]
+CMP        RAX, RDX
+JZ         loc_55555555a506
+->	c_next:loc_55555555a484 	c_to:loc_55555555a506 
+ */ 
+loc_55555555a43f:
+MOVABS          R14, 0x55555555a43f
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x55555555a446
+MOV             RAX, QWORD PTR [R14 + 0x3ECF2]
+MOV             RAX, QWORD PTR [RAX + 0x200870]
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF18], RAX
+MOVABS          R14, 0x55555555a45b
+MOV             RAX, QWORD PTR [R14 + 0x3ECDD]
+MOV             RDX, QWORD PTR [RAX + 0x200868]
+ADD             RDX, 0x1
+MOV             QWORD PTR [RAX + 0x200868], RDX
+MOV             RAX, QWORD PTR [RAX + 0x200868]
+MOVABS          R14, 0x55555555a47b
+MOV             RDX, QWORD PTR [R14 + 0x40E35]
+CMP             RAX, RDX
+JZ              loc_55555555a506
+
+
+/*
+loc_55555555a484
+LEA        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFEB8]
+MOV        RSI, RAX
+MOV        EDI, 0x1
+CALL       loc_5555555563f0
+->	c_next:loc_55555555a498 
+ */ 
+loc_55555555a484:
+LEA             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFEB8]
+MOV             RSI, RAX
+MOV             EDI, 0x1
+MOVABS          R14, 0x55555555A498
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555563f0
+
+
+/*
+loc_55555555a498
+JMP        loc_55555555a4d3
+->	c_to:loc_55555555a4d3 
+ */ 
+loc_55555555a498:
+MOVABS          R14, 0x55555555a498
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_55555555a4d3
+
+
+/*
+loc_55555555a49a
+MOV        RAX, QWORD PTR [RIP + 0x3EC97]
+LEA        RDX, QWORD PTR [RAX + 0x200810]
+MOV        RAX, QWORD PTR [RIP + 0x3EC89]
+ADD        RAX, 0x200838
+MOV        RSI, RDX
+MOV        RDI, RAX
+CALL       loc_5555555563b0
+->	c_next:loc_55555555a4c0 
+ */ 
+loc_55555555a49a:
+MOVABS          R14, 0x55555555a4a1
+MOV             RAX, QWORD PTR [R14 + 0x3EC97]
+LEA             RDX, QWORD PTR [RAX + 0x200810]
+MOVABS          R14, 0x55555555a4af
+MOV             RAX, QWORD PTR [R14 + 0x3EC89]
+ADD             RAX, 0x200838
+MOV             RSI, RDX
+MOV             RDI, RAX
+MOVABS          R14, 0x55555555A4C0
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555563b0
+
+
+/*
+loc_55555555a4c0
+CDQE       
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF10], RAX
+CMP        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF10], 0x0
+JNZ        loc_55555555a4ec
+->	c_next:loc_55555555a4d3 	c_to:loc_55555555a4ec 
+ */ 
+loc_55555555a4c0:
+MOVABS          R14, 0x55555555a4c0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CDQE            
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF10], RAX
+CMP             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF10], 0x0
+JNZ             loc_55555555a4ec
+
+
+/*
+loc_55555555a4d3
+MOV        RAX, QWORD PTR [RIP + 0x3EC5E]
+MOV        RAX, QWORD PTR [RAX + 0x200870]
+CMP        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF18], RAX
+JZ         loc_55555555a49a
+->	c_next:loc_55555555a4ea 	c_to:loc_55555555a49a 
+ */ 
+loc_55555555a4d3:
+MOVABS          R14, 0x55555555a4d3
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x55555555a4da
+MOV             RAX, QWORD PTR [R14 + 0x3EC5E]
+MOV             RAX, QWORD PTR [RAX + 0x200870]
+CMP             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF18], RAX
+JZ              loc_55555555a49a
+
+
+/*
+loc_55555555a4ea
+JMP        loc_55555555a4ed
+->	c_to:loc_55555555a4ed 
+ */ 
+loc_55555555a4ea:
+MOVABS          R14, 0x55555555a4ea
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_55555555a4ed
+
+
+/*
+loc_55555555a4ec
+NOP        
+->	c_next:loc_55555555a4ed 
+ */ 
+loc_55555555a4ec:
+NOP
+
+
+/*
+loc_55555555a4ed
+MOV        EAX, DWORD PTR [RBP + 0xFFFFFFFFFFFFFEB8]
+LEA        RDX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFEBC]
+MOV        RSI, RDX
+MOV        EDI, EAX
+CALL       loc_5555555563f0
+->	c_next:loc_55555555a504 
+ */ 
+loc_55555555a4ed:
+MOV             EAX, DWORD PTR [R12 + 0xFFFFFFFFFFFFFEB8]
+LEA             RDX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFEBC]
+MOV             RSI, RDX
+MOV             EDI, EAX
+MOVABS          R14, 0x55555555A504
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555563f0
+
+
+/*
+loc_55555555a504
+JMP        loc_55555555a55b
+->	c_to:loc_55555555a55b 
+ */ 
+loc_55555555a504:
+MOVABS          R14, 0x55555555a504
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_55555555a55b
+
+
+/*
+loc_55555555a506
+MOV        RAX, QWORD PTR [RIP + 0x3EC2B]
+MOV        RAX, QWORD PTR [RAX + 0x200870]
+TEST       RAX, RAX
+SETZ       DL
+MOV        RAX, QWORD PTR [RIP + 0x3EC17]
+MOVZX      EDX, DL
+MOV        QWORD PTR [RAX + 0x200870], RDX
+MOV        RAX, QWORD PTR [RIP + 0x3EC06]
+MOV        QWORD PTR [RAX + 0x200868], 0x0
+MOV        RAX, QWORD PTR [RIP + 0x3EBF4]
+ADD        RAX, 0x200838
+MOV        RDI, RAX
+CALL       loc_555555556380
+->	c_next:loc_55555555a552 
+ */ 
+loc_55555555a506:
+MOVABS          R14, 0x55555555a50d
+MOV             RAX, QWORD PTR [R14 + 0x3EC2B]
+MOV             RAX, QWORD PTR [RAX + 0x200870]
+TEST            RAX, RAX
+SETZ            DL
+MOVABS          R14, 0x55555555a521
+MOV             RAX, QWORD PTR [R14 + 0x3EC17]
+MOVZX           EDX, DL
+MOV             QWORD PTR [RAX + 0x200870], RDX
+MOVABS          R14, 0x55555555a532
+MOV             RAX, QWORD PTR [R14 + 0x3EC06]
+MOV             QWORD PTR [RAX + 0x200868], 0x0
+MOVABS          R14, 0x55555555a544
+MOV             RAX, QWORD PTR [R14 + 0x3EBF4]
+ADD             RAX, 0x200838
+MOV             RDI, RAX
+MOVABS          R14, 0x55555555A552
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_555555556380
+
+
+/*
+loc_55555555a552
+CDQE       
+MOV        QWORD PTR [RBP + 0xFFFFFFFFFFFFFF10], RAX
+->	c_next:loc_55555555a55b 
+ */ 
+loc_55555555a552:
+CDQE            
+MOV             QWORD PTR [R12 + 0xFFFFFFFFFFFFFF10], RAX
+
+
+/*
+loc_55555555a55b
+MOV        RAX, QWORD PTR [RIP + 0x3EBD6]
+ADD        RAX, 0x200810
+MOV        RDI, RAX
+CALL       loc_5555555564b0
+->	c_next:loc_55555555a570 
+ */ 
+loc_55555555a55b:
+MOVABS          R14, 0x55555555a562
+MOV             RAX, QWORD PTR [R14 + 0x3EBD6]
+ADD             RAX, 0x200810
+MOV             RDI, RAX
+MOVABS          R14, 0x55555555A570
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555564b0
+
+
+/*
+loc_55555555a570
+MOV        RAX, QWORD PTR [RIP + 0x3EBC1]
+MOV        RDX, QWORD PTR [RIP + 0x40D32]
+MOV        QWORD PTR [RAX + 0x8], RDX
+MOV        RDX, QWORD PTR [RIP + 0x3EBAF]
+MOV        RCX, QWORD PTR [RIP + 0x40D20]
+MOV        RAX, QWORD PTR [RIP + 0x40D19]
+SHL        RCX, 0xB
+ADD        RDX, RCX
+ADD        RDX, 0x10
+MOV        QWORD PTR [RDX], RAX
+MOV        RAX, QWORD PTR [RIP + 0x3EB8C]
+MOV        RDX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFEE8]
+SHL        RDX, 0xB
+ADD        RAX, RDX
+ADD        RAX, 0x10
+MOV        QWORD PTR [RAX], 0x0
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFEE8]
+MOV        RDI, RAX
+CALL       loc_555555561313
+->	c_next:loc_55555555a5d4 
+ */ 
+loc_55555555a570:
+MOVABS          R14, 0x55555555a577
+MOV             RAX, QWORD PTR [R14 + 0x3EBC1]
+MOVABS          R14, 0x55555555a57e
+MOV             RDX, QWORD PTR [R14 + 0x40D32]
+MOV             QWORD PTR [RAX + 0x8], RDX
+MOVABS          R14, 0x55555555a589
+MOV             RDX, QWORD PTR [R14 + 0x3EBAF]
+MOVABS          R14, 0x55555555a590
+MOV             RCX, QWORD PTR [R14 + 0x40D20]
+MOVABS          R14, 0x55555555a597
+MOV             RAX, QWORD PTR [R14 + 0x40D19]
+SHL             RCX, 0xB
+ADD             RDX, RCX
+ADD             RDX, 0x10
+MOV             QWORD PTR [RDX], RAX
+MOVABS          R14, 0x55555555a5ac
+MOV             RAX, QWORD PTR [R14 + 0x3EB8C]
+MOV             RDX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFEE8]
+SHL             RDX, 0xB
+ADD             RAX, RDX
+ADD             RAX, 0x10
+MOV             QWORD PTR [RAX], 0x0
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFEE8]
+MOV             RDI, RAX
+MOVABS          R14, 0x55555555A5D4
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_555555561313
+
+
+/*
+loc_55555555a5d4
+CMP        QWORD PTR [RBP + 0xFFFFFFFFFFFFFEE8], 0x0
+JNZ        loc_55555555a6ca
+->	c_next:loc_55555555a5e2 	c_to:loc_55555555a6ca 
+ */ 
+loc_55555555a5d4:
+MOVABS          R14, 0x55555555a5d4
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             QWORD PTR [R12 + 0xFFFFFFFFFFFFFEE8], 0x0
+JNZ             loc_55555555a6ca
+
+
+/*
+loc_55555555a5e2
+MOV        EAX, DWORD PTR [RIP + 0x1BA28]
+CMP        EAX, 0x1
+JLE        loc_55555555a661
+->	c_next:loc_55555555a5ed 	c_to:loc_55555555a661 
+ */ 
+loc_55555555a5e2:
+MOVABS          R14, 0x55555555a5e2
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x55555555a5e8
+MOV             EAX, DWORD PTR [R14 + 0x1BA28]
+CMP             EAX, 0x1
+JLE             loc_55555555a661
+
+
+/*
+loc_55555555a5ed
+MOV        EAX, DWORD PTR [RIP + 0x1BA1D]
+IMUL       EAX, DWORD PTR [RBP + 0xFFFFFFFFFFFFFEC0]
+ADD        EAX, 0x3E8
+MOVSXD     RDX, EAX
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFEC8]
+ADD        RDX, RAX
+LEA        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF20]
+MOV        RCX, RDX
+LEA        RDX, QWORD PTR [RIP + 0x40B83]
+LEA        RSI, QWORD PTR [RIP + 0x13D4F]
+MOV        RDI, RAX
+MOV        EAX, 0x0
+CALL       loc_5555555565a0
+->	c_next:loc_55555555a631 
+ */ 
+loc_55555555a5ed:
+MOVABS          R14, 0x55555555a5f3
+MOV             EAX, DWORD PTR [R14 + 0x1BA1D]
+IMUL            EAX, DWORD PTR [R12 + 0xFFFFFFFFFFFFFEC0]
+ADD             EAX, 0x3E8
+MOVSXD          RDX, EAX
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFEC8]
+ADD             RDX, RAX
+LEA             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF20]
+MOV             RCX, RDX
+MOVABS          R14, 0x55555555a61d
+LEA             RDX, QWORD PTR [R14 + 0x40B83]
+MOVABS          R14, 0x55555555a624
+LEA             RSI, QWORD PTR [R14 + 0x13D4F]
+MOV             RDI, RAX
+MOV             EAX, 0x0
+MOVABS          R14, 0x55555555A631
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555565a0
+
+
+/*
+loc_55555555a631
+MOV        RDI, QWORD PTR [RIP + 0x3EB08]
+MOV        RCX, QWORD PTR [RIP + 0x40C41]
+MOV        RDX, QWORD PTR [RIP + 0x40C42]
+MOV        RSI, QWORD PTR [RIP + 0x40C33]
+LEA        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFF20]
+MOV        R8, RDI
+MOV        RDI, RAX
+CALL       loc_55555555b19a
+->	c_next:loc_55555555a65f 
+ */ 
+loc_55555555a631:
+MOVABS          R14, 0x55555555a638
+MOV             RDI, QWORD PTR [R14 + 0x3EB08]
+MOVABS          R14, 0x55555555a63f
+MOV             RCX, QWORD PTR [R14 + 0x40C41]
+MOVABS          R14, 0x55555555a646
+MOV             RDX, QWORD PTR [R14 + 0x40C42]
+MOVABS          R14, 0x55555555a64d
+MOV             RSI, QWORD PTR [R14 + 0x40C33]
+LEA             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFF20]
+MOV             R8, RDI
+MOV             RDI, RAX
+MOVABS          R14, 0x55555555A65F
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_55555555b19a
+
+
+/*
+loc_55555555a65f
+JMP        loc_55555555a6ca
+->	c_to:loc_55555555a6ca 
+ */ 
+loc_55555555a65f:
+MOVABS          R14, 0x55555555a65f
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_55555555a6ca
+
+
+/*
+loc_55555555a661
+LEA        RAX, QWORD PTR [RIP + 0x40B38]
+MOV        RCX, 0xFFFFFFFFFFFFFFFF
+MOV        RDX, RAX
+MOV        EAX, 0x0
+MOV        RDI, RDX
+REPNE SCASB      
+MOV        RAX, RCX
+NOT        RAX
+LEA        RDX, QWORD PTR [RAX + 0xFFFFFFFFFFFFFFFF]
+LEA        RAX, QWORD PTR [RIP + 0x40B13]
+ADD        RAX, RDX
+MOV        DWORD PTR [RAX], 0x6669742E
+MOV        WORD PTR [RAX + 0x4], 0x66
+MOV        RSI, QWORD PTR [RIP + 0x3EA9D]
+MOV        RCX, QWORD PTR [RIP + 0x40BD6]
+MOV        RDX, QWORD PTR [RIP + 0x40BD7]
+MOV        RAX, QWORD PTR [RIP + 0x40BC8]
+MOV        R8, RSI
+MOV        RSI, RAX
+LEA        RDI, QWORD PTR [RIP + 0x40ADB]
+CALL       loc_55555555b19a
+->	c_next:loc_55555555a6ca 
+ */ 
+loc_55555555a661:
+MOVABS          R14, 0x55555555a668
+LEA             RAX, QWORD PTR [R14 + 0x40B38]
+MOV             RCX, 0xFFFFFFFFFFFFFFFF
+MOV             RDX, RAX
+MOV             EAX, 0x0
+MOV             RDI, RDX
+REPNE SCASB     
+MOV             RAX, RCX
+NOT             RAX
+LEA             RDX, QWORD PTR [RAX + 0xFFFFFFFFFFFFFFFF]
+MOVABS          R14, 0x55555555a68d
+LEA             RAX, QWORD PTR [R14 + 0x40B13]
+ADD             RAX, RDX
+MOV             DWORD PTR [RAX], 0x6669742E
+MOV             WORD PTR [RAX + 0x4], 0x66
+MOVABS          R14, 0x55555555a6a3
+MOV             RSI, QWORD PTR [R14 + 0x3EA9D]
+MOVABS          R14, 0x55555555a6aa
+MOV             RCX, QWORD PTR [R14 + 0x40BD6]
+MOVABS          R14, 0x55555555a6b1
+MOV             RDX, QWORD PTR [R14 + 0x40BD7]
+MOVABS          R14, 0x55555555a6b8
+MOV             RAX, QWORD PTR [R14 + 0x40BC8]
+MOV             R8, RSI
+MOV             RSI, RAX
+MOVABS          R14, 0x55555555a6c5
+LEA             RDI, QWORD PTR [R14 + 0x40ADB]
+MOVABS          R14, 0x55555555A6CA
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_55555555b19a
+
+
+/*
+loc_55555555a6ca
+ADD        QWORD PTR [RBP + 0xFFFFFFFFFFFFFEC8], 0x1
+->	c_next:loc_55555555a6d2 
+ */ 
+loc_55555555a6ca:
+ADD             QWORD PTR [R12 + 0xFFFFFFFFFFFFFEC8], 0x1
+
+
+/*
+loc_55555555a6d2
+MOV        EAX, DWORD PTR [RIP + 0x1B938]
+CDQE       
+CMP        QWORD PTR [RBP + 0xFFFFFFFFFFFFFEC8], RAX
+JL         loc_55555555a0d9
+->	c_next:loc_55555555a6e7 	c_to:loc_55555555a0d9 
+ */ 
+loc_55555555a6d2:
+MOVABS          R14, 0x55555555a6d2
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x55555555a6d8
+MOV             EAX, DWORD PTR [R14 + 0x1B938]
+CDQE            
+CMP             QWORD PTR [R12 + 0xFFFFFFFFFFFFFEC8], RAX
+JL              loc_55555555a0d9
+
+
+/*
+loc_55555555a6e7
+ADD        DWORD PTR [RBP + 0xFFFFFFFFFFFFFEC0], 0x1
+CMP        DWORD PTR [RBP + 0xFFFFFFFFFFFFFEC0], 0x2
+JLE        loc_55555555a0c9
+->	c_next:loc_55555555a6fb 	c_to:loc_55555555a0c9 
+ */ 
+loc_55555555a6e7:
+MOVABS          R14, 0x55555555a6e7
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             DWORD PTR [R12 + 0xFFFFFFFFFFFFFEC0], 0x1
+CMP             DWORD PTR [R12 + 0xFFFFFFFFFFFFFEC0], 0x2
+JLE             loc_55555555a0c9
+
+
+/*
+loc_55555555a6fb
+NOP        
+MOV        RAX, QWORD PTR [RBP + 0xFFFFFFFFFFFFFFF8]
+XOR        RAX, QWORD PTR FS:[0x28]
+JZ         loc_55555555a710
+->	c_next:loc_55555555a70b 	c_to:loc_55555555a710 
+ */ 
+loc_55555555a6fb:
+MOVABS          R14, 0x55555555a6fb
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+NOP
+MOV             RAX, QWORD PTR [R12 + 0xFFFFFFFFFFFFFFF8]
+MOV             R14, Stack_RFS
+XOR             RAX, QWORD PTR [R14 + 0x28]
+JZ              loc_55555555a710
+
+
+/*
+loc_55555555a70b
+CALL       loc_5555555563d0
+->	c_next:loc_55555555a710 
+ */ 
+loc_55555555a70b:
+MOVABS          R14, 0x55555555A710
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_5555555563d0
+
+
+/*
+loc_55555555a710
+LEAVE      
+RET        
+ */ 
+loc_55555555a710:
+MOV             R13, R12
+MOV             R12, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+JMP             ij_55555555a712
+
+
+/*
+loc_7ffff7e4ffe8
+XOR        EAX, EAX
+MOV        EDX, 0x1
+LOCK CMPXCHG    DWORD PTR [RDI], EDX
+JNZ        loc_7ffff7e50090
+->	c_next:loc_7ffff7e4fff9 	c_to:loc_7ffff7e50090 
+ */ 
+loc_7ffff7e4ffe8:
+MOVABS          R14, 0x7ffff7e4ffe8
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+XOR             EAX, EAX
+MOV             EDX, 0x1
+LOCK CMPXCHG    DWORD PTR [RDI], EDX
+JNZ             loc_7ffff7e50090
+
+
+/*
+loc_7ffff7e4fff9
+MOV        EDX, DWORD PTR [RDI + 0x8]
+TEST       EDX, EDX
+JNZ        loc_7ffff7e50145
+->	c_next:loc_7ffff7e50004 	c_to:loc_7ffff7e50145 
+ */ 
+loc_7ffff7e4fff9:
+MOVABS          R14, 0x7ffff7e4fff9
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EDX, DWORD PTR [RDI + 0x8]
+TEST            EDX, EDX
+JNZ             loc_7ffff7e50145
+
+
+/*
+loc_7ffff7e50004
+MOV        EAX, DWORD PTR FS:[0x2D0]
+MOV        DWORD PTR [RDI + 0x8], EAX
+ADD        DWORD PTR [RDI + 0xC], 0x1
+NOP        
+XOR        EAX, EAX
+->	c_next:loc_7ffff7e50016 
+ */ 
+loc_7ffff7e50004:
+MOV             R14, Stack_RFS
+MOV             EAX, DWORD PTR [R14 + 0x2D0]
+MOV             DWORD PTR [RDI + 0x8], EAX
+ADD             DWORD PTR [RDI + 0xC], 0x1
+NOP
+XOR             EAX, EAX
+
+
+/*
+loc_7ffff7e50016
+ADD        RSP, 0x10
+POP        RBX
+RET        
+ */ 
+loc_7ffff7e50016:
+ADD             R13, 0x10
+MOV             RBX, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+JMP             ij_7ffff7e5001c
+
+
+/*
+loc_7ffff7e50090
+MOV        ESI, DWORD PTR [RDI + 0x10]
+MOV        QWORD PTR [RSP + 0x8], RDI
+AND        ESI, 0x80
+CALL       loc_7ffff7e58140
+->	c_next:loc_7ffff7e500a3 
+ */ 
+loc_7ffff7e50090:
+MOV             ESI, DWORD PTR [RDI + 0x10]
+MOV             QWORD PTR [R13 + 0x8], RDI
+AND             ESI, 0x80
+MOVABS          R14, 0x7FFFF7E500A3
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e58140
+
+
+/*
+loc_7ffff7e500a3
+MOV        RDI, QWORD PTR [RSP + 0x8]
+JMP        loc_7ffff7e4fff9
+->	c_to:loc_7ffff7e4fff9 
+ */ 
+loc_7ffff7e500a3:
+MOVABS          R14, 0x7ffff7e500a3
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RDI, QWORD PTR [R13 + 0x8]
+JMP             loc_7ffff7e4fff9
+
+
+/*
+loc_7ffff7e500b3
+MOV        EAX, DWORD PTR [RDI + 0x8]
+TEST       EAX, EAX
+JNZ        loc_7ffff7e5018a
+->	c_next:loc_7ffff7e500be 	c_to:loc_7ffff7e5018a 
+ */ 
+loc_7ffff7e500b3:
+MOVABS          R14, 0x7ffff7e500b3
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, DWORD PTR [RDI + 0x8]
+TEST            EAX, EAX
+JNZ             loc_7ffff7e5018a
+
+
+/*
+loc_7ffff7e500be
+MOV        DWORD PTR [RDI + 0x4], 0x1
+JMP        loc_7ffff7e50004
+->	c_to:loc_7ffff7e50004 
+ */ 
+loc_7ffff7e500be:
+MOVABS          R14, 0x7ffff7e500be
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             DWORD PTR [RDI + 0x4], 0x1
+JMP             loc_7ffff7e50004
+
+
+/*
+loc_7ffff7e500f5
+CMP        DWORD PTR [RDI + 0x8], 0x0
+JZ         loc_7ffff7e50004
+->	c_next:loc_7ffff7e500ff 	c_to:loc_7ffff7e50004 
+ */ 
+loc_7ffff7e500f5:
+MOVABS          R14, 0x7ffff7e500f5
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             DWORD PTR [RDI + 0x8], 0x0
+JZ              loc_7ffff7e50004
+
+
+/*
+loc_7ffff7e500ff
+LEA        RCX, QWORD PTR [RIP + 0xC68A]
+MOV        EDX, 0x90
+LEA        RSI, QWORD PTR [RIP + 0xC4E8]
+LEA        RDI, QWORD PTR [RIP + 0xC514]
+CALL       loc_7ffff7e4b730
+->	c_next:loc_7ffff7e5011e 
+ */ 
+loc_7ffff7e500ff:
+MOVABS          R14, 0x7ffff7e50106
+LEA             RCX, QWORD PTR [R14 + 0xC68A]
+MOV             EDX, 0x90
+MOVABS          R14, 0x7ffff7e50112
+LEA             RSI, QWORD PTR [R14 + 0xC4E8]
+MOVABS          R14, 0x7ffff7e50119
+LEA             RDI, QWORD PTR [R14 + 0xC514]
+MOVABS          R14, 0x7FFFF7E5011E
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b730
+
+
+/*
+loc_7ffff7e5011e
+MOV        ESI, DWORD PTR [RDI + 0x10]
+MOV        QWORD PTR [RSP + 0x8], RDI
+AND        ESI, 0x80
+CALL       loc_7ffff7e58140
+->	c_next:loc_7ffff7e50131 
+ */ 
+loc_7ffff7e5011e:
+MOV             ESI, DWORD PTR [RDI + 0x10]
+MOV             QWORD PTR [R13 + 0x8], RDI
+AND             ESI, 0x80
+MOVABS          R14, 0x7FFFF7E50131
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e58140
+
+
+/*
+loc_7ffff7e50131
+MOV        RDI, QWORD PTR [RSP + 0x8]
+JMP        loc_7ffff7e500b3
+->	c_to:loc_7ffff7e500b3 
+ */ 
+loc_7ffff7e50131:
+MOVABS          R14, 0x7ffff7e50131
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RDI, QWORD PTR [R13 + 0x8]
+JMP             loc_7ffff7e500b3
+
+
+/*
+loc_7ffff7e50145
+LEA        RCX, QWORD PTR [RIP + 0xC644]
+MOV        EDX, 0x51
+LEA        RSI, QWORD PTR [RIP + 0xC4A2]
+LEA        RDI, QWORD PTR [RIP + 0xC4CE]
+CALL       loc_7ffff7e4b730
+->	c_next:loc_7ffff7e50164 
+ */ 
+loc_7ffff7e50145:
+MOVABS          R14, 0x7ffff7e5014c
+LEA             RCX, QWORD PTR [R14 + 0xC644]
+MOV             EDX, 0x51
+MOVABS          R14, 0x7ffff7e50158
+LEA             RSI, QWORD PTR [R14 + 0xC4A2]
+MOVABS          R14, 0x7ffff7e5015f
+LEA             RDI, QWORD PTR [R14 + 0xC4CE]
+MOVABS          R14, 0x7FFFF7E50164
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b730
+
+
+/*
+loc_7ffff7e50164
+MOV        EDX, DWORD PTR FS:[0x2D0]
+MOV        EAX, DWORD PTR [RDI + 0x10]
+AND        EAX, 0x7F
+CMP        EAX, 0x2
+JNZ        loc_7ffff7e501f6
+->	c_next:loc_7ffff7e50177 	c_to:loc_7ffff7e501f6 
+ */ 
+loc_7ffff7e50164:
+MOVABS          R14, 0x7ffff7e50164
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_RFS
+MOV             EDX, DWORD PTR [R14 + 0x2D0]
+MOV             EAX, DWORD PTR [RDI + 0x10]
+AND             EAX, 0x7F
+CMP             EAX, 0x2
+JNZ             loc_7ffff7e501f6
+
+
+/*
+loc_7ffff7e50177
+CMP        DWORD PTR [RDI + 0x8], EDX
+JNZ        loc_7ffff7e4ffe8
+->	c_next:loc_7ffff7e50180 	c_to:loc_7ffff7e4ffe8 
+ */ 
+loc_7ffff7e50177:
+MOVABS          R14, 0x7ffff7e50177
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             DWORD PTR [RDI + 0x8], EDX
+JNZ             loc_7ffff7e4ffe8
+
+
+/*
+loc_7ffff7e50180
+MOV        EAX, 0x23
+JMP        loc_7ffff7e50016
+->	c_to:loc_7ffff7e50016 
+ */ 
+loc_7ffff7e50180:
+MOVABS          R14, 0x7ffff7e50180
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, 0x23
+JMP             loc_7ffff7e50016
+
+
+/*
+loc_7ffff7e5018a
+LEA        RCX, QWORD PTR [RIP + 0xC5FF]
+MOV        EDX, 0x75
+LEA        RSI, QWORD PTR [RIP + 0xC45D]
+LEA        RDI, QWORD PTR [RIP + 0xC489]
+CALL       loc_7ffff7e4b730
+->	c_next:loc_7ffff7e501a9 
+ */ 
+loc_7ffff7e5018a:
+MOVABS          R14, 0x7ffff7e50191
+LEA             RCX, QWORD PTR [R14 + 0xC5FF]
+MOV             EDX, 0x75
+MOVABS          R14, 0x7ffff7e5019d
+LEA             RSI, QWORD PTR [R14 + 0xC45D]
+MOVABS          R14, 0x7ffff7e501a4
+LEA             RDI, QWORD PTR [R14 + 0xC489]
+MOVABS          R14, 0x7FFFF7E501A9
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b730
+
+
+/*
+loc_7ffff7e501a9
+MOVSX      EAX, WORD PTR [RDI + 0x14]
+MOVSX      EDX, WORD PTR [RIP + 0x13144]
+MOV        ECX, 0x1
+LEA        EAX, DWORD PTR [RAX * 0x2 + 0xA]
+CMP        EAX, EDX
+CMOVLE     EDX, EAX
+XOR        EBX, EBX
+XOR        ESI, ESI
+->	c_next:loc_7ffff7e501c6 
+ */ 
+loc_7ffff7e501a9:
+MOVSX           EAX, WORD PTR [RDI + 0x14]
+MOVABS          R14, 0x7ffff7e501b4
+MOVSX           EDX, WORD PTR [R14 + 0x13144]
+MOV             ECX, 0x1
+LEA             EAX, DWORD PTR [0xA + 0x2 * RAX]
+CMP             EAX, EDX
+CMOVLE          EDX, EAX
+XOR             EBX, EBX
+XOR             ESI, ESI
+
+
+/*
+loc_7ffff7e501c6
+MOV        EAX, EBX
+ADD        EBX, 0x1
+CMP        EAX, EDX
+JGE        loc_7ffff7e50215
+->	c_next:loc_7ffff7e501cf 	c_to:loc_7ffff7e50215 
+ */ 
+loc_7ffff7e501c6:
+MOVABS          R14, 0x7ffff7e501c6
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, EBX
+ADD             EBX, 0x1
+CMP             EAX, EDX
+JGE             loc_7ffff7e50215
+
+
+/*
+loc_7ffff7e501cf
+REP NOP        
+MOV        EAX, ESI
+LOCK CMPXCHG    DWORD PTR [RDI], ECX
+JNZ        loc_7ffff7e501c6
+->	c_next:loc_7ffff7e501d9 	c_to:loc_7ffff7e501c6 
+ */ 
+loc_7ffff7e501cf:
+MOVABS          R14, 0x7ffff7e501cf
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+NOP
+MOV             EAX, ESI
+LOCK CMPXCHG    DWORD PTR [RDI], ECX
+JNZ             loc_7ffff7e501c6
+
+
+/*
+loc_7ffff7e501d9
+MOVSX      EAX, WORD PTR [RDI + 0x14]
+MOV        ESI, 0x8
+SUB        EBX, EAX
+MOV        ECX, EAX
+MOV        EAX, EBX
+CDQ        
+IDIV       ESI
+ADD        EAX, ECX
+MOV        WORD PTR [RDI + 0x14], AX
+JMP        loc_7ffff7e500f5
+->	c_to:loc_7ffff7e500f5 
+ */ 
+loc_7ffff7e501d9:
+MOVABS          R14, 0x7ffff7e501d9
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVSX           EAX, WORD PTR [RDI + 0x14]
+MOV             ESI, 0x8
+SUB             EBX, EAX
+MOV             ECX, EAX
+MOV             EAX, EBX
+CDQ             
+IDIV            ESI
+ADD             EAX, ECX
+MOV             WORD PTR [RDI + 0x14], AX
+JMP             loc_7ffff7e500f5
+
+
+/*
+loc_7ffff7e501f6
+LEA        RCX, QWORD PTR [RIP + 0xC593]
+MOV        EDX, 0x95
+LEA        RSI, QWORD PTR [RIP + 0xC3F1]
+LEA        RDI, QWORD PTR [RIP + 0xC3B0]
+CALL       loc_7ffff7e4b730
+->	c_next:loc_7ffff7e50215 
+ */ 
+loc_7ffff7e501f6:
+MOVABS          R14, 0x7ffff7e501fd
+LEA             RCX, QWORD PTR [R14 + 0xC593]
+MOV             EDX, 0x95
+MOVABS          R14, 0x7ffff7e50209
+LEA             RSI, QWORD PTR [R14 + 0xC3F1]
+MOVABS          R14, 0x7ffff7e50210
+LEA             RDI, QWORD PTR [R14 + 0xC3B0]
+MOVABS          R14, 0x7FFFF7E50215
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b730
+
+
+/*
+loc_7ffff7e50215
+XOR        EAX, EAX
+MOV        EDX, 0x1
+LOCK CMPXCHG    DWORD PTR [RDI], EDX
+JZ         loc_7ffff7e501d9
+->	c_next:loc_7ffff7e50222 	c_to:loc_7ffff7e501d9 
+ */ 
+loc_7ffff7e50215:
+MOVABS          R14, 0x7ffff7e50215
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+XOR             EAX, EAX
+MOV             EDX, 0x1
+LOCK CMPXCHG    DWORD PTR [RDI], EDX
+JZ              loc_7ffff7e501d9
+
+
+/*
+loc_7ffff7e50222
+MOV        ESI, DWORD PTR [RDI + 0x10]
+MOV        QWORD PTR [RSP + 0x8], RDI
+AND        ESI, 0x80
+CALL       loc_7ffff7e58140
+->	c_next:loc_7ffff7e50235 
+ */ 
+loc_7ffff7e50222:
+MOV             ESI, DWORD PTR [RDI + 0x10]
+MOV             QWORD PTR [R13 + 0x8], RDI
+AND             ESI, 0x80
+MOVABS          R14, 0x7FFFF7E50235
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e58140
+
+
+/*
+loc_7ffff7e50235
+MOV        RDI, QWORD PTR [RSP + 0x8]
+JMP        loc_7ffff7e501d9
+->	c_to:loc_7ffff7e501d9 
+ */ 
+loc_7ffff7e50235:
+MOVABS          R14, 0x7ffff7e50235
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RDI, QWORD PTR [R13 + 0x8]
+JMP             loc_7ffff7e501d9
+
+
+/*
+loc_7ffff7e51300
+MOV        EAX, DWORD PTR [RDI + 0x10]
+AND        EAX, 0x7F
+SUB        EAX, 0x10
+CMP        EAX, 0x33
+JA         loc_7ffff7e51320
+->	c_next:loc_7ffff7e5130e 	c_to:loc_7ffff7e51320 
+ */ 
+loc_7ffff7e51300:
+MOVABS          R14, 0x7ffff7e51300
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, DWORD PTR [RDI + 0x10]
+AND             EAX, 0x7F
+SUB             EAX, 0x10
+CMP             EAX, 0x33
+JA              loc_7ffff7e51320
+
+
+/*
+loc_7ffff7e5130e
+LEA        RDX, QWORD PTR [RIP + 0xB917]
+MOVSXD     RAX, DWORD PTR [RDX + RAX * 0x4]
+ADD        RAX, RDX
+JMP        RAX
+ */ 
+loc_7ffff7e5130e:
+MOVABS          R14, 0x7ffff7e5130e
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x7ffff7e51315
+LEA             RDX, QWORD PTR [R14 + 0xB917]
+MOVSXD          RAX, DWORD PTR [RDX + 0x4 * RAX]
+ADD             RAX, RDX
+MOV             R14, RAX
+JMP             ij_7ffff7e5131f
+
+
+/*
+loc_7ffff7e51320
+MOV        EAX, 0x16
+RET        
+ */ 
+loc_7ffff7e51320:
+MOV             EAX, 0x16
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+JMP             ij_7ffff7e51326
+
+
+/*
+loc_7ffff7e516a0
+ENDBR64    
+MOV        EAX, DWORD PTR [RDI + 0x10]
+MOV        EDX, EAX
+AND        EDX, 0x17F
+AND        EAX, 0x7C
+JNZ        loc_7ffff7e516f0
+->	c_next:loc_7ffff7e516b4 	c_to:loc_7ffff7e516f0 
+ */ 
+loc_7ffff7e516a0:
+MOVABS          R14, 0x7ffff7e516a0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+NOP
+MOV             EAX, DWORD PTR [RDI + 0x10]
+MOV             EDX, EAX
+AND             EDX, 0x17F
+AND             EAX, 0x7C
+JNZ             loc_7ffff7e516f0
+
+
+/*
+loc_7ffff7e516b4
+MOV        R8D, EAX
+TEST       EDX, EDX
+JNZ        loc_7ffff7e516f8
+->	c_next:loc_7ffff7e516bb 	c_to:loc_7ffff7e516f8 
+ */ 
+loc_7ffff7e516b4:
+MOVABS          R14, 0x7ffff7e516b4
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R8D, EAX
+TEST            EDX, EDX
+JNZ             loc_7ffff7e516f8
+
+
+/*
+loc_7ffff7e516bb
+MOV        DWORD PTR [RDI + 0x8], 0x0
+TEST       ESI, ESI
+JNZ        loc_7ffff7e516e0
+->	c_next:loc_7ffff7e516c6 	c_to:loc_7ffff7e516e0 
+ */ 
+loc_7ffff7e516bb:
+MOVABS          R14, 0x7ffff7e516bb
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             DWORD PTR [RDI + 0x8], 0x0
+TEST            ESI, ESI
+JNZ             loc_7ffff7e516e0
+
+
+/*
+loc_7ffff7e516c6
+MOV        ESI, DWORD PTR [RDI + 0x10]
+XOR        EAX, EAX
+XCHG       DWORD PTR [RDI], EAX
+CMP        EAX, 0x1
+JG         loc_7ffff7e51710
+->	c_next:loc_7ffff7e516d2 	c_to:loc_7ffff7e51710 
+ */ 
+loc_7ffff7e516c6:
+MOVABS          R14, 0x7ffff7e516c6
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             ESI, DWORD PTR [RDI + 0x10]
+XOR             EAX, EAX
+XCHG            DWORD PTR [RDI], EAX
+CMP             EAX, 0x1
+JG              loc_7ffff7e51710
+
+
+/*
+loc_7ffff7e516d2
+NOP        
+->	c_next:loc_7ffff7e516d3 
+ */ 
+loc_7ffff7e516d2:
+NOP
+
+
+/*
+loc_7ffff7e516d3
+MOV        EAX, R8D
+RET        
+ */ 
+loc_7ffff7e516d3:
+MOV             EAX, R8D
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+JMP             ij_7ffff7e516d7
+
+
+/*
+loc_7ffff7e516e0
+SUB        DWORD PTR [RDI + 0xC], 0x1
+JMP        loc_7ffff7e516c6
+->	c_to:loc_7ffff7e516c6 
+ */ 
+loc_7ffff7e516e0:
+MOVABS          R14, 0x7ffff7e516e0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+SUB             DWORD PTR [RDI + 0xC], 0x1
+JMP             loc_7ffff7e516c6
+
+
+/*
+loc_7ffff7e516f0
+JMP        loc_7ffff7e51300
+->	c_to:loc_7ffff7e51300 
+ */ 
+loc_7ffff7e516f0:
+MOVABS          R14, 0x7ffff7e516f0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e51300
+
+
+/*
+loc_7ffff7e516f8
+CMP        EDX, 0x100
+JNZ        loc_7ffff7e5172b
+->	c_next:loc_7ffff7e51700 	c_to:loc_7ffff7e5172b 
+ */ 
+loc_7ffff7e516f8:
+MOVABS          R14, 0x7ffff7e516f8
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             EDX, 0x100
+JNZ             loc_7ffff7e5172b
+
+
+/*
+loc_7ffff7e51700
+MOV        ESI, DWORD PTR [RDI + 0x10]
+AND        ESI, 0x80
+JMP        loc_7ffff7e5b380
+->	c_to:loc_7ffff7e5b380 
+ */ 
+loc_7ffff7e51700:
+MOVABS          R14, 0x7ffff7e51700
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             ESI, DWORD PTR [RDI + 0x10]
+AND             ESI, 0x80
+JMP             loc_7ffff7e5b380
+
+
+/*
+loc_7ffff7e51710
+AND        ESI, 0x80
+XOR        R10D, R10D
+MOV        EDX, 0x1
+MOV        EAX, 0xCA
+XOR        SIL, 0x81
+SYSCALL    
+->	c_next:loc_7ffff7e51729 
+ */ 
+loc_7ffff7e51710:
+AND             ESI, 0x80
+XOR             R10D, R10D
+MOV             EDX, 0x1
+MOV             EAX, 0xCA
+XOR             SIL, 0x81
+MOVABS          R14, 0x7ffff7e51727
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e51729
+JMP        loc_7ffff7e516d2
+->	c_to:loc_7ffff7e516d2 
+ */ 
+loc_7ffff7e51729:
+MOVABS          R14, 0x7ffff7e51729
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e516d2
+
+
+/*
+loc_7ffff7e5172b
+MOV        EAX, DWORD PTR [RDI + 0x10]
+AND        EAX, 0x7F
+CMP        EAX, 0x1
+JNZ        loc_7ffff7e51756
+->	c_next:loc_7ffff7e51736 	c_to:loc_7ffff7e51756 
+ */ 
+loc_7ffff7e5172b:
+MOVABS          R14, 0x7ffff7e5172b
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, DWORD PTR [RDI + 0x10]
+AND             EAX, 0x7F
+CMP             EAX, 0x1
+JNZ             loc_7ffff7e51756
+
+
+/*
+loc_7ffff7e51736
+MOV        EAX, DWORD PTR FS:[0x2D0]
+CMP        DWORD PTR [RDI + 0x8], EAX
+JZ         loc_7ffff7e5174b
+->	c_next:loc_7ffff7e51743 	c_to:loc_7ffff7e5174b 
+ */ 
+loc_7ffff7e51736:
+MOVABS          R14, 0x7ffff7e51736
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_RFS
+MOV             EAX, DWORD PTR [R14 + 0x2D0]
+CMP             DWORD PTR [RDI + 0x8], EAX
+JZ              loc_7ffff7e5174b
+
+
+/*
+loc_7ffff7e51743
+MOV        R8D, 0x1
+JMP        loc_7ffff7e516d3
+->	c_to:loc_7ffff7e516d3 
+ */ 
+loc_7ffff7e51743:
+MOVABS          R14, 0x7ffff7e51743
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R8D, 0x1
+JMP             loc_7ffff7e516d3
+
+
+/*
+loc_7ffff7e5174b
+SUB        DWORD PTR [RDI + 0x4], 0x1
+JNZ        loc_7ffff7e516d3
+->	c_next:loc_7ffff7e51751 	c_to:loc_7ffff7e516d3 
+ */ 
+loc_7ffff7e5174b:
+MOVABS          R14, 0x7ffff7e5174b
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+SUB             DWORD PTR [RDI + 0x4], 0x1
+JNZ             loc_7ffff7e516d3
+
+
+/*
+loc_7ffff7e51751
+JMP        loc_7ffff7e516bb
+->	c_to:loc_7ffff7e516bb 
+ */ 
+loc_7ffff7e51751:
+MOVABS          R14, 0x7ffff7e51751
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e516bb
+
+
+/*
+loc_7ffff7e51756
+MOV        EAX, DWORD PTR [RDI + 0x10]
+AND        EAX, 0x7F
+CMP        EAX, 0x3
+JZ         loc_7ffff7e516bb
+->	c_next:loc_7ffff7e51765 	c_to:loc_7ffff7e516bb 
+ */ 
+loc_7ffff7e51756:
+MOVABS          R14, 0x7ffff7e51756
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, DWORD PTR [RDI + 0x10]
+AND             EAX, 0x7F
+CMP             EAX, 0x3
+JZ              loc_7ffff7e516bb
+
+
+/*
+loc_7ffff7e51765
+CMP        EDX, 0x2
+JNZ        loc_7ffff7e51781
+->	c_next:loc_7ffff7e5176a 	c_to:loc_7ffff7e51781 
+ */ 
+loc_7ffff7e51765:
+MOVABS          R14, 0x7ffff7e51765
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             EDX, 0x2
+JNZ             loc_7ffff7e51781
+
+
+/*
+loc_7ffff7e5176a
+MOV        EAX, DWORD PTR FS:[0x2D0]
+CMP        DWORD PTR [RDI + 0x8], EAX
+JNZ        loc_7ffff7e51743
+->	c_next:loc_7ffff7e51777 	c_to:loc_7ffff7e51743 
+ */ 
+loc_7ffff7e5176a:
+MOVABS          R14, 0x7ffff7e5176a
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_RFS
+MOV             EAX, DWORD PTR [R14 + 0x2D0]
+CMP             DWORD PTR [RDI + 0x8], EAX
+JNZ             loc_7ffff7e51743
+
+
+/*
+loc_7ffff7e51777
+CMP        DWORD PTR [RDI], 0x0
+JZ         loc_7ffff7e51743
+->	c_next:loc_7ffff7e5177c 	c_to:loc_7ffff7e51743 
+ */ 
+loc_7ffff7e51777:
+MOVABS          R14, 0x7ffff7e51777
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             DWORD PTR [RDI], 0x0
+JZ              loc_7ffff7e51743
+
+
+/*
+loc_7ffff7e5177c
+JMP        loc_7ffff7e516bb
+->	c_to:loc_7ffff7e516bb 
+ */ 
+loc_7ffff7e5177c:
+MOVABS          R14, 0x7ffff7e5177c
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e516bb
+
+
+/*
+loc_7ffff7e51781
+PUSH       RAX
+LEA        RCX, QWORD PTR [RIP + 0xB627]
+MOV        EDX, 0x58
+LEA        RSI, QWORD PTR [RIP + 0xB5FF]
+LEA        RDI, QWORD PTR [RIP + 0xB46C]
+CALL       loc_7ffff7e4b730
+->	c_next:loc_7ffff7e517a1 
+ */ 
+loc_7ffff7e51781:
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], RAX
+MOVABS          R14, 0x7ffff7e51789
+LEA             RCX, QWORD PTR [R14 + 0xB627]
+MOV             EDX, 0x58
+MOVABS          R14, 0x7ffff7e51795
+LEA             RSI, QWORD PTR [R14 + 0xB5FF]
+MOVABS          R14, 0x7ffff7e5179c
+LEA             RDI, QWORD PTR [R14 + 0xB46C]
+MOVABS          R14, 0x7FFFF7E517A1
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b730
+
+
+/*
+loc_7ffff7e517a1
+NOP        WORD PTR CS:[RAX * 0x2]
+NOP        DWORD PTR [RAX]
+->	c_next:loc_7ffff7e517b0 
+ */ 
+loc_7ffff7e517a1:
+NOP
+NOP
+
+
+/*
+loc_7ffff7e517b0
+ENDBR64    
+MOV        EAX, DWORD PTR [RDI + 0x10]
+MOV        EDX, EAX
+AND        EDX, 0x17F
+AND        EAX, 0x7C
+JNZ        loc_7ffff7e517f0
+->	c_next:loc_7ffff7e517c4 	c_to:loc_7ffff7e517f0 
+ */ 
+loc_7ffff7e517b0:
+MOVABS          R14, 0x7ffff7e517b0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+NOP
+MOV             EAX, DWORD PTR [RDI + 0x10]
+MOV             EDX, EAX
+AND             EDX, 0x17F
+AND             EAX, 0x7C
+JNZ             loc_7ffff7e517f0
+
+
+/*
+loc_7ffff7e517c4
+MOV        R8D, EAX
+TEST       EDX, EDX
+JNZ        loc_7ffff7e51800
+->	c_next:loc_7ffff7e517cb 	c_to:loc_7ffff7e51800 
+ */ 
+loc_7ffff7e517c4:
+MOVABS          R14, 0x7ffff7e517c4
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R8D, EAX
+TEST            EDX, EDX
+JNZ             loc_7ffff7e51800
+
+
+/*
+loc_7ffff7e517cb
+SUB        DWORD PTR [RDI + 0xC], 0x1
+XOR        EAX, EAX
+MOV        DWORD PTR [RDI + 0x8], 0x0
+MOV        ESI, DWORD PTR [RDI + 0x10]
+XCHG       DWORD PTR [RDI], EAX
+CMP        EAX, 0x1
+JG         loc_7ffff7e51820
+->	c_next:loc_7ffff7e517e2 	c_to:loc_7ffff7e51820 
+ */ 
+loc_7ffff7e517cb:
+MOVABS          R14, 0x7ffff7e517cb
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+SUB             DWORD PTR [RDI + 0xC], 0x1
+XOR             EAX, EAX
+MOV             DWORD PTR [RDI + 0x8], 0x0
+MOV             ESI, DWORD PTR [RDI + 0x10]
+XCHG            DWORD PTR [RDI], EAX
+CMP             EAX, 0x1
+JG              loc_7ffff7e51820
+
+
+/*
+loc_7ffff7e517e2
+NOP        
+->	c_next:loc_7ffff7e517e3 
+ */ 
+loc_7ffff7e517e2:
+NOP
+
+
+/*
+loc_7ffff7e517e3
+MOV        EAX, R8D
+RET        
+ */ 
+loc_7ffff7e517e3:
+MOV             EAX, R8D
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+JMP             ij_7ffff7e517e7
+
+
+/*
+loc_7ffff7e517f0
+MOV        ESI, 0x1
+JMP        loc_7ffff7e51300
+->	c_to:loc_7ffff7e51300 
+ */ 
+loc_7ffff7e517f0:
+MOVABS          R14, 0x7ffff7e517f0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             ESI, 0x1
+JMP             loc_7ffff7e51300
+
+
+/*
+loc_7ffff7e51800
+CMP        EDX, 0x100
+JNZ        loc_7ffff7e5183b
+->	c_next:loc_7ffff7e51808 	c_to:loc_7ffff7e5183b 
+ */ 
+loc_7ffff7e51800:
+MOVABS          R14, 0x7ffff7e51800
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             EDX, 0x100
+JNZ             loc_7ffff7e5183b
+
+
+/*
+loc_7ffff7e51808
+MOV        ESI, DWORD PTR [RDI + 0x10]
+AND        ESI, 0x80
+JMP        loc_7ffff7e5b380
+->	c_to:loc_7ffff7e5b380 
+ */ 
+loc_7ffff7e51808:
+MOVABS          R14, 0x7ffff7e51808
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             ESI, DWORD PTR [RDI + 0x10]
+AND             ESI, 0x80
+JMP             loc_7ffff7e5b380
+
+
+/*
+loc_7ffff7e51820
+AND        ESI, 0x80
+XOR        R10D, R10D
+MOV        EDX, 0x1
+MOV        EAX, 0xCA
+XOR        SIL, 0x81
+SYSCALL    
+->	c_next:loc_7ffff7e51839 
+ */ 
+loc_7ffff7e51820:
+AND             ESI, 0x80
+XOR             R10D, R10D
+MOV             EDX, 0x1
+MOV             EAX, 0xCA
+XOR             SIL, 0x81
+MOVABS          R14, 0x7ffff7e51837
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e51839
+JMP        loc_7ffff7e517e2
+->	c_to:loc_7ffff7e517e2 
+ */ 
+loc_7ffff7e51839:
+MOVABS          R14, 0x7ffff7e51839
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e517e2
+
+
+/*
+loc_7ffff7e5183b
+MOV        EAX, DWORD PTR [RDI + 0x10]
+AND        EAX, 0x7F
+CMP        EAX, 0x1
+JNZ        loc_7ffff7e51866
+->	c_next:loc_7ffff7e51846 	c_to:loc_7ffff7e51866 
+ */ 
+loc_7ffff7e5183b:
+MOVABS          R14, 0x7ffff7e5183b
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, DWORD PTR [RDI + 0x10]
+AND             EAX, 0x7F
+CMP             EAX, 0x1
+JNZ             loc_7ffff7e51866
+
+
+/*
+loc_7ffff7e51846
+MOV        EAX, DWORD PTR FS:[0x2D0]
+CMP        DWORD PTR [RDI + 0x8], EAX
+JZ         loc_7ffff7e5185b
+->	c_next:loc_7ffff7e51853 	c_to:loc_7ffff7e5185b 
+ */ 
+loc_7ffff7e51846:
+MOVABS          R14, 0x7ffff7e51846
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_RFS
+MOV             EAX, DWORD PTR [R14 + 0x2D0]
+CMP             DWORD PTR [RDI + 0x8], EAX
+JZ              loc_7ffff7e5185b
+
+
+/*
+loc_7ffff7e51853
+MOV        R8D, 0x1
+JMP        loc_7ffff7e517e3
+->	c_to:loc_7ffff7e517e3 
+ */ 
+loc_7ffff7e51853:
+MOVABS          R14, 0x7ffff7e51853
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R8D, 0x1
+JMP             loc_7ffff7e517e3
+
+
+/*
+loc_7ffff7e5185b
+SUB        DWORD PTR [RDI + 0x4], 0x1
+JNZ        loc_7ffff7e517e3
+->	c_next:loc_7ffff7e51861 	c_to:loc_7ffff7e517e3 
+ */ 
+loc_7ffff7e5185b:
+MOVABS          R14, 0x7ffff7e5185b
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+SUB             DWORD PTR [RDI + 0x4], 0x1
+JNZ             loc_7ffff7e517e3
+
+
+/*
+loc_7ffff7e51861
+JMP        loc_7ffff7e517cb
+->	c_to:loc_7ffff7e517cb 
+ */ 
+loc_7ffff7e51861:
+MOVABS          R14, 0x7ffff7e51861
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e517cb
+
+
+/*
+loc_7ffff7e51866
+MOV        EAX, DWORD PTR [RDI + 0x10]
+AND        EAX, 0x7F
+CMP        EAX, 0x3
+JZ         loc_7ffff7e517cb
+->	c_next:loc_7ffff7e51875 	c_to:loc_7ffff7e517cb 
+ */ 
+loc_7ffff7e51866:
+MOVABS          R14, 0x7ffff7e51866
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, DWORD PTR [RDI + 0x10]
+AND             EAX, 0x7F
+CMP             EAX, 0x3
+JZ              loc_7ffff7e517cb
+
+
+/*
+loc_7ffff7e51875
+CMP        EDX, 0x2
+JNZ        loc_7ffff7e51891
+->	c_next:loc_7ffff7e5187a 	c_to:loc_7ffff7e51891 
+ */ 
+loc_7ffff7e51875:
+MOVABS          R14, 0x7ffff7e51875
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             EDX, 0x2
+JNZ             loc_7ffff7e51891
+
+
+/*
+loc_7ffff7e5187a
+MOV        EAX, DWORD PTR FS:[0x2D0]
+CMP        DWORD PTR [RDI + 0x8], EAX
+JNZ        loc_7ffff7e51853
+->	c_next:loc_7ffff7e51887 	c_to:loc_7ffff7e51853 
+ */ 
+loc_7ffff7e5187a:
+MOVABS          R14, 0x7ffff7e5187a
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_RFS
+MOV             EAX, DWORD PTR [R14 + 0x2D0]
+CMP             DWORD PTR [RDI + 0x8], EAX
+JNZ             loc_7ffff7e51853
+
+
+/*
+loc_7ffff7e51887
+CMP        DWORD PTR [RDI], 0x0
+JZ         loc_7ffff7e51853
+->	c_next:loc_7ffff7e5188c 	c_to:loc_7ffff7e51853 
+ */ 
+loc_7ffff7e51887:
+MOVABS          R14, 0x7ffff7e51887
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             DWORD PTR [RDI], 0x0
+JZ              loc_7ffff7e51853
+
+
+/*
+loc_7ffff7e5188c
+JMP        loc_7ffff7e517cb
+->	c_to:loc_7ffff7e517cb 
+ */ 
+loc_7ffff7e5188c:
+MOVABS          R14, 0x7ffff7e5188c
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e517cb
+
+
+/*
+loc_7ffff7e51891
+PUSH       RAX
+LEA        RCX, QWORD PTR [RIP + 0xB517]
+MOV        EDX, 0x58
+LEA        RSI, QWORD PTR [RIP + 0xB4EF]
+LEA        RDI, QWORD PTR [RIP + 0xB35C]
+CALL       loc_7ffff7e4b730
+->	c_next:loc_7ffff7e518b1 
+ */ 
+loc_7ffff7e51891:
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], RAX
+MOVABS          R14, 0x7ffff7e51899
+LEA             RCX, QWORD PTR [R14 + 0xB517]
+MOV             EDX, 0x58
+MOVABS          R14, 0x7ffff7e518a5
+LEA             RSI, QWORD PTR [R14 + 0xB4EF]
+MOVABS          R14, 0x7ffff7e518ac
+LEA             RDI, QWORD PTR [R14 + 0xB35C]
+MOVABS          R14, 0x7FFFF7E518B1
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b730
+
+
+/*
+loc_7ffff7e518b1
+NOP        WORD PTR CS:[RAX * 0x2]
+NOP        DWORD PTR [RAX * 0x2]
+->	c_next:loc_7ffff7e518c0 
+ */ 
+loc_7ffff7e518b1:
+NOP
+NOP
+
+
+/*
+loc_7ffff7e518c0
+PUSH       R15
+PUSH       R14
+PUSH       R13
+PUSH       R12
+PUSH       RBP
+MOV        RBP, RDI
+PUSH       RBX
+SUB        RSP, 0x28
+MOV        RAX, QWORD PTR FS:[0x28]
+MOV        QWORD PTR [RSP + 0x18], RAX
+XOR        EAX, EAX
+MOV        R12D, DWORD PTR FS:[0x2D0]
+MOV        EDX, DWORD PTR [RDI + 0x10]
+LEA        R13, QWORD PTR [RDI + 0x10]
+MOV        EAX, EDX
+AND        EAX, 0x7F
+CMP        EAX, 0x33
+JG         loc_7ffff7e51ae8
+->	c_next:loc_7ffff7e518ff 	c_to:loc_7ffff7e51ae8 
+ */ 
+loc_7ffff7e518c0:
+MOVABS          R14, 0x7ffff7e518c0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             R14, Stack_R15
+MOV             QWORD PTR [R13], R14
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             R15, Stack_R14
+MOV             QWORD PTR [R13], R15
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             Stack_R15, R14
+MOV             R14, Stack_R13
+MOV             QWORD PTR [R13], R14
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             Stack_R13, R14
+MOV             R14, Stack_R12
+MOV             QWORD PTR [R13], R14
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R12
+MOV             R12, RDI
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], RBX
+SUB             R13, 0x28
+MOV             Stack_R12, R14
+MOV             R14, Stack_RFS
+MOV             RAX, QWORD PTR [R14 + 0x28]
+MOV             QWORD PTR [R13 + 0x18], RAX
+XOR             EAX, EAX
+MOV             Stack_R14, R15
+MOV             R15, Stack_R12
+MOV             R15d, DWORD PTR [R14 + 0x2D0]
+MOV             EDX, DWORD PTR [RDI + 0x10]
+MOV             Stack_RFS, R14
+MOV             R14, Stack_R13
+LEA             R14, QWORD PTR [RDI + 0x10]
+MOV             EAX, EDX
+AND             EAX, 0x7F
+CMP             EAX, 0x33
+MOV             Stack_R12, R15
+MOV             Stack_R13, R14
+JG              loc_7ffff7e51ae8
+
+
+/*
+loc_7ffff7e518ff
+CMP        EAX, 0x2F
+JG         loc_7ffff7e519eb
+->	c_next:loc_7ffff7e51908 	c_to:loc_7ffff7e519eb 
+ */ 
+loc_7ffff7e518ff:
+MOVABS          R14, 0x7ffff7e518ff
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             EAX, 0x2F
+JG              loc_7ffff7e519eb
+
+
+/*
+loc_7ffff7e51908
+CMP        EAX, 0x13
+JG         loc_7ffff7e519e3
+->	c_next:loc_7ffff7e51911 	c_to:loc_7ffff7e519e3 
+ */ 
+loc_7ffff7e51908:
+MOVABS          R14, 0x7ffff7e51908
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             EAX, 0x13
+JG              loc_7ffff7e519e3
+
+
+/*
+loc_7ffff7e51911
+AND        EDX, 0x70
+JZ         loc_7ffff7e519b7
+->	c_next:loc_7ffff7e5191a 	c_to:loc_7ffff7e519b7 
+ */ 
+loc_7ffff7e51911:
+MOVABS          R14, 0x7ffff7e51911
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+AND             EDX, 0x70
+JZ              loc_7ffff7e519b7
+
+
+/*
+loc_7ffff7e5191a
+LEA        R8, QWORD PTR [RDI + 0x20]
+MOV        QWORD PTR FS:[0x2F0], R8
+MOV        R9D, R12D
+MOV        EDX, DWORD PTR [RDI]
+MOV        EBX, 0xCA
+OR         R9D, 0x80000000
+->	c_next:loc_7ffff7e51938 
+ */ 
+loc_7ffff7e5191a:
+LEA             R8, QWORD PTR [RDI + 0x20]
+MOV             R14, Stack_RFS
+MOV             QWORD PTR [R14 + 0x2F0], R8
+MOV             R15, Stack_R12
+MOV             R9D, R15d
+MOV             EDX, DWORD PTR [RDI]
+MOV             EBX, 0xCA
+OR              R9D, 0x80000000
+MOV             Stack_R12, R15
+
+
+/*
+loc_7ffff7e51938
+TEST       EDX, EDX
+JNZ        loc_7ffff7e51c8a
+->	c_next:loc_7ffff7e51940 	c_to:loc_7ffff7e51c8a 
+ */ 
+loc_7ffff7e51938:
+MOVABS          R14, 0x7ffff7e51938
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            EDX, EDX
+JNZ             loc_7ffff7e51c8a
+
+
+/*
+loc_7ffff7e51940
+MOV        EAX, EDX
+LOCK CMPXCHG    DWORD PTR [RBP], R9D
+MOV        EDX, EAX
+TEST       EAX, EAX
+JNZ        loc_7ffff7e51c8a
+->	c_next:loc_7ffff7e51952 	c_to:loc_7ffff7e51c8a 
+ */ 
+loc_7ffff7e51940:
+MOVABS          R14, 0x7ffff7e51940
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, EDX
+LOCK CMPXCHG    DWORD PTR [R12], R9D
+MOV             EDX, EAX
+TEST            EAX, EAX
+JNZ             loc_7ffff7e51c8a
+
+
+/*
+loc_7ffff7e51952
+CMP        DWORD PTR [RBP + 0x8], 0x7FFFFFFE
+JZ         loc_7ffff7e51fa5
+->	c_next:loc_7ffff7e5195f 	c_to:loc_7ffff7e51fa5 
+ */ 
+loc_7ffff7e51952:
+MOVABS          R14, 0x7ffff7e51952
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             DWORD PTR [R12 + 0x8], 0x7FFFFFFE
+JZ              loc_7ffff7e51fa5
+
+
+/*
+loc_7ffff7e5195f
+MOV        DWORD PTR [RBP + 0x4], 0x1
+MOV        RAX, QWORD PTR FS:[0x2E0]
+AND        RAX, 0xFFFFFFFFFFFFFFFE
+MOV        QWORD PTR [RAX + 0xFFFFFFFFFFFFFFF8], R8
+MOV        RAX, QWORD PTR FS:[0x2E0]
+MOV        QWORD PTR [RBP + 0x20], RAX
+MOV        RAX, QWORD PTR FS:[0x10]
+ADD        RAX, 0x2E0
+MOV        QWORD PTR [RBP + 0x18], RAX
+MOV        QWORD PTR FS:[0x2E0], R8
+MOV        QWORD PTR FS:[0x2F0], 0x0
+->	c_next:loc_7ffff7e519ad 
+ */ 
+loc_7ffff7e5195f:
+MOV             DWORD PTR [R12 + 0x4], 0x1
+MOV             R14, Stack_RFS
+MOV             RAX, QWORD PTR [R14 + 0x2E0]
+AND             RAX, 0xFFFFFFFFFFFFFFFE
+MOV             QWORD PTR [RAX + 0xFFFFFFFFFFFFFFF8], R8
+MOV             RAX, QWORD PTR [R14 + 0x2E0]
+MOV             QWORD PTR [R12 + 0x20], RAX
+MOV             RAX, QWORD PTR [R14 + 0x10]
+ADD             RAX, 0x2E0
+MOV             QWORD PTR [R12 + 0x18], RAX
+MOV             QWORD PTR [R14 + 0x2E0], R8
+MOV             QWORD PTR [R14 + 0x2F0], 0x0
+
+
+/*
+loc_7ffff7e519ad
+MOV        DWORD PTR [RBP + 0x8], R12D
+NOP        
+XOR        R15D, R15D
+JMP        loc_7ffff7e519bd
+->	c_to:loc_7ffff7e519bd 
+ */ 
+loc_7ffff7e519ad:
+MOVABS          R14, 0x7ffff7e519ad
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_R12
+MOV             DWORD PTR [R12 + 0x8], R14d
+NOP
+MOV             R15, Stack_R15
+XOR             R15d, R15d
+MOV             Stack_R15, R15
+MOV             Stack_R12, R14
+JMP             loc_7ffff7e519bd
+
+
+/*
+loc_7ffff7e519b7
+MOV        R15D, 0x16
+->	c_next:loc_7ffff7e519bd 
+ */ 
+loc_7ffff7e519b7:
+MOV             R14, Stack_R15
+MOV             R14d, 0x16
+MOV             Stack_R15, R14
+
+
+/*
+loc_7ffff7e519bd
+MOV        RAX, QWORD PTR [RSP + 0x18]
+XOR        RAX, QWORD PTR FS:[0x28]
+JNZ        loc_7ffff7e51fd0
+->	c_next:loc_7ffff7e519d1 	c_to:loc_7ffff7e51fd0 
+ */ 
+loc_7ffff7e519bd:
+MOVABS          R14, 0x7ffff7e519bd
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R13 + 0x18]
+MOV             R14, Stack_RFS
+XOR             RAX, QWORD PTR [R14 + 0x28]
+JNZ             loc_7ffff7e51fd0
+
+
+/*
+loc_7ffff7e519d1
+ADD        RSP, 0x28
+MOV        EAX, R15D
+POP        RBX
+POP        RBP
+POP        R12
+POP        R13
+POP        R14
+POP        R15
+RET        
+ */ 
+loc_7ffff7e519d1:
+ADD             R13, 0x28
+MOV             R14, Stack_R15
+MOV             EAX, R14d
+MOV             RBX, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             R12, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             R15, Stack_R12
+MOV             R15, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R15, R14
+MOV             R14, Stack_R13
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R13, R14
+MOV             R14, Stack_R14
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R14, R14
+MOV             R14, Stack_R15
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R15, R14
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R12, R15
+JMP             ij_7ffff7e519e3
+
+
+/*
+loc_7ffff7e519e3
+SUB        EAX, 0x20
+CMP        EAX, 0x3
+JA         loc_7ffff7e519b7
+->	c_next:loc_7ffff7e519eb 	c_to:loc_7ffff7e519b7 
+ */ 
+loc_7ffff7e519e3:
+MOVABS          R14, 0x7ffff7e519e3
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+SUB             EAX, 0x20
+CMP             EAX, 0x3
+JA              loc_7ffff7e519b7
+
+
+/*
+loc_7ffff7e519eb
+MOV        R8D, DWORD PTR [RBP + 0x10]
+MOV        R9D, R8D
+AND        R9D, 0x3
+AND        R8D, 0x10
+JNZ        loc_7ffff7e51c45
+->	c_next:loc_7ffff7e51a00 	c_to:loc_7ffff7e51c45 
+ */ 
+loc_7ffff7e519eb:
+MOVABS          R14, 0x7ffff7e519eb
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R8D, DWORD PTR [R12 + 0x10]
+MOV             R9D, R8D
+AND             R9D, 0x3
+AND             R8D, 0x10
+JNZ             loc_7ffff7e51c45
+
+
+/*
+loc_7ffff7e51a00
+MOV        EAX, DWORD PTR [RBP]
+AND        EAX, 0x3FFFFFFF
+CMP        R12D, EAX
+JZ         loc_7ffff7e51dda
+->	c_next:loc_7ffff7e51a11 	c_to:loc_7ffff7e51dda 
+ */ 
+loc_7ffff7e51a00:
+MOVABS          R14, 0x7ffff7e51a00
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, DWORD PTR [R12]
+AND             EAX, 0x3FFFFFFF
+MOV             R14, Stack_R12
+CMP             R14d, EAX
+MOV             Stack_R12, R14
+JZ              loc_7ffff7e51dda
+
+
+/*
+loc_7ffff7e51a11
+MOV        EDX, R12D
+XOR        EAX, EAX
+OR         EDX, 0x80000000
+LOCK CMPXCHG    DWORD PTR [RBP], EDX
+TEST       EAX, EAX
+JZ         loc_7ffff7e51bd7
+->	c_next:loc_7ffff7e51a29 	c_to:loc_7ffff7e51bd7 
+ */ 
+loc_7ffff7e51a11:
+MOVABS          R14, 0x7ffff7e51a11
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_R12
+MOV             EDX, R14d
+XOR             EAX, EAX
+OR              EDX, 0x80000000
+LOCK CMPXCHG    DWORD PTR [R12], EDX
+TEST            EAX, EAX
+MOV             Stack_R12, R14
+JZ              loc_7ffff7e51bd7
+
+
+/*
+loc_7ffff7e51a29
+MOV        ESI, 0x6
+MOV        EBX, 0x80
+TEST       R8D, R8D
+JZ         loc_7ffff7e51d10
+->	c_next:loc_7ffff7e51a3c 	c_to:loc_7ffff7e51d10 
+ */ 
+loc_7ffff7e51a29:
+MOVABS          R14, 0x7ffff7e51a29
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             ESI, 0x6
+MOV             EBX, 0x80
+TEST            R8D, R8D
+JZ              loc_7ffff7e51d10
+
+
+/*
+loc_7ffff7e51a3c
+XOR        R10D, R10D
+XOR        EDX, EDX
+MOV        RDI, RBP
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e51a4b 
+ */ 
+loc_7ffff7e51a3c:
+XOR             R10D, R10D
+XOR             EDX, EDX
+MOV             RDI, R12
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e51a49
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e51a4b
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JA         loc_7ffff7e51e4d
+->	c_next:loc_7ffff7e51a57 	c_to:loc_7ffff7e51e4d 
+ */ 
+loc_7ffff7e51a4b:
+MOVABS          R14, 0x7ffff7e51a4b
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JA              loc_7ffff7e51e4d
+
+
+/*
+loc_7ffff7e51a57
+MOV        EAX, DWORD PTR [RBP]
+AND        EAX, 0x40000000
+TEST       R8D, R8D
+JZ         loc_7ffff7e51ce2
+->	c_next:loc_7ffff7e51a68 	c_to:loc_7ffff7e51ce2 
+ */ 
+loc_7ffff7e51a57:
+MOVABS          R14, 0x7ffff7e51a57
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, DWORD PTR [R12]
+AND             EAX, 0x40000000
+TEST            R8D, R8D
+JZ              loc_7ffff7e51ce2
+
+
+/*
+loc_7ffff7e51a68
+TEST       EAX, EAX
+JZ         loc_7ffff7e51bdc
+->	c_next:loc_7ffff7e51a70 	c_to:loc_7ffff7e51bdc 
+ */ 
+loc_7ffff7e51a68:
+MOVABS          R14, 0x7ffff7e51a68
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            EAX, EAX
+JZ              loc_7ffff7e51bdc
+
+
+/*
+loc_7ffff7e51a70
+LOCK AND        DWORD PTR [RBP], 0xBFFFFFFF
+MOV        RAX, 0x7FFFFFFF00000001
+MOV        QWORD PTR [RBP + 0x4], RAX
+MOV        RDX, QWORD PTR FS:[0x2E0]
+LEA        RAX, QWORD PTR [RBP + 0x20]
+AND        RDX, 0xFFFFFFFFFFFFFFFE
+MOV        QWORD PTR [RDX + 0xFFFFFFFFFFFFFFF8], RAX
+MOV        RDX, QWORD PTR FS:[0x2E0]
+MOV        QWORD PTR [RBP + 0x20], RDX
+MOV        RDX, QWORD PTR FS:[0x10]
+ADD        RDX, 0x2E0
+MOV        QWORD PTR [RBP + 0x18], RDX
+OR         RAX, 0x1
+MOV        QWORD PTR FS:[0x2E0], RAX
+MOV        QWORD PTR FS:[0x2F0], 0x0
+MOV        R15D, 0x82
+SUB        DWORD PTR [RBP + 0xC], 0x1
+JMP        loc_7ffff7e519bd
+->	c_to:loc_7ffff7e519bd 
+ */ 
+loc_7ffff7e51a70:
+MOVABS          R14, 0x7ffff7e51a70
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+LOCK AND        DWORD PTR [R12], 0xBFFFFFFF
+MOV             RAX, 0x7FFFFFFF00000001
+MOV             QWORD PTR [R12 + 0x4], RAX
+MOV             R14, Stack_RFS
+MOV             RDX, QWORD PTR [R14 + 0x2E0]
+LEA             RAX, QWORD PTR [R12 + 0x20]
+AND             RDX, 0xFFFFFFFFFFFFFFFE
+MOV             QWORD PTR [RDX + 0xFFFFFFFFFFFFFFF8], RAX
+MOV             RDX, QWORD PTR [R14 + 0x2E0]
+MOV             QWORD PTR [R12 + 0x20], RDX
+MOV             RDX, QWORD PTR [R14 + 0x10]
+ADD             RDX, 0x2E0
+MOV             QWORD PTR [R12 + 0x18], RDX
+OR              RAX, 0x1
+MOV             QWORD PTR [R14 + 0x2E0], RAX
+MOV             QWORD PTR [R14 + 0x2F0], 0x0
+MOV             R15, Stack_R15
+MOV             R15d, 0x82
+SUB             DWORD PTR [R12 + 0xC], 0x1
+MOV             Stack_R15, R15
+JMP             loc_7ffff7e519bd
+
+
+/*
+loc_7ffff7e51ae8
+SUB        EAX, 0x40
+CMP        EAX, 0x3
+JA         loc_7ffff7e519b7
+->	c_next:loc_7ffff7e51af4 	c_to:loc_7ffff7e519b7 
+ */ 
+loc_7ffff7e51ae8:
+MOVABS          R14, 0x7ffff7e51ae8
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+SUB             EAX, 0x40
+CMP             EAX, 0x3
+JA              loc_7ffff7e519b7
+
+
+/*
+loc_7ffff7e51af4
+MOV        EAX, DWORD PTR [RDI + 0x10]
+MOV        ESI, DWORD PTR [RDI]
+MOV        EDI, 0xFFFFFFFF
+CMP        R12D, DWORD PTR [RBP + 0x8]
+JZ         loc_7ffff7e51c5b
+->	c_next:loc_7ffff7e51b08 	c_to:loc_7ffff7e51c5b 
+ */ 
+loc_7ffff7e51af4:
+MOVABS          R14, 0x7ffff7e51af4
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, DWORD PTR [RDI + 0x10]
+MOV             ESI, DWORD PTR [RDI]
+MOV             EDI, 0xFFFFFFFF
+MOV             R14, Stack_R12
+CMP             R14d, DWORD PTR [R12 + 0x8]
+MOV             Stack_R12, R14
+JZ              loc_7ffff7e51c5b
+
+
+/*
+loc_7ffff7e51b08
+MOV        EBX, 0xCA
+->	c_next:loc_7ffff7e51b0d 
+ */ 
+loc_7ffff7e51b08:
+MOV             EBX, 0xCA
+
+
+/*
+loc_7ffff7e51b0d
+SHR        ESI, 0x13
+MOV        DWORD PTR [RSP + 0xC], EDI
+MOV        R14D, ESI
+CALL       loc_7ffff7e5a210
+->	c_next:loc_7ffff7e51b1c 
+ */ 
+loc_7ffff7e51b0d:
+SHR             ESI, 0x13
+MOV             DWORD PTR [R13 + 0xC], EDI
+MOV             R14, Stack_R14
+MOV             R14d, ESI
+MOVABS          R15, 0x7FFFF7E51B1C
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R15
+MOV             Stack_R14, R14
+JMP             loc_7ffff7e5a210
+
+
+/*
+loc_7ffff7e51b1c
+MOV        EDI, DWORD PTR [RSP + 0xC]
+CMP        EAX, R14D
+JG         loc_7ffff7e51cc4
+->	c_next:loc_7ffff7e51b29 	c_to:loc_7ffff7e51cc4 
+ */ 
+loc_7ffff7e51b1c:
+MOVABS          R14, 0x7ffff7e51b1c
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EDI, DWORD PTR [R13 + 0xC]
+MOV             R14, Stack_R14
+CMP             EAX, R14d
+MOV             Stack_R14, R14
+JG              loc_7ffff7e51cc4
+
+
+/*
+loc_7ffff7e51b29
+MOV        ESI, R14D
+CALL       loc_7ffff7e59e00
+->	c_next:loc_7ffff7e51b31 
+ */ 
+loc_7ffff7e51b29:
+MOV             R14, Stack_R14
+MOV             ESI, R14d
+MOVABS          R15, 0x7FFFF7E51B31
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R15
+MOV             Stack_R14, R14
+JMP             loc_7ffff7e59e00
+
+
+/*
+loc_7ffff7e51b31
+MOV        R15D, EAX
+TEST       EAX, EAX
+JNZ        loc_7ffff7e519bd
+->	c_next:loc_7ffff7e51b3c 	c_to:loc_7ffff7e519bd 
+ */ 
+loc_7ffff7e51b31:
+MOVABS          R14, 0x7ffff7e51b31
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_R15
+MOV             R14d, EAX
+TEST            EAX, EAX
+MOV             Stack_R15, R14
+JNZ             loc_7ffff7e519bd
+
+
+/*
+loc_7ffff7e51b3c
+MOV        R8D, R14D
+SHL        R8D, 0x13
+MOV        EDX, R8D
+MOV        EAX, R8D
+OR         EDX, 0x2
+LOCK CMPXCHG    DWORD PTR [RBP], EDX
+CMP        R8D, EAX
+JZ         loc_7ffff7e51b9f
+->	c_next:loc_7ffff7e51b56 	c_to:loc_7ffff7e51b9f 
+ */ 
+loc_7ffff7e51b3c:
+MOVABS          R14, 0x7ffff7e51b3c
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_R14
+MOV             R8D, R14d
+SHL             R8D, 0x13
+MOV             EDX, R8D
+MOV             EAX, R8D
+OR              EDX, 0x2
+LOCK CMPXCHG    DWORD PTR [R12], EDX
+CMP             R8D, EAX
+MOV             Stack_R14, R14
+JZ              loc_7ffff7e51b9f
+
+
+/*
+loc_7ffff7e51b56
+MOV        R9D, R8D
+OR         R9D, 0x1
+NOP        DWORD PTR [RAX]
+->	c_next:loc_7ffff7e51b60 
+ */ 
+loc_7ffff7e51b56:
+MOV             R9D, R8D
+OR              R9D, 0x1
+NOP
+
+
+/*
+loc_7ffff7e51b60
+MOV        EAX, R9D
+LOCK CMPXCHG    DWORD PTR [RBP], EDX
+MOV        ECX, EAX
+MOV        ESI, EAX
+AND        ECX, 0xFFF80000
+CMP        R8D, ECX
+JNZ        loc_7ffff7e51bcf
+->	c_next:loc_7ffff7e51b77 	c_to:loc_7ffff7e51bcf 
+ */ 
+loc_7ffff7e51b60:
+MOVABS          R14, 0x7ffff7e51b60
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, R9D
+LOCK CMPXCHG    DWORD PTR [R12], EDX
+MOV             ECX, EAX
+MOV             ESI, EAX
+AND             ECX, 0xFFF80000
+CMP             R8D, ECX
+JNZ             loc_7ffff7e51bcf
+
+
+/*
+loc_7ffff7e51b77
+CMP        R8D, EAX
+JZ         loc_7ffff7e51bc0
+->	c_next:loc_7ffff7e51b7c 	c_to:loc_7ffff7e51bc0 
+ */ 
+loc_7ffff7e51b77:
+MOVABS          R14, 0x7ffff7e51b77
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             R8D, EAX
+JZ              loc_7ffff7e51bc0
+
+
+/*
+loc_7ffff7e51b7c
+MOV        ESI, DWORD PTR [R13]
+XOR        R10D, R10D
+MOV        RDI, RBP
+MOV        EAX, EBX
+NOT        ESI
+AND        ESI, 0x80
+SYSCALL    
+->	c_next:loc_7ffff7e51b92 
+ */ 
+loc_7ffff7e51b7c:
+MOV             R14, Stack_R13
+MOV             ESI, DWORD PTR [R14]
+XOR             R10D, R10D
+MOV             RDI, R12
+MOV             EAX, EBX
+NOT             ESI
+AND             ESI, 0x80
+MOVABS          R14, 0x7ffff7e51b90
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e51b92
+MOV        EAX, R8D
+LOCK CMPXCHG    DWORD PTR [RBP], EDX
+CMP        EAX, R8D
+JNZ        loc_7ffff7e51b60
+->	c_next:loc_7ffff7e51b9f 	c_to:loc_7ffff7e51b60 
+ */ 
+loc_7ffff7e51b92:
+MOVABS          R14, 0x7ffff7e51b92
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, R8D
+LOCK CMPXCHG    DWORD PTR [R12], EDX
+CMP             EAX, R8D
+JNZ             loc_7ffff7e51b60
+
+
+/*
+loc_7ffff7e51b9f
+MOV        EAX, DWORD PTR [RBP + 0x8]
+TEST       EAX, EAX
+JNZ        loc_7ffff7e51f5b
+->	c_next:loc_7ffff7e51baa 	c_to:loc_7ffff7e51f5b 
+ */ 
+loc_7ffff7e51b9f:
+MOVABS          R14, 0x7ffff7e51b9f
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, DWORD PTR [R12 + 0x8]
+TEST            EAX, EAX
+JNZ             loc_7ffff7e51f5b
+
+
+/*
+loc_7ffff7e51baa
+MOV        DWORD PTR [RBP + 0x4], 0x1
+JMP        loc_7ffff7e519ad
+->	c_to:loc_7ffff7e519ad 
+ */ 
+loc_7ffff7e51baa:
+MOVABS          R14, 0x7ffff7e51baa
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             DWORD PTR [R12 + 0x4], 0x1
+JMP             loc_7ffff7e519ad
+
+
+/*
+loc_7ffff7e51bc0
+MOV        EAX, R8D
+LOCK CMPXCHG    DWORD PTR [RBP], EDX
+CMP        R8D, EAX
+JNZ        loc_7ffff7e51b60
+->	c_next:loc_7ffff7e51bcd 	c_to:loc_7ffff7e51b60 
+ */ 
+loc_7ffff7e51bc0:
+MOVABS          R14, 0x7ffff7e51bc0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, R8D
+LOCK CMPXCHG    DWORD PTR [R12], EDX
+CMP             R8D, EAX
+JNZ             loc_7ffff7e51b60
+
+
+/*
+loc_7ffff7e51bcd
+JMP        loc_7ffff7e51b9f
+->	c_to:loc_7ffff7e51b9f 
+ */ 
+loc_7ffff7e51bcd:
+MOVABS          R14, 0x7ffff7e51bcd
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e51b9f
+
+
+/*
+loc_7ffff7e51bcf
+MOV        EDI, R14D
+JMP        loc_7ffff7e51b0d
+->	c_to:loc_7ffff7e51b0d 
+ */ 
+loc_7ffff7e51bcf:
+MOVABS          R14, 0x7ffff7e51bcf
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_R14
+MOV             EDI, R14d
+MOV             Stack_R14, R14
+JMP             loc_7ffff7e51b0d
+
+
+/*
+loc_7ffff7e51bd7
+TEST       R8D, R8D
+JZ         loc_7ffff7e51baa
+->	c_next:loc_7ffff7e51bdc 	c_to:loc_7ffff7e51baa 
+ */ 
+loc_7ffff7e51bd7:
+MOVABS          R14, 0x7ffff7e51bd7
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            R8D, R8D
+JZ              loc_7ffff7e51baa
+
+
+/*
+loc_7ffff7e51bdc
+CMP        DWORD PTR [RBP + 0x8], 0x7FFFFFFE
+JZ         loc_7ffff7e51f20
+->	c_next:loc_7ffff7e51be9 	c_to:loc_7ffff7e51f20 
+ */ 
+loc_7ffff7e51bdc:
+MOVABS          R14, 0x7ffff7e51bdc
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             DWORD PTR [R12 + 0x8], 0x7FFFFFFE
+JZ              loc_7ffff7e51f20
+
+
+/*
+loc_7ffff7e51be9
+MOV        DWORD PTR [RBP + 0x4], 0x1
+MOV        RDX, QWORD PTR FS:[0x2E0]
+LEA        RAX, QWORD PTR [RBP + 0x20]
+AND        RDX, 0xFFFFFFFFFFFFFFFE
+MOV        QWORD PTR [RDX + 0xFFFFFFFFFFFFFFF8], RAX
+MOV        RDX, QWORD PTR FS:[0x2E0]
+MOV        QWORD PTR [RBP + 0x20], RDX
+MOV        RDX, QWORD PTR FS:[0x10]
+ADD        RDX, 0x2E0
+MOV        QWORD PTR [RBP + 0x18], RDX
+OR         RAX, 0x1
+MOV        QWORD PTR FS:[0x2E0], RAX
+MOV        QWORD PTR FS:[0x2F0], 0x0
+JMP        loc_7ffff7e519ad
+->	c_to:loc_7ffff7e519ad 
+ */ 
+loc_7ffff7e51be9:
+MOVABS          R14, 0x7ffff7e51be9
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             DWORD PTR [R12 + 0x4], 0x1
+MOV             R14, Stack_RFS
+MOV             RDX, QWORD PTR [R14 + 0x2E0]
+LEA             RAX, QWORD PTR [R12 + 0x20]
+AND             RDX, 0xFFFFFFFFFFFFFFFE
+MOV             QWORD PTR [RDX + 0xFFFFFFFFFFFFFFF8], RAX
+MOV             RDX, QWORD PTR [R14 + 0x2E0]
+MOV             QWORD PTR [R12 + 0x20], RDX
+MOV             RDX, QWORD PTR [R14 + 0x10]
+ADD             RDX, 0x2E0
+MOV             QWORD PTR [R12 + 0x18], RDX
+OR              RAX, 0x1
+MOV             QWORD PTR [R14 + 0x2E0], RAX
+MOV             QWORD PTR [R14 + 0x2F0], 0x0
+JMP             loc_7ffff7e519ad
+
+
+/*
+loc_7ffff7e51c45
+LEA        RAX, QWORD PTR [RBP + 0x20]
+OR         RAX, 0x1
+MOV        QWORD PTR FS:[0x2F0], RAX
+JMP        loc_7ffff7e51a00
+->	c_to:loc_7ffff7e51a00 
+ */ 
+loc_7ffff7e51c45:
+MOVABS          R14, 0x7ffff7e51c45
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+LEA             RAX, QWORD PTR [R12 + 0x20]
+OR              RAX, 0x1
+MOV             R14, Stack_RFS
+MOV             QWORD PTR [R14 + 0x2F0], RAX
+JMP             loc_7ffff7e51a00
+
+
+/*
+loc_7ffff7e51c5b
+AND        EAX, 0x3
+CMP        EAX, 0x2
+JZ         loc_7ffff7e51e26
+->	c_next:loc_7ffff7e51c67 	c_to:loc_7ffff7e51e26 
+ */ 
+loc_7ffff7e51c5b:
+MOVABS          R14, 0x7ffff7e51c5b
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+AND             EAX, 0x3
+CMP             EAX, 0x2
+JZ              loc_7ffff7e51e26
+
+
+/*
+loc_7ffff7e51c67
+CMP        EAX, 0x1
+JNZ        loc_7ffff7e51b08
+->	c_next:loc_7ffff7e51c70 	c_to:loc_7ffff7e51b08 
+ */ 
+loc_7ffff7e51c67:
+MOVABS          R14, 0x7ffff7e51c67
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             EAX, 0x1
+JNZ             loc_7ffff7e51b08
+
+
+/*
+loc_7ffff7e51c70
+MOV        EAX, DWORD PTR [RBP + 0x4]
+CMP        EAX, 0xFFFFFFFF
+JZ         loc_7ffff7e51e03
+->	c_next:loc_7ffff7e51c7c 	c_to:loc_7ffff7e51e03 
+ */ 
+loc_7ffff7e51c70:
+MOVABS          R14, 0x7ffff7e51c70
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, DWORD PTR [R12 + 0x4]
+CMP             EAX, 0xFFFFFFFF
+JZ              loc_7ffff7e51e03
+
+
+/*
+loc_7ffff7e51c7c
+ADD        EAX, 0x1
+XOR        R15D, R15D
+MOV        DWORD PTR [RBP + 0x4], EAX
+JMP        loc_7ffff7e519bd
+->	c_to:loc_7ffff7e519bd 
+ */ 
+loc_7ffff7e51c7c:
+MOVABS          R14, 0x7ffff7e51c7c
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x1
+MOV             R14, Stack_R15
+XOR             R14d, R14d
+MOV             DWORD PTR [R12 + 0x4], EAX
+MOV             Stack_R15, R14
+JMP             loc_7ffff7e519bd
+
+
+/*
+loc_7ffff7e51c8a
+MOV        R15D, EDX
+MOV        EAX, EDX
+AND        R15D, 0x40000000
+JNZ        loc_7ffff7e51d68
+->	c_next:loc_7ffff7e51c9c 	c_to:loc_7ffff7e51d68 
+ */ 
+loc_7ffff7e51c8a:
+MOVABS          R14, 0x7ffff7e51c8a
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_R15
+MOV             R14d, EDX
+MOV             EAX, EDX
+AND             R14d, 0x40000000
+MOV             Stack_R15, R14
+JNZ             loc_7ffff7e51d68
+
+
+/*
+loc_7ffff7e51c9c
+AND        EAX, 0x3FFFFFFF
+CMP        R12D, EAX
+JZ         loc_7ffff7e51d24
+->	c_next:loc_7ffff7e51ca6 	c_to:loc_7ffff7e51d24 
+ */ 
+loc_7ffff7e51c9c:
+MOVABS          R14, 0x7ffff7e51c9c
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+AND             EAX, 0x3FFFFFFF
+MOV             R14, Stack_R12
+CMP             R14d, EAX
+MOV             Stack_R12, R14
+JZ              loc_7ffff7e51d24
+
+
+/*
+loc_7ffff7e51ca6
+TEST       EDX, EDX
+JNS        loc_7ffff7e51e31
+->	c_next:loc_7ffff7e51cae 	c_to:loc_7ffff7e51e31 
+ */ 
+loc_7ffff7e51ca6:
+MOVABS          R14, 0x7ffff7e51ca6
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            EDX, EDX
+JNS             loc_7ffff7e51e31
+
+
+/*
+loc_7ffff7e51cae
+XOR        R10D, R10D
+XOR        ESI, ESI
+MOV        RDI, RBP
+MOV        EAX, EBX
+SYSCALL    
+->	c_next:loc_7ffff7e51cba 
+ */ 
+loc_7ffff7e51cae:
+XOR             R10D, R10D
+XOR             ESI, ESI
+MOV             RDI, R12
+MOV             EAX, EBX
+MOVABS          R14, 0x7ffff7e51cb8
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e51cba
+MOV        EAX, DWORD PTR [RBP]
+->	c_next:loc_7ffff7e51cbd 
+ */ 
+loc_7ffff7e51cba:
+MOV             EAX, DWORD PTR [R12]
+
+
+/*
+loc_7ffff7e51cbd
+MOV        EDX, EAX
+JMP        loc_7ffff7e51938
+->	c_to:loc_7ffff7e51938 
+ */ 
+loc_7ffff7e51cbd:
+MOVABS          R14, 0x7ffff7e51cbd
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EDX, EAX
+JMP             loc_7ffff7e51938
+
+
+/*
+loc_7ffff7e51cc4
+MOV        R15D, 0x16
+CMP        EDI, 0xFFFFFFFF
+JZ         loc_7ffff7e519bd
+->	c_next:loc_7ffff7e51cd3 	c_to:loc_7ffff7e519bd 
+ */ 
+loc_7ffff7e51cc4:
+MOVABS          R14, 0x7ffff7e51cc4
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_R15
+MOV             R14d, 0x16
+CMP             EDI, 0xFFFFFFFF
+MOV             Stack_R15, R14
+JZ              loc_7ffff7e519bd
+
+
+/*
+loc_7ffff7e51cd3
+MOV        ESI, 0xFFFFFFFF
+CALL       loc_7ffff7e59e00
+->	c_next:loc_7ffff7e51cdd 
+ */ 
+loc_7ffff7e51cd3:
+MOV             ESI, 0xFFFFFFFF
+MOVABS          R14, 0x7FFFF7E51CDD
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e59e00
+
+
+/*
+loc_7ffff7e51cdd
+JMP        loc_7ffff7e519bd
+->	c_to:loc_7ffff7e519bd 
+ */ 
+loc_7ffff7e51cdd:
+MOVABS          R14, 0x7ffff7e51cdd
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e519bd
+
+
+/*
+loc_7ffff7e51ce2
+TEST       EAX, EAX
+JZ         loc_7ffff7e51baa
+->	c_next:loc_7ffff7e51cea 	c_to:loc_7ffff7e51baa 
+ */ 
+loc_7ffff7e51ce2:
+MOVABS          R14, 0x7ffff7e51ce2
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            EAX, EAX
+JZ              loc_7ffff7e51baa
+
+
+/*
+loc_7ffff7e51cea
+LEA        RCX, QWORD PTR [RIP + 0xB2DF]
+MOV        EDX, 0x1B6
+LEA        RSI, QWORD PTR [RIP + 0xA8FD]
+LEA        RDI, QWORD PTR [RIP + 0xA88C]
+CALL       loc_7ffff7e4b730
+->	c_next:loc_7ffff7e51d09 
+ */ 
+loc_7ffff7e51cea:
+MOVABS          R14, 0x7ffff7e51cf1
+LEA             RCX, QWORD PTR [R14 + 0xB2DF]
+MOV             EDX, 0x1B6
+MOVABS          R14, 0x7ffff7e51cfd
+LEA             RSI, QWORD PTR [R14 + 0xA8FD]
+MOVABS          R14, 0x7ffff7e51d04
+LEA             RDI, QWORD PTR [R14 + 0xA88C]
+MOVABS          R14, 0x7FFFF7E51D09
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b730
+
+
+/*
+loc_7ffff7e51d09
+NOP        DWORD PTR [RAX]
+->	c_next:loc_7ffff7e51d10 
+ */ 
+loc_7ffff7e51d09:
+NOP
+
+
+/*
+loc_7ffff7e51d10
+MOV        EBX, DWORD PTR [RBP + 0x10]
+AND        EBX, 0x80
+MOV        ESI, EBX
+XOR        SIL, 0x86
+JMP        loc_7ffff7e51a3c
+->	c_to:loc_7ffff7e51a3c 
+ */ 
+loc_7ffff7e51d10:
+MOVABS          R14, 0x7ffff7e51d10
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EBX, DWORD PTR [R12 + 0x10]
+AND             EBX, 0x80
+MOV             ESI, EBX
+XOR             SIL, 0x86
+JMP             loc_7ffff7e51a3c
+
+
+/*
+loc_7ffff7e51d24
+MOV        EAX, DWORD PTR [R13]
+AND        EAX, 0x7F
+CMP        EAX, 0x12
+JZ         loc_7ffff7e51e0e
+->	c_next:loc_7ffff7e51d34 	c_to:loc_7ffff7e51e0e 
+ */ 
+loc_7ffff7e51d24:
+MOVABS          R14, 0x7ffff7e51d24
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_R13
+MOV             EAX, DWORD PTR [R14]
+AND             EAX, 0x7F
+CMP             EAX, 0x12
+MOV             Stack_R13, R14
+JZ              loc_7ffff7e51e0e
+
+
+/*
+loc_7ffff7e51d34
+CMP        EAX, 0x11
+JNZ        loc_7ffff7e51ca6
+->	c_next:loc_7ffff7e51d3d 	c_to:loc_7ffff7e51ca6 
+ */ 
+loc_7ffff7e51d34:
+MOVABS          R14, 0x7ffff7e51d34
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             EAX, 0x11
+JNZ             loc_7ffff7e51ca6
+
+
+/*
+loc_7ffff7e51d3d
+MOV        QWORD PTR FS:[0x2F0], 0x0
+MOV        EAX, DWORD PTR [RBP + 0x4]
+CMP        EAX, 0xFFFFFFFF
+JZ         loc_7ffff7e51e03
+->	c_next:loc_7ffff7e51d56 	c_to:loc_7ffff7e51e03 
+ */ 
+loc_7ffff7e51d3d:
+MOVABS          R14, 0x7ffff7e51d3d
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_RFS
+MOV             QWORD PTR [R14 + 0x2F0], 0x0
+MOV             EAX, DWORD PTR [R12 + 0x4]
+CMP             EAX, 0xFFFFFFFF
+JZ              loc_7ffff7e51e03
+
+
+/*
+loc_7ffff7e51d56
+ADD        EAX, 0x1
+MOV        DWORD PTR [RBP + 0x4], EAX
+JMP        loc_7ffff7e519bd
+->	c_to:loc_7ffff7e519bd 
+ */ 
+loc_7ffff7e51d56:
+MOVABS          R14, 0x7ffff7e51d56
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x1
+MOV             DWORD PTR [R12 + 0x4], EAX
+JMP             loc_7ffff7e519bd
+
+
+/*
+loc_7ffff7e51d68
+LOCK CMPXCHG    DWORD PTR [RBP], R9D
+CMP        EDX, EAX
+JNZ        loc_7ffff7e51cbd
+->	c_next:loc_7ffff7e51d76 	c_to:loc_7ffff7e51cbd 
+ */ 
+loc_7ffff7e51d68:
+MOVABS          R14, 0x7ffff7e51d68
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+LOCK CMPXCHG    DWORD PTR [R12], R9D
+CMP             EDX, EAX
+JNZ             loc_7ffff7e51cbd
+
+
+/*
+loc_7ffff7e51d76
+MOV        RAX, 0x7FFFFFFF00000001
+MOV        QWORD PTR [RBP + 0x4], RAX
+MOV        RAX, QWORD PTR FS:[0x2E0]
+AND        RAX, 0xFFFFFFFFFFFFFFFE
+MOV        QWORD PTR [RAX + 0xFFFFFFFFFFFFFFF8], R8
+MOV        RAX, QWORD PTR FS:[0x2E0]
+MOV        QWORD PTR [RBP + 0x20], RAX
+MOV        RAX, QWORD PTR FS:[0x10]
+ADD        RAX, 0x2E0
+MOV        QWORD PTR [RBP + 0x18], RAX
+MOV        QWORD PTR FS:[0x2E0], R8
+MOV        QWORD PTR FS:[0x2F0], 0x0
+MOV        R15D, 0x82
+SUB        DWORD PTR [RBP + 0xC], 0x1
+JMP        loc_7ffff7e519bd
+->	c_to:loc_7ffff7e519bd 
+ */ 
+loc_7ffff7e51d76:
+MOVABS          R14, 0x7ffff7e51d76
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, 0x7FFFFFFF00000001
+MOV             QWORD PTR [R12 + 0x4], RAX
+MOV             R14, Stack_RFS
+MOV             RAX, QWORD PTR [R14 + 0x2E0]
+AND             RAX, 0xFFFFFFFFFFFFFFFE
+MOV             QWORD PTR [RAX + 0xFFFFFFFFFFFFFFF8], R8
+MOV             RAX, QWORD PTR [R14 + 0x2E0]
+MOV             QWORD PTR [R12 + 0x20], RAX
+MOV             RAX, QWORD PTR [R14 + 0x10]
+ADD             RAX, 0x2E0
+MOV             QWORD PTR [R12 + 0x18], RAX
+MOV             QWORD PTR [R14 + 0x2E0], R8
+MOV             QWORD PTR [R14 + 0x2F0], 0x0
+MOV             R15, Stack_R15
+MOV             R15d, 0x82
+SUB             DWORD PTR [R12 + 0xC], 0x1
+MOV             Stack_R15, R15
+JMP             loc_7ffff7e519bd
+
+
+/*
+loc_7ffff7e51dda
+CMP        R9D, 0x2
+JZ         loc_7ffff7e51e0e
+->	c_next:loc_7ffff7e51de0 	c_to:loc_7ffff7e51e0e 
+ */ 
+loc_7ffff7e51dda:
+MOVABS          R14, 0x7ffff7e51dda
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             R9D, 0x2
+JZ              loc_7ffff7e51e0e
+
+
+/*
+loc_7ffff7e51de0
+CMP        R9D, 0x1
+JNZ        loc_7ffff7e51a11
+->	c_next:loc_7ffff7e51dea 	c_to:loc_7ffff7e51a11 
+ */ 
+loc_7ffff7e51de0:
+MOVABS          R14, 0x7ffff7e51de0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             R9D, 0x1
+JNZ             loc_7ffff7e51a11
+
+
+/*
+loc_7ffff7e51dea
+MOV        QWORD PTR FS:[0x2F0], 0x0
+MOV        EAX, DWORD PTR [RBP + 0x4]
+CMP        EAX, 0xFFFFFFFF
+JNZ        loc_7ffff7e51c7c
+->	c_next:loc_7ffff7e51e03 	c_to:loc_7ffff7e51c7c 
+ */ 
+loc_7ffff7e51dea:
+MOVABS          R14, 0x7ffff7e51dea
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_RFS
+MOV             QWORD PTR [R14 + 0x2F0], 0x0
+MOV             EAX, DWORD PTR [R12 + 0x4]
+CMP             EAX, 0xFFFFFFFF
+JNZ             loc_7ffff7e51c7c
+
+
+/*
+loc_7ffff7e51e03
+MOV        R15D, 0xB
+JMP        loc_7ffff7e519bd
+->	c_to:loc_7ffff7e519bd 
+ */ 
+loc_7ffff7e51e03:
+MOVABS          R14, 0x7ffff7e51e03
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_R15
+MOV             R14d, 0xB
+MOV             Stack_R15, R14
+JMP             loc_7ffff7e519bd
+
+
+/*
+loc_7ffff7e51e0e
+MOV        QWORD PTR FS:[0x2F0], 0x0
+MOV        R15D, 0x23
+JMP        loc_7ffff7e519bd
+->	c_to:loc_7ffff7e519bd 
+ */ 
+loc_7ffff7e51e0e:
+MOVABS          R14, 0x7ffff7e51e0e
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_RFS
+MOV             QWORD PTR [R14 + 0x2F0], 0x0
+MOV             R15, Stack_R15
+MOV             R15d, 0x23
+MOV             Stack_R15, R15
+JMP             loc_7ffff7e519bd
+
+
+/*
+loc_7ffff7e51e26
+MOV        R15D, 0x23
+JMP        loc_7ffff7e519bd
+->	c_to:loc_7ffff7e519bd 
+ */ 
+loc_7ffff7e51e26:
+MOVABS          R14, 0x7ffff7e51e26
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_R15
+MOV             R14d, 0x23
+MOV             Stack_R15, R14
+JMP             loc_7ffff7e519bd
+
+
+/*
+loc_7ffff7e51e31
+MOV        ECX, EDX
+MOV        EAX, EDX
+OR         ECX, 0x80000000
+LOCK CMPXCHG    DWORD PTR [RBP], ECX
+JNZ        loc_7ffff7e51cba
+->	c_next:loc_7ffff7e51e46 	c_to:loc_7ffff7e51cba 
+ */ 
+loc_7ffff7e51e31:
+MOVABS          R14, 0x7ffff7e51e31
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             ECX, EDX
+MOV             EAX, EDX
+OR              ECX, 0x80000000
+LOCK CMPXCHG    DWORD PTR [R12], ECX
+JNZ             loc_7ffff7e51cba
+
+
+/*
+loc_7ffff7e51e46
+MOV        EDX, ECX
+JMP        loc_7ffff7e51cae
+->	c_to:loc_7ffff7e51cae 
+ */ 
+loc_7ffff7e51e46:
+MOVABS          R14, 0x7ffff7e51e46
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EDX, ECX
+JMP             loc_7ffff7e51cae
+
+
+/*
+loc_7ffff7e51e4d
+CMP        EAX, 0xFFFFFF92
+JZ         loc_7ffff7e51a57
+->	c_next:loc_7ffff7e51e56 	c_to:loc_7ffff7e51a57 
+ */ 
+loc_7ffff7e51e4d:
+MOVABS          R14, 0x7ffff7e51e4d
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             EAX, 0xFFFFFF92
+JZ              loc_7ffff7e51a57
+
+
+/*
+loc_7ffff7e51e56
+LEA        EDX, DWORD PTR [RAX + 0x23]
+CMP        EDX, 0x23
+JA         loc_7ffff7e51ebb
+->	c_next:loc_7ffff7e51e5e 	c_to:loc_7ffff7e51ebb 
+ */ 
+loc_7ffff7e51e56:
+MOVABS          R14, 0x7ffff7e51e56
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+LEA             EDX, DWORD PTR [RAX + 0x23]
+CMP             EDX, 0x23
+JA              loc_7ffff7e51ebb
+
+
+/*
+loc_7ffff7e51e5e
+CMP        EDX, 0x20
+JA         loc_7ffff7e51ebb
+->	c_next:loc_7ffff7e51e63 	c_to:loc_7ffff7e51ebb 
+ */ 
+loc_7ffff7e51e5e:
+MOVABS          R14, 0x7ffff7e51e5e
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             EDX, 0x20
+JA              loc_7ffff7e51ebb
+
+
+/*
+loc_7ffff7e51e63
+LEA        RCX, QWORD PTR [RIP + 0xB006]
+MOVSXD     RDX, DWORD PTR [RCX + RDX * 0x4]
+ADD        RDX, RCX
+JMP        RDX
+ */ 
+loc_7ffff7e51e63:
+MOVABS          R14, 0x7ffff7e51e63
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x7ffff7e51e6a
+LEA             RCX, QWORD PTR [R14 + 0xB006]
+MOVSXD          RDX, DWORD PTR [RCX + 0x4 * RDX]
+ADD             RDX, RCX
+MOV             R14, RDX
+JMP             ij_7ffff7e51e74
+
+
+/*
+loc_7ffff7e51e91
+LEA        RBP, QWORD PTR [RSP + 0x14]
+NOP        WORD PTR CS:[RAX * 0x2]
+->	c_next:loc_7ffff7e51ea0 
+ */ 
+loc_7ffff7e51e91:
+LEA             R12, QWORD PTR [R13 + 0x14]
+NOP
+
+
+/*
+loc_7ffff7e51ea0
+MOV        R8D, EBX
+XOR        ECX, ECX
+XOR        EDX, EDX
+XOR        ESI, ESI
+MOV        RDI, RBP
+MOV        DWORD PTR [RSP + 0x14], 0x0
+CALL       loc_7ffff7e58180
+->	c_next:loc_7ffff7e51eb9 
+ */ 
+loc_7ffff7e51ea0:
+MOV             R8D, EBX
+XOR             ECX, ECX
+XOR             EDX, EDX
+XOR             ESI, ESI
+MOV             RDI, R12
+MOV             DWORD PTR [R13 + 0x14], 0x0
+MOVABS          R14, 0x7FFFF7E51EB9
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e58180
+
+
+/*
+loc_7ffff7e51eb9
+JMP        loc_7ffff7e51ea0
+->	c_to:loc_7ffff7e51ea0 
+ */ 
+loc_7ffff7e51eb9:
+MOVABS          R14, 0x7ffff7e51eb9
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e51ea0
+
+
+/*
+loc_7ffff7e51ebb
+LEA        RDI, QWORD PTR [RIP + 0xA13E]
+CALL       loc_7ffff7e4b630
+->	c_next:loc_7ffff7e51ec7 
+ */ 
+loc_7ffff7e51ebb:
+MOVABS          R14, 0x7ffff7e51ec2
+LEA             RDI, QWORD PTR [R14 + 0xA13E]
+MOVABS          R14, 0x7FFFF7E51EC7
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b630
+
+
+/*
+loc_7ffff7e51ec7
+NOP        WORD PTR [RAX * 0x2]
+CMP        EAX, 0xFFFFFFFD
+JNZ        loc_7ffff7e51e91
+->	c_next:loc_7ffff7e51ed5 	c_to:loc_7ffff7e51e91 
+ */ 
+loc_7ffff7e51ec7:
+MOVABS          R14, 0x7ffff7e51ec7
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+NOP
+CMP             EAX, 0xFFFFFFFD
+JNZ             loc_7ffff7e51e91
+
+
+/*
+loc_7ffff7e51ed5
+TEST       R8D, R8D
+JZ         loc_7ffff7e51e91
+->	c_next:loc_7ffff7e51eda 	c_to:loc_7ffff7e51e91 
+ */ 
+loc_7ffff7e51ed5:
+MOVABS          R14, 0x7ffff7e51ed5
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            R8D, R8D
+JZ              loc_7ffff7e51e91
+
+
+/*
+loc_7ffff7e51eda
+LEA        RCX, QWORD PTR [RIP + 0xB0EF]
+MOV        EDX, 0x1AC
+LEA        RSI, QWORD PTR [RIP + 0xA70D]
+LEA        RDI, QWORD PTR [RIP + 0xA723]
+CALL       loc_7ffff7e4b730
+->	c_next:loc_7ffff7e51ef9 
+ */ 
+loc_7ffff7e51eda:
+MOVABS          R14, 0x7ffff7e51ee1
+LEA             RCX, QWORD PTR [R14 + 0xB0EF]
+MOV             EDX, 0x1AC
+MOVABS          R14, 0x7ffff7e51eed
+LEA             RSI, QWORD PTR [R14 + 0xA70D]
+MOVABS          R14, 0x7ffff7e51ef4
+LEA             RDI, QWORD PTR [R14 + 0xA723]
+MOVABS          R14, 0x7FFFF7E51EF9
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b730
+
+
+/*
+loc_7ffff7e51ef9
+LEA        RCX, QWORD PTR [RIP + 0xB0D0]
+MOV        EDX, 0x1A7
+LEA        RSI, QWORD PTR [RIP + 0xA6EE]
+LEA        RDI, QWORD PTR [RIP + 0xA61D]
+CALL       loc_7ffff7e4b730
+->	c_next:loc_7ffff7e51f18 
+ */ 
+loc_7ffff7e51ef9:
+MOVABS          R14, 0x7ffff7e51f00
+LEA             RCX, QWORD PTR [R14 + 0xB0D0]
+MOV             EDX, 0x1A7
+MOVABS          R14, 0x7ffff7e51f0c
+LEA             RSI, QWORD PTR [R14 + 0xA6EE]
+MOVABS          R14, 0x7ffff7e51f13
+LEA             RDI, QWORD PTR [R14 + 0xA61D]
+MOVABS          R14, 0x7FFFF7E51F18
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b730
+
+
+/*
+loc_7ffff7e51f18
+NOP        DWORD PTR [RAX * 0x2]
+->	c_next:loc_7ffff7e51f20 
+ */ 
+loc_7ffff7e51f18:
+NOP
+
+
+/*
+loc_7ffff7e51f20
+MOV        DWORD PTR [RBP + 0x4], 0x0
+XOR        R10D, R10D
+XOR        EDX, EDX
+MOV        RDI, RBP
+MOV        ESI, 0x7
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e51f3b 
+ */ 
+loc_7ffff7e51f20:
+MOV             DWORD PTR [R12 + 0x4], 0x0
+XOR             R10D, R10D
+XOR             EDX, EDX
+MOV             RDI, R12
+MOV             ESI, 0x7
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e51f39
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e51f3b
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JA         loc_7ffff7e51f7a
+->	c_next:loc_7ffff7e51f43 	c_to:loc_7ffff7e51f7a 
+ */ 
+loc_7ffff7e51f3b:
+MOVABS          R14, 0x7ffff7e51f3b
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JA              loc_7ffff7e51f7a
+
+
+/*
+loc_7ffff7e51f43
+MOV        QWORD PTR FS:[0x2F0], 0x0
+MOV        R15D, 0x83
+JMP        loc_7ffff7e519bd
+->	c_to:loc_7ffff7e519bd 
+ */ 
+loc_7ffff7e51f43:
+MOVABS          R14, 0x7ffff7e51f43
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_RFS
+MOV             QWORD PTR [R14 + 0x2F0], 0x0
+MOV             R15, Stack_R15
+MOV             R15d, 0x83
+MOV             Stack_R15, R15
+JMP             loc_7ffff7e519bd
+
+
+/*
+loc_7ffff7e51f5b
+LEA        RCX, QWORD PTR [RIP + 0xB06E]
+MOV        EDX, 0x248
+LEA        RSI, QWORD PTR [RIP + 0xA68C]
+LEA        RDI, QWORD PTR [RIP + 0xA6B8]
+CALL       loc_7ffff7e4b730
+->	c_next:loc_7ffff7e51f7a 
+ */ 
+loc_7ffff7e51f5b:
+MOVABS          R14, 0x7ffff7e51f62
+LEA             RCX, QWORD PTR [R14 + 0xB06E]
+MOV             EDX, 0x248
+MOVABS          R14, 0x7ffff7e51f6e
+LEA             RSI, QWORD PTR [R14 + 0xA68C]
+MOVABS          R14, 0x7ffff7e51f75
+LEA             RDI, QWORD PTR [R14 + 0xA6B8]
+MOVABS          R14, 0x7FFFF7E51F7A
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b730
+
+
+/*
+loc_7ffff7e51f7a
+CMP        EAX, 0xFFFFFF92
+JZ         loc_7ffff7e51f43
+->	c_next:loc_7ffff7e51f7f 	c_to:loc_7ffff7e51f43 
+ */ 
+loc_7ffff7e51f7a:
+MOVABS          R14, 0x7ffff7e51f7a
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             EAX, 0xFFFFFF92
+JZ              loc_7ffff7e51f43
+
+
+/*
+loc_7ffff7e51f7f
+ADD        EAX, 0x26
+CMP        EAX, 0x26
+JA         loc_7ffff7e51ebb
+->	c_next:loc_7ffff7e51f8b 	c_to:loc_7ffff7e51ebb 
+ */ 
+loc_7ffff7e51f7f:
+MOVABS          R14, 0x7ffff7e51f7f
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x26
+CMP             EAX, 0x26
+JA              loc_7ffff7e51ebb
+
+
+/*
+loc_7ffff7e51f8b
+CMP        EAX, 0x25
+JA         loc_7ffff7e51ebb
+->	c_next:loc_7ffff7e51f94 	c_to:loc_7ffff7e51ebb 
+ */ 
+loc_7ffff7e51f8b:
+MOVABS          R14, 0x7ffff7e51f8b
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             EAX, 0x25
+JA              loc_7ffff7e51ebb
+
+
+/*
+loc_7ffff7e51f94
+LEA        RDX, QWORD PTR [RIP + 0xAF59]
+MOVSXD     RAX, DWORD PTR [RDX + RAX * 0x4]
+ADD        RAX, RDX
+JMP        RAX
+ */ 
+loc_7ffff7e51f94:
+MOVABS          R14, 0x7ffff7e51f94
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x7ffff7e51f9b
+LEA             RDX, QWORD PTR [R14 + 0xAF59]
+MOVSXD          RAX, DWORD PTR [RDX + 0x4 * RAX]
+ADD             RAX, RDX
+MOV             R14, RAX
+JMP             ij_7ffff7e51fa5
+
+
+/*
+loc_7ffff7e51fa5
+MOV        DWORD PTR [RBP + 0x4], 0x0
+XCHG       DWORD PTR [RBP], EDX
+CMP        EDX, 0x1
+JLE        loc_7ffff7e51f43
+->	c_next:loc_7ffff7e51fb4 	c_to:loc_7ffff7e51f43 
+ */ 
+loc_7ffff7e51fa5:
+MOVABS          R14, 0x7ffff7e51fa5
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             DWORD PTR [R12 + 0x4], 0x0
+XCHG            DWORD PTR [R12], EDX
+CMP             EDX, 0x1
+JLE             loc_7ffff7e51f43
+
+
+/*
+loc_7ffff7e51fb4
+XOR        R10D, R10D
+MOV        EDX, 0x1
+MOV        ESI, 0x1
+MOV        RDI, RBP
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e51fcb 
+ */ 
+loc_7ffff7e51fb4:
+XOR             R10D, R10D
+MOV             EDX, 0x1
+MOV             ESI, 0x1
+MOV             RDI, R12
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e51fc9
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e51fcb
+JMP        loc_7ffff7e51f43
+->	c_to:loc_7ffff7e51f43 
+ */ 
+loc_7ffff7e51fcb:
+MOVABS          R14, 0x7ffff7e51fcb
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e51f43
+
+
+/*
+loc_7ffff7e51fd0
+CALL       loc_7ffff7e4b6d0
+->	c_next:loc_7ffff7e51fd5 
+ */ 
+loc_7ffff7e51fd0:
+MOVABS          R14, 0x7FFFF7E51FD5
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b6d0
+
+
+/*
+loc_7ffff7e51fd5
+NOP        WORD PTR CS:[RAX * 0x2]
+ENDBR64    
+MOV        EAX, DWORD PTR [RDI + 0x10]
+MOV        EDX, EAX
+AND        EDX, 0x17F
+NOP        
+AND        EAX, 0x7C
+JNZ        loc_7ffff7e52030
+->	c_next:loc_7ffff7e51ff5 	c_to:loc_7ffff7e52030 
+ */ 
+loc_7ffff7e51fd5:
+MOVABS          R14, 0x7ffff7e51fd5
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+NOP
+NOP
+MOV             EAX, DWORD PTR [RDI + 0x10]
+MOV             EDX, EAX
+AND             EDX, 0x17F
+NOP
+AND             EAX, 0x7C
+JNZ             loc_7ffff7e52030
+
+
+/*
+loc_7ffff7e51ff5
+PUSH       RBX
+SUB        RSP, 0x10
+TEST       EDX, EDX
+JNZ        loc_7ffff7e52038
+->	c_next:loc_7ffff7e51ffe 	c_to:loc_7ffff7e52038 
+ */ 
+loc_7ffff7e51ff5:
+MOVABS          R14, 0x7ffff7e51ff5
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], RBX
+SUB             R13, 0x10
+TEST            EDX, EDX
+JNZ             loc_7ffff7e52038
+
+
+/*
+loc_7ffff7e51ffe
+MOV        EAX, 0x2
+XCHG       DWORD PTR [RDI], EAX
+TEST       EAX, EAX
+JNZ        loc_7ffff7e52068
+->	c_next:loc_7ffff7e52009 	c_to:loc_7ffff7e52068 
+ */ 
+loc_7ffff7e51ffe:
+MOVABS          R14, 0x7ffff7e51ffe
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, 0x2
+XCHG            DWORD PTR [RDI], EAX
+TEST            EAX, EAX
+JNZ             loc_7ffff7e52068
+
+
+/*
+loc_7ffff7e52009
+MOV        EDX, DWORD PTR [RDI + 0x8]
+TEST       EDX, EDX
+JNZ        loc_7ffff7e5214a
+->	c_next:loc_7ffff7e52014 	c_to:loc_7ffff7e5214a 
+ */ 
+loc_7ffff7e52009:
+MOVABS          R14, 0x7ffff7e52009
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EDX, DWORD PTR [RDI + 0x8]
+TEST            EDX, EDX
+JNZ             loc_7ffff7e5214a
+
+
+/*
+loc_7ffff7e52014
+MOV        EAX, DWORD PTR FS:[0x2D0]
+MOV        DWORD PTR [RDI + 0x8], EAX
+NOP        
+XOR        EAX, EAX
+->	c_next:loc_7ffff7e52022 
+ */ 
+loc_7ffff7e52014:
+MOV             R14, Stack_RFS
+MOV             EAX, DWORD PTR [R14 + 0x2D0]
+MOV             DWORD PTR [RDI + 0x8], EAX
+NOP
+XOR             EAX, EAX
+
+
+/*
+loc_7ffff7e52022
+ADD        RSP, 0x10
+POP        RBX
+RET        
+ */ 
+loc_7ffff7e52022:
+ADD             R13, 0x10
+MOV             RBX, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+JMP             ij_7ffff7e52028
+
+
+/*
+loc_7ffff7e52030
+JMP        loc_7ffff7e518c0
+->	c_to:loc_7ffff7e518c0 
+ */ 
+loc_7ffff7e52030:
+MOVABS          R14, 0x7ffff7e52030
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e518c0
+
+
+/*
+loc_7ffff7e52038
+CMP        EDX, 0x100
+JNZ        loc_7ffff7e52082
+->	c_next:loc_7ffff7e52040 	c_to:loc_7ffff7e52082 
+ */ 
+loc_7ffff7e52038:
+MOVABS          R14, 0x7ffff7e52038
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             EDX, 0x100
+JNZ             loc_7ffff7e52082
+
+
+/*
+loc_7ffff7e52040
+ENDBR64    
+MOV        EAX, 0x2
+XCHG       DWORD PTR [RDI], EAX
+TEST       EAX, EAX
+JZ         loc_7ffff7e52022
+->	c_next:loc_7ffff7e5204f 	c_to:loc_7ffff7e52022 
+ */ 
+loc_7ffff7e52040:
+MOVABS          R14, 0x7ffff7e52040
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+NOP
+MOV             EAX, 0x2
+XCHG            DWORD PTR [RDI], EAX
+TEST            EAX, EAX
+JZ              loc_7ffff7e52022
+
+
+/*
+loc_7ffff7e5204f
+MOV        ESI, DWORD PTR [RDI + 0x10]
+AND        ESI, 0x80
+CALL       loc_7ffff7e58140
+->	c_next:loc_7ffff7e5205d 
+ */ 
+loc_7ffff7e5204f:
+MOV             ESI, DWORD PTR [RDI + 0x10]
+AND             ESI, 0x80
+MOVABS          R14, 0x7FFFF7E5205D
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e58140
+
+
+/*
+loc_7ffff7e5205d
+XOR        EAX, EAX
+JMP        loc_7ffff7e52022
+->	c_to:loc_7ffff7e52022 
+ */ 
+loc_7ffff7e5205d:
+MOVABS          R14, 0x7ffff7e5205d
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+XOR             EAX, EAX
+JMP             loc_7ffff7e52022
+
+
+/*
+loc_7ffff7e52068
+MOV        ESI, DWORD PTR [RDI + 0x10]
+MOV        QWORD PTR [RSP + 0x8], RDI
+AND        ESI, 0x80
+CALL       loc_7ffff7e58140
+->	c_next:loc_7ffff7e5207b 
+ */ 
+loc_7ffff7e52068:
+MOV             ESI, DWORD PTR [RDI + 0x10]
+MOV             QWORD PTR [R13 + 0x8], RDI
+AND             ESI, 0x80
+MOVABS          R14, 0x7FFFF7E5207B
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e58140
+
+
+/*
+loc_7ffff7e5207b
+MOV        RDI, QWORD PTR [RSP + 0x8]
+JMP        loc_7ffff7e52009
+->	c_to:loc_7ffff7e52009 
+ */ 
+loc_7ffff7e5207b:
+MOVABS          R14, 0x7ffff7e5207b
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RDI, QWORD PTR [R13 + 0x8]
+JMP             loc_7ffff7e52009
+
+
+/*
+loc_7ffff7e52082
+MOV        EDX, DWORD PTR [RDI + 0x10]
+AND        EDX, 0x7F
+CMP        EDX, 0x1
+JNZ        loc_7ffff7e520d9
+->	c_next:loc_7ffff7e5208d 	c_to:loc_7ffff7e520d9 
+ */ 
+loc_7ffff7e52082:
+MOVABS          R14, 0x7ffff7e52082
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EDX, DWORD PTR [RDI + 0x10]
+AND             EDX, 0x7F
+CMP             EDX, 0x1
+JNZ             loc_7ffff7e520d9
+
+
+/*
+loc_7ffff7e5208d
+MOV        EAX, DWORD PTR FS:[0x2D0]
+CMP        DWORD PTR [RDI + 0x8], EAX
+JZ         loc_7ffff7e520c0
+->	c_next:loc_7ffff7e5209a 	c_to:loc_7ffff7e520c0 
+ */ 
+loc_7ffff7e5208d:
+MOVABS          R14, 0x7ffff7e5208d
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_RFS
+MOV             EAX, DWORD PTR [R14 + 0x2D0]
+CMP             DWORD PTR [RDI + 0x8], EAX
+JZ              loc_7ffff7e520c0
+
+
+/*
+loc_7ffff7e5209a
+MOV        EAX, 0x2
+XCHG       DWORD PTR [RDI], EAX
+TEST       EAX, EAX
+JNZ        loc_7ffff7e5212d
+->	c_next:loc_7ffff7e520a9 	c_to:loc_7ffff7e5212d 
+ */ 
+loc_7ffff7e5209a:
+MOVABS          R14, 0x7ffff7e5209a
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, 0x2
+XCHG            DWORD PTR [RDI], EAX
+TEST            EAX, EAX
+JNZ             loc_7ffff7e5212d
+
+
+/*
+loc_7ffff7e520a9
+MOV        EAX, DWORD PTR [RDI + 0x8]
+TEST       EAX, EAX
+JNZ        loc_7ffff7e52199
+->	c_next:loc_7ffff7e520b4 	c_to:loc_7ffff7e52199 
+ */ 
+loc_7ffff7e520a9:
+MOVABS          R14, 0x7ffff7e520a9
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, DWORD PTR [RDI + 0x8]
+TEST            EAX, EAX
+JNZ             loc_7ffff7e52199
+
+
+/*
+loc_7ffff7e520b4
+MOV        DWORD PTR [RDI + 0x4], 0x1
+JMP        loc_7ffff7e52014
+->	c_to:loc_7ffff7e52014 
+ */ 
+loc_7ffff7e520b4:
+MOVABS          R14, 0x7ffff7e520b4
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             DWORD PTR [RDI + 0x4], 0x1
+JMP             loc_7ffff7e52014
+
+
+/*
+loc_7ffff7e520c0
+MOV        EAX, DWORD PTR [RDI + 0x4]
+CMP        EAX, 0xFFFFFFFF
+JZ         loc_7ffff7e52169
+->	c_next:loc_7ffff7e520cc 	c_to:loc_7ffff7e52169 
+ */ 
+loc_7ffff7e520c0:
+MOVABS          R14, 0x7ffff7e520c0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, DWORD PTR [RDI + 0x4]
+CMP             EAX, 0xFFFFFFFF
+JZ              loc_7ffff7e52169
+
+
+/*
+loc_7ffff7e520cc
+ADD        EAX, 0x1
+MOV        DWORD PTR [RDI + 0x4], EAX
+XOR        EAX, EAX
+JMP        loc_7ffff7e52022
+->	c_to:loc_7ffff7e52022 
+ */ 
+loc_7ffff7e520cc:
+MOVABS          R14, 0x7ffff7e520cc
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x1
+MOV             DWORD PTR [RDI + 0x4], EAX
+XOR             EAX, EAX
+JMP             loc_7ffff7e52022
+
+
+/*
+loc_7ffff7e520d9
+MOV        EDX, DWORD PTR [RDI + 0x10]
+AND        EDX, 0x7F
+CMP        EDX, 0x3
+JNZ        loc_7ffff7e52173
+->	c_next:loc_7ffff7e520e8 	c_to:loc_7ffff7e52173 
+ */ 
+loc_7ffff7e520d9:
+MOVABS          R14, 0x7ffff7e520d9
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EDX, DWORD PTR [RDI + 0x10]
+AND             EDX, 0x7F
+CMP             EDX, 0x3
+JNZ             loc_7ffff7e52173
+
+
+/*
+loc_7ffff7e520e8
+CMP        DWORD PTR [RIP + 0x15315], 0x0
+JZ         loc_7ffff7e51ffe
+->	c_next:loc_7ffff7e520f5 	c_to:loc_7ffff7e51ffe 
+ */ 
+loc_7ffff7e520e8:
+MOVABS          R14, 0x7ffff7e520e8
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x7ffff7e520ef
+CMP             DWORD PTR [R14 + 0x15315], 0x0
+JZ              loc_7ffff7e51ffe
+
+
+/*
+loc_7ffff7e520f5
+MOV        EDX, 0x2
+LOCK CMPXCHG    DWORD PTR [RDI], EDX
+JNZ        loc_7ffff7e521b8
+->	c_next:loc_7ffff7e52104 	c_to:loc_7ffff7e521b8 
+ */ 
+loc_7ffff7e520f5:
+MOVABS          R14, 0x7ffff7e520f5
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EDX, 0x2
+LOCK CMPXCHG    DWORD PTR [RDI], EDX
+JNZ             loc_7ffff7e521b8
+
+
+/*
+loc_7ffff7e52104
+CMP        DWORD PTR [RDI + 0x8], 0x0
+JZ         loc_7ffff7e52014
+->	c_next:loc_7ffff7e5210e 	c_to:loc_7ffff7e52014 
+ */ 
+loc_7ffff7e52104:
+MOVABS          R14, 0x7ffff7e52104
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             DWORD PTR [RDI + 0x8], 0x0
+JZ              loc_7ffff7e52014
+
+
+/*
+loc_7ffff7e5210e
+LEA        RCX, QWORD PTR [RIP + 0xAEDB]
+MOV        EDX, 0x90
+LEA        RSI, QWORD PTR [RIP + 0xA4D9]
+LEA        RDI, QWORD PTR [RIP + 0xA505]
+CALL       loc_7ffff7e4b730
+->	c_next:loc_7ffff7e5212d 
+ */ 
+loc_7ffff7e5210e:
+MOVABS          R14, 0x7ffff7e52115
+LEA             RCX, QWORD PTR [R14 + 0xAEDB]
+MOV             EDX, 0x90
+MOVABS          R14, 0x7ffff7e52121
+LEA             RSI, QWORD PTR [R14 + 0xA4D9]
+MOVABS          R14, 0x7ffff7e52128
+LEA             RDI, QWORD PTR [R14 + 0xA505]
+MOVABS          R14, 0x7FFFF7E5212D
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b730
+
+
+/*
+loc_7ffff7e5212d
+MOV        ESI, DWORD PTR [RDI + 0x10]
+MOV        QWORD PTR [RSP + 0x8], RDI
+AND        ESI, 0x80
+CALL       loc_7ffff7e58140
+->	c_next:loc_7ffff7e52140 
+ */ 
+loc_7ffff7e5212d:
+MOV             ESI, DWORD PTR [RDI + 0x10]
+MOV             QWORD PTR [R13 + 0x8], RDI
+AND             ESI, 0x80
+MOVABS          R14, 0x7FFFF7E52140
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e58140
+
+
+/*
+loc_7ffff7e52140
+MOV        RDI, QWORD PTR [RSP + 0x8]
+JMP        loc_7ffff7e520a9
+->	c_to:loc_7ffff7e520a9 
+ */ 
+loc_7ffff7e52140:
+MOVABS          R14, 0x7ffff7e52140
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RDI, QWORD PTR [R13 + 0x8]
+JMP             loc_7ffff7e520a9
+
+
+/*
+loc_7ffff7e5214a
+LEA        RCX, QWORD PTR [RIP + 0xAE9F]
+MOV        EDX, 0x51
+LEA        RSI, QWORD PTR [RIP + 0xA49D]
+LEA        RDI, QWORD PTR [RIP + 0xA4C9]
+CALL       loc_7ffff7e4b730
+->	c_next:loc_7ffff7e52169 
+ */ 
+loc_7ffff7e5214a:
+MOVABS          R14, 0x7ffff7e52151
+LEA             RCX, QWORD PTR [R14 + 0xAE9F]
+MOV             EDX, 0x51
+MOVABS          R14, 0x7ffff7e5215d
+LEA             RSI, QWORD PTR [R14 + 0xA49D]
+MOVABS          R14, 0x7ffff7e52164
+LEA             RDI, QWORD PTR [R14 + 0xA4C9]
+MOVABS          R14, 0x7FFFF7E52169
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b730
+
+
+/*
+loc_7ffff7e52169
+MOV        EAX, 0xB
+JMP        loc_7ffff7e52022
+->	c_to:loc_7ffff7e52022 
+ */ 
+loc_7ffff7e52169:
+MOVABS          R14, 0x7ffff7e52169
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, 0xB
+JMP             loc_7ffff7e52022
+
+
+/*
+loc_7ffff7e52173
+MOV        EDX, DWORD PTR FS:[0x2D0]
+MOV        EAX, DWORD PTR [RDI + 0x10]
+AND        EAX, 0x7F
+CMP        EAX, 0x2
+JNZ        loc_7ffff7e52205
+->	c_next:loc_7ffff7e52186 	c_to:loc_7ffff7e52205 
+ */ 
+loc_7ffff7e52173:
+MOVABS          R14, 0x7ffff7e52173
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_RFS
+MOV             EDX, DWORD PTR [R14 + 0x2D0]
+MOV             EAX, DWORD PTR [RDI + 0x10]
+AND             EAX, 0x7F
+CMP             EAX, 0x2
+JNZ             loc_7ffff7e52205
+
+
+/*
+loc_7ffff7e52186
+CMP        DWORD PTR [RDI + 0x8], EDX
+JNZ        loc_7ffff7e51ffe
+->	c_next:loc_7ffff7e5218f 	c_to:loc_7ffff7e51ffe 
+ */ 
+loc_7ffff7e52186:
+MOVABS          R14, 0x7ffff7e52186
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             DWORD PTR [RDI + 0x8], EDX
+JNZ             loc_7ffff7e51ffe
+
+
+/*
+loc_7ffff7e5218f
+MOV        EAX, 0x23
+JMP        loc_7ffff7e52022
+->	c_to:loc_7ffff7e52022 
+ */ 
+loc_7ffff7e5218f:
+MOVABS          R14, 0x7ffff7e5218f
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, 0x23
+JMP             loc_7ffff7e52022
+
+
+/*
+loc_7ffff7e52199
+LEA        RCX, QWORD PTR [RIP + 0xAE50]
+MOV        EDX, 0x75
+LEA        RSI, QWORD PTR [RIP + 0xA44E]
+LEA        RDI, QWORD PTR [RIP + 0xA47A]
+CALL       loc_7ffff7e4b730
+->	c_next:loc_7ffff7e521b8 
+ */ 
+loc_7ffff7e52199:
+MOVABS          R14, 0x7ffff7e521a0
+LEA             RCX, QWORD PTR [R14 + 0xAE50]
+MOV             EDX, 0x75
+MOVABS          R14, 0x7ffff7e521ac
+LEA             RSI, QWORD PTR [R14 + 0xA44E]
+MOVABS          R14, 0x7ffff7e521b3
+LEA             RDI, QWORD PTR [R14 + 0xA47A]
+MOVABS          R14, 0x7FFFF7E521B8
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b730
+
+
+/*
+loc_7ffff7e521b8
+MOVSX      EAX, WORD PTR [RDI + 0x14]
+MOVSX      EDX, WORD PTR [RIP + 0x11135]
+MOV        ECX, 0x2
+LEA        EAX, DWORD PTR [RAX * 0x2 + 0xA]
+CMP        EAX, EDX
+CMOVLE     EDX, EAX
+XOR        EBX, EBX
+XOR        ESI, ESI
+->	c_next:loc_7ffff7e521d5 
+ */ 
+loc_7ffff7e521b8:
+MOVSX           EAX, WORD PTR [RDI + 0x14]
+MOVABS          R14, 0x7ffff7e521c3
+MOVSX           EDX, WORD PTR [R14 + 0x11135]
+MOV             ECX, 0x2
+LEA             EAX, DWORD PTR [0xA + 0x2 * RAX]
+CMP             EAX, EDX
+CMOVLE          EDX, EAX
+XOR             EBX, EBX
+XOR             ESI, ESI
+
+
+/*
+loc_7ffff7e521d5
+MOV        EAX, EBX
+ADD        EBX, 0x1
+CMP        EAX, EDX
+JGE        loc_7ffff7e52224
+->	c_next:loc_7ffff7e521de 	c_to:loc_7ffff7e52224 
+ */ 
+loc_7ffff7e521d5:
+MOVABS          R14, 0x7ffff7e521d5
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, EBX
+ADD             EBX, 0x1
+CMP             EAX, EDX
+JGE             loc_7ffff7e52224
+
+
+/*
+loc_7ffff7e521de
+REP NOP        
+MOV        EAX, ESI
+LOCK CMPXCHG    DWORD PTR [RDI], ECX
+JNZ        loc_7ffff7e521d5
+->	c_next:loc_7ffff7e521e8 	c_to:loc_7ffff7e521d5 
+ */ 
+loc_7ffff7e521de:
+MOVABS          R14, 0x7ffff7e521de
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+NOP
+MOV             EAX, ESI
+LOCK CMPXCHG    DWORD PTR [RDI], ECX
+JNZ             loc_7ffff7e521d5
+
+
+/*
+loc_7ffff7e521e8
+MOVSX      EAX, WORD PTR [RDI + 0x14]
+MOV        ESI, 0x8
+SUB        EBX, EAX
+MOV        ECX, EAX
+MOV        EAX, EBX
+CDQ        
+IDIV       ESI
+ADD        EAX, ECX
+MOV        WORD PTR [RDI + 0x14], AX
+JMP        loc_7ffff7e52104
+->	c_to:loc_7ffff7e52104 
+ */ 
+loc_7ffff7e521e8:
+MOVABS          R14, 0x7ffff7e521e8
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVSX           EAX, WORD PTR [RDI + 0x14]
+MOV             ESI, 0x8
+SUB             EBX, EAX
+MOV             ECX, EAX
+MOV             EAX, EBX
+CDQ             
+IDIV            ESI
+ADD             EAX, ECX
+MOV             WORD PTR [RDI + 0x14], AX
+JMP             loc_7ffff7e52104
+
+
+/*
+loc_7ffff7e52205
+LEA        RCX, QWORD PTR [RIP + 0xADE4]
+MOV        EDX, 0x95
+LEA        RSI, QWORD PTR [RIP + 0xA3E2]
+LEA        RDI, QWORD PTR [RIP + 0xA3A1]
+CALL       loc_7ffff7e4b730
+->	c_next:loc_7ffff7e52224 
+ */ 
+loc_7ffff7e52205:
+MOVABS          R14, 0x7ffff7e5220c
+LEA             RCX, QWORD PTR [R14 + 0xADE4]
+MOV             EDX, 0x95
+MOVABS          R14, 0x7ffff7e52218
+LEA             RSI, QWORD PTR [R14 + 0xA3E2]
+MOVABS          R14, 0x7ffff7e5221f
+LEA             RDI, QWORD PTR [R14 + 0xA3A1]
+MOVABS          R14, 0x7FFFF7E52224
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b730
+
+
+/*
+loc_7ffff7e52224
+MOV        EAX, 0x2
+XCHG       DWORD PTR [RDI], EAX
+TEST       EAX, EAX
+JZ         loc_7ffff7e521e8
+->	c_next:loc_7ffff7e5222f 	c_to:loc_7ffff7e521e8 
+ */ 
+loc_7ffff7e52224:
+MOVABS          R14, 0x7ffff7e52224
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, 0x2
+XCHG            DWORD PTR [RDI], EAX
+TEST            EAX, EAX
+JZ              loc_7ffff7e521e8
+
+
+/*
+loc_7ffff7e5222f
+MOV        ESI, DWORD PTR [RDI + 0x10]
+MOV        QWORD PTR [RSP + 0x8], RDI
+AND        ESI, 0x80
+CALL       loc_7ffff7e58140
+->	c_next:loc_7ffff7e52242 
+ */ 
+loc_7ffff7e5222f:
+MOV             ESI, DWORD PTR [RDI + 0x10]
+MOV             QWORD PTR [R13 + 0x8], RDI
+AND             ESI, 0x80
+MOVABS          R14, 0x7FFFF7E52242
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e58140
+
+
+/*
+loc_7ffff7e52242
+MOV        RDI, QWORD PTR [RSP + 0x8]
+JMP        loc_7ffff7e521e8
+->	c_to:loc_7ffff7e521e8 
+ */ 
+loc_7ffff7e52242:
+MOVABS          R14, 0x7ffff7e52242
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RDI, QWORD PTR [R13 + 0x8]
+JMP             loc_7ffff7e521e8
+
+
+/*
+loc_7ffff7e54160
+ENDBR64    
+PUSH       R15
+PUSH       R14
+PUSH       R13
+MOV        R13, RSI
+PUSH       R12
+PUSH       RBP
+MOV        RBP, RDI
+PUSH       RBX
+SUB        RSP, 0x98
+MOV        RAX, QWORD PTR FS:[0x28]
+MOV        QWORD PTR [RSP + 0x88], RAX
+XOR        EAX, EAX
+NOP        
+MOV        EBX, 0x2
+LOCK XADD       QWORD PTR [RDI], RBX
+MOV        R14D, 0x8
+MOV        RAX, RBX
+MOV        R15D, EBX
+LEA        R12, QWORD PTR [RDI + 0x24]
+SHR        RAX, 0x1
+AND        R15D, 0x1
+MOV        QWORD PTR [RSP], RAX
+LOCK XADD       DWORD PTR [R12], R14D
+MOV        DWORD PTR [RSP + 0xC], 0x81
+AND        R14D, 0x1
+JZ         loc_7ffff7e541d3
+->	c_next:loc_7ffff7e541c8 	c_to:loc_7ffff7e541d3 
+ */ 
+loc_7ffff7e54160:
+MOVABS          R14, 0x7ffff7e54160
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+NOP
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             R14, Stack_R15
+MOV             QWORD PTR [R13], R14
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             R15, Stack_R14
+MOV             QWORD PTR [R13], R15
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             Stack_R15, R14
+MOV             R14, Stack_R13
+MOV             QWORD PTR [R13], R14
+MOV             R14, RSI
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             Stack_R13, R14
+MOV             R14, Stack_R12
+MOV             QWORD PTR [R13], R14
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R12
+MOV             R12, RDI
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], RBX
+SUB             R13, 0x98
+MOV             Stack_R12, R14
+MOV             R14, Stack_RFS
+MOV             RAX, QWORD PTR [R14 + 0x28]
+MOV             QWORD PTR [R13 + 0x88], RAX
+XOR             EAX, EAX
+NOP
+MOV             EBX, 0x2
+LOCK XADD       QWORD PTR [RDI], RBX
+MOV             R15d, 0x8
+MOV             RAX, RBX
+MOV             Stack_RFS, R14
+MOV             R14, Stack_R15
+MOV             R14d, EBX
+MOV             Stack_R15, R14
+MOV             R14, Stack_R12
+LEA             R14, QWORD PTR [RDI + 0x24]
+SHR             RAX, 0x1
+MOV             Stack_R12, R14
+MOV             R14, Stack_R15
+AND             R14d, 0x1
+MOV             QWORD PTR [R13], RAX
+MOV             Stack_R15, R14
+MOV             R14, Stack_R12
+LOCK XADD       DWORD PTR [R14], R15d
+MOV             DWORD PTR [R13 + 0xC], 0x81
+AND             R15d, 0x1
+MOV             Stack_R14, R15
+MOV             Stack_R12, R14
+JZ              loc_7ffff7e541d3
+
+
+/*
+loc_7ffff7e541c8
+MOV        DWORD PTR [RSP + 0xC], R14D
+MOV        R14D, 0x80
+->	c_next:loc_7ffff7e541d3 
+ */ 
+loc_7ffff7e541c8:
+MOV             R14, Stack_R14
+MOV             DWORD PTR [R13 + 0xC], R14d
+MOV             R14d, 0x80
+MOV             Stack_R14, R14
+
+
+/*
+loc_7ffff7e541d3
+XOR        ESI, ESI
+MOV        RDI, R13
+CALL       loc_7ffff7e516a0
+->	c_next:loc_7ffff7e541dd 
+ */ 
+loc_7ffff7e541d3:
+XOR             ESI, ESI
+MOV             R14, Stack_R13
+MOV             RDI, R14
+MOVABS          R15, 0x7FFFF7E541DD
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R15
+MOV             Stack_R13, R14
+JMP             loc_7ffff7e516a0
+
+
+/*
+loc_7ffff7e541dd
+TEST       EAX, EAX
+JNZ        loc_7ffff7e54400
+->	c_next:loc_7ffff7e541e5 	c_to:loc_7ffff7e54400 
+ */ 
+loc_7ffff7e541dd:
+MOVABS          R14, 0x7ffff7e541dd
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            EAX, EAX
+JNZ             loc_7ffff7e54400
+
+
+/*
+loc_7ffff7e541e5
+MOV        EAX, R15D
+LEA        R9, QWORD PTR [RAX * 0x4]
+MOV        QWORD PTR [RSP + 0x10], RAX
+LEA        R15, QWORD PTR [R9 + RBP + 0x28]
+MOV        EAX, DWORD PTR [R15]
+TEST       AL, 0x1
+JNZ        loc_7ffff7e54241
+->	c_next:loc_7ffff7e54201 	c_to:loc_7ffff7e54241 
+ */ 
+loc_7ffff7e541e5:
+MOVABS          R14, 0x7ffff7e541e5
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_R15
+MOV             EAX, R14d
+LEA             R9, QWORD PTR [0x4 * RAX]
+MOV             QWORD PTR [R13 + 0x10], RAX
+LEA             R14, QWORD PTR [R9 + R12 + 0x28]
+MOV             EAX, DWORD PTR [R14]
+TEST            AL, 0x1
+MOV             Stack_R15, R14
+JNZ             loc_7ffff7e54241
+
+
+/*
+loc_7ffff7e54201
+LEA        RCX, QWORD PTR [RBP + 0x10]
+MOV        QWORD PTR [RSP + 0x20], R9
+MOV        QWORD PTR [RSP + 0x18], RCX
+MOV        QWORD PTR [RSP + 0x28], RBX
+MOV        EBX, R14D
+->	c_next:loc_7ffff7e54217 
+ */ 
+loc_7ffff7e54201:
+LEA             RCX, QWORD PTR [R12 + 0x10]
+MOV             QWORD PTR [R13 + 0x20], R9
+MOV             QWORD PTR [R13 + 0x18], RCX
+MOV             QWORD PTR [R13 + 0x28], RBX
+MOV             R14, Stack_R14
+MOV             EBX, R14d
+MOV             Stack_R14, R14
+
+
+/*
+loc_7ffff7e54217
+TEST       EAX, EAX
+JZ         loc_7ffff7e542f0
+->	c_next:loc_7ffff7e5421f 	c_to:loc_7ffff7e542f0 
+ */ 
+loc_7ffff7e54217:
+MOVABS          R14, 0x7ffff7e54217
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            EAX, EAX
+JZ              loc_7ffff7e542f0
+
+
+/*
+loc_7ffff7e5421f
+LEA        EDX, DWORD PTR [RAX + 0xFFFFFFFFFFFFFFFE]
+LOCK CMPXCHG    DWORD PTR [R15], EDX
+JNZ        loc_7ffff7e543ae
+->	c_next:loc_7ffff7e5422d 	c_to:loc_7ffff7e543ae 
+ */ 
+loc_7ffff7e5421f:
+MOVABS          R14, 0x7ffff7e5421f
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+LEA             EDX, DWORD PTR [RAX + 0xFFFFFFFFFFFFFFFE]
+MOV             R14, Stack_R15
+LOCK CMPXCHG    DWORD PTR [R14], EDX
+MOV             Stack_R15, R14
+JNZ             loc_7ffff7e543ae
+
+
+/*
+loc_7ffff7e5422d
+MOV        RDX, QWORD PTR [RBP + 0x8]
+LEA        RCX, QWORD PTR [RBP + 0x8]
+MOV        RAX, RDX
+SHR        RAX, 0x1
+CMP        QWORD PTR [RSP], RAX
+JB         loc_7ffff7e54290
+->	c_next:loc_7ffff7e54241 	c_to:loc_7ffff7e54290 
+ */ 
+loc_7ffff7e5422d:
+MOVABS          R14, 0x7ffff7e5422d
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RDX, QWORD PTR [R12 + 0x8]
+LEA             RCX, QWORD PTR [R12 + 0x8]
+MOV             RAX, RDX
+SHR             RAX, 0x1
+CMP             QWORD PTR [R13], RAX
+JB              loc_7ffff7e54290
+
+
+/*
+loc_7ffff7e54241
+MOV        EAX, 0xFFFFFFF8
+LOCK XADD       DWORD PTR [R12], EAX
+SHR        EAX, 0x2
+CMP        EAX, 0x3
+JZ         loc_7ffff7e543c0
+->	c_next:loc_7ffff7e54258 	c_to:loc_7ffff7e543c0 
+ */ 
+loc_7ffff7e54241:
+MOVABS          R14, 0x7ffff7e54241
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, 0xFFFFFFF8
+MOV             R14, Stack_R12
+LOCK XADD       DWORD PTR [R14], EAX
+SHR             EAX, 0x2
+CMP             EAX, 0x3
+MOV             Stack_R12, R14
+JZ              loc_7ffff7e543c0
+
+
+/*
+loc_7ffff7e54258
+MOV        RDI, R13
+CALL       loc_7ffff7e51fe0
+->	c_next:loc_7ffff7e54260 
+ */ 
+loc_7ffff7e54258:
+MOV             R14, Stack_R13
+MOV             RDI, R14
+MOVABS          R15, 0x7FFFF7E54260
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R15
+MOV             Stack_R13, R14
+JMP             loc_7ffff7e51fe0
+
+
+/*
+loc_7ffff7e54260
+MOV        R8D, EAX
+->	c_next:loc_7ffff7e54263 
+ */ 
+loc_7ffff7e54260:
+MOV             R8D, EAX
+
+
+/*
+loc_7ffff7e54263
+MOV        RAX, QWORD PTR [RSP + 0x88]
+XOR        RAX, QWORD PTR FS:[0x28]
+JNZ        loc_7ffff7e54553
+->	c_next:loc_7ffff7e5427a 	c_to:loc_7ffff7e54553 
+ */ 
+loc_7ffff7e54263:
+MOVABS          R14, 0x7ffff7e54263
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R13 + 0x88]
+MOV             R14, Stack_RFS
+XOR             RAX, QWORD PTR [R14 + 0x28]
+JNZ             loc_7ffff7e54553
+
+
+/*
+loc_7ffff7e5427a
+ADD        RSP, 0x98
+MOV        EAX, R8D
+POP        RBX
+POP        RBP
+POP        R12
+POP        R13
+POP        R14
+POP        R15
+RET        
+ */ 
+loc_7ffff7e5427a:
+ADD             R13, 0x98
+MOV             EAX, R8D
+MOV             RBX, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             R12, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             R14, Stack_R12
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             R15, Stack_R13
+MOV             R15, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R12, R14
+MOV             R14, Stack_R14
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R14, R14
+MOV             R14, Stack_R15
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R15, R14
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R13, R15
+JMP             ij_7ffff7e5428f
+
+
+/*
+loc_7ffff7e54290
+MOV        RAX, RDX
+NOT        RAX
+AND        EAX, 0x1
+CMP        QWORD PTR [RSP + 0x10], RAX
+JNZ        loc_7ffff7e54241
+->	c_next:loc_7ffff7e542a0 	c_to:loc_7ffff7e54241 
+ */ 
+loc_7ffff7e54290:
+MOVABS          R14, 0x7ffff7e54290
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, RDX
+NOT             RAX
+AND             EAX, 0x1
+CMP             QWORD PTR [R13 + 0x10], RAX
+JNZ             loc_7ffff7e54241
+
+
+/*
+loc_7ffff7e542a0
+MOV        EAX, DWORD PTR [R15]
+->	c_next:loc_7ffff7e542a3 
+ */ 
+loc_7ffff7e542a0:
+MOV             R14, Stack_R15
+MOV             EAX, DWORD PTR [R14]
+MOV             Stack_R15, R14
+
+
+/*
+loc_7ffff7e542a3
+MOV        RSI, QWORD PTR [RCX]
+CMP        RDX, RSI
+JNZ        loc_7ffff7e54241
+->	c_next:loc_7ffff7e542ab 	c_to:loc_7ffff7e54241 
+ */ 
+loc_7ffff7e542a3:
+MOVABS          R14, 0x7ffff7e542a3
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RSI, QWORD PTR [RCX]
+CMP             RDX, RSI
+JNZ             loc_7ffff7e54241
+
+
+/*
+loc_7ffff7e542ab
+TEST       AL, 0x1
+JNZ        loc_7ffff7e542b9
+->	c_next:loc_7ffff7e542af 	c_to:loc_7ffff7e542b9 
+ */ 
+loc_7ffff7e542ab:
+MOVABS          R14, 0x7ffff7e542ab
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            AL, 0x1
+JNZ             loc_7ffff7e542b9
+
+
+/*
+loc_7ffff7e542af
+LEA        ESI, DWORD PTR [RAX + 0x2]
+LOCK CMPXCHG    DWORD PTR [R15], ESI
+JNZ        loc_7ffff7e542a3
+->	c_next:loc_7ffff7e542b9 	c_to:loc_7ffff7e542a3 
+ */ 
+loc_7ffff7e542af:
+MOVABS          R14, 0x7ffff7e542af
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+LEA             ESI, DWORD PTR [RAX + 0x2]
+MOV             R14, Stack_R15
+LOCK CMPXCHG    DWORD PTR [R14], ESI
+MOV             Stack_R15, R14
+JNZ             loc_7ffff7e542a3
+
+
+/*
+loc_7ffff7e542b9
+MOV        ESI, DWORD PTR [RSP + 0xC]
+XOR        R10D, R10D
+MOV        EDX, 0x1
+MOV        RDI, R15
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e542cf 
+ */ 
+loc_7ffff7e542b9:
+MOV             ESI, DWORD PTR [R13 + 0xC]
+XOR             R10D, R10D
+MOV             EDX, 0x1
+MOV             R14, Stack_R15
+MOV             RDI, R14
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e542cd
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e542cf
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JA         loc_7ffff7e544a4
+->	c_next:loc_7ffff7e542db 	c_to:loc_7ffff7e544a4 
+ */ 
+loc_7ffff7e542cf:
+MOVABS          R14, 0x7ffff7e542cf
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JA              loc_7ffff7e544a4
+
+
+/*
+loc_7ffff7e542db
+MOV        RDI, RBP
+CALL       loc_7ffff7e55290
+->	c_next:loc_7ffff7e542e3 
+ */ 
+loc_7ffff7e542db:
+MOV             RDI, R12
+MOVABS          R14, 0x7FFFF7E542E3
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e55290
+
+
+/*
+loc_7ffff7e542e3
+JMP        loc_7ffff7e54241
+->	c_to:loc_7ffff7e54241 
+ */ 
+loc_7ffff7e542e3:
+MOVABS          R14, 0x7ffff7e542e3
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e54241
+
+
+/*
+loc_7ffff7e542f0
+MOV        RAX, QWORD PTR [RSP + 0x18]
+ADD        RAX, QWORD PTR [RSP + 0x20]
+MOV        QWORD PTR [RSP + 0x30], RAX
+LOCK ADD        DWORD PTR [RAX], 0x2
+MOV        EAX, DWORD PTR [R15]
+TEST       AL, 0x1
+JNZ        loc_7ffff7e54500
+->	c_next:loc_7ffff7e5430e 	c_to:loc_7ffff7e54500 
+ */ 
+loc_7ffff7e542f0:
+MOVABS          R14, 0x7ffff7e542f0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R13 + 0x18]
+ADD             RAX, QWORD PTR [R13 + 0x20]
+MOV             QWORD PTR [R13 + 0x30], RAX
+LOCK ADD        DWORD PTR [RAX], 0x2
+MOV             R14, Stack_R15
+MOV             EAX, DWORD PTR [R14]
+TEST            AL, 0x1
+MOV             Stack_R15, R14
+JNZ             loc_7ffff7e54500
+
+
+/*
+loc_7ffff7e5430e
+MOV        RAX, QWORD PTR [RBP + 0x8]
+SHR        RAX, 0x1
+CMP        QWORD PTR [RSP], RAX
+JB         loc_7ffff7e54500
+->	c_next:loc_7ffff7e5431f 	c_to:loc_7ffff7e54500 
+ */ 
+loc_7ffff7e5430e:
+MOVABS          R14, 0x7ffff7e5430e
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R12 + 0x8]
+SHR             RAX, 0x1
+CMP             QWORD PTR [R13], RAX
+JB              loc_7ffff7e54500
+
+
+/*
+loc_7ffff7e5431f
+MOV        RAX, QWORD PTR [RSP + 0x28]
+MOVQ       XMM1, R13
+MOVQ       XMM0, RBP
+LEA        R14, QWORD PTR [RSP + 0x40]
+PUNPCKLQDQ XMM0, XMM1
+LEA        RDX, QWORD PTR [RSP + 0x60]
+MOV        RDI, R14
+MOV        DWORD PTR [RSP + 0x78], EBX
+LEA        RSI, QWORD PTR [RIP + 0xFFFFFFFFFFFFFD06]
+MOV        QWORD PTR [RSP + 0x60], RAX
+MOVUPS     XMMWORD PTR [RSP + 0x68], XMM0
+CALL       loc_7ffff7e57c50
+->	c_next:loc_7ffff7e54359 
+ */ 
+loc_7ffff7e5431f:
+MOV             RAX, QWORD PTR [R13 + 0x28]
+MOV             R14, Stack_R13
+MOVQ            XMM1, R14
+MOVQ            XMM0, R12
+MOV             R15, Stack_R14
+LEA             R15, QWORD PTR [R13 + 0x40]
+PUNPCKLQDQ      XMM0, XMM1
+LEA             RDX, QWORD PTR [R13 + 0x60]
+MOV             RDI, R15
+MOV             DWORD PTR [R13 + 0x78], EBX
+MOV             Stack_R13, R14
+MOVABS          R14, 0x7ffff7e5434a
+LEA             RSI, QWORD PTR [R14 + 0xFFFFFFFFFFFFFD06]
+MOV             QWORD PTR [R13 + 0x60], RAX
+MOVUPS          XMMWORD PTR [R13 + 0x68], XMM0
+MOVABS          R14, 0x7FFFF7E54359
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+MOV             Stack_R14, R15
+JMP             loc_7ffff7e57c50
+
+
+/*
+loc_7ffff7e54359
+CALL       loc_7ffff7e58040
+->	c_next:loc_7ffff7e5435e 
+ */ 
+loc_7ffff7e54359:
+MOVABS          R14, 0x7FFFF7E5435E
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e58040
+
+
+/*
+loc_7ffff7e5435e
+MOV        ESI, EBX
+XOR        R10D, R10D
+XOR        EDX, EDX
+MOV        R8D, EAX
+XOR        SIL, 0x80
+MOV        RDI, R15
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e54376 
+ */ 
+loc_7ffff7e5435e:
+MOV             ESI, EBX
+XOR             R10D, R10D
+XOR             EDX, EDX
+MOV             R8D, EAX
+XOR             SIL, 0x80
+MOV             R14, Stack_R15
+MOV             RDI, R14
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e54374
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e54376
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JA         loc_7ffff7e544b8
+->	c_next:loc_7ffff7e54382 	c_to:loc_7ffff7e544b8 
+ */ 
+loc_7ffff7e54376:
+MOVABS          R14, 0x7ffff7e54376
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JA              loc_7ffff7e544b8
+
+
+/*
+loc_7ffff7e54382
+MOV        EDI, R8D
+CALL       loc_7ffff7e580a0
+->	c_next:loc_7ffff7e5438a 
+ */ 
+loc_7ffff7e54382:
+MOV             EDI, R8D
+MOVABS          R14, 0x7FFFF7E5438A
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e580a0
+
+
+/*
+loc_7ffff7e5438a
+XOR        ESI, ESI
+MOV        RDI, R14
+CALL       loc_7ffff7e57c80
+->	c_next:loc_7ffff7e54394 
+ */ 
+loc_7ffff7e5438a:
+XOR             ESI, ESI
+MOV             R14, Stack_R14
+MOV             RDI, R14
+MOVABS          R15, 0x7FFFF7E54394
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R15
+MOV             Stack_R14, R14
+JMP             loc_7ffff7e57c80
+
+
+/*
+loc_7ffff7e54394
+MOV        RCX, QWORD PTR [RSP + 0x30]
+MOV        EAX, 0xFFFFFFFE
+LOCK XADD       DWORD PTR [RCX], EAX
+CMP        EAX, 0x3
+JZ         loc_7ffff7e54468
+->	c_next:loc_7ffff7e543ab 	c_to:loc_7ffff7e54468 
+ */ 
+loc_7ffff7e54394:
+MOVABS          R14, 0x7ffff7e54394
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RCX, QWORD PTR [R13 + 0x30]
+MOV             EAX, 0xFFFFFFFE
+LOCK XADD       DWORD PTR [RCX], EAX
+CMP             EAX, 0x3
+JZ              loc_7ffff7e54468
+
+
+/*
+loc_7ffff7e543ab
+MOV        EAX, DWORD PTR [R15]
+->	c_next:loc_7ffff7e543ae 
+ */ 
+loc_7ffff7e543ab:
+MOV             R14, Stack_R15
+MOV             EAX, DWORD PTR [R14]
+MOV             Stack_R15, R14
+
+
+/*
+loc_7ffff7e543ae
+TEST       AL, 0x1
+JZ         loc_7ffff7e54217
+->	c_next:loc_7ffff7e543b6 	c_to:loc_7ffff7e54217 
+ */ 
+loc_7ffff7e543ae:
+MOVABS          R14, 0x7ffff7e543ae
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            AL, 0x1
+JZ              loc_7ffff7e54217
+
+
+/*
+loc_7ffff7e543b6
+JMP        loc_7ffff7e54241
+->	c_to:loc_7ffff7e54241 
+ */ 
+loc_7ffff7e543b6:
+MOVABS          R14, 0x7ffff7e543b6
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e54241
+
+
+/*
+loc_7ffff7e543c0
+MOV        ESI, DWORD PTR [RSP + 0xC]
+XOR        R10D, R10D
+MOV        EDX, 0x7FFFFFFF
+MOV        RDI, R12
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e543d6 
+ */ 
+loc_7ffff7e543c0:
+MOV             ESI, DWORD PTR [R13 + 0xC]
+XOR             R10D, R10D
+MOV             EDX, 0x7FFFFFFF
+MOV             R14, Stack_R12
+MOV             RDI, R14
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e543d4
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e543d6
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JBE        loc_7ffff7e54258
+->	c_next:loc_7ffff7e543e2 	c_to:loc_7ffff7e54258 
+ */ 
+loc_7ffff7e543d6:
+MOVABS          R14, 0x7ffff7e543d6
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JBE             loc_7ffff7e54258
+
+
+/*
+loc_7ffff7e543e2
+ADD        EAX, 0x16
+AND        EAX, 0xFFFFFFF7
+JZ         loc_7ffff7e54258
+->	c_next:loc_7ffff7e543ee 	c_to:loc_7ffff7e54258 
+ */ 
+loc_7ffff7e543e2:
+MOVABS          R14, 0x7ffff7e543e2
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x16
+AND             EAX, 0xFFFFFFF7
+JZ              loc_7ffff7e54258
+
+
+/*
+loc_7ffff7e543ee
+LEA        RDI, QWORD PTR [RIP + 0x7C0B]
+CALL       loc_7ffff7e4b630
+->	c_next:loc_7ffff7e543fa 
+ */ 
+loc_7ffff7e543ee:
+MOVABS          R14, 0x7ffff7e543f5
+LEA             RDI, QWORD PTR [R14 + 0x7C0B]
+MOVABS          R14, 0x7FFFF7E543FA
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b630
+
+
+/*
+loc_7ffff7e543fa
+NOP        WORD PTR [RAX * 0x2]
+->	c_next:loc_7ffff7e54400 
+ */ 
+loc_7ffff7e543fa:
+NOP
+
+
+/*
+loc_7ffff7e54400
+MOV        RSI, QWORD PTR [RSP]
+MOV        ECX, R14D
+MOV        EDX, R15D
+MOV        RDI, RBP
+MOV        DWORD PTR [RSP + 0x10], EAX
+CALL       loc_7ffff7e53e60
+->	c_next:loc_7ffff7e54416 
+ */ 
+loc_7ffff7e54400:
+MOV             RSI, QWORD PTR [R13]
+MOV             R14, Stack_R14
+MOV             ECX, R14d
+MOV             R15, Stack_R15
+MOV             EDX, R15d
+MOV             RDI, R12
+MOV             DWORD PTR [R13 + 0x10], EAX
+MOV             Stack_R14, R14
+MOVABS          R14, 0x7FFFF7E54416
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+MOV             Stack_R15, R15
+JMP             loc_7ffff7e53e60
+
+
+/*
+loc_7ffff7e54416
+MOV        EAX, 0xFFFFFFF8
+LOCK XADD       DWORD PTR [R12], EAX
+MOV        R8D, DWORD PTR [RSP + 0x10]
+SHR        EAX, 0x2
+CMP        EAX, 0x3
+JNZ        loc_7ffff7e54263
+->	c_next:loc_7ffff7e54432 	c_to:loc_7ffff7e54263 
+ */ 
+loc_7ffff7e54416:
+MOVABS          R14, 0x7ffff7e54416
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, 0xFFFFFFF8
+MOV             R14, Stack_R12
+LOCK XADD       DWORD PTR [R14], EAX
+MOV             R8D, DWORD PTR [R13 + 0x10]
+SHR             EAX, 0x2
+CMP             EAX, 0x3
+MOV             Stack_R12, R14
+JNZ             loc_7ffff7e54263
+
+
+/*
+loc_7ffff7e54432
+MOV        ESI, DWORD PTR [RSP + 0xC]
+XOR        R10D, R10D
+MOV        EDX, 0x7FFFFFFF
+MOV        RDI, R12
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e54448 
+ */ 
+loc_7ffff7e54432:
+MOV             ESI, DWORD PTR [R13 + 0xC]
+XOR             R10D, R10D
+MOV             EDX, 0x7FFFFFFF
+MOV             R14, Stack_R12
+MOV             RDI, R14
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e54446
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e54448
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JBE        loc_7ffff7e54263
+->	c_next:loc_7ffff7e54454 	c_to:loc_7ffff7e54263 
+ */ 
+loc_7ffff7e54448:
+MOVABS          R14, 0x7ffff7e54448
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JBE             loc_7ffff7e54263
+
+
+/*
+loc_7ffff7e54454
+ADD        EAX, 0x16
+AND        EAX, 0xFFFFFFF7
+JNZ        loc_7ffff7e543ee
+->	c_next:loc_7ffff7e5445c 	c_to:loc_7ffff7e543ee 
+ */ 
+loc_7ffff7e54454:
+MOVABS          R14, 0x7ffff7e54454
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x16
+AND             EAX, 0xFFFFFFF7
+JNZ             loc_7ffff7e543ee
+
+
+/*
+loc_7ffff7e5445c
+JMP        loc_7ffff7e54263
+->	c_to:loc_7ffff7e54263 
+ */ 
+loc_7ffff7e5445c:
+MOVABS          R14, 0x7ffff7e5445c
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e54263
+
+
+/*
+loc_7ffff7e54468
+MOV        RAX, QWORD PTR [RSP + 0x30]
+LOCK AND        DWORD PTR [RAX], 0xFFFFFFFE
+XOR        R10D, R10D
+MOV        EDX, 0x7FFFFFFF
+MOV        ESI, DWORD PTR [RSP + 0xC]
+MOV        RDI, RAX
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e54487 
+ */ 
+loc_7ffff7e54468:
+MOV             RAX, QWORD PTR [R13 + 0x30]
+LOCK AND        DWORD PTR [RAX], 0xFFFFFFFE
+XOR             R10D, R10D
+MOV             EDX, 0x7FFFFFFF
+MOV             ESI, DWORD PTR [R13 + 0xC]
+MOV             RDI, RAX
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e54485
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e54487
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JBE        loc_7ffff7e543ab
+->	c_next:loc_7ffff7e54493 	c_to:loc_7ffff7e543ab 
+ */ 
+loc_7ffff7e54487:
+MOVABS          R14, 0x7ffff7e54487
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JBE             loc_7ffff7e543ab
+
+
+/*
+loc_7ffff7e54493
+ADD        EAX, 0x16
+AND        EAX, 0xFFFFFFF7
+JNZ        loc_7ffff7e543ee
+->	c_next:loc_7ffff7e5449f 	c_to:loc_7ffff7e543ee 
+ */ 
+loc_7ffff7e54493:
+MOVABS          R14, 0x7ffff7e54493
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x16
+AND             EAX, 0xFFFFFFF7
+JNZ             loc_7ffff7e543ee
+
+
+/*
+loc_7ffff7e5449f
+JMP        loc_7ffff7e543ab
+->	c_to:loc_7ffff7e543ab 
+ */ 
+loc_7ffff7e5449f:
+MOVABS          R14, 0x7ffff7e5449f
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e543ab
+
+
+/*
+loc_7ffff7e544a4
+ADD        EAX, 0x16
+AND        EAX, 0xFFFFFFF7
+JNZ        loc_7ffff7e543ee
+->	c_next:loc_7ffff7e544b0 	c_to:loc_7ffff7e543ee 
+ */ 
+loc_7ffff7e544a4:
+MOVABS          R14, 0x7ffff7e544a4
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x16
+AND             EAX, 0xFFFFFFF7
+JNZ             loc_7ffff7e543ee
+
+
+/*
+loc_7ffff7e544b0
+JMP        loc_7ffff7e542db
+->	c_to:loc_7ffff7e542db 
+ */ 
+loc_7ffff7e544b0:
+MOVABS          R14, 0x7ffff7e544b0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e542db
+
+
+/*
+loc_7ffff7e544b8
+MOV        EDI, R8D
+MOV        QWORD PTR [RSP + 0x38], RAX
+CALL       loc_7ffff7e580a0
+->	c_next:loc_7ffff7e544c5 
+ */ 
+loc_7ffff7e544b8:
+MOV             EDI, R8D
+MOV             QWORD PTR [R13 + 0x38], RAX
+MOVABS          R14, 0x7FFFF7E544C5
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e580a0
+
+
+/*
+loc_7ffff7e544c5
+MOV        RAX, QWORD PTR [RSP + 0x38]
+LEA        ECX, DWORD PTR [RAX + 0xB]
+CMP        ECX, 0xB
+JA         loc_7ffff7e543ee
+->	c_next:loc_7ffff7e544d6 	c_to:loc_7ffff7e543ee 
+ */ 
+loc_7ffff7e544c5:
+MOVABS          R14, 0x7ffff7e544c5
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R13 + 0x38]
+LEA             ECX, DWORD PTR [RAX + 0xB]
+CMP             ECX, 0xB
+JA              loc_7ffff7e543ee
+
+
+/*
+loc_7ffff7e544d6
+MOV        EDX, 0x1
+SHL        RDX, CL
+TEST       EDX, 0x881
+JZ         loc_7ffff7e543ee
+->	c_next:loc_7ffff7e544ea 	c_to:loc_7ffff7e543ee 
+ */ 
+loc_7ffff7e544d6:
+MOVABS          R14, 0x7ffff7e544d6
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EDX, 0x1
+SHL             RDX, CL
+TEST            EDX, 0x881
+JZ              loc_7ffff7e543ee
+
+
+/*
+loc_7ffff7e544ea
+XOR        ESI, ESI
+MOV        RDI, R14
+CALL       loc_7ffff7e57c80
+->	c_next:loc_7ffff7e544f4 
+ */ 
+loc_7ffff7e544ea:
+XOR             ESI, ESI
+MOV             R14, Stack_R14
+MOV             RDI, R14
+MOVABS          R15, 0x7FFFF7E544F4
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R15
+MOV             Stack_R14, R14
+JMP             loc_7ffff7e57c80
+
+
+/*
+loc_7ffff7e544f4
+JMP        loc_7ffff7e54394
+->	c_to:loc_7ffff7e54394 
+ */ 
+loc_7ffff7e544f4:
+MOVABS          R14, 0x7ffff7e544f4
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e54394
+
+
+/*
+loc_7ffff7e54500
+MOV        RCX, QWORD PTR [RSP + 0x30]
+MOV        EAX, 0xFFFFFFFE
+LOCK XADD       DWORD PTR [RCX], EAX
+CMP        EAX, 0x3
+JNZ        loc_7ffff7e54241
+->	c_next:loc_7ffff7e54517 	c_to:loc_7ffff7e54241 
+ */ 
+loc_7ffff7e54500:
+MOVABS          R14, 0x7ffff7e54500
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RCX, QWORD PTR [R13 + 0x30]
+MOV             EAX, 0xFFFFFFFE
+LOCK XADD       DWORD PTR [RCX], EAX
+CMP             EAX, 0x3
+JNZ             loc_7ffff7e54241
+
+
+/*
+loc_7ffff7e54517
+MOV        RAX, QWORD PTR [RSP + 0x30]
+LOCK AND        DWORD PTR [RAX], 0xFFFFFFFE
+XOR        R10D, R10D
+MOV        EDX, 0x7FFFFFFF
+MOV        ESI, DWORD PTR [RSP + 0xC]
+MOV        RDI, RAX
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e54536 
+ */ 
+loc_7ffff7e54517:
+MOV             RAX, QWORD PTR [R13 + 0x30]
+LOCK AND        DWORD PTR [RAX], 0xFFFFFFFE
+XOR             R10D, R10D
+MOV             EDX, 0x7FFFFFFF
+MOV             ESI, DWORD PTR [R13 + 0xC]
+MOV             RDI, RAX
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e54534
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e54536
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JBE        loc_7ffff7e54241
+->	c_next:loc_7ffff7e54542 	c_to:loc_7ffff7e54241 
+ */ 
+loc_7ffff7e54536:
+MOVABS          R14, 0x7ffff7e54536
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JBE             loc_7ffff7e54241
+
+
+/*
+loc_7ffff7e54542
+ADD        EAX, 0x16
+AND        EAX, 0xFFFFFFF7
+JNZ        loc_7ffff7e543ee
+->	c_next:loc_7ffff7e5454e 	c_to:loc_7ffff7e543ee 
+ */ 
+loc_7ffff7e54542:
+MOVABS          R14, 0x7ffff7e54542
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x16
+AND             EAX, 0xFFFFFFF7
+JNZ             loc_7ffff7e543ee
+
+
+/*
+loc_7ffff7e5454e
+JMP        loc_7ffff7e54241
+->	c_to:loc_7ffff7e54241 
+ */ 
+loc_7ffff7e5454e:
+MOVABS          R14, 0x7ffff7e5454e
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e54241
+
+
+/*
+loc_7ffff7e54553
+CALL       loc_7ffff7e4b6d0
+->	c_next:loc_7ffff7e54558 
+ */ 
+loc_7ffff7e54553:
+MOVABS          R14, 0x7FFFF7E54558
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b6d0
+
+
+/*
+loc_7ffff7e54558
+NOP        DWORD PTR [RAX * 0x2]
+ENDBR64    
+PUSH       R15
+PUSH       R14
+PUSH       R13
+PUSH       R12
+PUSH       RBP
+PUSH       RBX
+SUB        RSP, 0xA8
+MOV        QWORD PTR [RSP + 0x18], RDX
+MOV        RCX, QWORD PTR FS:[0x28]
+MOV        QWORD PTR [RSP + 0x98], RCX
+XOR        ECX, ECX
+CMP        QWORD PTR [RDX + 0x8], 0x3B9AC9FF
+JA         loc_7ffff7e54858
+->	c_next:loc_7ffff7e5459b 	c_to:loc_7ffff7e54858 
+ */ 
+loc_7ffff7e54558:
+MOVABS          R14, 0x7ffff7e54558
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+NOP
+NOP
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             R14, Stack_R15
+MOV             QWORD PTR [R13], R14
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             R15, Stack_R14
+MOV             QWORD PTR [R13], R15
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             Stack_R15, R14
+MOV             R14, Stack_R13
+MOV             QWORD PTR [R13], R14
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             Stack_R13, R14
+MOV             R14, Stack_R12
+MOV             QWORD PTR [R13], R14
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R12
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], RBX
+SUB             R13, 0xA8
+MOV             QWORD PTR [R13 + 0x18], RDX
+MOV             Stack_R12, R14
+MOV             R14, Stack_RFS
+MOV             RCX, QWORD PTR [R14 + 0x28]
+MOV             QWORD PTR [R13 + 0x98], RCX
+XOR             ECX, ECX
+CMP             QWORD PTR [RDX + 0x8], 0x3B9AC9FF
+MOV             Stack_R14, R15
+JA              loc_7ffff7e54858
+
+
+/*
+loc_7ffff7e5459b
+MOV        EBX, DWORD PTR [RDI + 0x24]
+MOV        RBP, RDI
+MOV        R13, RSI
+LEA        R12, QWORD PTR [RDI + 0x24]
+SHR        EBX, 0x1
+AND        EBX, 0x1
+NOP        
+MOV        EAX, 0x2
+LOCK XADD       QWORD PTR [RDI], RAX
+MOV        ECX, EAX
+MOV        QWORD PTR [RSP + 0x20], RAX
+SHR        RAX, 0x1
+AND        ECX, 0x1
+MOV        QWORD PTR [RSP], RAX
+MOV        EAX, 0x8
+MOV        DWORD PTR [RSP + 0xC], ECX
+LOCK XADD       DWORD PTR [R12], EAX
+XOR        R15D, R15D
+AND        EAX, 0x1
+MOV        DWORD PTR [RSP + 0x14], 0x81
+MOV        DWORD PTR [RSP + 0x8], EAX
+JZ         loc_7ffff7e545fe
+->	c_next:loc_7ffff7e545ec 	c_to:loc_7ffff7e545fe 
+ */ 
+loc_7ffff7e5459b:
+MOVABS          R14, 0x7ffff7e5459b
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EBX, DWORD PTR [RDI + 0x24]
+MOV             R12, RDI
+MOV             R14, Stack_R13
+MOV             R14, RSI
+MOV             R15, Stack_R12
+LEA             R15, QWORD PTR [RDI + 0x24]
+SHR             EBX, 0x1
+AND             EBX, 0x1
+NOP
+MOV             EAX, 0x2
+LOCK XADD       QWORD PTR [RDI], RAX
+MOV             ECX, EAX
+MOV             QWORD PTR [R13 + 0x20], RAX
+SHR             RAX, 0x1
+AND             ECX, 0x1
+MOV             QWORD PTR [R13], RAX
+MOV             EAX, 0x8
+MOV             DWORD PTR [R13 + 0xC], ECX
+LOCK XADD       DWORD PTR [R15], EAX
+MOV             Stack_R13, R14
+MOV             R14, Stack_R15
+XOR             R14d, R14d
+AND             EAX, 0x1
+MOV             DWORD PTR [R13 + 0x14], 0x81
+MOV             DWORD PTR [R13 + 0x8], EAX
+MOV             Stack_R12, R15
+MOV             Stack_R15, R14
+JZ              loc_7ffff7e545fe
+
+
+/*
+loc_7ffff7e545ec
+MOV        DWORD PTR [RSP + 0x14], EAX
+MOV        R15D, 0x80
+MOV        DWORD PTR [RSP + 0x8], 0x80
+->	c_next:loc_7ffff7e545fe 
+ */ 
+loc_7ffff7e545ec:
+MOV             DWORD PTR [R13 + 0x14], EAX
+MOV             R14, Stack_R15
+MOV             R14d, 0x80
+MOV             DWORD PTR [R13 + 0x8], 0x80
+MOV             Stack_R15, R14
+
+
+/*
+loc_7ffff7e545fe
+XOR        ESI, ESI
+MOV        RDI, R13
+CALL       loc_7ffff7e516a0
+->	c_next:loc_7ffff7e54608 
+ */ 
+loc_7ffff7e545fe:
+XOR             ESI, ESI
+MOV             R14, Stack_R13
+MOV             RDI, R14
+MOVABS          R15, 0x7FFFF7E54608
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R15
+MOV             Stack_R13, R14
+JMP             loc_7ffff7e516a0
+
+
+/*
+loc_7ffff7e54608
+MOV        DWORD PTR [RSP + 0x10], EAX
+TEST       EAX, EAX
+JNZ        loc_7ffff7e54868
+->	c_next:loc_7ffff7e54614 	c_to:loc_7ffff7e54868 
+ */ 
+loc_7ffff7e54608:
+MOVABS          R14, 0x7ffff7e54608
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             DWORD PTR [R13 + 0x10], EAX
+TEST            EAX, EAX
+JNZ             loc_7ffff7e54868
+
+
+/*
+loc_7ffff7e54614
+MOV        EAX, DWORD PTR [RSP + 0xC]
+MOV        QWORD PTR [RSP + 0x28], RAX
+SHL        RAX, 0x2
+MOV        QWORD PTR [RSP + 0x30], RAX
+LEA        R14, QWORD PTR [RAX + RBP + 0x28]
+MOV        EAX, DWORD PTR [R14]
+TEST       AL, 0x1
+JNZ        loc_7ffff7e5467a
+->	c_next:loc_7ffff7e54632 	c_to:loc_7ffff7e5467a 
+ */ 
+loc_7ffff7e54614:
+MOVABS          R14, 0x7ffff7e54614
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, DWORD PTR [R13 + 0xC]
+MOV             QWORD PTR [R13 + 0x28], RAX
+SHL             RAX, 0x2
+MOV             QWORD PTR [R13 + 0x30], RAX
+MOV             R14, Stack_R14
+LEA             R14, QWORD PTR [RAX + R12 + 0x28]
+MOV             EAX, DWORD PTR [R14]
+TEST            AL, 0x1
+MOV             Stack_R14, R14
+JNZ             loc_7ffff7e5467a
+
+
+/*
+loc_7ffff7e54632
+CMP        EBX, 0x1
+LEA        RCX, QWORD PTR [RBP + 0x10]
+SBB        EDX, EDX
+MOV        QWORD PTR [RSP + 0x38], RCX
+AND        EDX, 0x100
+OR         DL, 0x89
+XOR        EDX, R15D
+MOV        DWORD PTR [RSP + 0x40], EDX
+->	c_next:loc_7ffff7e54650 
+ */ 
+loc_7ffff7e54632:
+CMP             EBX, 0x1
+LEA             RCX, QWORD PTR [R12 + 0x10]
+SBB             EDX, EDX
+MOV             QWORD PTR [R13 + 0x38], RCX
+AND             EDX, 0x100
+OR              DL, 0x89
+MOV             R14, Stack_R15
+XOR             EDX, R14d
+MOV             DWORD PTR [R13 + 0x40], EDX
+MOV             Stack_R15, R14
+
+
+/*
+loc_7ffff7e54650
+TEST       EAX, EAX
+JZ         loc_7ffff7e54730
+->	c_next:loc_7ffff7e54658 	c_to:loc_7ffff7e54730 
+ */ 
+loc_7ffff7e54650:
+MOVABS          R14, 0x7ffff7e54650
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            EAX, EAX
+JZ              loc_7ffff7e54730
+
+
+/*
+loc_7ffff7e54658
+LEA        EDX, DWORD PTR [RAX + 0xFFFFFFFFFFFFFFFE]
+LOCK CMPXCHG    DWORD PTR [R14], EDX
+JNZ        loc_7ffff7e54805
+->	c_next:loc_7ffff7e54666 	c_to:loc_7ffff7e54805 
+ */ 
+loc_7ffff7e54658:
+MOVABS          R14, 0x7ffff7e54658
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+LEA             EDX, DWORD PTR [RAX + 0xFFFFFFFFFFFFFFFE]
+MOV             R14, Stack_R14
+LOCK CMPXCHG    DWORD PTR [R14], EDX
+MOV             Stack_R14, R14
+JNZ             loc_7ffff7e54805
+
+
+/*
+loc_7ffff7e54666
+MOV        RDX, QWORD PTR [RBP + 0x8]
+LEA        RCX, QWORD PTR [RBP + 0x8]
+MOV        RAX, RDX
+SHR        RAX, 0x1
+CMP        QWORD PTR [RSP], RAX
+JB         loc_7ffff7e546d0
+->	c_next:loc_7ffff7e5467a 	c_to:loc_7ffff7e546d0 
+ */ 
+loc_7ffff7e54666:
+MOVABS          R14, 0x7ffff7e54666
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RDX, QWORD PTR [R12 + 0x8]
+LEA             RCX, QWORD PTR [R12 + 0x8]
+MOV             RAX, RDX
+SHR             RAX, 0x1
+CMP             QWORD PTR [R13], RAX
+JB              loc_7ffff7e546d0
+
+
+/*
+loc_7ffff7e5467a
+MOV        EAX, 0xFFFFFFF8
+LOCK XADD       DWORD PTR [R12], EAX
+SHR        EAX, 0x2
+CMP        EAX, 0x3
+JZ         loc_7ffff7e54818
+->	c_next:loc_7ffff7e54691 	c_to:loc_7ffff7e54818 
+ */ 
+loc_7ffff7e5467a:
+MOVABS          R14, 0x7ffff7e5467a
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, 0xFFFFFFF8
+MOV             R14, Stack_R12
+LOCK XADD       DWORD PTR [R14], EAX
+SHR             EAX, 0x2
+CMP             EAX, 0x3
+MOV             Stack_R12, R14
+JZ              loc_7ffff7e54818
+
+
+/*
+loc_7ffff7e54691
+MOV        RDI, R13
+CALL       loc_7ffff7e51fe0
+->	c_next:loc_7ffff7e54699 
+ */ 
+loc_7ffff7e54691:
+MOV             R14, Stack_R13
+MOV             RDI, R14
+MOVABS          R15, 0x7FFFF7E54699
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R15
+MOV             Stack_R13, R14
+JMP             loc_7ffff7e51fe0
+
+
+/*
+loc_7ffff7e54699
+MOV        R8D, EAX
+TEST       EAX, EAX
+CMOVZ      R8D, DWORD PTR [RSP + 0x10]
+->	c_next:loc_7ffff7e546a4 
+ */ 
+loc_7ffff7e54699:
+MOV             R8D, EAX
+TEST            EAX, EAX
+CMOVZ           R8D, DWORD PTR [R13 + 0x10]
+
+
+/*
+loc_7ffff7e546a4
+MOV        RAX, QWORD PTR [RSP + 0x98]
+XOR        RAX, QWORD PTR FS:[0x28]
+JNZ        loc_7ffff7e54a30
+->	c_next:loc_7ffff7e546bb 	c_to:loc_7ffff7e54a30 
+ */ 
+loc_7ffff7e546a4:
+MOVABS          R14, 0x7ffff7e546a4
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R13 + 0x98]
+MOV             R14, Stack_RFS
+XOR             RAX, QWORD PTR [R14 + 0x28]
+JNZ             loc_7ffff7e54a30
+
+
+/*
+loc_7ffff7e546bb
+ADD        RSP, 0xA8
+MOV        EAX, R8D
+POP        RBX
+POP        RBP
+POP        R12
+POP        R13
+POP        R14
+POP        R15
+RET        
+ */ 
+loc_7ffff7e546bb:
+ADD             R13, 0xA8
+MOV             EAX, R8D
+MOV             RBX, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             R12, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             R14, Stack_R12
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             R15, Stack_R13
+MOV             R15, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R12, R14
+MOV             R14, Stack_R14
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R14, R14
+MOV             R14, Stack_R15
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R15, R14
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R13, R15
+JMP             ij_7ffff7e546d0
+
+
+/*
+loc_7ffff7e546d0
+MOV        RAX, RDX
+NOT        RAX
+AND        EAX, 0x1
+CMP        QWORD PTR [RSP + 0x28], RAX
+JNZ        loc_7ffff7e5467a
+->	c_next:loc_7ffff7e546e0 	c_to:loc_7ffff7e5467a 
+ */ 
+loc_7ffff7e546d0:
+MOVABS          R14, 0x7ffff7e546d0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, RDX
+NOT             RAX
+AND             EAX, 0x1
+CMP             QWORD PTR [R13 + 0x28], RAX
+JNZ             loc_7ffff7e5467a
+
+
+/*
+loc_7ffff7e546e0
+MOV        EAX, DWORD PTR [R14]
+->	c_next:loc_7ffff7e546e3 
+ */ 
+loc_7ffff7e546e0:
+MOV             R14, Stack_R14
+MOV             EAX, DWORD PTR [R14]
+MOV             Stack_R14, R14
+
+
+/*
+loc_7ffff7e546e3
+MOV        RSI, QWORD PTR [RCX]
+CMP        RDX, RSI
+JNZ        loc_7ffff7e5467a
+->	c_next:loc_7ffff7e546eb 	c_to:loc_7ffff7e5467a 
+ */ 
+loc_7ffff7e546e3:
+MOVABS          R14, 0x7ffff7e546e3
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RSI, QWORD PTR [RCX]
+CMP             RDX, RSI
+JNZ             loc_7ffff7e5467a
+
+
+/*
+loc_7ffff7e546eb
+TEST       AL, 0x1
+JNZ        loc_7ffff7e546f9
+->	c_next:loc_7ffff7e546ef 	c_to:loc_7ffff7e546f9 
+ */ 
+loc_7ffff7e546eb:
+MOVABS          R14, 0x7ffff7e546eb
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            AL, 0x1
+JNZ             loc_7ffff7e546f9
+
+
+/*
+loc_7ffff7e546ef
+LEA        ESI, DWORD PTR [RAX + 0x2]
+LOCK CMPXCHG    DWORD PTR [R14], ESI
+JNZ        loc_7ffff7e546e3
+->	c_next:loc_7ffff7e546f9 	c_to:loc_7ffff7e546e3 
+ */ 
+loc_7ffff7e546ef:
+MOVABS          R14, 0x7ffff7e546ef
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+LEA             ESI, DWORD PTR [RAX + 0x2]
+MOV             R14, Stack_R14
+LOCK CMPXCHG    DWORD PTR [R14], ESI
+MOV             Stack_R14, R14
+JNZ             loc_7ffff7e546e3
+
+
+/*
+loc_7ffff7e546f9
+MOV        ESI, DWORD PTR [RSP + 0x14]
+XOR        R10D, R10D
+MOV        EDX, 0x1
+MOV        RDI, R14
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e5470f 
+ */ 
+loc_7ffff7e546f9:
+MOV             ESI, DWORD PTR [R13 + 0x14]
+XOR             R10D, R10D
+MOV             EDX, 0x1
+MOV             R14, Stack_R14
+MOV             RDI, R14
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e5470d
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e5470f
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JA         loc_7ffff7e5494d
+->	c_next:loc_7ffff7e5471b 	c_to:loc_7ffff7e5494d 
+ */ 
+loc_7ffff7e5470f:
+MOVABS          R14, 0x7ffff7e5470f
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JA              loc_7ffff7e5494d
+
+
+/*
+loc_7ffff7e5471b
+MOV        RDI, RBP
+CALL       loc_7ffff7e55290
+->	c_next:loc_7ffff7e54723 
+ */ 
+loc_7ffff7e5471b:
+MOV             RDI, R12
+MOVABS          R14, 0x7FFFF7E54723
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e55290
+
+
+/*
+loc_7ffff7e54723
+JMP        loc_7ffff7e5467a
+->	c_to:loc_7ffff7e5467a 
+ */ 
+loc_7ffff7e54723:
+MOVABS          R14, 0x7ffff7e54723
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e5467a
+
+
+/*
+loc_7ffff7e54730
+MOV        RBX, QWORD PTR [RSP + 0x38]
+ADD        RBX, QWORD PTR [RSP + 0x30]
+LOCK ADD        DWORD PTR [RBX], 0x2
+MOV        EAX, DWORD PTR [R14]
+TEST       AL, 0x1
+JNZ        loc_7ffff7e549b0
+->	c_next:loc_7ffff7e54749 	c_to:loc_7ffff7e549b0 
+ */ 
+loc_7ffff7e54730:
+MOVABS          R14, 0x7ffff7e54730
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RBX, QWORD PTR [R13 + 0x38]
+ADD             RBX, QWORD PTR [R13 + 0x30]
+LOCK ADD        DWORD PTR [RBX], 0x2
+MOV             R14, Stack_R14
+MOV             EAX, DWORD PTR [R14]
+TEST            AL, 0x1
+MOV             Stack_R14, R14
+JNZ             loc_7ffff7e549b0
+
+
+/*
+loc_7ffff7e54749
+MOV        RAX, QWORD PTR [RBP + 0x8]
+SHR        RAX, 0x1
+CMP        QWORD PTR [RSP], RAX
+JB         loc_7ffff7e549b0
+->	c_next:loc_7ffff7e5475a 	c_to:loc_7ffff7e549b0 
+ */ 
+loc_7ffff7e54749:
+MOVABS          R14, 0x7ffff7e54749
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R12 + 0x8]
+SHR             RAX, 0x1
+CMP             QWORD PTR [R13], RAX
+JB              loc_7ffff7e549b0
+
+
+/*
+loc_7ffff7e5475a
+MOV        RAX, QWORD PTR [RSP + 0x20]
+MOVQ       XMM1, R13
+MOVQ       XMM0, RBP
+LEA        R15, QWORD PTR [RSP + 0x50]
+PUNPCKLQDQ XMM0, XMM1
+LEA        RDX, QWORD PTR [RSP + 0x70]
+LEA        RSI, QWORD PTR [RIP + 0xFFFFFFFFFFFFF8D2]
+MOV        RDI, R15
+MOV        QWORD PTR [RSP + 0x70], RAX
+MOV        EAX, DWORD PTR [RSP + 0x8]
+MOVUPS     XMMWORD PTR [RSP + 0x78], XMM0
+MOV        DWORD PTR [RSP + 0x88], EAX
+CALL       loc_7ffff7e57c50
+->	c_next:loc_7ffff7e5479b 
+ */ 
+loc_7ffff7e5475a:
+MOV             RAX, QWORD PTR [R13 + 0x20]
+MOV             R14, Stack_R13
+MOVQ            XMM1, R14
+MOVQ            XMM0, R12
+MOV             R15, Stack_R15
+LEA             R15, QWORD PTR [R13 + 0x50]
+PUNPCKLQDQ      XMM0, XMM1
+LEA             RDX, QWORD PTR [R13 + 0x70]
+MOV             Stack_R13, R14
+MOVABS          R14, 0x7ffff7e5477e
+LEA             RSI, QWORD PTR [R14 + 0xFFFFFFFFFFFFF8D2]
+MOV             RDI, R15
+MOV             QWORD PTR [R13 + 0x70], RAX
+MOV             EAX, DWORD PTR [R13 + 0x8]
+MOVUPS          XMMWORD PTR [R13 + 0x78], XMM0
+MOV             DWORD PTR [R13 + 0x88], EAX
+MOVABS          R14, 0x7FFFF7E5479B
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+MOV             Stack_R15, R15
+JMP             loc_7ffff7e57c50
+
+
+/*
+loc_7ffff7e5479b
+MOV        RAX, QWORD PTR [RSP + 0x18]
+CMP        QWORD PTR [RAX], 0x0
+JS         loc_7ffff7e54910
+->	c_next:loc_7ffff7e547aa 	c_to:loc_7ffff7e54910 
+ */ 
+loc_7ffff7e5479b:
+MOVABS          R14, 0x7ffff7e5479b
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R13 + 0x18]
+CMP             QWORD PTR [RAX], 0x0
+JS              loc_7ffff7e54910
+
+
+/*
+loc_7ffff7e547aa
+CALL       loc_7ffff7e58040
+->	c_next:loc_7ffff7e547af 
+ */ 
+loc_7ffff7e547aa:
+MOVABS          R14, 0x7FFFF7E547AF
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e58040
+
+
+/*
+loc_7ffff7e547af
+MOV        R10, QWORD PTR [RSP + 0x18]
+MOV        ESI, DWORD PTR [RSP + 0x40]
+XOR        EDX, EDX
+MOV        DWORD PTR [RSP + 0x44], EAX
+MOV        R9D, 0xFFFFFFFF
+XOR        R8D, R8D
+MOV        RDI, R14
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e547d1 
+ */ 
+loc_7ffff7e547af:
+MOV             R10, QWORD PTR [R13 + 0x18]
+MOV             ESI, DWORD PTR [R13 + 0x40]
+XOR             EDX, EDX
+MOV             DWORD PTR [R13 + 0x44], EAX
+MOV             R9D, 0xFFFFFFFF
+XOR             R8D, R8D
+MOV             R14, Stack_R14
+MOV             RDI, R14
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e547cf
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e547d1
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JA         loc_7ffff7e54960
+->	c_next:loc_7ffff7e547dd 	c_to:loc_7ffff7e54960 
+ */ 
+loc_7ffff7e547d1:
+MOVABS          R14, 0x7ffff7e547d1
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JA              loc_7ffff7e54960
+
+
+/*
+loc_7ffff7e547dd
+MOV        EDI, DWORD PTR [RSP + 0x44]
+CALL       loc_7ffff7e580a0
+->	c_next:loc_7ffff7e547e6 
+ */ 
+loc_7ffff7e547dd:
+MOV             EDI, DWORD PTR [R13 + 0x44]
+MOVABS          R14, 0x7FFFF7E547E6
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e580a0
+
+
+/*
+loc_7ffff7e547e6
+XOR        ESI, ESI
+MOV        RDI, R15
+CALL       loc_7ffff7e57c80
+->	c_next:loc_7ffff7e547f0 
+ */ 
+loc_7ffff7e547e6:
+XOR             ESI, ESI
+MOV             R14, Stack_R15
+MOV             RDI, R14
+MOVABS          R15, 0x7FFFF7E547F0
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R15
+MOV             Stack_R15, R14
+JMP             loc_7ffff7e57c80
+
+
+/*
+loc_7ffff7e547f0
+MOV        EAX, 0xFFFFFFFE
+LOCK XADD       DWORD PTR [RBX], EAX
+CMP        EAX, 0x3
+JZ         loc_7ffff7e548d0
+->	c_next:loc_7ffff7e54802 	c_to:loc_7ffff7e548d0 
+ */ 
+loc_7ffff7e547f0:
+MOVABS          R14, 0x7ffff7e547f0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, 0xFFFFFFFE
+LOCK XADD       DWORD PTR [RBX], EAX
+CMP             EAX, 0x3
+JZ              loc_7ffff7e548d0
+
+
+/*
+loc_7ffff7e54802
+MOV        EAX, DWORD PTR [R14]
+->	c_next:loc_7ffff7e54805 
+ */ 
+loc_7ffff7e54802:
+MOV             R14, Stack_R14
+MOV             EAX, DWORD PTR [R14]
+MOV             Stack_R14, R14
+
+
+/*
+loc_7ffff7e54805
+TEST       AL, 0x1
+JZ         loc_7ffff7e54650
+->	c_next:loc_7ffff7e5480d 	c_to:loc_7ffff7e54650 
+ */ 
+loc_7ffff7e54805:
+MOVABS          R14, 0x7ffff7e54805
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            AL, 0x1
+JZ              loc_7ffff7e54650
+
+
+/*
+loc_7ffff7e5480d
+JMP        loc_7ffff7e5467a
+->	c_to:loc_7ffff7e5467a 
+ */ 
+loc_7ffff7e5480d:
+MOVABS          R14, 0x7ffff7e5480d
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e5467a
+
+
+/*
+loc_7ffff7e54818
+MOV        ESI, DWORD PTR [RSP + 0x14]
+XOR        R10D, R10D
+MOV        EDX, 0x7FFFFFFF
+MOV        RDI, R12
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e5482e 
+ */ 
+loc_7ffff7e54818:
+MOV             ESI, DWORD PTR [R13 + 0x14]
+XOR             R10D, R10D
+MOV             EDX, 0x7FFFFFFF
+MOV             R14, Stack_R12
+MOV             RDI, R14
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e5482c
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e5482e
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JBE        loc_7ffff7e54691
+->	c_next:loc_7ffff7e5483a 	c_to:loc_7ffff7e54691 
+ */ 
+loc_7ffff7e5482e:
+MOVABS          R14, 0x7ffff7e5482e
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JBE             loc_7ffff7e54691
+
+
+/*
+loc_7ffff7e5483a
+ADD        EAX, 0x16
+AND        EAX, 0xFFFFFFF7
+JZ         loc_7ffff7e54691
+->	c_next:loc_7ffff7e54846 	c_to:loc_7ffff7e54691 
+ */ 
+loc_7ffff7e5483a:
+MOVABS          R14, 0x7ffff7e5483a
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x16
+AND             EAX, 0xFFFFFFF7
+JZ              loc_7ffff7e54691
+
+
+/*
+loc_7ffff7e54846
+LEA        RDI, QWORD PTR [RIP + 0x77B3]
+CALL       loc_7ffff7e4b630
+->	c_next:loc_7ffff7e54852 
+ */ 
+loc_7ffff7e54846:
+MOVABS          R14, 0x7ffff7e5484d
+LEA             RDI, QWORD PTR [R14 + 0x77B3]
+MOVABS          R14, 0x7FFFF7E54852
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b630
+
+
+/*
+loc_7ffff7e54852
+NOP        WORD PTR [RAX * 0x2]
+->	c_next:loc_7ffff7e54858 
+ */ 
+loc_7ffff7e54852:
+NOP
+
+
+/*
+loc_7ffff7e54858
+MOV        R8D, 0x16
+JMP        loc_7ffff7e546a4
+->	c_to:loc_7ffff7e546a4 
+ */ 
+loc_7ffff7e54858:
+MOVABS          R14, 0x7ffff7e54858
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R8D, 0x16
+JMP             loc_7ffff7e546a4
+
+
+/*
+loc_7ffff7e54868
+MOV        ECX, DWORD PTR [RSP + 0x8]
+MOV        EDX, DWORD PTR [RSP + 0xC]
+MOV        RDI, RBP
+MOV        RSI, QWORD PTR [RSP]
+CALL       loc_7ffff7e53e60
+->	c_next:loc_7ffff7e5487c 
+ */ 
+loc_7ffff7e54868:
+MOV             ECX, DWORD PTR [R13 + 0x8]
+MOV             EDX, DWORD PTR [R13 + 0xC]
+MOV             RDI, R12
+MOV             RSI, QWORD PTR [R13]
+MOVABS          R14, 0x7FFFF7E5487C
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e53e60
+
+
+/*
+loc_7ffff7e5487c
+MOV        EAX, 0xFFFFFFF8
+LOCK XADD       DWORD PTR [R12], EAX
+MOV        R8D, DWORD PTR [RSP + 0x10]
+SHR        EAX, 0x2
+CMP        EAX, 0x3
+JNZ        loc_7ffff7e546a4
+->	c_next:loc_7ffff7e54898 	c_to:loc_7ffff7e546a4 
+ */ 
+loc_7ffff7e5487c:
+MOVABS          R14, 0x7ffff7e5487c
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, 0xFFFFFFF8
+MOV             R14, Stack_R12
+LOCK XADD       DWORD PTR [R14], EAX
+MOV             R8D, DWORD PTR [R13 + 0x10]
+SHR             EAX, 0x2
+CMP             EAX, 0x3
+MOV             Stack_R12, R14
+JNZ             loc_7ffff7e546a4
+
+
+/*
+loc_7ffff7e54898
+MOV        ESI, DWORD PTR [RSP + 0x14]
+XOR        R10D, R10D
+MOV        EDX, 0x7FFFFFFF
+MOV        RDI, R12
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e548ae 
+ */ 
+loc_7ffff7e54898:
+MOV             ESI, DWORD PTR [R13 + 0x14]
+XOR             R10D, R10D
+MOV             EDX, 0x7FFFFFFF
+MOV             R14, Stack_R12
+MOV             RDI, R14
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e548ac
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e548ae
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JBE        loc_7ffff7e546a4
+->	c_next:loc_7ffff7e548ba 	c_to:loc_7ffff7e546a4 
+ */ 
+loc_7ffff7e548ae:
+MOVABS          R14, 0x7ffff7e548ae
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JBE             loc_7ffff7e546a4
+
+
+/*
+loc_7ffff7e548ba
+ADD        EAX, 0x16
+AND        EAX, 0xFFFFFFF7
+JNZ        loc_7ffff7e54846
+->	c_next:loc_7ffff7e548c2 	c_to:loc_7ffff7e54846 
+ */ 
+loc_7ffff7e548ba:
+MOVABS          R14, 0x7ffff7e548ba
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x16
+AND             EAX, 0xFFFFFFF7
+JNZ             loc_7ffff7e54846
+
+
+/*
+loc_7ffff7e548c2
+JMP        loc_7ffff7e546a4
+->	c_to:loc_7ffff7e546a4 
+ */ 
+loc_7ffff7e548c2:
+MOVABS          R14, 0x7ffff7e548c2
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e546a4
+
+
+/*
+loc_7ffff7e548d0
+LOCK AND        DWORD PTR [RBX], 0xFFFFFFFE
+XOR        R10D, R10D
+MOV        EDX, 0x7FFFFFFF
+MOV        EAX, 0xCA
+MOV        ESI, DWORD PTR [RSP + 0x14]
+MOV        RDI, RBX
+SYSCALL    
+->	c_next:loc_7ffff7e548ea 
+ */ 
+loc_7ffff7e548d0:
+LOCK AND        DWORD PTR [RBX], 0xFFFFFFFE
+XOR             R10D, R10D
+MOV             EDX, 0x7FFFFFFF
+MOV             EAX, 0xCA
+MOV             ESI, DWORD PTR [R13 + 0x14]
+MOV             RDI, RBX
+MOVABS          R14, 0x7ffff7e548e8
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e548ea
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JBE        loc_7ffff7e54802
+->	c_next:loc_7ffff7e548f6 	c_to:loc_7ffff7e54802 
+ */ 
+loc_7ffff7e548ea:
+MOVABS          R14, 0x7ffff7e548ea
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JBE             loc_7ffff7e54802
+
+
+/*
+loc_7ffff7e548f6
+ADD        EAX, 0x16
+AND        EAX, 0xFFFFFFF7
+JNZ        loc_7ffff7e54846
+->	c_next:loc_7ffff7e54902 	c_to:loc_7ffff7e54846 
+ */ 
+loc_7ffff7e548f6:
+MOVABS          R14, 0x7ffff7e548f6
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x16
+AND             EAX, 0xFFFFFFF7
+JNZ             loc_7ffff7e54846
+
+
+/*
+loc_7ffff7e54902
+JMP        loc_7ffff7e54802
+->	c_to:loc_7ffff7e54802 
+ */ 
+loc_7ffff7e54902:
+MOVABS          R14, 0x7ffff7e54902
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e54802
+
+
+/*
+loc_7ffff7e54910
+XOR        ESI, ESI
+MOV        RDI, R15
+CALL       loc_7ffff7e57c80
+->	c_next:loc_7ffff7e5491a 
+ */ 
+loc_7ffff7e54910:
+XOR             ESI, ESI
+MOV             R14, Stack_R15
+MOV             RDI, R14
+MOVABS          R15, 0x7FFFF7E5491A
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R15
+MOV             Stack_R15, R14
+JMP             loc_7ffff7e57c80
+
+
+/*
+loc_7ffff7e5491a
+MOV        EAX, 0xFFFFFFFE
+LOCK XADD       DWORD PTR [RBX], EAX
+CMP        EAX, 0x3
+JZ         loc_7ffff7e549f9
+->	c_next:loc_7ffff7e5492c 	c_to:loc_7ffff7e549f9 
+ */ 
+loc_7ffff7e5491a:
+MOVABS          R14, 0x7ffff7e5491a
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, 0xFFFFFFFE
+LOCK XADD       DWORD PTR [RBX], EAX
+CMP             EAX, 0x3
+JZ              loc_7ffff7e549f9
+
+
+/*
+loc_7ffff7e5492c
+MOV        ECX, DWORD PTR [RSP + 0x8]
+MOV        EDX, DWORD PTR [RSP + 0xC]
+MOV        RDI, RBP
+MOV        RSI, QWORD PTR [RSP]
+CALL       loc_7ffff7e53e60
+->	c_next:loc_7ffff7e54940 
+ */ 
+loc_7ffff7e5492c:
+MOV             ECX, DWORD PTR [R13 + 0x8]
+MOV             EDX, DWORD PTR [R13 + 0xC]
+MOV             RDI, R12
+MOV             RSI, QWORD PTR [R13]
+MOVABS          R14, 0x7FFFF7E54940
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e53e60
+
+
+/*
+loc_7ffff7e54940
+MOV        DWORD PTR [RSP + 0x10], 0x6E
+JMP        loc_7ffff7e5467a
+->	c_to:loc_7ffff7e5467a 
+ */ 
+loc_7ffff7e54940:
+MOVABS          R14, 0x7ffff7e54940
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             DWORD PTR [R13 + 0x10], 0x6E
+JMP             loc_7ffff7e5467a
+
+
+/*
+loc_7ffff7e5494d
+ADD        EAX, 0x16
+AND        EAX, 0xFFFFFFF7
+JNZ        loc_7ffff7e54846
+->	c_next:loc_7ffff7e54959 	c_to:loc_7ffff7e54846 
+ */ 
+loc_7ffff7e5494d:
+MOVABS          R14, 0x7ffff7e5494d
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x16
+AND             EAX, 0xFFFFFFF7
+JNZ             loc_7ffff7e54846
+
+
+/*
+loc_7ffff7e54959
+JMP        loc_7ffff7e5471b
+->	c_to:loc_7ffff7e5471b 
+ */ 
+loc_7ffff7e54959:
+MOVABS          R14, 0x7ffff7e54959
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e5471b
+
+
+/*
+loc_7ffff7e54960
+MOV        EDI, DWORD PTR [RSP + 0x44]
+MOV        QWORD PTR [RSP + 0x48], RAX
+CALL       loc_7ffff7e580a0
+->	c_next:loc_7ffff7e5496e 
+ */ 
+loc_7ffff7e54960:
+MOV             EDI, DWORD PTR [R13 + 0x44]
+MOV             QWORD PTR [R13 + 0x48], RAX
+MOVABS          R14, 0x7FFFF7E5496E
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e580a0
+
+
+/*
+loc_7ffff7e5496e
+MOV        RAX, QWORD PTR [RSP + 0x48]
+CMP        EAX, 0xFFFFFF92
+JZ         loc_7ffff7e54910
+->	c_next:loc_7ffff7e54978 	c_to:loc_7ffff7e54910 
+ */ 
+loc_7ffff7e5496e:
+MOVABS          R14, 0x7ffff7e5496e
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R13 + 0x48]
+CMP             EAX, 0xFFFFFF92
+JZ              loc_7ffff7e54910
+
+
+/*
+loc_7ffff7e54978
+LEA        ECX, DWORD PTR [RAX + 0xB]
+CMP        ECX, 0xB
+JA         loc_7ffff7e54846
+->	c_next:loc_7ffff7e54984 	c_to:loc_7ffff7e54846 
+ */ 
+loc_7ffff7e54978:
+MOVABS          R14, 0x7ffff7e54978
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+LEA             ECX, DWORD PTR [RAX + 0xB]
+CMP             ECX, 0xB
+JA              loc_7ffff7e54846
+
+
+/*
+loc_7ffff7e54984
+MOV        EAX, 0x1
+SHL        RAX, CL
+TEST       EAX, 0x881
+JZ         loc_7ffff7e54846
+->	c_next:loc_7ffff7e54997 	c_to:loc_7ffff7e54846 
+ */ 
+loc_7ffff7e54984:
+MOVABS          R14, 0x7ffff7e54984
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, 0x1
+SHL             RAX, CL
+TEST            EAX, 0x881
+JZ              loc_7ffff7e54846
+
+
+/*
+loc_7ffff7e54997
+XOR        ESI, ESI
+MOV        RDI, R15
+CALL       loc_7ffff7e57c80
+->	c_next:loc_7ffff7e549a1 
+ */ 
+loc_7ffff7e54997:
+XOR             ESI, ESI
+MOV             R14, Stack_R15
+MOV             RDI, R14
+MOVABS          R15, 0x7FFFF7E549A1
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R15
+MOV             Stack_R15, R14
+JMP             loc_7ffff7e57c80
+
+
+/*
+loc_7ffff7e549a1
+JMP        loc_7ffff7e547f0
+->	c_to:loc_7ffff7e547f0 
+ */ 
+loc_7ffff7e549a1:
+MOVABS          R14, 0x7ffff7e549a1
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e547f0
+
+
+/*
+loc_7ffff7e549b0
+MOV        EAX, 0xFFFFFFFE
+LOCK XADD       DWORD PTR [RBX], EAX
+CMP        EAX, 0x3
+JNZ        loc_7ffff7e5467a
+->	c_next:loc_7ffff7e549c2 	c_to:loc_7ffff7e5467a 
+ */ 
+loc_7ffff7e549b0:
+MOVABS          R14, 0x7ffff7e549b0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, 0xFFFFFFFE
+LOCK XADD       DWORD PTR [RBX], EAX
+CMP             EAX, 0x3
+JNZ             loc_7ffff7e5467a
+
+
+/*
+loc_7ffff7e549c2
+LOCK AND        DWORD PTR [RBX], 0xFFFFFFFE
+XOR        R10D, R10D
+MOV        EDX, 0x7FFFFFFF
+MOV        EAX, 0xCA
+MOV        ESI, DWORD PTR [RSP + 0x14]
+MOV        RDI, RBX
+SYSCALL    
+->	c_next:loc_7ffff7e549dc 
+ */ 
+loc_7ffff7e549c2:
+LOCK AND        DWORD PTR [RBX], 0xFFFFFFFE
+XOR             R10D, R10D
+MOV             EDX, 0x7FFFFFFF
+MOV             EAX, 0xCA
+MOV             ESI, DWORD PTR [R13 + 0x14]
+MOV             RDI, RBX
+MOVABS          R14, 0x7ffff7e549da
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e549dc
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JBE        loc_7ffff7e5467a
+->	c_next:loc_7ffff7e549e8 	c_to:loc_7ffff7e5467a 
+ */ 
+loc_7ffff7e549dc:
+MOVABS          R14, 0x7ffff7e549dc
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JBE             loc_7ffff7e5467a
+
+
+/*
+loc_7ffff7e549e8
+ADD        EAX, 0x16
+AND        EAX, 0xFFFFFFF7
+JNZ        loc_7ffff7e54846
+->	c_next:loc_7ffff7e549f4 	c_to:loc_7ffff7e54846 
+ */ 
+loc_7ffff7e549e8:
+MOVABS          R14, 0x7ffff7e549e8
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x16
+AND             EAX, 0xFFFFFFF7
+JNZ             loc_7ffff7e54846
+
+
+/*
+loc_7ffff7e549f4
+JMP        loc_7ffff7e5467a
+->	c_to:loc_7ffff7e5467a 
+ */ 
+loc_7ffff7e549f4:
+MOVABS          R14, 0x7ffff7e549f4
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e5467a
+
+
+/*
+loc_7ffff7e549f9
+LOCK AND        DWORD PTR [RBX], 0xFFFFFFFE
+XOR        R10D, R10D
+MOV        EDX, 0x7FFFFFFF
+MOV        EAX, 0xCA
+MOV        ESI, DWORD PTR [RSP + 0x14]
+MOV        RDI, RBX
+SYSCALL    
+->	c_next:loc_7ffff7e54a13 
+ */ 
+loc_7ffff7e549f9:
+LOCK AND        DWORD PTR [RBX], 0xFFFFFFFE
+XOR             R10D, R10D
+MOV             EDX, 0x7FFFFFFF
+MOV             EAX, 0xCA
+MOV             ESI, DWORD PTR [R13 + 0x14]
+MOV             RDI, RBX
+MOVABS          R14, 0x7ffff7e54a11
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e54a13
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JBE        loc_7ffff7e5492c
+->	c_next:loc_7ffff7e54a1f 	c_to:loc_7ffff7e5492c 
+ */ 
+loc_7ffff7e54a13:
+MOVABS          R14, 0x7ffff7e54a13
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JBE             loc_7ffff7e5492c
+
+
+/*
+loc_7ffff7e54a1f
+ADD        EAX, 0x16
+AND        EAX, 0xFFFFFFF7
+JNZ        loc_7ffff7e54846
+->	c_next:loc_7ffff7e54a2b 	c_to:loc_7ffff7e54846 
+ */ 
+loc_7ffff7e54a1f:
+MOVABS          R14, 0x7ffff7e54a1f
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x16
+AND             EAX, 0xFFFFFFF7
+JNZ             loc_7ffff7e54846
+
+
+/*
+loc_7ffff7e54a2b
+JMP        loc_7ffff7e5492c
+->	c_to:loc_7ffff7e5492c 
+ */ 
+loc_7ffff7e54a2b:
+MOVABS          R14, 0x7ffff7e54a2b
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e5492c
+
+
+/*
+loc_7ffff7e54a30
+CALL       loc_7ffff7e4b6d0
+->	c_next:loc_7ffff7e54a35 
+ */ 
+loc_7ffff7e54a30:
+MOVABS          R14, 0x7FFFF7E54A35
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b6d0
+
+
+/*
+loc_7ffff7e54a35
+NOP        WORD PTR CS:[RAX * 0x2]
+ENDBR64    
+PUSH       R15
+PUSH       R14
+PUSH       R13
+PUSH       R12
+PUSH       RBP
+PUSH       RBX
+SUB        RSP, 0xA8
+MOV        RAX, QWORD PTR FS:[0x28]
+MOV        QWORD PTR [RSP + 0x98], RAX
+XOR        EAX, EAX
+CMP        QWORD PTR [RCX + 0x8], 0x3B9AC9FF
+JA         loc_7ffff7e54ba8
+->	c_next:loc_7ffff7e54a76 	c_to:loc_7ffff7e54ba8 
+ */ 
+loc_7ffff7e54a35:
+MOVABS          R14, 0x7ffff7e54a35
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+NOP
+NOP
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             R14, Stack_R15
+MOV             QWORD PTR [R13], R14
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             R15, Stack_R14
+MOV             QWORD PTR [R13], R15
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             Stack_R15, R14
+MOV             R14, Stack_R13
+MOV             QWORD PTR [R13], R14
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             Stack_R13, R14
+MOV             R14, Stack_R12
+MOV             QWORD PTR [R13], R14
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R12
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], RBX
+SUB             R13, 0xA8
+MOV             Stack_R12, R14
+MOV             R14, Stack_RFS
+MOV             RAX, QWORD PTR [R14 + 0x28]
+MOV             QWORD PTR [R13 + 0x98], RAX
+XOR             EAX, EAX
+CMP             QWORD PTR [RCX + 0x8], 0x3B9AC9FF
+MOV             Stack_R14, R15
+JA              loc_7ffff7e54ba8
+
+
+/*
+loc_7ffff7e54a76
+MOV        R14D, EDX
+CMP        EDX, 0x1
+JA         loc_7ffff7e54ba8
+->	c_next:loc_7ffff7e54a82 	c_to:loc_7ffff7e54ba8 
+ */ 
+loc_7ffff7e54a76:
+MOVABS          R14, 0x7ffff7e54a76
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_R14
+MOV             R14d, EDX
+CMP             EDX, 0x1
+MOV             Stack_R14, R14
+JA              loc_7ffff7e54ba8
+
+
+/*
+loc_7ffff7e54a82
+MOV        RBP, RDI
+MOV        R12, RSI
+MOV        RBX, RCX
+NOP        
+MOV        EAX, 0x2
+LOCK XADD       QWORD PTR [RDI], RAX
+MOV        ESI, EAX
+MOV        QWORD PTR [RSP + 0x20], RAX
+SHR        RAX, 0x1
+LEA        R15, QWORD PTR [RDI + 0x24]
+AND        ESI, 0x1
+MOV        QWORD PTR [RSP], RAX
+MOV        EAX, 0x8
+MOV        DWORD PTR [RSP + 0xC], ESI
+LOCK XADD       DWORD PTR [R15], EAX
+XOR        ECX, ECX
+AND        EAX, 0x1
+MOV        DWORD PTR [RSP + 0x1C], 0x81
+MOV        DWORD PTR [RSP + 0x8], EAX
+JZ         loc_7ffff7e54add
+->	c_next:loc_7ffff7e54acc 	c_to:loc_7ffff7e54add 
+ */ 
+loc_7ffff7e54a82:
+MOVABS          R14, 0x7ffff7e54a82
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R12, RDI
+MOV             R14, Stack_R12
+MOV             R14, RSI
+MOV             RBX, RCX
+NOP
+MOV             EAX, 0x2
+LOCK XADD       QWORD PTR [RDI], RAX
+MOV             ESI, EAX
+MOV             QWORD PTR [R13 + 0x20], RAX
+SHR             RAX, 0x1
+MOV             R15, Stack_R15
+LEA             R15, QWORD PTR [RDI + 0x24]
+AND             ESI, 0x1
+MOV             QWORD PTR [R13], RAX
+MOV             EAX, 0x8
+MOV             DWORD PTR [R13 + 0xC], ESI
+LOCK XADD       DWORD PTR [R15], EAX
+XOR             ECX, ECX
+AND             EAX, 0x1
+MOV             DWORD PTR [R13 + 0x1C], 0x81
+MOV             DWORD PTR [R13 + 0x8], EAX
+MOV             Stack_R15, R15
+MOV             Stack_R12, R14
+JZ              loc_7ffff7e54add
+
+
+/*
+loc_7ffff7e54acc
+MOV        DWORD PTR [RSP + 0x1C], EAX
+MOV        ECX, 0x80
+MOV        DWORD PTR [RSP + 0x8], 0x80
+->	c_next:loc_7ffff7e54add 
+ */ 
+loc_7ffff7e54acc:
+MOV             DWORD PTR [R13 + 0x1C], EAX
+MOV             ECX, 0x80
+MOV             DWORD PTR [R13 + 0x8], 0x80
+
+
+/*
+loc_7ffff7e54add
+XOR        ESI, ESI
+MOV        RDI, R12
+MOV        DWORD PTR [RSP + 0x10], ECX
+CALL       loc_7ffff7e516a0
+->	c_next:loc_7ffff7e54aeb 
+ */ 
+loc_7ffff7e54add:
+XOR             ESI, ESI
+MOV             R14, Stack_R12
+MOV             RDI, R14
+MOV             DWORD PTR [R13 + 0x10], ECX
+MOVABS          R15, 0x7FFFF7E54AEB
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R15
+MOV             Stack_R12, R14
+JMP             loc_7ffff7e516a0
+
+
+/*
+loc_7ffff7e54aeb
+MOV        ECX, DWORD PTR [RSP + 0x10]
+TEST       EAX, EAX
+MOV        DWORD PTR [RSP + 0x18], EAX
+JNZ        loc_7ffff7e54db8
+->	c_next:loc_7ffff7e54afb 	c_to:loc_7ffff7e54db8 
+ */ 
+loc_7ffff7e54aeb:
+MOVABS          R14, 0x7ffff7e54aeb
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             ECX, DWORD PTR [R13 + 0x10]
+TEST            EAX, EAX
+MOV             DWORD PTR [R13 + 0x18], EAX
+JNZ             loc_7ffff7e54db8
+
+
+/*
+loc_7ffff7e54afb
+MOV        EAX, DWORD PTR [RSP + 0xC]
+MOV        QWORD PTR [RSP + 0x10], RAX
+SHL        RAX, 0x2
+MOV        QWORD PTR [RSP + 0x28], RAX
+LEA        R13, QWORD PTR [RAX + RBP + 0x28]
+MOV        EAX, DWORD PTR [R13]
+TEST       AL, 0x1
+JNZ        loc_7ffff7e54b77
+->	c_next:loc_7ffff7e54b1a 	c_to:loc_7ffff7e54b77 
+ */ 
+loc_7ffff7e54afb:
+MOVABS          R14, 0x7ffff7e54afb
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, DWORD PTR [R13 + 0xC]
+MOV             QWORD PTR [R13 + 0x10], RAX
+SHL             RAX, 0x2
+MOV             QWORD PTR [R13 + 0x28], RAX
+MOV             R14, Stack_R13
+LEA             R14, QWORD PTR [RAX + R12 + 0x28]
+MOV             EAX, DWORD PTR [R14]
+TEST            AL, 0x1
+MOV             Stack_R13, R14
+JNZ             loc_7ffff7e54b77
+
+
+/*
+loc_7ffff7e54b1a
+CMP        R14D, 0x1
+LEA        RDI, QWORD PTR [RBP + 0x10]
+SBB        EDX, EDX
+MOV        QWORD PTR [RSP + 0x30], RDI
+AND        EDX, 0x100
+OR         DL, 0x89
+XOR        EDX, ECX
+MOV        DWORD PTR [RSP + 0x40], EDX
+->	c_next:loc_7ffff7e54b38 
+ */ 
+loc_7ffff7e54b1a:
+MOV             R14, Stack_R14
+CMP             R14d, 0x1
+LEA             RDI, QWORD PTR [R12 + 0x10]
+SBB             EDX, EDX
+MOV             QWORD PTR [R13 + 0x30], RDI
+AND             EDX, 0x100
+OR              DL, 0x89
+XOR             EDX, ECX
+MOV             DWORD PTR [R13 + 0x40], EDX
+MOV             Stack_R14, R14
+
+
+/*
+loc_7ffff7e54b38
+TEST       EAX, EAX
+JZ         loc_7ffff7e54be0
+->	c_next:loc_7ffff7e54b40 	c_to:loc_7ffff7e54be0 
+ */ 
+loc_7ffff7e54b38:
+MOVABS          R14, 0x7ffff7e54b38
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            EAX, EAX
+JZ              loc_7ffff7e54be0
+
+
+/*
+loc_7ffff7e54b40
+LEA        EDX, DWORD PTR [RAX + 0xFFFFFFFFFFFFFFFE]
+LOCK CMPXCHG    DWORD PTR [R13], EDX
+JNZ        loc_7ffff7e54cba
+->	c_next:loc_7ffff7e54b4f 	c_to:loc_7ffff7e54cba 
+ */ 
+loc_7ffff7e54b40:
+MOVABS          R14, 0x7ffff7e54b40
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+LEA             EDX, DWORD PTR [RAX + 0xFFFFFFFFFFFFFFFE]
+MOV             R14, Stack_R13
+LOCK CMPXCHG    DWORD PTR [R14], EDX
+MOV             Stack_R13, R14
+JNZ             loc_7ffff7e54cba
+
+
+/*
+loc_7ffff7e54b4f
+MOV        RDX, QWORD PTR [RBP + 0x8]
+LEA        RCX, QWORD PTR [RBP + 0x8]
+MOV        RAX, RDX
+SHR        RAX, 0x1
+CMP        QWORD PTR [RSP], RAX
+JAE        loc_7ffff7e54b77
+->	c_next:loc_7ffff7e54b63 	c_to:loc_7ffff7e54b77 
+ */ 
+loc_7ffff7e54b4f:
+MOVABS          R14, 0x7ffff7e54b4f
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RDX, QWORD PTR [R12 + 0x8]
+LEA             RCX, QWORD PTR [R12 + 0x8]
+MOV             RAX, RDX
+SHR             RAX, 0x1
+CMP             QWORD PTR [R13], RAX
+JAE             loc_7ffff7e54b77
+
+
+/*
+loc_7ffff7e54b63
+MOV        RAX, RDX
+NOT        RAX
+AND        EAX, 0x1
+CMP        QWORD PTR [RSP + 0x10], RAX
+JZ         loc_7ffff7e54d10
+->	c_next:loc_7ffff7e54b77 	c_to:loc_7ffff7e54d10 
+ */ 
+loc_7ffff7e54b63:
+MOVABS          R14, 0x7ffff7e54b63
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, RDX
+NOT             RAX
+AND             EAX, 0x1
+CMP             QWORD PTR [R13 + 0x10], RAX
+JZ              loc_7ffff7e54d10
+
+
+/*
+loc_7ffff7e54b77
+MOV        EAX, 0xFFFFFFF8
+LOCK XADD       DWORD PTR [R15], EAX
+SHR        EAX, 0x2
+CMP        EAX, 0x3
+JZ         loc_7ffff7e54cd0
+->	c_next:loc_7ffff7e54b8d 	c_to:loc_7ffff7e54cd0 
+ */ 
+loc_7ffff7e54b77:
+MOVABS          R14, 0x7ffff7e54b77
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, 0xFFFFFFF8
+MOV             R14, Stack_R15
+LOCK XADD       DWORD PTR [R14], EAX
+SHR             EAX, 0x2
+CMP             EAX, 0x3
+MOV             Stack_R15, R14
+JZ              loc_7ffff7e54cd0
+
+
+/*
+loc_7ffff7e54b8d
+MOV        RDI, R12
+CALL       loc_7ffff7e51fe0
+->	c_next:loc_7ffff7e54b95 
+ */ 
+loc_7ffff7e54b8d:
+MOV             R14, Stack_R12
+MOV             RDI, R14
+MOVABS          R15, 0x7FFFF7E54B95
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R15
+MOV             Stack_R12, R14
+JMP             loc_7ffff7e51fe0
+
+
+/*
+loc_7ffff7e54b95
+MOV        R8D, EAX
+TEST       EAX, EAX
+CMOVZ      R8D, DWORD PTR [RSP + 0x18]
+JMP        loc_7ffff7e54bae
+->	c_to:loc_7ffff7e54bae 
+ */ 
+loc_7ffff7e54b95:
+MOVABS          R14, 0x7ffff7e54b95
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R8D, EAX
+TEST            EAX, EAX
+CMOVZ           R8D, DWORD PTR [R13 + 0x18]
+JMP             loc_7ffff7e54bae
+
+
+/*
+loc_7ffff7e54ba8
+MOV        R8D, 0x16
+->	c_next:loc_7ffff7e54bae 
+ */ 
+loc_7ffff7e54ba8:
+MOV             R8D, 0x16
+
+
+/*
+loc_7ffff7e54bae
+MOV        RAX, QWORD PTR [RSP + 0x98]
+XOR        RAX, QWORD PTR FS:[0x28]
+JNZ        loc_7ffff7e54f32
+->	c_next:loc_7ffff7e54bc5 	c_to:loc_7ffff7e54f32 
+ */ 
+loc_7ffff7e54bae:
+MOVABS          R14, 0x7ffff7e54bae
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R13 + 0x98]
+MOV             R14, Stack_RFS
+XOR             RAX, QWORD PTR [R14 + 0x28]
+JNZ             loc_7ffff7e54f32
+
+
+/*
+loc_7ffff7e54bc5
+ADD        RSP, 0xA8
+MOV        EAX, R8D
+POP        RBX
+POP        RBP
+POP        R12
+POP        R13
+POP        R14
+POP        R15
+RET        
+ */ 
+loc_7ffff7e54bc5:
+ADD             R13, 0xA8
+MOV             EAX, R8D
+MOV             RBX, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             R12, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             R14, Stack_R12
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             R15, Stack_R13
+MOV             R15, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R12, R14
+MOV             R14, Stack_R14
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R14, R14
+MOV             R14, Stack_R15
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R15, R14
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R13, R15
+JMP             ij_7ffff7e54bda
+
+
+/*
+loc_7ffff7e54be0
+MOV        RAX, QWORD PTR [RSP + 0x30]
+ADD        RAX, QWORD PTR [RSP + 0x28]
+MOV        QWORD PTR [RSP + 0x38], RAX
+LOCK ADD        DWORD PTR [RAX], 0x2
+MOV        EAX, DWORD PTR [R13]
+TEST       AL, 0x1
+JNZ        loc_7ffff7e54d5e
+->	c_next:loc_7ffff7e54bff 	c_to:loc_7ffff7e54d5e 
+ */ 
+loc_7ffff7e54be0:
+MOVABS          R14, 0x7ffff7e54be0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R13 + 0x30]
+ADD             RAX, QWORD PTR [R13 + 0x28]
+MOV             QWORD PTR [R13 + 0x38], RAX
+LOCK ADD        DWORD PTR [RAX], 0x2
+MOV             R14, Stack_R13
+MOV             EAX, DWORD PTR [R14]
+TEST            AL, 0x1
+MOV             Stack_R13, R14
+JNZ             loc_7ffff7e54d5e
+
+
+/*
+loc_7ffff7e54bff
+MOV        RAX, QWORD PTR [RBP + 0x8]
+SHR        RAX, 0x1
+CMP        QWORD PTR [RSP], RAX
+JB         loc_7ffff7e54d5e
+->	c_next:loc_7ffff7e54c10 	c_to:loc_7ffff7e54d5e 
+ */ 
+loc_7ffff7e54bff:
+MOVABS          R14, 0x7ffff7e54bff
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R12 + 0x8]
+SHR             RAX, 0x1
+CMP             QWORD PTR [R13], RAX
+JB              loc_7ffff7e54d5e
+
+
+/*
+loc_7ffff7e54c10
+MOV        RAX, QWORD PTR [RSP + 0x20]
+MOVQ       XMM1, R12
+MOVQ       XMM0, RBP
+LEA        R14, QWORD PTR [RSP + 0x50]
+PUNPCKLQDQ XMM0, XMM1
+LEA        RDX, QWORD PTR [RSP + 0x70]
+LEA        RSI, QWORD PTR [RIP + 0xFFFFFFFFFFFFF41C]
+MOV        RDI, R14
+MOV        QWORD PTR [RSP + 0x70], RAX
+MOV        EAX, DWORD PTR [RSP + 0x8]
+MOVUPS     XMMWORD PTR [RSP + 0x78], XMM0
+MOV        DWORD PTR [RSP + 0x88], EAX
+CALL       loc_7ffff7e57c50
+->	c_next:loc_7ffff7e54c51 
+ */ 
+loc_7ffff7e54c10:
+MOV             RAX, QWORD PTR [R13 + 0x20]
+MOV             R14, Stack_R12
+MOVQ            XMM1, R14
+MOVQ            XMM0, R12
+MOV             R15, Stack_R14
+LEA             R15, QWORD PTR [R13 + 0x50]
+PUNPCKLQDQ      XMM0, XMM1
+LEA             RDX, QWORD PTR [R13 + 0x70]
+MOV             Stack_R12, R14
+MOVABS          R14, 0x7ffff7e54c34
+LEA             RSI, QWORD PTR [R14 + 0xFFFFFFFFFFFFF41C]
+MOV             RDI, R15
+MOV             QWORD PTR [R13 + 0x70], RAX
+MOV             EAX, DWORD PTR [R13 + 0x8]
+MOVUPS          XMMWORD PTR [R13 + 0x78], XMM0
+MOV             DWORD PTR [R13 + 0x88], EAX
+MOVABS          R14, 0x7FFFF7E54C51
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+MOV             Stack_R14, R15
+JMP             loc_7ffff7e57c50
+
+
+/*
+loc_7ffff7e54c51
+CMP        QWORD PTR [RBX], 0x0
+JS         loc_7ffff7e54e60
+->	c_next:loc_7ffff7e54c5b 	c_to:loc_7ffff7e54e60 
+ */ 
+loc_7ffff7e54c51:
+MOVABS          R14, 0x7ffff7e54c51
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             QWORD PTR [RBX], 0x0
+JS              loc_7ffff7e54e60
+
+
+/*
+loc_7ffff7e54c5b
+CALL       loc_7ffff7e58040
+->	c_next:loc_7ffff7e54c60 
+ */ 
+loc_7ffff7e54c5b:
+MOVABS          R14, 0x7FFFF7E54C60
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e58040
+
+
+/*
+loc_7ffff7e54c60
+MOV        ESI, DWORD PTR [RSP + 0x40]
+XOR        R8D, R8D
+MOV        R10, RBX
+MOV        DWORD PTR [RSP + 0x44], EAX
+MOV        R9D, 0xFFFFFFFF
+XOR        EDX, EDX
+MOV        RDI, R13
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e54c80 
+ */ 
+loc_7ffff7e54c60:
+MOV             ESI, DWORD PTR [R13 + 0x40]
+XOR             R8D, R8D
+MOV             R10, RBX
+MOV             DWORD PTR [R13 + 0x44], EAX
+MOV             R9D, 0xFFFFFFFF
+XOR             EDX, EDX
+MOV             R14, Stack_R13
+MOV             RDI, R14
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e54c7e
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e54c80
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JA         loc_7ffff7e54eb0
+->	c_next:loc_7ffff7e54c8c 	c_to:loc_7ffff7e54eb0 
+ */ 
+loc_7ffff7e54c80:
+MOVABS          R14, 0x7ffff7e54c80
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JA              loc_7ffff7e54eb0
+
+
+/*
+loc_7ffff7e54c8c
+MOV        EDI, DWORD PTR [RSP + 0x44]
+CALL       loc_7ffff7e580a0
+->	c_next:loc_7ffff7e54c95 
+ */ 
+loc_7ffff7e54c8c:
+MOV             EDI, DWORD PTR [R13 + 0x44]
+MOVABS          R14, 0x7FFFF7E54C95
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e580a0
+
+
+/*
+loc_7ffff7e54c95
+XOR        ESI, ESI
+MOV        RDI, R14
+CALL       loc_7ffff7e57c80
+->	c_next:loc_7ffff7e54c9f 
+ */ 
+loc_7ffff7e54c95:
+XOR             ESI, ESI
+MOV             R14, Stack_R14
+MOV             RDI, R14
+MOVABS          R15, 0x7FFFF7E54C9F
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R15
+MOV             Stack_R14, R14
+JMP             loc_7ffff7e57c80
+
+
+/*
+loc_7ffff7e54c9f
+MOV        RDI, QWORD PTR [RSP + 0x38]
+MOV        EAX, 0xFFFFFFFE
+LOCK XADD       DWORD PTR [RDI], EAX
+CMP        EAX, 0x3
+JZ         loc_7ffff7e54e20
+->	c_next:loc_7ffff7e54cb6 	c_to:loc_7ffff7e54e20 
+ */ 
+loc_7ffff7e54c9f:
+MOVABS          R14, 0x7ffff7e54c9f
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RDI, QWORD PTR [R13 + 0x38]
+MOV             EAX, 0xFFFFFFFE
+LOCK XADD       DWORD PTR [RDI], EAX
+CMP             EAX, 0x3
+JZ              loc_7ffff7e54e20
+
+
+/*
+loc_7ffff7e54cb6
+MOV        EAX, DWORD PTR [R13]
+->	c_next:loc_7ffff7e54cba 
+ */ 
+loc_7ffff7e54cb6:
+MOV             R14, Stack_R13
+MOV             EAX, DWORD PTR [R14]
+MOV             Stack_R13, R14
+
+
+/*
+loc_7ffff7e54cba
+TEST       AL, 0x1
+JZ         loc_7ffff7e54b38
+->	c_next:loc_7ffff7e54cc2 	c_to:loc_7ffff7e54b38 
+ */ 
+loc_7ffff7e54cba:
+MOVABS          R14, 0x7ffff7e54cba
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            AL, 0x1
+JZ              loc_7ffff7e54b38
+
+
+/*
+loc_7ffff7e54cc2
+JMP        loc_7ffff7e54b77
+->	c_to:loc_7ffff7e54b77 
+ */ 
+loc_7ffff7e54cc2:
+MOVABS          R14, 0x7ffff7e54cc2
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e54b77
+
+
+/*
+loc_7ffff7e54cd0
+MOV        ESI, DWORD PTR [RSP + 0x1C]
+XOR        R10D, R10D
+MOV        EDX, 0x7FFFFFFF
+MOV        RDI, R15
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e54ce6 
+ */ 
+loc_7ffff7e54cd0:
+MOV             ESI, DWORD PTR [R13 + 0x1C]
+XOR             R10D, R10D
+MOV             EDX, 0x7FFFFFFF
+MOV             R14, Stack_R15
+MOV             RDI, R14
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e54ce4
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e54ce6
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JBE        loc_7ffff7e54b8d
+->	c_next:loc_7ffff7e54cf2 	c_to:loc_7ffff7e54b8d 
+ */ 
+loc_7ffff7e54ce6:
+MOVABS          R14, 0x7ffff7e54ce6
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JBE             loc_7ffff7e54b8d
+
+
+/*
+loc_7ffff7e54cf2
+ADD        EAX, 0x16
+AND        EAX, 0xFFFFFFF7
+JZ         loc_7ffff7e54b8d
+->	c_next:loc_7ffff7e54cfe 	c_to:loc_7ffff7e54b8d 
+ */ 
+loc_7ffff7e54cf2:
+MOVABS          R14, 0x7ffff7e54cf2
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x16
+AND             EAX, 0xFFFFFFF7
+JZ              loc_7ffff7e54b8d
+
+
+/*
+loc_7ffff7e54cfe
+LEA        RDI, QWORD PTR [RIP + 0x72FB]
+CALL       loc_7ffff7e4b630
+->	c_next:loc_7ffff7e54d0a 
+ */ 
+loc_7ffff7e54cfe:
+MOVABS          R14, 0x7ffff7e54d05
+LEA             RDI, QWORD PTR [R14 + 0x72FB]
+MOVABS          R14, 0x7FFFF7E54D0A
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b630
+
+
+/*
+loc_7ffff7e54d0a
+NOP        WORD PTR [RAX * 0x2]
+->	c_next:loc_7ffff7e54d10 
+ */ 
+loc_7ffff7e54d0a:
+NOP
+
+
+/*
+loc_7ffff7e54d10
+MOV        EAX, DWORD PTR [R13]
+->	c_next:loc_7ffff7e54d14 
+ */ 
+loc_7ffff7e54d10:
+MOV             R14, Stack_R13
+MOV             EAX, DWORD PTR [R14]
+MOV             Stack_R13, R14
+
+
+/*
+loc_7ffff7e54d14
+MOV        RSI, QWORD PTR [RCX]
+CMP        RDX, RSI
+JNZ        loc_7ffff7e54b77
+->	c_next:loc_7ffff7e54d20 	c_to:loc_7ffff7e54b77 
+ */ 
+loc_7ffff7e54d14:
+MOVABS          R14, 0x7ffff7e54d14
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RSI, QWORD PTR [RCX]
+CMP             RDX, RSI
+JNZ             loc_7ffff7e54b77
+
+
+/*
+loc_7ffff7e54d20
+TEST       AL, 0x1
+JNZ        loc_7ffff7e54d2f
+->	c_next:loc_7ffff7e54d24 	c_to:loc_7ffff7e54d2f 
+ */ 
+loc_7ffff7e54d20:
+MOVABS          R14, 0x7ffff7e54d20
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            AL, 0x1
+JNZ             loc_7ffff7e54d2f
+
+
+/*
+loc_7ffff7e54d24
+LEA        ESI, DWORD PTR [RAX + 0x2]
+LOCK CMPXCHG    DWORD PTR [R13], ESI
+JNZ        loc_7ffff7e54d14
+->	c_next:loc_7ffff7e54d2f 	c_to:loc_7ffff7e54d14 
+ */ 
+loc_7ffff7e54d24:
+MOVABS          R14, 0x7ffff7e54d24
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+LEA             ESI, DWORD PTR [RAX + 0x2]
+MOV             R14, Stack_R13
+LOCK CMPXCHG    DWORD PTR [R14], ESI
+MOV             Stack_R13, R14
+JNZ             loc_7ffff7e54d14
+
+
+/*
+loc_7ffff7e54d2f
+MOV        ESI, DWORD PTR [RSP + 0x1C]
+XOR        R10D, R10D
+MOV        EDX, 0x1
+MOV        RDI, R13
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e54d45 
+ */ 
+loc_7ffff7e54d2f:
+MOV             ESI, DWORD PTR [R13 + 0x1C]
+XOR             R10D, R10D
+MOV             EDX, 0x1
+MOV             R14, Stack_R13
+MOV             RDI, R14
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e54d43
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e54d45
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JA         loc_7ffff7e54e9e
+->	c_next:loc_7ffff7e54d51 	c_to:loc_7ffff7e54e9e 
+ */ 
+loc_7ffff7e54d45:
+MOVABS          R14, 0x7ffff7e54d45
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JA              loc_7ffff7e54e9e
+
+
+/*
+loc_7ffff7e54d51
+MOV        RDI, RBP
+CALL       loc_7ffff7e55290
+->	c_next:loc_7ffff7e54d59 
+ */ 
+loc_7ffff7e54d51:
+MOV             RDI, R12
+MOVABS          R14, 0x7FFFF7E54D59
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e55290
+
+
+/*
+loc_7ffff7e54d59
+JMP        loc_7ffff7e54b77
+->	c_to:loc_7ffff7e54b77 
+ */ 
+loc_7ffff7e54d59:
+MOVABS          R14, 0x7ffff7e54d59
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e54b77
+
+
+/*
+loc_7ffff7e54d5e
+MOV        RBX, QWORD PTR [RSP + 0x38]
+MOV        EAX, 0xFFFFFFFE
+LOCK XADD       DWORD PTR [RBX], EAX
+CMP        EAX, 0x3
+JNZ        loc_7ffff7e54b77
+->	c_next:loc_7ffff7e54d75 	c_to:loc_7ffff7e54b77 
+ */ 
+loc_7ffff7e54d5e:
+MOVABS          R14, 0x7ffff7e54d5e
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RBX, QWORD PTR [R13 + 0x38]
+MOV             EAX, 0xFFFFFFFE
+LOCK XADD       DWORD PTR [RBX], EAX
+CMP             EAX, 0x3
+JNZ             loc_7ffff7e54b77
+
+
+/*
+loc_7ffff7e54d75
+MOV        RAX, QWORD PTR [RSP + 0x38]
+LOCK AND        DWORD PTR [RAX], 0xFFFFFFFE
+XOR        R10D, R10D
+MOV        EDX, 0x7FFFFFFF
+MOV        ESI, DWORD PTR [RSP + 0x1C]
+MOV        RDI, RAX
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e54d94 
+ */ 
+loc_7ffff7e54d75:
+MOV             RAX, QWORD PTR [R13 + 0x38]
+LOCK AND        DWORD PTR [RAX], 0xFFFFFFFE
+XOR             R10D, R10D
+MOV             EDX, 0x7FFFFFFF
+MOV             ESI, DWORD PTR [R13 + 0x1C]
+MOV             RDI, RAX
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e54d92
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e54d94
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JBE        loc_7ffff7e54b77
+->	c_next:loc_7ffff7e54da0 	c_to:loc_7ffff7e54b77 
+ */ 
+loc_7ffff7e54d94:
+MOVABS          R14, 0x7ffff7e54d94
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JBE             loc_7ffff7e54b77
+
+
+/*
+loc_7ffff7e54da0
+ADD        EAX, 0x16
+AND        EAX, 0xFFFFFFF7
+JNZ        loc_7ffff7e54cfe
+->	c_next:loc_7ffff7e54dac 	c_to:loc_7ffff7e54cfe 
+ */ 
+loc_7ffff7e54da0:
+MOVABS          R14, 0x7ffff7e54da0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x16
+AND             EAX, 0xFFFFFFF7
+JNZ             loc_7ffff7e54cfe
+
+
+/*
+loc_7ffff7e54dac
+JMP        loc_7ffff7e54b77
+->	c_to:loc_7ffff7e54b77 
+ */ 
+loc_7ffff7e54dac:
+MOVABS          R14, 0x7ffff7e54dac
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e54b77
+
+
+/*
+loc_7ffff7e54db8
+MOV        ECX, DWORD PTR [RSP + 0x8]
+MOV        EDX, DWORD PTR [RSP + 0xC]
+MOV        RDI, RBP
+MOV        RSI, QWORD PTR [RSP]
+CALL       loc_7ffff7e53e60
+->	c_next:loc_7ffff7e54dcc 
+ */ 
+loc_7ffff7e54db8:
+MOV             ECX, DWORD PTR [R13 + 0x8]
+MOV             EDX, DWORD PTR [R13 + 0xC]
+MOV             RDI, R12
+MOV             RSI, QWORD PTR [R13]
+MOVABS          R14, 0x7FFFF7E54DCC
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e53e60
+
+
+/*
+loc_7ffff7e54dcc
+MOV        EAX, 0xFFFFFFF8
+LOCK XADD       DWORD PTR [R15], EAX
+MOV        R8D, DWORD PTR [RSP + 0x18]
+SHR        EAX, 0x2
+CMP        EAX, 0x3
+JNZ        loc_7ffff7e54bae
+->	c_next:loc_7ffff7e54de7 	c_to:loc_7ffff7e54bae 
+ */ 
+loc_7ffff7e54dcc:
+MOVABS          R14, 0x7ffff7e54dcc
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, 0xFFFFFFF8
+MOV             R14, Stack_R15
+LOCK XADD       DWORD PTR [R14], EAX
+MOV             R8D, DWORD PTR [R13 + 0x18]
+SHR             EAX, 0x2
+CMP             EAX, 0x3
+MOV             Stack_R15, R14
+JNZ             loc_7ffff7e54bae
+
+
+/*
+loc_7ffff7e54de7
+MOV        ESI, DWORD PTR [RSP + 0x1C]
+XOR        R10D, R10D
+MOV        EDX, 0x7FFFFFFF
+MOV        RDI, R15
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e54dfd 
+ */ 
+loc_7ffff7e54de7:
+MOV             ESI, DWORD PTR [R13 + 0x1C]
+XOR             R10D, R10D
+MOV             EDX, 0x7FFFFFFF
+MOV             R14, Stack_R15
+MOV             RDI, R14
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e54dfb
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e54dfd
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JBE        loc_7ffff7e54bae
+->	c_next:loc_7ffff7e54e09 	c_to:loc_7ffff7e54bae 
+ */ 
+loc_7ffff7e54dfd:
+MOVABS          R14, 0x7ffff7e54dfd
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JBE             loc_7ffff7e54bae
+
+
+/*
+loc_7ffff7e54e09
+ADD        EAX, 0x16
+AND        EAX, 0xFFFFFFF7
+JNZ        loc_7ffff7e54cfe
+->	c_next:loc_7ffff7e54e15 	c_to:loc_7ffff7e54cfe 
+ */ 
+loc_7ffff7e54e09:
+MOVABS          R14, 0x7ffff7e54e09
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x16
+AND             EAX, 0xFFFFFFF7
+JNZ             loc_7ffff7e54cfe
+
+
+/*
+loc_7ffff7e54e15
+JMP        loc_7ffff7e54bae
+->	c_to:loc_7ffff7e54bae 
+ */ 
+loc_7ffff7e54e15:
+MOVABS          R14, 0x7ffff7e54e15
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e54bae
+
+
+/*
+loc_7ffff7e54e20
+MOV        RAX, QWORD PTR [RSP + 0x38]
+LOCK AND        DWORD PTR [RAX], 0xFFFFFFFE
+XOR        R10D, R10D
+MOV        EDX, 0x7FFFFFFF
+MOV        ESI, DWORD PTR [RSP + 0x1C]
+MOV        RDI, RAX
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e54e3f 
+ */ 
+loc_7ffff7e54e20:
+MOV             RAX, QWORD PTR [R13 + 0x38]
+LOCK AND        DWORD PTR [RAX], 0xFFFFFFFE
+XOR             R10D, R10D
+MOV             EDX, 0x7FFFFFFF
+MOV             ESI, DWORD PTR [R13 + 0x1C]
+MOV             RDI, RAX
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e54e3d
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e54e3f
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JBE        loc_7ffff7e54cb6
+->	c_next:loc_7ffff7e54e4b 	c_to:loc_7ffff7e54cb6 
+ */ 
+loc_7ffff7e54e3f:
+MOVABS          R14, 0x7ffff7e54e3f
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JBE             loc_7ffff7e54cb6
+
+
+/*
+loc_7ffff7e54e4b
+ADD        EAX, 0x16
+AND        EAX, 0xFFFFFFF7
+JNZ        loc_7ffff7e54cfe
+->	c_next:loc_7ffff7e54e57 	c_to:loc_7ffff7e54cfe 
+ */ 
+loc_7ffff7e54e4b:
+MOVABS          R14, 0x7ffff7e54e4b
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x16
+AND             EAX, 0xFFFFFFF7
+JNZ             loc_7ffff7e54cfe
+
+
+/*
+loc_7ffff7e54e57
+JMP        loc_7ffff7e54cb6
+->	c_to:loc_7ffff7e54cb6 
+ */ 
+loc_7ffff7e54e57:
+MOVABS          R14, 0x7ffff7e54e57
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e54cb6
+
+
+/*
+loc_7ffff7e54e60
+XOR        ESI, ESI
+MOV        RDI, R14
+CALL       loc_7ffff7e57c80
+->	c_next:loc_7ffff7e54e6a 
+ */ 
+loc_7ffff7e54e60:
+XOR             ESI, ESI
+MOV             R14, Stack_R14
+MOV             RDI, R14
+MOVABS          R15, 0x7FFFF7E54E6A
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R15
+MOV             Stack_R14, R14
+JMP             loc_7ffff7e57c80
+
+
+/*
+loc_7ffff7e54e6a
+MOV        RBX, QWORD PTR [RSP + 0x38]
+MOV        EAX, 0xFFFFFFFE
+LOCK XADD       DWORD PTR [RBX], EAX
+CMP        EAX, 0x3
+JZ         loc_7ffff7e54ef6
+->	c_next:loc_7ffff7e54e7d 	c_to:loc_7ffff7e54ef6 
+ */ 
+loc_7ffff7e54e6a:
+MOVABS          R14, 0x7ffff7e54e6a
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RBX, QWORD PTR [R13 + 0x38]
+MOV             EAX, 0xFFFFFFFE
+LOCK XADD       DWORD PTR [RBX], EAX
+CMP             EAX, 0x3
+JZ              loc_7ffff7e54ef6
+
+
+/*
+loc_7ffff7e54e7d
+MOV        ECX, DWORD PTR [RSP + 0x8]
+MOV        EDX, DWORD PTR [RSP + 0xC]
+MOV        RDI, RBP
+MOV        RSI, QWORD PTR [RSP]
+CALL       loc_7ffff7e53e60
+->	c_next:loc_7ffff7e54e91 
+ */ 
+loc_7ffff7e54e7d:
+MOV             ECX, DWORD PTR [R13 + 0x8]
+MOV             EDX, DWORD PTR [R13 + 0xC]
+MOV             RDI, R12
+MOV             RSI, QWORD PTR [R13]
+MOVABS          R14, 0x7FFFF7E54E91
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e53e60
+
+
+/*
+loc_7ffff7e54e91
+MOV        DWORD PTR [RSP + 0x18], 0x6E
+JMP        loc_7ffff7e54b77
+->	c_to:loc_7ffff7e54b77 
+ */ 
+loc_7ffff7e54e91:
+MOVABS          R14, 0x7ffff7e54e91
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             DWORD PTR [R13 + 0x18], 0x6E
+JMP             loc_7ffff7e54b77
+
+
+/*
+loc_7ffff7e54e9e
+ADD        EAX, 0x16
+AND        EAX, 0xFFFFFFF7
+JNZ        loc_7ffff7e54cfe
+->	c_next:loc_7ffff7e54eaa 	c_to:loc_7ffff7e54cfe 
+ */ 
+loc_7ffff7e54e9e:
+MOVABS          R14, 0x7ffff7e54e9e
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x16
+AND             EAX, 0xFFFFFFF7
+JNZ             loc_7ffff7e54cfe
+
+
+/*
+loc_7ffff7e54eaa
+JMP        loc_7ffff7e54d51
+->	c_to:loc_7ffff7e54d51 
+ */ 
+loc_7ffff7e54eaa:
+MOVABS          R14, 0x7ffff7e54eaa
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e54d51
+
+
+/*
+loc_7ffff7e54eb0
+MOV        EDI, DWORD PTR [RSP + 0x44]
+MOV        QWORD PTR [RSP + 0x48], RAX
+CALL       loc_7ffff7e580a0
+->	c_next:loc_7ffff7e54ebe 
+ */ 
+loc_7ffff7e54eb0:
+MOV             EDI, DWORD PTR [R13 + 0x44]
+MOV             QWORD PTR [R13 + 0x48], RAX
+MOVABS          R14, 0x7FFFF7E54EBE
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e580a0
+
+
+/*
+loc_7ffff7e54ebe
+MOV        RAX, QWORD PTR [RSP + 0x48]
+CMP        EAX, 0xFFFFFF92
+JZ         loc_7ffff7e54e60
+->	c_next:loc_7ffff7e54ec8 	c_to:loc_7ffff7e54e60 
+ */ 
+loc_7ffff7e54ebe:
+MOVABS          R14, 0x7ffff7e54ebe
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R13 + 0x48]
+CMP             EAX, 0xFFFFFF92
+JZ              loc_7ffff7e54e60
+
+
+/*
+loc_7ffff7e54ec8
+LEA        ECX, DWORD PTR [RAX + 0xB]
+CMP        ECX, 0xB
+JA         loc_7ffff7e54cfe
+->	c_next:loc_7ffff7e54ed4 	c_to:loc_7ffff7e54cfe 
+ */ 
+loc_7ffff7e54ec8:
+MOVABS          R14, 0x7ffff7e54ec8
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+LEA             ECX, DWORD PTR [RAX + 0xB]
+CMP             ECX, 0xB
+JA              loc_7ffff7e54cfe
+
+
+/*
+loc_7ffff7e54ed4
+MOV        EAX, 0x1
+SHL        RAX, CL
+TEST       EAX, 0x881
+JZ         loc_7ffff7e54cfe
+->	c_next:loc_7ffff7e54ee7 	c_to:loc_7ffff7e54cfe 
+ */ 
+loc_7ffff7e54ed4:
+MOVABS          R14, 0x7ffff7e54ed4
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, 0x1
+SHL             RAX, CL
+TEST            EAX, 0x881
+JZ              loc_7ffff7e54cfe
+
+
+/*
+loc_7ffff7e54ee7
+XOR        ESI, ESI
+MOV        RDI, R14
+CALL       loc_7ffff7e57c80
+->	c_next:loc_7ffff7e54ef1 
+ */ 
+loc_7ffff7e54ee7:
+XOR             ESI, ESI
+MOV             R14, Stack_R14
+MOV             RDI, R14
+MOVABS          R15, 0x7FFFF7E54EF1
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R15
+MOV             Stack_R14, R14
+JMP             loc_7ffff7e57c80
+
+
+/*
+loc_7ffff7e54ef1
+JMP        loc_7ffff7e54c9f
+->	c_to:loc_7ffff7e54c9f 
+ */ 
+loc_7ffff7e54ef1:
+MOVABS          R14, 0x7ffff7e54ef1
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e54c9f
+
+
+/*
+loc_7ffff7e54ef6
+MOV        RAX, QWORD PTR [RSP + 0x38]
+LOCK AND        DWORD PTR [RAX], 0xFFFFFFFE
+XOR        R10D, R10D
+MOV        EDX, 0x7FFFFFFF
+MOV        ESI, DWORD PTR [RSP + 0x1C]
+MOV        RDI, RAX
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e54f15 
+ */ 
+loc_7ffff7e54ef6:
+MOV             RAX, QWORD PTR [R13 + 0x38]
+LOCK AND        DWORD PTR [RAX], 0xFFFFFFFE
+XOR             R10D, R10D
+MOV             EDX, 0x7FFFFFFF
+MOV             ESI, DWORD PTR [R13 + 0x1C]
+MOV             RDI, RAX
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e54f13
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e54f15
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JBE        loc_7ffff7e54e7d
+->	c_next:loc_7ffff7e54f21 	c_to:loc_7ffff7e54e7d 
+ */ 
+loc_7ffff7e54f15:
+MOVABS          R14, 0x7ffff7e54f15
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JBE             loc_7ffff7e54e7d
+
+
+/*
+loc_7ffff7e54f21
+ADD        EAX, 0x16
+AND        EAX, 0xFFFFFFF7
+JNZ        loc_7ffff7e54cfe
+->	c_next:loc_7ffff7e54f2d 	c_to:loc_7ffff7e54cfe 
+ */ 
+loc_7ffff7e54f21:
+MOVABS          R14, 0x7ffff7e54f21
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x16
+AND             EAX, 0xFFFFFFF7
+JNZ             loc_7ffff7e54cfe
+
+
+/*
+loc_7ffff7e54f2d
+JMP        loc_7ffff7e54e7d
+->	c_to:loc_7ffff7e54e7d 
+ */ 
+loc_7ffff7e54f2d:
+MOVABS          R14, 0x7ffff7e54f2d
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e54e7d
+
+
+/*
+loc_7ffff7e54f32
+CALL       loc_7ffff7e4b6d0
+->	c_next:loc_7ffff7e54f37 
+ */ 
+loc_7ffff7e54f32:
+MOVABS          R14, 0x7FFFF7E54F37
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b6d0
+
+
+/*
+loc_7ffff7e54f37
+NOP        WORD PTR [RAX * 0x2]
+ENDBR64    
+PUSH       R15
+PUSH       R14
+PUSH       R13
+PUSH       R12
+PUSH       RBP
+PUSH       RBX
+SUB        RSP, 0x38
+NOP        
+MOV        EBP, DWORD PTR [RDI + 0x24]
+MOV        EAX, EBP
+SHR        EAX, 0x3
+JZ         loc_7ffff7e55038
+->	c_next:loc_7ffff7e54f61 	c_to:loc_7ffff7e55038 
+ */ 
+loc_7ffff7e54f37:
+MOVABS          R14, 0x7ffff7e54f37
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+NOP
+NOP
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             R14, Stack_R15
+MOV             QWORD PTR [R13], R14
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             R15, Stack_R14
+MOV             QWORD PTR [R13], R15
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             Stack_R15, R14
+MOV             R14, Stack_R13
+MOV             QWORD PTR [R13], R14
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             Stack_R13, R14
+MOV             R14, Stack_R12
+MOV             QWORD PTR [R13], R14
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R12
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], RBX
+SUB             R13, 0x38
+NOP
+MOV             R12d, DWORD PTR [RDI + 0x24]
+MOV             EAX, R12d
+SHR             EAX, 0x3
+MOV             Stack_R14, R15
+MOV             Stack_R12, R14
+JZ              loc_7ffff7e55038
+
+
+/*
+loc_7ffff7e54f61
+MOV        R8, RDI
+AND        EBP, 0x1
+JNZ        loc_7ffff7e55050
+->	c_next:loc_7ffff7e54f6d 	c_to:loc_7ffff7e55050 
+ */ 
+loc_7ffff7e54f61:
+MOVABS          R14, 0x7ffff7e54f61
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R8, RDI
+AND             R12d, 0x1
+JNZ             loc_7ffff7e55050
+
+
+/*
+loc_7ffff7e54f6d
+MOV        EBP, 0x81
+MOV        ESI, 0x80
+->	c_next:loc_7ffff7e54f77 
+ */ 
+loc_7ffff7e54f6d:
+MOV             R12d, 0x81
+MOV             ESI, 0x80
+
+
+/*
+loc_7ffff7e54f77
+MOV        EAX, DWORD PTR [R8 + 0x20]
+LEA        R9, QWORD PTR [R8 + 0x20]
+->	c_next:loc_7ffff7e54f7f 
+ */ 
+loc_7ffff7e54f77:
+MOV             EAX, DWORD PTR [R8 + 0x20]
+LEA             R9, QWORD PTR [R8 + 0x20]
+
+
+/*
+loc_7ffff7e54f7f
+TEST       AL, 0x3
+JNZ        loc_7ffff7e55218
+->	c_next:loc_7ffff7e54f87 	c_to:loc_7ffff7e55218 
+ */ 
+loc_7ffff7e54f7f:
+MOVABS          R14, 0x7ffff7e54f7f
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            AL, 0x3
+JNZ             loc_7ffff7e55218
+
+
+/*
+loc_7ffff7e54f87
+MOV        EDX, EAX
+OR         EDX, 0x1
+LOCK CMPXCHG    DWORD PTR [R9], EDX
+JNZ        loc_7ffff7e54f7f
+->	c_next:loc_7ffff7e54f93 	c_to:loc_7ffff7e54f7f 
+ */ 
+loc_7ffff7e54f87:
+MOVABS          R14, 0x7ffff7e54f87
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EDX, EAX
+OR              EDX, 0x1
+LOCK CMPXCHG    DWORD PTR [R9], EDX
+JNZ             loc_7ffff7e54f7f
+
+
+/*
+loc_7ffff7e54f93
+MOV        RAX, QWORD PTR [R8]
+LEA        R15, QWORD PTR [R8 + 0x28]
+MOV        RBX, RAX
+NOT        RBX
+AND        EBX, 0x1
+LEA        RDX, QWORD PTR [RBX + 0x4]
+MOV        R13D, EBX
+MOV        EDX, DWORD PTR [R8 + RDX * 0x4 + 0x8]
+TEST       EDX, EDX
+JNZ        loc_7ffff7e55148
+->	c_next:loc_7ffff7e54fb7 	c_to:loc_7ffff7e55148 
+ */ 
+loc_7ffff7e54f93:
+MOVABS          R14, 0x7ffff7e54f93
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R8]
+MOV             R14, Stack_R15
+LEA             R14, QWORD PTR [R8 + 0x28]
+MOV             RBX, RAX
+NOT             RBX
+AND             EBX, 0x1
+LEA             RDX, QWORD PTR [RBX + 0x4]
+MOV             R15, Stack_R13
+MOV             R15d, EBX
+MOV             EDX, DWORD PTR [R8 + 0x8 + 0x4 * RDX]
+TEST            EDX, EDX
+MOV             Stack_R13, R15
+MOV             Stack_R15, R14
+JNZ             loc_7ffff7e55148
+
+
+/*
+loc_7ffff7e54fb7
+MOV        ECX, EBX
+MOV        R12D, DWORD PTR [R8 + 0x20]
+MOV        RDX, QWORD PTR [R8 + 0x8]
+SHR        RAX, 0x1
+XOR        ECX, 0x1
+MOV        DWORD PTR [RSP + 0x1C], ECX
+SHR        R12D, 0x2
+MOV        RDI, RDX
+MOV        QWORD PTR [RSP + 0x20], RCX
+LEA        RCX, QWORD PTR [R8 + RCX * 0x4]
+SHR        RDI, 0x1
+ADD        EAX, DWORD PTR [RCX + 0x18]
+MOV        QWORD PTR [RSP + 0x8], RDI
+SUB        EAX, R12D
+MOV        QWORD PTR [RSP + 0x10], RCX
+CMP        EDI, EAX
+JNZ        loc_7ffff7e55060
+->	c_next:loc_7ffff7e54ff2 	c_to:loc_7ffff7e55060 
+ */ 
+loc_7ffff7e54fb7:
+MOVABS          R14, 0x7ffff7e54fb7
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             ECX, EBX
+MOV             R14, Stack_R12
+MOV             R14d, DWORD PTR [R8 + 0x20]
+MOV             RDX, QWORD PTR [R8 + 0x8]
+SHR             RAX, 0x1
+XOR             ECX, 0x1
+MOV             DWORD PTR [R13 + 0x1C], ECX
+SHR             R14d, 0x2
+MOV             RDI, RDX
+MOV             QWORD PTR [R13 + 0x20], RCX
+LEA             RCX, QWORD PTR [R8 + 0x4 * RCX]
+SHR             RDI, 0x1
+ADD             EAX, DWORD PTR [RCX + 0x18]
+MOV             QWORD PTR [R13 + 0x8], RDI
+SUB             EAX, R14d
+MOV             QWORD PTR [R13 + 0x10], RCX
+CMP             EDI, EAX
+MOV             Stack_R12, R14
+JNZ             loc_7ffff7e55060
+
+
+/*
+loc_7ffff7e54ff2
+MOV        EAX, DWORD PTR [R8 + 0x20]
+->	c_next:loc_7ffff7e54ff6 
+ */ 
+loc_7ffff7e54ff2:
+MOV             EAX, DWORD PTR [R8 + 0x20]
+
+
+/*
+loc_7ffff7e54ff6
+MOV        ECX, EAX
+MOV        EDX, EAX
+AND        ECX, 0xFFFFFFFC
+LOCK CMPXCHG    DWORD PTR [R9], ECX
+JNZ        loc_7ffff7e54ff6
+->	c_next:loc_7ffff7e55004 	c_to:loc_7ffff7e54ff6 
+ */ 
+loc_7ffff7e54ff6:
+MOVABS          R14, 0x7ffff7e54ff6
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             ECX, EAX
+MOV             EDX, EAX
+AND             ECX, 0xFFFFFFFC
+LOCK CMPXCHG    DWORD PTR [R9], ECX
+JNZ             loc_7ffff7e54ff6
+
+
+/*
+loc_7ffff7e55004
+AND        EDX, 0x3
+CMP        EDX, 0x2
+JNZ        loc_7ffff7e55038
+->	c_next:loc_7ffff7e5500c 	c_to:loc_7ffff7e55038 
+ */ 
+loc_7ffff7e55004:
+MOVABS          R14, 0x7ffff7e55004
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+AND             EDX, 0x3
+CMP             EDX, 0x2
+JNZ             loc_7ffff7e55038
+
+
+/*
+loc_7ffff7e5500c
+XOR        EBX, EBX
+NOP        
+->	c_next:loc_7ffff7e55010 
+ */ 
+loc_7ffff7e5500c:
+XOR             EBX, EBX
+NOP
+
+
+/*
+loc_7ffff7e55010
+XOR        R10D, R10D
+MOV        EDX, 0x1
+MOV        ESI, EBP
+MOV        RDI, R9
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e55024 
+ */ 
+loc_7ffff7e55010:
+XOR             R10D, R10D
+MOV             EDX, 0x1
+MOV             ESI, R12d
+MOV             RDI, R9
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e55022
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e55024
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JA         loc_7ffff7e551d8
+->	c_next:loc_7ffff7e55030 	c_to:loc_7ffff7e551d8 
+ */ 
+loc_7ffff7e55024:
+MOVABS          R14, 0x7ffff7e55024
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JA              loc_7ffff7e551d8
+
+
+/*
+loc_7ffff7e55030
+TEST       BL, BL
+JNZ        loc_7ffff7e55208
+->	c_next:loc_7ffff7e55038 	c_to:loc_7ffff7e55208 
+ */ 
+loc_7ffff7e55030:
+MOVABS          R14, 0x7ffff7e55030
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            BL, BL
+JNZ             loc_7ffff7e55208
+
+
+/*
+loc_7ffff7e55038
+ADD        RSP, 0x38
+XOR        EAX, EAX
+POP        RBX
+POP        RBP
+POP        R12
+POP        R13
+POP        R14
+POP        R15
+RET        
+ */ 
+loc_7ffff7e55038:
+ADD             R13, 0x38
+XOR             EAX, EAX
+MOV             RBX, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             R12, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             R14, Stack_R12
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             R15, Stack_R13
+MOV             R15, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R12, R14
+MOV             R14, Stack_R14
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R14, R14
+MOV             R14, Stack_R15
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R15, R14
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R13, R15
+JMP             ij_7ffff7e55049
+
+
+/*
+loc_7ffff7e55050
+XOR        ESI, ESI
+JMP        loc_7ffff7e54f77
+->	c_to:loc_7ffff7e54f77 
+ */ 
+loc_7ffff7e55050:
+MOVABS          R14, 0x7ffff7e55050
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+XOR             ESI, ESI
+JMP             loc_7ffff7e54f77
+
+
+/*
+loc_7ffff7e55060
+LEA        R15, QWORD PTR [R8 + 0x28]
+LEA        RAX, QWORD PTR [RBX * 0x4]
+LEA        RDI, QWORD PTR [R15 + RAX]
+MOV        QWORD PTR [RSP + 0x28], RDI
+LOCK OR         DWORD PTR [RDI], 0x1
+LEA        RDI, QWORD PTR [R8 + RAX + 0x10]
+MOV        EAX, DWORD PTR [RDI]
+->	c_next:loc_7ffff7e55080 
+ */ 
+loc_7ffff7e55060:
+MOV             R14, Stack_R15
+LEA             R14, QWORD PTR [R8 + 0x28]
+LEA             RAX, QWORD PTR [0x4 * RBX]
+LEA             RDI, QWORD PTR [R14 + RAX]
+MOV             QWORD PTR [R13 + 0x28], RDI
+LOCK OR         DWORD PTR [RDI], 0x1
+LEA             RDI, QWORD PTR [R8 + RAX + 0x10]
+MOV             EAX, DWORD PTR [RDI]
+MOV             Stack_R15, R14
+
+
+/*
+loc_7ffff7e55080
+MOV        EDX, EAX
+LOCK CMPXCHG    DWORD PTR [RDI], EAX
+JNZ        loc_7ffff7e55080
+->	c_next:loc_7ffff7e55088 	c_to:loc_7ffff7e55080 
+ */ 
+loc_7ffff7e55080:
+MOVABS          R14, 0x7ffff7e55080
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EDX, EAX
+LOCK CMPXCHG    DWORD PTR [RDI], EAX
+JNZ             loc_7ffff7e55080
+
+
+/*
+loc_7ffff7e55088
+SHR        EDX, 0x1
+MOV        R14D, 0xCA
+MOV        R13D, 0x1
+JZ         loc_7ffff7e550cf
+->	c_next:loc_7ffff7e55098 	c_to:loc_7ffff7e550cf 
+ */ 
+loc_7ffff7e55088:
+MOVABS          R14, 0x7ffff7e55088
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+SHR             EDX, 0x1
+MOV             R14, Stack_R14
+MOV             R14d, 0xCA
+MOV             R15, Stack_R13
+MOV             R15d, 0x1
+MOV             Stack_R13, R15
+MOV             Stack_R14, R14
+JZ              loc_7ffff7e550cf
+
+
+/*
+loc_7ffff7e55098
+NOP        DWORD PTR [RAX * 0x2]
+->	c_next:loc_7ffff7e550a0 
+ */ 
+loc_7ffff7e55098:
+NOP
+
+
+/*
+loc_7ffff7e550a0
+MOV        EAX, DWORD PTR [RDI]
+->	c_next:loc_7ffff7e550a2 
+ */ 
+loc_7ffff7e550a0:
+MOV             EAX, DWORD PTR [RDI]
+
+
+/*
+loc_7ffff7e550a2
+MOV        ECX, EAX
+MOV        EDX, EAX
+OR         ECX, 0x1
+LOCK CMPXCHG    DWORD PTR [RDI], ECX
+JNZ        loc_7ffff7e550a2
+->	c_next:loc_7ffff7e550af 	c_to:loc_7ffff7e550a2 
+ */ 
+loc_7ffff7e550a2:
+MOVABS          R14, 0x7ffff7e550a2
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             ECX, EAX
+MOV             EDX, EAX
+OR              ECX, 0x1
+LOCK CMPXCHG    DWORD PTR [RDI], ECX
+JNZ             loc_7ffff7e550a2
+
+
+/*
+loc_7ffff7e550af
+SHR        EDX, 0x1
+JZ         loc_7ffff7e550c9
+->	c_next:loc_7ffff7e550b3 	c_to:loc_7ffff7e550c9 
+ */ 
+loc_7ffff7e550af:
+MOVABS          R14, 0x7ffff7e550af
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+SHR             EDX, 0x1
+JZ              loc_7ffff7e550c9
+
+
+/*
+loc_7ffff7e550b3
+XOR        R10D, R10D
+MOV        EDX, ECX
+MOV        EAX, R14D
+SYSCALL    
+->	c_next:loc_7ffff7e550bd 
+ */ 
+loc_7ffff7e550b3:
+XOR             R10D, R10D
+MOV             EDX, ECX
+MOV             R14, Stack_R14
+MOV             EAX, R14d
+MOVABS          R14, 0x7ffff7e550bb
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e550bd
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JA         loc_7ffff7e551b8
+->	c_next:loc_7ffff7e550c9 	c_to:loc_7ffff7e551b8 
+ */ 
+loc_7ffff7e550bd:
+MOVABS          R14, 0x7ffff7e550bd
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JA              loc_7ffff7e551b8
+
+
+/*
+loc_7ffff7e550c9
+MOV        EAX, DWORD PTR [RDI]
+SHR        EAX, 0x1
+JNZ        loc_7ffff7e550a0
+->	c_next:loc_7ffff7e550cf 	c_to:loc_7ffff7e550a0 
+ */ 
+loc_7ffff7e550c9:
+MOVABS          R14, 0x7ffff7e550c9
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, DWORD PTR [RDI]
+SHR             EAX, 0x1
+JNZ             loc_7ffff7e550a0
+
+
+/*
+loc_7ffff7e550cf
+CMP        RBX, 0x1
+SBB        EDX, EDX
+MOV        RCX, QWORD PTR [R8 + 0x8]
+OR         EDX, 0x1
+LEA        EAX, DWORD PTR [RDX + R12 * 0x2]
+ADD        RAX, RCX
+MOV        QWORD PTR [R8 + 0x8], RAX
+MOV        RAX, QWORD PTR [RSP + 0x28]
+MOV        DWORD PTR [RAX], 0x0
+MOV        RAX, QWORD PTR [R8]
+->	c_next:loc_7ffff7e550f5 
+ */ 
+loc_7ffff7e550cf:
+CMP             RBX, 0x1
+SBB             EDX, EDX
+MOV             RCX, QWORD PTR [R8 + 0x8]
+OR              EDX, 0x1
+MOV             R14, Stack_R12
+LEA             EAX, DWORD PTR [RDX + 0x2 * R14]
+ADD             RAX, RCX
+MOV             QWORD PTR [R8 + 0x8], RAX
+MOV             RAX, QWORD PTR [R13 + 0x28]
+MOV             DWORD PTR [RAX], 0x0
+MOV             RAX, QWORD PTR [R8]
+MOV             Stack_R12, R14
+
+
+/*
+loc_7ffff7e550f5
+MOV        RCX, RAX
+MOV        RDX, RAX
+XOR        RCX, 0x1
+LOCK CMPXCHG    QWORD PTR [R8], RCX
+JNZ        loc_7ffff7e550f5
+->	c_next:loc_7ffff7e55106 	c_to:loc_7ffff7e550f5 
+ */ 
+loc_7ffff7e550f5:
+MOVABS          R14, 0x7ffff7e550f5
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RCX, RAX
+MOV             RDX, RAX
+XOR             RCX, 0x1
+LOCK CMPXCHG    QWORD PTR [R8], RCX
+JNZ             loc_7ffff7e550f5
+
+
+/*
+loc_7ffff7e55106
+ADD        R12D, DWORD PTR [RSP + 0x8]
+SHR        RDX, 0x1
+MOV        EAX, DWORD PTR [R8 + 0x20]
+SUB        EDX, R12D
+LEA        ECX, DWORD PTR [RDX * 0x4]
+AND        EAX, 0x3
+OR         EAX, ECX
+MOV        ESI, EAX
+XCHG       DWORD PTR [R9], ESI
+XOR        EAX, ESI
+TEST       AL, 0x3
+JNZ        loc_7ffff7e551f8
+->	c_next:loc_7ffff7e55130 	c_to:loc_7ffff7e551f8 
+ */ 
+loc_7ffff7e55106:
+MOVABS          R14, 0x7ffff7e55106
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_R12
+ADD             R14d, DWORD PTR [R13 + 0x8]
+SHR             RDX, 0x1
+MOV             EAX, DWORD PTR [R8 + 0x20]
+SUB             EDX, R14d
+LEA             ECX, DWORD PTR [0x4 * RDX]
+AND             EAX, 0x3
+OR              EAX, ECX
+MOV             ESI, EAX
+XCHG            DWORD PTR [R9], ESI
+XOR             EAX, ESI
+TEST            AL, 0x3
+MOV             Stack_R12, R14
+JNZ             loc_7ffff7e551f8
+
+
+/*
+loc_7ffff7e55130
+MOV        RAX, QWORD PTR [RSP + 0x10]
+ADD        DWORD PTR [RAX + 0x18], EDX
+JZ         loc_7ffff7e551e8
+->	c_next:loc_7ffff7e5513e 	c_to:loc_7ffff7e551e8 
+ */ 
+loc_7ffff7e55130:
+MOVABS          R14, 0x7ffff7e55130
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R13 + 0x10]
+ADD             DWORD PTR [RAX + 0x18], EDX
+JZ              loc_7ffff7e551e8
+
+
+/*
+loc_7ffff7e5513e
+MOV        RBX, QWORD PTR [RSP + 0x20]
+MOV        R13D, DWORD PTR [RSP + 0x1C]
+->	c_next:loc_7ffff7e55148 
+ */ 
+loc_7ffff7e5513e:
+MOV             RBX, QWORD PTR [R13 + 0x20]
+MOV             R14, Stack_R13
+MOV             R14d, DWORD PTR [R13 + 0x1C]
+MOV             Stack_R13, R14
+
+
+/*
+loc_7ffff7e55148
+LEA        RDI, QWORD PTR [R15 + RBX * 0x4]
+LOCK ADD        DWORD PTR [RDI], 0x2
+MOV        EAX, R13D
+SUB        DWORD PTR [R8 + RAX * 0x4 + 0x18], 0x1
+MOV        EAX, DWORD PTR [R8 + 0x20]
+->	c_next:loc_7ffff7e5515d 
+ */ 
+loc_7ffff7e55148:
+MOV             R14, Stack_R15
+LEA             RDI, QWORD PTR [R14 + 0x4 * RBX]
+LOCK ADD        DWORD PTR [RDI], 0x2
+MOV             R15, Stack_R13
+MOV             EAX, R15d
+SUB             DWORD PTR [R8 + 0x18 + 0x4 * RAX], 0x1
+MOV             EAX, DWORD PTR [R8 + 0x20]
+MOV             Stack_R13, R15
+MOV             Stack_R15, R14
+
+
+/*
+loc_7ffff7e5515d
+MOV        ECX, EAX
+MOV        EDX, EAX
+AND        ECX, 0xFFFFFFFC
+LOCK CMPXCHG    DWORD PTR [R9], ECX
+JNZ        loc_7ffff7e5515d
+->	c_next:loc_7ffff7e5516b 	c_to:loc_7ffff7e5515d 
+ */ 
+loc_7ffff7e5515d:
+MOVABS          R14, 0x7ffff7e5515d
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             ECX, EAX
+MOV             EDX, EAX
+AND             ECX, 0xFFFFFFFC
+LOCK CMPXCHG    DWORD PTR [R9], ECX
+JNZ             loc_7ffff7e5515d
+
+
+/*
+loc_7ffff7e5516b
+AND        EDX, 0x3
+MOV        EBX, 0x1
+CMP        EDX, 0x2
+JZ         loc_7ffff7e55010
+->	c_next:loc_7ffff7e5517c 	c_to:loc_7ffff7e55010 
+ */ 
+loc_7ffff7e5516b:
+MOVABS          R14, 0x7ffff7e5516b
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+AND             EDX, 0x3
+MOV             EBX, 0x1
+CMP             EDX, 0x2
+JZ              loc_7ffff7e55010
+
+
+/*
+loc_7ffff7e5517c
+XOR        R10D, R10D
+MOV        EDX, 0x1
+MOV        ESI, EBP
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e5518d 
+ */ 
+loc_7ffff7e5517c:
+XOR             R10D, R10D
+MOV             EDX, 0x1
+MOV             ESI, R12d
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e5518b
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e5518d
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JBE        loc_7ffff7e55038
+->	c_next:loc_7ffff7e55199 	c_to:loc_7ffff7e55038 
+ */ 
+loc_7ffff7e5518d:
+MOVABS          R14, 0x7ffff7e5518d
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JBE             loc_7ffff7e55038
+
+
+/*
+loc_7ffff7e55199
+ADD        EAX, 0x16
+AND        EAX, 0xFFFFFFF7
+JZ         loc_7ffff7e55038
+->	c_next:loc_7ffff7e551a5 	c_to:loc_7ffff7e55038 
+ */ 
+loc_7ffff7e55199:
+MOVABS          R14, 0x7ffff7e55199
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x16
+AND             EAX, 0xFFFFFFF7
+JZ              loc_7ffff7e55038
+
+
+/*
+loc_7ffff7e551a5
+LEA        RDI, QWORD PTR [RIP + 0x6E54]
+CALL       loc_7ffff7e4b630
+->	c_next:loc_7ffff7e551b1 
+ */ 
+loc_7ffff7e551a5:
+MOVABS          R14, 0x7ffff7e551ac
+LEA             RDI, QWORD PTR [R14 + 0x6E54]
+MOVABS          R14, 0x7FFFF7E551B1
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b630
+
+
+/*
+loc_7ffff7e551b1
+NOP        DWORD PTR [RAX]
+->	c_next:loc_7ffff7e551b8 
+ */ 
+loc_7ffff7e551b1:
+NOP
+
+
+/*
+loc_7ffff7e551b8
+LEA        ECX, DWORD PTR [RAX + 0xB]
+CMP        ECX, 0xB
+JA         loc_7ffff7e551a5
+->	c_next:loc_7ffff7e551c0 	c_to:loc_7ffff7e551a5 
+ */ 
+loc_7ffff7e551b8:
+MOVABS          R14, 0x7ffff7e551b8
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+LEA             ECX, DWORD PTR [RAX + 0xB]
+CMP             ECX, 0xB
+JA              loc_7ffff7e551a5
+
+
+/*
+loc_7ffff7e551c0
+MOV        RAX, R13
+SHL        RAX, CL
+TEST       EAX, 0x881
+JZ         loc_7ffff7e551a5
+->	c_next:loc_7ffff7e551cd 	c_to:loc_7ffff7e551a5 
+ */ 
+loc_7ffff7e551c0:
+MOVABS          R14, 0x7ffff7e551c0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_R13
+MOV             RAX, R14
+SHL             RAX, CL
+TEST            EAX, 0x881
+MOV             Stack_R13, R14
+JZ              loc_7ffff7e551a5
+
+
+/*
+loc_7ffff7e551cd
+JMP        loc_7ffff7e550c9
+->	c_to:loc_7ffff7e550c9 
+ */ 
+loc_7ffff7e551cd:
+MOVABS          R14, 0x7ffff7e551cd
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e550c9
+
+
+/*
+loc_7ffff7e551d8
+ADD        EAX, 0x16
+AND        EAX, 0xFFFFFFF7
+JNZ        loc_7ffff7e551a5
+->	c_next:loc_7ffff7e551e0 	c_to:loc_7ffff7e551a5 
+ */ 
+loc_7ffff7e551d8:
+MOVABS          R14, 0x7ffff7e551d8
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x16
+AND             EAX, 0xFFFFFFF7
+JNZ             loc_7ffff7e551a5
+
+
+/*
+loc_7ffff7e551e0
+JMP        loc_7ffff7e55030
+->	c_to:loc_7ffff7e55030 
+ */ 
+loc_7ffff7e551e0:
+MOVABS          R14, 0x7ffff7e551e0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e55030
+
+
+/*
+loc_7ffff7e551e8
+MOV        R13D, DWORD PTR [RSP + 0x1C]
+JMP        loc_7ffff7e54ff2
+->	c_to:loc_7ffff7e54ff2 
+ */ 
+loc_7ffff7e551e8:
+MOVABS          R14, 0x7ffff7e551e8
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_R13
+MOV             R14d, DWORD PTR [R13 + 0x1C]
+MOV             Stack_R13, R14
+JMP             loc_7ffff7e54ff2
+
+
+/*
+loc_7ffff7e551f8
+OR         ECX, 0x2
+MOV        DWORD PTR [R8 + 0x20], ECX
+JMP        loc_7ffff7e55130
+->	c_to:loc_7ffff7e55130 
+ */ 
+loc_7ffff7e551f8:
+MOVABS          R14, 0x7ffff7e551f8
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+OR              ECX, 0x2
+MOV             DWORD PTR [R8 + 0x20], ECX
+JMP             loc_7ffff7e55130
+
+
+/*
+loc_7ffff7e55208
+MOV        R13D, R13D
+LEA        RDI, QWORD PTR [R8 + R13 * 0x4 + 0x28]
+JMP        loc_7ffff7e5517c
+->	c_to:loc_7ffff7e5517c 
+ */ 
+loc_7ffff7e55208:
+MOVABS          R14, 0x7ffff7e55208
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_R13
+MOV             R14d, R14d
+LEA             RDI, QWORD PTR [R8 + 0x28 + 0x4 * R14]
+MOV             Stack_R13, R14
+JMP             loc_7ffff7e5517c
+
+
+/*
+loc_7ffff7e55218
+MOV        R12D, 0xCA
+MOV        EBX, 0x1
+JMP        loc_7ffff7e55228
+->	c_to:loc_7ffff7e55228 
+ */ 
+loc_7ffff7e55218:
+MOVABS          R14, 0x7ffff7e55218
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_R12
+MOV             R14d, 0xCA
+MOV             EBX, 0x1
+MOV             Stack_R12, R14
+JMP             loc_7ffff7e55228
+
+
+/*
+loc_7ffff7e55225
+MOV        EAX, DWORD PTR [R9]
+->	c_next:loc_7ffff7e55228 
+ */ 
+loc_7ffff7e55225:
+MOV             EAX, DWORD PTR [R9]
+
+
+/*
+loc_7ffff7e55228
+MOV        EDX, EAX
+MOV        ECX, EAX
+AND        EDX, 0xFFFFFFFC
+AND        ECX, 0x3
+OR         EDX, 0x2
+CMP        ECX, 0x2
+JZ         loc_7ffff7e55251
+->	c_next:loc_7ffff7e5523a 	c_to:loc_7ffff7e55251 
+ */ 
+loc_7ffff7e55228:
+MOVABS          R14, 0x7ffff7e55228
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EDX, EAX
+MOV             ECX, EAX
+AND             EDX, 0xFFFFFFFC
+AND             ECX, 0x3
+OR              EDX, 0x2
+CMP             ECX, 0x2
+JZ              loc_7ffff7e55251
+
+
+/*
+loc_7ffff7e5523a
+LOCK CMPXCHG    DWORD PTR [R9], EDX
+JNZ        loc_7ffff7e55228
+->	c_next:loc_7ffff7e55241 	c_to:loc_7ffff7e55228 
+ */ 
+loc_7ffff7e5523a:
+MOVABS          R14, 0x7ffff7e5523a
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+LOCK CMPXCHG    DWORD PTR [R9], EDX
+JNZ             loc_7ffff7e55228
+
+
+/*
+loc_7ffff7e55241
+TEST       AL, 0x3
+JZ         loc_7ffff7e54f93
+->	c_next:loc_7ffff7e55249 	c_to:loc_7ffff7e54f93 
+ */ 
+loc_7ffff7e55241:
+MOVABS          R14, 0x7ffff7e55241
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            AL, 0x3
+JZ              loc_7ffff7e54f93
+
+
+/*
+loc_7ffff7e55249
+AND        EAX, 0xFFFFFFFC
+OR         EAX, 0x2
+MOV        EDX, EAX
+->	c_next:loc_7ffff7e55251 
+ */ 
+loc_7ffff7e55249:
+AND             EAX, 0xFFFFFFFC
+OR              EAX, 0x2
+MOV             EDX, EAX
+
+
+/*
+loc_7ffff7e55251
+XOR        R10D, R10D
+MOV        RDI, R9
+MOV        EAX, R12D
+SYSCALL    
+->	c_next:loc_7ffff7e5525c 
+ */ 
+loc_7ffff7e55251:
+XOR             R10D, R10D
+MOV             RDI, R9
+MOV             R14, Stack_R12
+MOV             EAX, R14d
+MOVABS          R14, 0x7ffff7e5525a
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e5525c
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JBE        loc_7ffff7e55225
+->	c_next:loc_7ffff7e55264 	c_to:loc_7ffff7e55225 
+ */ 
+loc_7ffff7e5525c:
+MOVABS          R14, 0x7ffff7e5525c
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JBE             loc_7ffff7e55225
+
+
+/*
+loc_7ffff7e55264
+LEA        ECX, DWORD PTR [RAX + 0xB]
+CMP        ECX, 0xB
+JA         loc_7ffff7e551a5
+->	c_next:loc_7ffff7e55270 	c_to:loc_7ffff7e551a5 
+ */ 
+loc_7ffff7e55264:
+MOVABS          R14, 0x7ffff7e55264
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+LEA             ECX, DWORD PTR [RAX + 0xB]
+CMP             ECX, 0xB
+JA              loc_7ffff7e551a5
+
+
+/*
+loc_7ffff7e55270
+MOV        RAX, RBX
+SHL        RAX, CL
+TEST       EAX, 0x881
+JZ         loc_7ffff7e551a5
+->	c_next:loc_7ffff7e55281 	c_to:loc_7ffff7e551a5 
+ */ 
+loc_7ffff7e55270:
+MOVABS          R14, 0x7ffff7e55270
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, RBX
+SHL             RAX, CL
+TEST            EAX, 0x881
+JZ              loc_7ffff7e551a5
+
+
+/*
+loc_7ffff7e55281
+JMP        loc_7ffff7e55225
+->	c_to:loc_7ffff7e55225 
+ */ 
+loc_7ffff7e55281:
+MOVABS          R14, 0x7ffff7e55281
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e55225
+
+
+/*
+loc_7ffff7e55290
+ENDBR64    
+PUSH       R15
+PUSH       R14
+PUSH       R13
+PUSH       R12
+PUSH       RBP
+PUSH       RBX
+SUB        RSP, 0x38
+NOP        
+MOV        EBP, DWORD PTR [RDI + 0x24]
+MOV        EAX, EBP
+SHR        EAX, 0x3
+JZ         loc_7ffff7e554a5
+->	c_next:loc_7ffff7e552b1 	c_to:loc_7ffff7e554a5 
+ */ 
+loc_7ffff7e55290:
+MOVABS          R14, 0x7ffff7e55290
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+NOP
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             R14, Stack_R15
+MOV             QWORD PTR [R13], R14
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             R15, Stack_R14
+MOV             QWORD PTR [R13], R15
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             Stack_R15, R14
+MOV             R14, Stack_R13
+MOV             QWORD PTR [R13], R14
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             Stack_R13, R14
+MOV             R14, Stack_R12
+MOV             QWORD PTR [R13], R14
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R12
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], RBX
+SUB             R13, 0x38
+NOP
+MOV             R12d, DWORD PTR [RDI + 0x24]
+MOV             EAX, R12d
+SHR             EAX, 0x3
+MOV             Stack_R14, R15
+MOV             Stack_R12, R14
+JZ              loc_7ffff7e554a5
+
+
+/*
+loc_7ffff7e552b1
+MOV        R8, RDI
+AND        EBP, 0x1
+JNZ        loc_7ffff7e554c0
+->	c_next:loc_7ffff7e552bd 	c_to:loc_7ffff7e554c0 
+ */ 
+loc_7ffff7e552b1:
+MOVABS          R14, 0x7ffff7e552b1
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R8, RDI
+AND             R12d, 0x1
+JNZ             loc_7ffff7e554c0
+
+
+/*
+loc_7ffff7e552bd
+MOV        R15D, 0x80
+MOV        EBP, 0x81
+->	c_next:loc_7ffff7e552c8 
+ */ 
+loc_7ffff7e552bd:
+MOV             R14, Stack_R15
+MOV             R14d, 0x80
+MOV             R12d, 0x81
+MOV             Stack_R15, R14
+
+
+/*
+loc_7ffff7e552c8
+MOV        EAX, DWORD PTR [R8 + 0x20]
+LEA        R9, QWORD PTR [R8 + 0x20]
+->	c_next:loc_7ffff7e552d0 
+ */ 
+loc_7ffff7e552c8:
+MOV             EAX, DWORD PTR [R8 + 0x20]
+LEA             R9, QWORD PTR [R8 + 0x20]
+
+
+/*
+loc_7ffff7e552d0
+TEST       AL, 0x3
+JNZ        loc_7ffff7e555a0
+->	c_next:loc_7ffff7e552d8 	c_to:loc_7ffff7e555a0 
+ */ 
+loc_7ffff7e552d0:
+MOVABS          R14, 0x7ffff7e552d0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            AL, 0x3
+JNZ             loc_7ffff7e555a0
+
+
+/*
+loc_7ffff7e552d8
+MOV        EDX, EAX
+OR         EDX, 0x1
+LOCK CMPXCHG    DWORD PTR [R9], EDX
+JNZ        loc_7ffff7e552d0
+->	c_next:loc_7ffff7e552e4 	c_to:loc_7ffff7e552d0 
+ */ 
+loc_7ffff7e552d8:
+MOVABS          R14, 0x7ffff7e552d8
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EDX, EAX
+OR              EDX, 0x1
+LOCK CMPXCHG    DWORD PTR [R9], EDX
+JNZ             loc_7ffff7e552d0
+
+
+/*
+loc_7ffff7e552e4
+MOV        R14, QWORD PTR [R8]
+MOV        EBX, R14D
+MOV        R12, R14
+NOT        EBX
+SHR        R12, 0x1
+AND        EBX, 0x1
+MOV        R13D, EBX
+SHL        R13, 0x2
+LEA        RDX, QWORD PTR [R13 + R8]
+MOV        EAX, DWORD PTR [RDX + 0x18]
+TEST       EAX, EAX
+JZ         loc_7ffff7e55335
+->	c_next:loc_7ffff7e55307 	c_to:loc_7ffff7e55335 
+ */ 
+loc_7ffff7e552e4:
+MOVABS          R14, 0x7ffff7e552e4
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_R14
+MOV             R14, QWORD PTR [R8]
+MOV             EBX, R14d
+MOV             R15, Stack_R12
+MOV             R15, R14
+NOT             EBX
+SHR             R15, 0x1
+AND             EBX, 0x1
+MOV             Stack_R14, R14
+MOV             R14, Stack_R13
+MOV             R14d, EBX
+SHL             R14, 0x2
+LEA             RDX, QWORD PTR [R14 + R8]
+MOV             EAX, DWORD PTR [RDX + 0x18]
+TEST            EAX, EAX
+MOV             Stack_R12, R15
+MOV             Stack_R13, R14
+JZ              loc_7ffff7e55335
+
+
+/*
+loc_7ffff7e55307
+LEA        RDI, QWORD PTR [R13 + R8 + 0x28]
+ADD        EAX, EAX
+LOCK ADD        DWORD PTR [RDI], EAX
+XOR        R10D, R10D
+MOV        EAX, 0xCA
+MOV        DWORD PTR [RDX + 0x18], 0x0
+MOV        ESI, EBP
+MOV        EDX, 0x7FFFFFFF
+SYSCALL    
+->	c_next:loc_7ffff7e55329 
+ */ 
+loc_7ffff7e55307:
+MOV             R14, Stack_R13
+LEA             RDI, QWORD PTR [R14 + R8 + 0x28]
+ADD             EAX, EAX
+LOCK ADD        DWORD PTR [RDI], EAX
+XOR             R10D, R10D
+MOV             EAX, 0xCA
+MOV             DWORD PTR [RDX + 0x18], 0x0
+MOV             ESI, R12d
+MOV             EDX, 0x7FFFFFFF
+MOVABS          R14, 0x7ffff7e55327
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e55329
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JA         loc_7ffff7e55558
+->	c_next:loc_7ffff7e55335 	c_to:loc_7ffff7e55558 
+ */ 
+loc_7ffff7e55329:
+MOVABS          R14, 0x7ffff7e55329
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JA              loc_7ffff7e55558
+
+
+/*
+loc_7ffff7e55335
+MOV        ECX, R14D
+MOV        EAX, DWORD PTR [R8 + 0x20]
+AND        ECX, 0x1
+MOV        EDI, ECX
+SHR        EAX, 0x2
+SHL        RDI, 0x2
+MOV        ESI, EAX
+MOV        DWORD PTR [RSP + 0x18], EAX
+MOV        RAX, QWORD PTR [R8 + 0x8]
+LEA        R14, QWORD PTR [R8 + RDI]
+MOV        DWORD PTR [RSP + 0x1C], ECX
+ADD        R12D, DWORD PTR [R14 + 0x18]
+SHR        RAX, 0x1
+MOV        QWORD PTR [RSP + 0x10], RDI
+SUB        R12D, ESI
+MOV        QWORD PTR [RSP + 0x8], RAX
+CMP        EAX, R12D
+JZ         loc_7ffff7e554d4
+->	c_next:loc_7ffff7e55377 	c_to:loc_7ffff7e554d4 
+ */ 
+loc_7ffff7e55335:
+MOVABS          R14, 0x7ffff7e55335
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_R14
+MOV             ECX, R14d
+MOV             EAX, DWORD PTR [R8 + 0x20]
+AND             ECX, 0x1
+MOV             EDI, ECX
+SHR             EAX, 0x2
+SHL             RDI, 0x2
+MOV             ESI, EAX
+MOV             DWORD PTR [R13 + 0x18], EAX
+MOV             RAX, QWORD PTR [R8 + 0x8]
+LEA             R14, QWORD PTR [R8 + RDI]
+MOV             DWORD PTR [R13 + 0x1C], ECX
+MOV             R15, Stack_R12
+ADD             R15d, DWORD PTR [R14 + 0x18]
+SHR             RAX, 0x1
+MOV             QWORD PTR [R13 + 0x10], RDI
+SUB             R15d, ESI
+MOV             QWORD PTR [R13 + 0x8], RAX
+CMP             EAX, R15d
+MOV             Stack_R12, R15
+MOV             Stack_R14, R14
+JZ              loc_7ffff7e554d4
+
+
+/*
+loc_7ffff7e55377
+LEA        RAX, QWORD PTR [R8 + 0x28]
+MOV        QWORD PTR [RSP + 0x28], RAX
+ADD        RAX, R13
+MOV        QWORD PTR [RSP + 0x20], RAX
+LOCK OR         DWORD PTR [RAX], 0x1
+LEA        RDI, QWORD PTR [R13 + R8 + 0x10]
+MOV        EAX, DWORD PTR [RDI]
+->	c_next:loc_7ffff7e55393 
+ */ 
+loc_7ffff7e55377:
+LEA             RAX, QWORD PTR [R8 + 0x28]
+MOV             QWORD PTR [R13 + 0x28], RAX
+MOV             R14, Stack_R13
+ADD             RAX, R14
+MOV             QWORD PTR [R13 + 0x20], RAX
+LOCK OR         DWORD PTR [RAX], 0x1
+LEA             RDI, QWORD PTR [R14 + R8 + 0x10]
+MOV             EAX, DWORD PTR [RDI]
+MOV             Stack_R13, R14
+
+
+/*
+loc_7ffff7e55393
+MOV        EDX, EAX
+LOCK CMPXCHG    DWORD PTR [RDI], EAX
+JNZ        loc_7ffff7e55393
+->	c_next:loc_7ffff7e5539b 	c_to:loc_7ffff7e55393 
+ */ 
+loc_7ffff7e55393:
+MOVABS          R14, 0x7ffff7e55393
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EDX, EAX
+LOCK CMPXCHG    DWORD PTR [RDI], EAX
+JNZ             loc_7ffff7e55393
+
+
+/*
+loc_7ffff7e5539b
+SHR        EDX, 0x1
+MOV        R12D, 0xCA
+MOV        R13D, 0x1
+JZ         loc_7ffff7e553e2
+->	c_next:loc_7ffff7e553ab 	c_to:loc_7ffff7e553e2 
+ */ 
+loc_7ffff7e5539b:
+MOVABS          R14, 0x7ffff7e5539b
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+SHR             EDX, 0x1
+MOV             R14, Stack_R12
+MOV             R14d, 0xCA
+MOV             R15, Stack_R13
+MOV             R15d, 0x1
+MOV             Stack_R13, R15
+MOV             Stack_R12, R14
+JZ              loc_7ffff7e553e2
+
+
+/*
+loc_7ffff7e553ab
+NOP        DWORD PTR [RAX * 0x2]
+->	c_next:loc_7ffff7e553b0 
+ */ 
+loc_7ffff7e553ab:
+NOP
+
+
+/*
+loc_7ffff7e553b0
+MOV        EAX, DWORD PTR [RDI]
+->	c_next:loc_7ffff7e553b2 
+ */ 
+loc_7ffff7e553b0:
+MOV             EAX, DWORD PTR [RDI]
+
+
+/*
+loc_7ffff7e553b2
+MOV        ECX, EAX
+MOV        EDX, EAX
+OR         ECX, 0x1
+LOCK CMPXCHG    DWORD PTR [RDI], ECX
+JNZ        loc_7ffff7e553b2
+->	c_next:loc_7ffff7e553bf 	c_to:loc_7ffff7e553b2 
+ */ 
+loc_7ffff7e553b2:
+MOVABS          R14, 0x7ffff7e553b2
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             ECX, EAX
+MOV             EDX, EAX
+OR              ECX, 0x1
+LOCK CMPXCHG    DWORD PTR [RDI], ECX
+JNZ             loc_7ffff7e553b2
+
+
+/*
+loc_7ffff7e553bf
+SHR        EDX, 0x1
+JZ         loc_7ffff7e553dc
+->	c_next:loc_7ffff7e553c3 	c_to:loc_7ffff7e553dc 
+ */ 
+loc_7ffff7e553bf:
+MOVABS          R14, 0x7ffff7e553bf
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+SHR             EDX, 0x1
+JZ              loc_7ffff7e553dc
+
+
+/*
+loc_7ffff7e553c3
+XOR        R10D, R10D
+MOV        EDX, ECX
+MOV        ESI, R15D
+MOV        EAX, R12D
+SYSCALL    
+->	c_next:loc_7ffff7e553d0 
+ */ 
+loc_7ffff7e553c3:
+XOR             R10D, R10D
+MOV             EDX, ECX
+MOV             R14, Stack_R15
+MOV             ESI, R14d
+MOV             R15, Stack_R12
+MOV             EAX, R15d
+MOVABS          R14, 0x7ffff7e553ce
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e553d0
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JA         loc_7ffff7e55520
+->	c_next:loc_7ffff7e553dc 	c_to:loc_7ffff7e55520 
+ */ 
+loc_7ffff7e553d0:
+MOVABS          R14, 0x7ffff7e553d0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JA              loc_7ffff7e55520
+
+
+/*
+loc_7ffff7e553dc
+MOV        EAX, DWORD PTR [RDI]
+SHR        EAX, 0x1
+JNZ        loc_7ffff7e553b0
+->	c_next:loc_7ffff7e553e2 	c_to:loc_7ffff7e553b0 
+ */ 
+loc_7ffff7e553dc:
+MOVABS          R14, 0x7ffff7e553dc
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, DWORD PTR [RDI]
+SHR             EAX, 0x1
+JNZ             loc_7ffff7e553b0
+
+
+/*
+loc_7ffff7e553e2
+TEST       EBX, EBX
+MOV        EAX, 0xFFFFFFFF
+CMOVZ      EBX, EAX
+MOV        RDX, QWORD PTR [R8 + 0x8]
+MOV        EAX, DWORD PTR [RSP + 0x18]
+LEA        EAX, DWORD PTR [RBX + RAX * 0x2]
+ADD        RAX, RDX
+MOV        QWORD PTR [R8 + 0x8], RAX
+MOV        RAX, QWORD PTR [RSP + 0x20]
+MOV        DWORD PTR [RAX], 0x0
+MOV        RAX, QWORD PTR [R8]
+->	c_next:loc_7ffff7e5540c 
+ */ 
+loc_7ffff7e553e2:
+TEST            EBX, EBX
+MOV             EAX, 0xFFFFFFFF
+CMOVZ           EBX, EAX
+MOV             RDX, QWORD PTR [R8 + 0x8]
+MOV             EAX, DWORD PTR [R13 + 0x18]
+LEA             EAX, DWORD PTR [RBX + 0x2 * RAX]
+ADD             RAX, RDX
+MOV             QWORD PTR [R8 + 0x8], RAX
+MOV             RAX, QWORD PTR [R13 + 0x20]
+MOV             DWORD PTR [RAX], 0x0
+MOV             RAX, QWORD PTR [R8]
+
+
+/*
+loc_7ffff7e5540c
+MOV        RCX, RAX
+MOV        RDX, RAX
+XOR        RCX, 0x1
+LOCK CMPXCHG    QWORD PTR [R8], RCX
+JNZ        loc_7ffff7e5540c
+->	c_next:loc_7ffff7e5541d 	c_to:loc_7ffff7e5540c 
+ */ 
+loc_7ffff7e5540c:
+MOVABS          R14, 0x7ffff7e5540c
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RCX, RAX
+MOV             RDX, RAX
+XOR             RCX, 0x1
+LOCK CMPXCHG    QWORD PTR [R8], RCX
+JNZ             loc_7ffff7e5540c
+
+
+/*
+loc_7ffff7e5541d
+MOV        EAX, DWORD PTR [RSP + 0x18]
+SHR        RDX, 0x1
+ADD        EAX, DWORD PTR [RSP + 0x8]
+SUB        EDX, EAX
+MOV        EAX, DWORD PTR [R8 + 0x20]
+LEA        ECX, DWORD PTR [RDX * 0x4]
+AND        EAX, 0x3
+OR         EAX, ECX
+MOV        ESI, EAX
+XCHG       DWORD PTR [R9], ESI
+XOR        EAX, ESI
+TEST       AL, 0x3
+JNZ        loc_7ffff7e55578
+->	c_next:loc_7ffff7e55449 	c_to:loc_7ffff7e55578 
+ */ 
+loc_7ffff7e5541d:
+MOVABS          R14, 0x7ffff7e5541d
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, DWORD PTR [R13 + 0x18]
+SHR             RDX, 0x1
+ADD             EAX, DWORD PTR [R13 + 0x8]
+SUB             EDX, EAX
+MOV             EAX, DWORD PTR [R8 + 0x20]
+LEA             ECX, DWORD PTR [0x4 * RDX]
+AND             EAX, 0x3
+OR              EAX, ECX
+MOV             ESI, EAX
+XCHG            DWORD PTR [R9], ESI
+XOR             EAX, ESI
+TEST            AL, 0x3
+JNZ             loc_7ffff7e55578
+
+
+/*
+loc_7ffff7e55449
+ADD        EDX, DWORD PTR [R14 + 0x18]
+MOV        DWORD PTR [R14 + 0x18], EDX
+JZ         loc_7ffff7e554d0
+->	c_next:loc_7ffff7e55453 	c_to:loc_7ffff7e554d0 
+ */ 
+loc_7ffff7e55449:
+MOVABS          R14, 0x7ffff7e55449
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_R14
+ADD             EDX, DWORD PTR [R14 + 0x18]
+MOV             DWORD PTR [R14 + 0x18], EDX
+MOV             Stack_R14, R14
+JZ              loc_7ffff7e554d0
+
+
+/*
+loc_7ffff7e55453
+MOV        RDI, QWORD PTR [RSP + 0x28]
+ADD        EDX, EDX
+ADD        RDI, QWORD PTR [RSP + 0x10]
+LOCK ADD        DWORD PTR [RDI], EDX
+MOV        DWORD PTR [R14 + 0x18], 0x0
+MOV        EAX, DWORD PTR [R8 + 0x20]
+->	c_next:loc_7ffff7e5546e 
+ */ 
+loc_7ffff7e55453:
+MOV             RDI, QWORD PTR [R13 + 0x28]
+ADD             EDX, EDX
+ADD             RDI, QWORD PTR [R13 + 0x10]
+LOCK ADD        DWORD PTR [RDI], EDX
+MOV             R14, Stack_R14
+MOV             DWORD PTR [R14 + 0x18], 0x0
+MOV             EAX, DWORD PTR [R8 + 0x20]
+MOV             Stack_R14, R14
+
+
+/*
+loc_7ffff7e5546e
+MOV        ECX, EAX
+MOV        EDX, EAX
+AND        ECX, 0xFFFFFFFC
+LOCK CMPXCHG    DWORD PTR [R9], ECX
+JNZ        loc_7ffff7e5546e
+->	c_next:loc_7ffff7e5547c 	c_to:loc_7ffff7e5546e 
+ */ 
+loc_7ffff7e5546e:
+MOVABS          R14, 0x7ffff7e5546e
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             ECX, EAX
+MOV             EDX, EAX
+AND             ECX, 0xFFFFFFFC
+LOCK CMPXCHG    DWORD PTR [R9], ECX
+JNZ             loc_7ffff7e5546e
+
+
+/*
+loc_7ffff7e5547c
+AND        EDX, 0x3
+CMP        EDX, 0x2
+JZ         loc_7ffff7e55588
+->	c_next:loc_7ffff7e55488 	c_to:loc_7ffff7e55588 
+ */ 
+loc_7ffff7e5547c:
+MOVABS          R14, 0x7ffff7e5547c
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+AND             EDX, 0x3
+CMP             EDX, 0x2
+JZ              loc_7ffff7e55588
+
+
+/*
+loc_7ffff7e55488
+XOR        R10D, R10D
+MOV        EDX, 0x7FFFFFFF
+MOV        ESI, EBP
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e55499 
+ */ 
+loc_7ffff7e55488:
+XOR             R10D, R10D
+MOV             EDX, 0x7FFFFFFF
+MOV             ESI, R12d
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e55497
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e55499
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JA         loc_7ffff7e55548
+->	c_next:loc_7ffff7e554a5 	c_to:loc_7ffff7e55548 
+ */ 
+loc_7ffff7e55499:
+MOVABS          R14, 0x7ffff7e55499
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JA              loc_7ffff7e55548
+
+
+/*
+loc_7ffff7e554a5
+ADD        RSP, 0x38
+XOR        EAX, EAX
+POP        RBX
+POP        RBP
+POP        R12
+POP        R13
+POP        R14
+POP        R15
+RET        
+ */ 
+loc_7ffff7e554a5:
+ADD             R13, 0x38
+XOR             EAX, EAX
+MOV             RBX, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             R12, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             R14, Stack_R12
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             R15, Stack_R13
+MOV             R15, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R12, R14
+MOV             R14, Stack_R14
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R14, R14
+MOV             R14, Stack_R15
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R15, R14
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R13, R15
+JMP             ij_7ffff7e554b6
+
+
+/*
+loc_7ffff7e554c0
+XOR        R15D, R15D
+JMP        loc_7ffff7e552c8
+->	c_to:loc_7ffff7e552c8 
+ */ 
+loc_7ffff7e554c0:
+MOVABS          R14, 0x7ffff7e554c0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_R15
+XOR             R14d, R14d
+MOV             Stack_R15, R14
+JMP             loc_7ffff7e552c8
+
+
+/*
+loc_7ffff7e554d0
+MOV        EBX, DWORD PTR [RSP + 0x1C]
+->	c_next:loc_7ffff7e554d4 
+ */ 
+loc_7ffff7e554d0:
+MOV             EBX, DWORD PTR [R13 + 0x1C]
+
+
+/*
+loc_7ffff7e554d4
+MOV        EAX, DWORD PTR [R8 + 0x20]
+->	c_next:loc_7ffff7e554d8 
+ */ 
+loc_7ffff7e554d4:
+MOV             EAX, DWORD PTR [R8 + 0x20]
+
+
+/*
+loc_7ffff7e554d8
+MOV        ECX, EAX
+MOV        EDX, EAX
+AND        ECX, 0xFFFFFFFC
+LOCK CMPXCHG    DWORD PTR [R9], ECX
+JNZ        loc_7ffff7e554d8
+->	c_next:loc_7ffff7e554e6 	c_to:loc_7ffff7e554d8 
+ */ 
+loc_7ffff7e554d8:
+MOVABS          R14, 0x7ffff7e554d8
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             ECX, EAX
+MOV             EDX, EAX
+AND             ECX, 0xFFFFFFFC
+LOCK CMPXCHG    DWORD PTR [R9], ECX
+JNZ             loc_7ffff7e554d8
+
+
+/*
+loc_7ffff7e554e6
+AND        EDX, 0x3
+CMP        EDX, 0x2
+JNZ        loc_7ffff7e554a5
+->	c_next:loc_7ffff7e554ee 	c_to:loc_7ffff7e554a5 
+ */ 
+loc_7ffff7e554e6:
+MOVABS          R14, 0x7ffff7e554e6
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+AND             EDX, 0x3
+CMP             EDX, 0x2
+JNZ             loc_7ffff7e554a5
+
+
+/*
+loc_7ffff7e554ee
+XOR        R12D, R12D
+->	c_next:loc_7ffff7e554f1 
+ */ 
+loc_7ffff7e554ee:
+MOV             R14, Stack_R12
+XOR             R14d, R14d
+MOV             Stack_R12, R14
+
+
+/*
+loc_7ffff7e554f1
+XOR        R10D, R10D
+MOV        EDX, 0x1
+MOV        ESI, EBP
+MOV        RDI, R9
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e55505 
+ */ 
+loc_7ffff7e554f1:
+XOR             R10D, R10D
+MOV             EDX, 0x1
+MOV             ESI, R12d
+MOV             RDI, R9
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e55503
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e55505
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JA         loc_7ffff7e55568
+->	c_next:loc_7ffff7e5550d 	c_to:loc_7ffff7e55568 
+ */ 
+loc_7ffff7e55505:
+MOVABS          R14, 0x7ffff7e55505
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JA              loc_7ffff7e55568
+
+
+/*
+loc_7ffff7e5550d
+TEST       R12B, R12B
+JZ         loc_7ffff7e554a5
+->	c_next:loc_7ffff7e55512 	c_to:loc_7ffff7e554a5 
+ */ 
+loc_7ffff7e5550d:
+MOVABS          R14, 0x7ffff7e5550d
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_R12
+TEST            R14b, R14b
+MOV             Stack_R12, R14
+JZ              loc_7ffff7e554a5
+
+
+/*
+loc_7ffff7e55512
+MOV        EBX, EBX
+LEA        RDI, QWORD PTR [R8 + RBX * 0x4 + 0x28]
+JMP        loc_7ffff7e55488
+->	c_to:loc_7ffff7e55488 
+ */ 
+loc_7ffff7e55512:
+MOVABS          R14, 0x7ffff7e55512
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EBX, EBX
+LEA             RDI, QWORD PTR [R8 + 0x28 + 0x4 * RBX]
+JMP             loc_7ffff7e55488
+
+
+/*
+loc_7ffff7e55520
+LEA        ECX, DWORD PTR [RAX + 0xB]
+CMP        ECX, 0xB
+JA         loc_7ffff7e55539
+->	c_next:loc_7ffff7e55528 	c_to:loc_7ffff7e55539 
+ */ 
+loc_7ffff7e55520:
+MOVABS          R14, 0x7ffff7e55520
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+LEA             ECX, DWORD PTR [RAX + 0xB]
+CMP             ECX, 0xB
+JA              loc_7ffff7e55539
+
+
+/*
+loc_7ffff7e55528
+MOV        RAX, R13
+SHL        RAX, CL
+TEST       EAX, 0x881
+JNZ        loc_7ffff7e553dc
+->	c_next:loc_7ffff7e55539 	c_to:loc_7ffff7e553dc 
+ */ 
+loc_7ffff7e55528:
+MOVABS          R14, 0x7ffff7e55528
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_R13
+MOV             RAX, R14
+SHL             RAX, CL
+TEST            EAX, 0x881
+MOV             Stack_R13, R14
+JNZ             loc_7ffff7e553dc
+
+
+/*
+loc_7ffff7e55539
+LEA        RDI, QWORD PTR [RIP + 0x6AC0]
+CALL       loc_7ffff7e4b630
+->	c_next:loc_7ffff7e55545 
+ */ 
+loc_7ffff7e55539:
+MOVABS          R14, 0x7ffff7e55540
+LEA             RDI, QWORD PTR [R14 + 0x6AC0]
+MOVABS          R14, 0x7FFFF7E55545
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b630
+
+
+/*
+loc_7ffff7e55545
+NOP        DWORD PTR [RAX]
+->	c_next:loc_7ffff7e55548 
+ */ 
+loc_7ffff7e55545:
+NOP
+
+
+/*
+loc_7ffff7e55548
+ADD        EAX, 0x16
+AND        EAX, 0xFFFFFFF7
+JNZ        loc_7ffff7e55539
+->	c_next:loc_7ffff7e55550 	c_to:loc_7ffff7e55539 
+ */ 
+loc_7ffff7e55548:
+MOVABS          R14, 0x7ffff7e55548
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x16
+AND             EAX, 0xFFFFFFF7
+JNZ             loc_7ffff7e55539
+
+
+/*
+loc_7ffff7e55550
+JMP        loc_7ffff7e554a5
+->	c_to:loc_7ffff7e554a5 
+ */ 
+loc_7ffff7e55550:
+MOVABS          R14, 0x7ffff7e55550
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e554a5
+
+
+/*
+loc_7ffff7e55558
+ADD        EAX, 0x16
+AND        EAX, 0xFFFFFFF7
+JNZ        loc_7ffff7e55539
+->	c_next:loc_7ffff7e55560 	c_to:loc_7ffff7e55539 
+ */ 
+loc_7ffff7e55558:
+MOVABS          R14, 0x7ffff7e55558
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x16
+AND             EAX, 0xFFFFFFF7
+JNZ             loc_7ffff7e55539
+
+
+/*
+loc_7ffff7e55560
+JMP        loc_7ffff7e55335
+->	c_to:loc_7ffff7e55335 
+ */ 
+loc_7ffff7e55560:
+MOVABS          R14, 0x7ffff7e55560
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e55335
+
+
+/*
+loc_7ffff7e55568
+ADD        EAX, 0x16
+AND        EAX, 0xFFFFFFF7
+JNZ        loc_7ffff7e55539
+->	c_next:loc_7ffff7e55570 	c_to:loc_7ffff7e55539 
+ */ 
+loc_7ffff7e55568:
+MOVABS          R14, 0x7ffff7e55568
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x16
+AND             EAX, 0xFFFFFFF7
+JNZ             loc_7ffff7e55539
+
+
+/*
+loc_7ffff7e55570
+JMP        loc_7ffff7e5550d
+->	c_to:loc_7ffff7e5550d 
+ */ 
+loc_7ffff7e55570:
+MOVABS          R14, 0x7ffff7e55570
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e5550d
+
+
+/*
+loc_7ffff7e55578
+OR         ECX, 0x2
+MOV        DWORD PTR [R8 + 0x20], ECX
+JMP        loc_7ffff7e55449
+->	c_to:loc_7ffff7e55449 
+ */ 
+loc_7ffff7e55578:
+MOVABS          R14, 0x7ffff7e55578
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+OR              ECX, 0x2
+MOV             DWORD PTR [R8 + 0x20], ECX
+JMP             loc_7ffff7e55449
+
+
+/*
+loc_7ffff7e55588
+MOV        EBX, DWORD PTR [RSP + 0x1C]
+MOV        R12D, 0x1
+JMP        loc_7ffff7e554f1
+->	c_to:loc_7ffff7e554f1 
+ */ 
+loc_7ffff7e55588:
+MOVABS          R14, 0x7ffff7e55588
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EBX, DWORD PTR [R13 + 0x1C]
+MOV             R14, Stack_R12
+MOV             R14d, 0x1
+MOV             Stack_R12, R14
+JMP             loc_7ffff7e554f1
+
+
+/*
+loc_7ffff7e555a0
+MOV        R12D, 0xCA
+MOV        EBX, 0x1
+JMP        loc_7ffff7e555b0
+->	c_to:loc_7ffff7e555b0 
+ */ 
+loc_7ffff7e555a0:
+MOVABS          R14, 0x7ffff7e555a0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             R14, Stack_R12
+MOV             R14d, 0xCA
+MOV             EBX, 0x1
+MOV             Stack_R12, R14
+JMP             loc_7ffff7e555b0
+
+
+/*
+loc_7ffff7e555ad
+MOV        EAX, DWORD PTR [R9]
+->	c_next:loc_7ffff7e555b0 
+ */ 
+loc_7ffff7e555ad:
+MOV             EAX, DWORD PTR [R9]
+
+
+/*
+loc_7ffff7e555b0
+MOV        EDX, EAX
+MOV        ECX, EAX
+AND        EDX, 0xFFFFFFFC
+AND        ECX, 0x3
+OR         EDX, 0x2
+CMP        ECX, 0x2
+JZ         loc_7ffff7e555d9
+->	c_next:loc_7ffff7e555c2 	c_to:loc_7ffff7e555d9 
+ */ 
+loc_7ffff7e555b0:
+MOVABS          R14, 0x7ffff7e555b0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EDX, EAX
+MOV             ECX, EAX
+AND             EDX, 0xFFFFFFFC
+AND             ECX, 0x3
+OR              EDX, 0x2
+CMP             ECX, 0x2
+JZ              loc_7ffff7e555d9
+
+
+/*
+loc_7ffff7e555c2
+LOCK CMPXCHG    DWORD PTR [R9], EDX
+JNZ        loc_7ffff7e555b0
+->	c_next:loc_7ffff7e555c9 	c_to:loc_7ffff7e555b0 
+ */ 
+loc_7ffff7e555c2:
+MOVABS          R14, 0x7ffff7e555c2
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+LOCK CMPXCHG    DWORD PTR [R9], EDX
+JNZ             loc_7ffff7e555b0
+
+
+/*
+loc_7ffff7e555c9
+TEST       AL, 0x3
+JZ         loc_7ffff7e552e4
+->	c_next:loc_7ffff7e555d1 	c_to:loc_7ffff7e552e4 
+ */ 
+loc_7ffff7e555c9:
+MOVABS          R14, 0x7ffff7e555c9
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            AL, 0x3
+JZ              loc_7ffff7e552e4
+
+
+/*
+loc_7ffff7e555d1
+AND        EAX, 0xFFFFFFFC
+OR         EAX, 0x2
+MOV        EDX, EAX
+->	c_next:loc_7ffff7e555d9 
+ */ 
+loc_7ffff7e555d1:
+AND             EAX, 0xFFFFFFFC
+OR              EAX, 0x2
+MOV             EDX, EAX
+
+
+/*
+loc_7ffff7e555d9
+XOR        R10D, R10D
+MOV        ESI, R15D
+MOV        RDI, R9
+MOV        EAX, R12D
+SYSCALL    
+->	c_next:loc_7ffff7e555e7 
+ */ 
+loc_7ffff7e555d9:
+XOR             R10D, R10D
+MOV             R14, Stack_R15
+MOV             ESI, R14d
+MOV             RDI, R9
+MOV             R15, Stack_R12
+MOV             EAX, R15d
+MOVABS          R14, 0x7ffff7e555e5
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e555e7
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JBE        loc_7ffff7e555ad
+->	c_next:loc_7ffff7e555ef 	c_to:loc_7ffff7e555ad 
+ */ 
+loc_7ffff7e555e7:
+MOVABS          R14, 0x7ffff7e555e7
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JBE             loc_7ffff7e555ad
+
+
+/*
+loc_7ffff7e555ef
+LEA        ECX, DWORD PTR [RAX + 0xB]
+CMP        ECX, 0xB
+JA         loc_7ffff7e55539
+->	c_next:loc_7ffff7e555fb 	c_to:loc_7ffff7e55539 
+ */ 
+loc_7ffff7e555ef:
+MOVABS          R14, 0x7ffff7e555ef
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+LEA             ECX, DWORD PTR [RAX + 0xB]
+CMP             ECX, 0xB
+JA              loc_7ffff7e55539
+
+
+/*
+loc_7ffff7e555fb
+MOV        RAX, RBX
+SHL        RAX, CL
+TEST       EAX, 0x881
+JZ         loc_7ffff7e55539
+->	c_next:loc_7ffff7e5560c 	c_to:loc_7ffff7e55539 
+ */ 
+loc_7ffff7e555fb:
+MOVABS          R14, 0x7ffff7e555fb
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, RBX
+SHL             RAX, CL
+TEST            EAX, 0x881
+JZ              loc_7ffff7e55539
+
+
+/*
+loc_7ffff7e5560c
+JMP        loc_7ffff7e555ad
+->	c_to:loc_7ffff7e555ad 
+ */ 
+loc_7ffff7e5560c:
+MOVABS          R14, 0x7ffff7e5560c
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e555ad
+
+
+/*
+loc_7ffff7e561b0
+ENDBR64    
+CMP        EDI, 0x1
+JA         loc_7ffff7e56250
+->	c_next:loc_7ffff7e561bd 	c_to:loc_7ffff7e56250 
+ */ 
+loc_7ffff7e561b0:
+MOVABS          R14, 0x7ffff7e561b0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+NOP
+CMP             EDI, 0x1
+JA              loc_7ffff7e56250
+
+
+/*
+loc_7ffff7e561bd
+SUB        RSP, 0x18
+MOV        R8, QWORD PTR FS:[0x10]
+MOV        EAX, DWORD PTR FS:[0x308]
+MOV        DWORD PTR [RSP + 0xC], EAX
+MOV        ECX, DWORD PTR [RSP + 0xC]
+CMP        EDI, 0x1
+JZ         loc_7ffff7e56220
+->	c_next:loc_7ffff7e561df 	c_to:loc_7ffff7e56220 
+ */ 
+loc_7ffff7e561bd:
+MOVABS          R14, 0x7ffff7e561bd
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+SUB             R13, 0x18
+MOV             R14, Stack_RFS
+MOV             R8, QWORD PTR [R14 + 0x10]
+MOV             EAX, DWORD PTR [R14 + 0x308]
+MOV             DWORD PTR [R13 + 0xC], EAX
+MOV             ECX, DWORD PTR [R13 + 0xC]
+CMP             EDI, 0x1
+JZ              loc_7ffff7e56220
+
+
+/*
+loc_7ffff7e561df
+TEST       RSI, RSI
+JZ         loc_7ffff7e56288
+->	c_next:loc_7ffff7e561e8 	c_to:loc_7ffff7e56288 
+ */ 
+loc_7ffff7e561df:
+MOVABS          R14, 0x7ffff7e561df
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            RSI, RSI
+JZ              loc_7ffff7e56288
+
+
+/*
+loc_7ffff7e561e8
+MOV        EAX, ECX
+MOV        EDX, ECX
+AND        EAX, 0x1
+AND        EDX, 0xFFFFFFFE
+MOV        DWORD PTR [RSI], EAX
+TEST       CL, 0x1
+JZ         loc_7ffff7e56218
+->	c_next:loc_7ffff7e561f9 	c_to:loc_7ffff7e56218 
+ */ 
+loc_7ffff7e561e8:
+MOVABS          R14, 0x7ffff7e561e8
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, ECX
+MOV             EDX, ECX
+AND             EAX, 0x1
+AND             EDX, 0xFFFFFFFE
+MOV             DWORD PTR [RSI], EAX
+TEST            CL, 0x1
+JZ              loc_7ffff7e56218
+
+
+/*
+loc_7ffff7e561f9
+MOV        EAX, ECX
+LOCK CMPXCHG    DWORD PTR [R8 + 0x308], EDX
+CMP        ECX, EAX
+JNZ        loc_7ffff7e562b0
+->	c_next:loc_7ffff7e5620c 	c_to:loc_7ffff7e562b0 
+ */ 
+loc_7ffff7e561f9:
+MOVABS          R14, 0x7ffff7e561f9
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, ECX
+LOCK CMPXCHG    DWORD PTR [R8 + 0x308], EDX
+CMP             ECX, EAX
+JNZ             loc_7ffff7e562b0
+
+
+/*
+loc_7ffff7e5620c
+AND        EDX, 0xFFFFFFBB
+CMP        EDX, 0xA
+JZ         loc_7ffff7e562b7
+->	c_next:loc_7ffff7e56218 	c_to:loc_7ffff7e562b7 
+ */ 
+loc_7ffff7e5620c:
+MOVABS          R14, 0x7ffff7e5620c
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+AND             EDX, 0xFFFFFFBB
+CMP             EDX, 0xA
+JZ              loc_7ffff7e562b7
+
+
+/*
+loc_7ffff7e56218
+XOR        EAX, EAX
+ADD        RSP, 0x18
+RET        
+ */ 
+loc_7ffff7e56218:
+XOR             EAX, EAX
+ADD             R13, 0x18
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+JMP             ij_7ffff7e5621f
+
+
+/*
+loc_7ffff7e56220
+TEST       RSI, RSI
+JZ         loc_7ffff7e56260
+->	c_next:loc_7ffff7e56225 	c_to:loc_7ffff7e56260 
+ */ 
+loc_7ffff7e56220:
+MOVABS          R14, 0x7ffff7e56220
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            RSI, RSI
+JZ              loc_7ffff7e56260
+
+
+/*
+loc_7ffff7e56225
+MOV        EAX, ECX
+MOV        EDX, ECX
+AND        EAX, 0x1
+OR         EDX, 0x1
+MOV        DWORD PTR [RSI], EAX
+TEST       CL, 0x1
+JNZ        loc_7ffff7e56218
+->	c_next:loc_7ffff7e56236 	c_to:loc_7ffff7e56218 
+ */ 
+loc_7ffff7e56225:
+MOVABS          R14, 0x7ffff7e56225
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, ECX
+MOV             EDX, ECX
+AND             EAX, 0x1
+OR              EDX, 0x1
+MOV             DWORD PTR [RSI], EAX
+TEST            CL, 0x1
+JNZ             loc_7ffff7e56218
+
+
+/*
+loc_7ffff7e56236
+MOV        EAX, ECX
+LOCK CMPXCHG    DWORD PTR [R8 + 0x308], EDX
+CMP        ECX, EAX
+JZ         loc_7ffff7e5620c
+->	c_next:loc_7ffff7e56245 	c_to:loc_7ffff7e5620c 
+ */ 
+loc_7ffff7e56236:
+MOVABS          R14, 0x7ffff7e56236
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, ECX
+LOCK CMPXCHG    DWORD PTR [R8 + 0x308], EDX
+CMP             ECX, EAX
+JZ              loc_7ffff7e5620c
+
+
+/*
+loc_7ffff7e56245
+MOV        ECX, EAX
+JMP        loc_7ffff7e56225
+->	c_to:loc_7ffff7e56225 
+ */ 
+loc_7ffff7e56245:
+MOVABS          R14, 0x7ffff7e56245
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             ECX, EAX
+JMP             loc_7ffff7e56225
+
+
+/*
+loc_7ffff7e56250
+MOV        EAX, 0x16
+RET        
+ */ 
+loc_7ffff7e56250:
+MOV             EAX, 0x16
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+JMP             ij_7ffff7e56256
+
+
+/*
+loc_7ffff7e56256
+MOV        ECX, EAX
+NOP        DWORD PTR [RAX * 0x2]
+->	c_next:loc_7ffff7e56260 
+ */ 
+loc_7ffff7e56256:
+MOV             ECX, EAX
+NOP
+
+
+/*
+loc_7ffff7e56260
+MOV        EDX, ECX
+OR         EDX, 0x1
+TEST       CL, 0x1
+JNZ        loc_7ffff7e56218
+->	c_next:loc_7ffff7e5626a 	c_to:loc_7ffff7e56218 
+ */ 
+loc_7ffff7e56260:
+MOVABS          R14, 0x7ffff7e56260
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EDX, ECX
+OR              EDX, 0x1
+TEST            CL, 0x1
+JNZ             loc_7ffff7e56218
+
+
+/*
+loc_7ffff7e5626a
+MOV        EAX, ECX
+LOCK CMPXCHG    DWORD PTR [R8 + 0x308], EDX
+CMP        ECX, EAX
+JZ         loc_7ffff7e5620c
+->	c_next:loc_7ffff7e56279 	c_to:loc_7ffff7e5620c 
+ */ 
+loc_7ffff7e5626a:
+MOVABS          R14, 0x7ffff7e5626a
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, ECX
+LOCK CMPXCHG    DWORD PTR [R8 + 0x308], EDX
+CMP             ECX, EAX
+JZ              loc_7ffff7e5620c
+
+
+/*
+loc_7ffff7e56279
+JMP        loc_7ffff7e56256
+->	c_to:loc_7ffff7e56256 
+ */ 
+loc_7ffff7e56279:
+MOVABS          R14, 0x7ffff7e56279
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e56256
+
+
+/*
+loc_7ffff7e56280
+MOV        ECX, EAX
+NOP        WORD PTR [RAX * 0x2]
+->	c_next:loc_7ffff7e56288 
+ */ 
+loc_7ffff7e56280:
+MOV             ECX, EAX
+NOP
+
+
+/*
+loc_7ffff7e56288
+MOV        EDX, ECX
+AND        EDX, 0xFFFFFFFE
+TEST       CL, 0x1
+JZ         loc_7ffff7e56218
+->	c_next:loc_7ffff7e56292 	c_to:loc_7ffff7e56218 
+ */ 
+loc_7ffff7e56288:
+MOVABS          R14, 0x7ffff7e56288
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EDX, ECX
+AND             EDX, 0xFFFFFFFE
+TEST            CL, 0x1
+JZ              loc_7ffff7e56218
+
+
+/*
+loc_7ffff7e56292
+MOV        EAX, ECX
+LOCK CMPXCHG    DWORD PTR [R8 + 0x308], EDX
+CMP        ECX, EAX
+JZ         loc_7ffff7e5620c
+->	c_next:loc_7ffff7e562a5 	c_to:loc_7ffff7e5620c 
+ */ 
+loc_7ffff7e56292:
+MOVABS          R14, 0x7ffff7e56292
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, ECX
+LOCK CMPXCHG    DWORD PTR [R8 + 0x308], EDX
+CMP             ECX, EAX
+JZ              loc_7ffff7e5620c
+
+
+/*
+loc_7ffff7e562a5
+JMP        loc_7ffff7e56280
+->	c_to:loc_7ffff7e56280 
+ */ 
+loc_7ffff7e562a5:
+MOVABS          R14, 0x7ffff7e562a5
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e56280
+
+
+/*
+loc_7ffff7e562b0
+MOV        ECX, EAX
+JMP        loc_7ffff7e561e8
+->	c_to:loc_7ffff7e561e8 
+ */ 
+loc_7ffff7e562b0:
+MOVABS          R14, 0x7ffff7e562b0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             ECX, EAX
+JMP             loc_7ffff7e561e8
+
+
+/*
+loc_7ffff7e562b7
+MOV        RAX, QWORD PTR FS:[0x10]
+LOCK OR         DWORD PTR [RAX + 0x308], 0x10
+MOV        RDI, QWORD PTR FS:[0x300]
+CALL       loc_7ffff7e57f20
+->	c_next:loc_7ffff7e562d6 
+ */ 
+loc_7ffff7e562b7:
+MOV             R14, Stack_RFS
+MOV             RAX, QWORD PTR [R14 + 0x10]
+LOCK OR         DWORD PTR [RAX + 0x308], 0x10
+MOV             RDI, QWORD PTR [R14 + 0x300]
+MOVABS          R15, 0x7FFFF7E562D6
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R15
+JMP             loc_7ffff7e57f20
+
+
+/*
+loc_7ffff7e562d6
+NOP        WORD PTR CS:[RAX * 0x2]
+ENDBR64    
+CMP        EDI, 0x1
+JA         loc_7ffff7e56388
+->	c_next:loc_7ffff7e562ed 	c_to:loc_7ffff7e56388 
+ */ 
+loc_7ffff7e562d6:
+MOVABS          R14, 0x7ffff7e562d6
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+NOP
+NOP
+CMP             EDI, 0x1
+JA              loc_7ffff7e56388
+
+
+/*
+loc_7ffff7e562ed
+SUB        RSP, 0x18
+MOV        R8, QWORD PTR FS:[0x10]
+MOV        EAX, DWORD PTR FS:[0x308]
+MOV        DWORD PTR [RSP + 0xC], EAX
+MOV        ECX, DWORD PTR [RSP + 0xC]
+CMP        EDI, 0x1
+JZ         loc_7ffff7e56358
+->	c_next:loc_7ffff7e5630f 	c_to:loc_7ffff7e56358 
+ */ 
+loc_7ffff7e562ed:
+MOVABS          R14, 0x7ffff7e562ed
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+SUB             R13, 0x18
+MOV             R14, Stack_RFS
+MOV             R8, QWORD PTR [R14 + 0x10]
+MOV             EAX, DWORD PTR [R14 + 0x308]
+MOV             DWORD PTR [R13 + 0xC], EAX
+MOV             ECX, DWORD PTR [R13 + 0xC]
+CMP             EDI, 0x1
+JZ              loc_7ffff7e56358
+
+
+/*
+loc_7ffff7e5630f
+TEST       RSI, RSI
+JZ         loc_7ffff7e563b8
+->	c_next:loc_7ffff7e56318 	c_to:loc_7ffff7e563b8 
+ */ 
+loc_7ffff7e5630f:
+MOVABS          R14, 0x7ffff7e5630f
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            RSI, RSI
+JZ              loc_7ffff7e563b8
+
+
+/*
+loc_7ffff7e56318
+MOV        EAX, ECX
+MOV        EDX, ECX
+SAR        EAX, 0x1
+AND        EDX, 0xFFFFFFFD
+AND        EAX, 0x1
+MOV        DWORD PTR [RSI], EAX
+TEST       CL, 0x2
+JZ         loc_7ffff7e5634a
+->	c_next:loc_7ffff7e5632b 	c_to:loc_7ffff7e5634a 
+ */ 
+loc_7ffff7e56318:
+MOVABS          R14, 0x7ffff7e56318
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, ECX
+MOV             EDX, ECX
+SAR             EAX, 0x1
+AND             EDX, 0xFFFFFFFD
+AND             EAX, 0x1
+MOV             DWORD PTR [RSI], EAX
+TEST            CL, 0x2
+JZ              loc_7ffff7e5634a
+
+
+/*
+loc_7ffff7e5632b
+MOV        EAX, ECX
+LOCK CMPXCHG    DWORD PTR [R8 + 0x308], EDX
+CMP        ECX, EAX
+JNZ        loc_7ffff7e563e0
+->	c_next:loc_7ffff7e5633e 	c_to:loc_7ffff7e563e0 
+ */ 
+loc_7ffff7e5632b:
+MOVABS          R14, 0x7ffff7e5632b
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, ECX
+LOCK CMPXCHG    DWORD PTR [R8 + 0x308], EDX
+CMP             ECX, EAX
+JNZ             loc_7ffff7e563e0
+
+
+/*
+loc_7ffff7e5633e
+AND        EDX, 0xFFFFFFBB
+CMP        EDX, 0xA
+JZ         loc_7ffff7e563e7
+->	c_next:loc_7ffff7e5634a 	c_to:loc_7ffff7e563e7 
+ */ 
+loc_7ffff7e5633e:
+MOVABS          R14, 0x7ffff7e5633e
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+AND             EDX, 0xFFFFFFBB
+CMP             EDX, 0xA
+JZ              loc_7ffff7e563e7
+
+
+/*
+loc_7ffff7e5634a
+XOR        EAX, EAX
+ADD        RSP, 0x18
+RET        
+ */ 
+loc_7ffff7e5634a:
+XOR             EAX, EAX
+ADD             R13, 0x18
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+JMP             ij_7ffff7e56351
+
+
+/*
+loc_7ffff7e56358
+TEST       RSI, RSI
+JZ         loc_7ffff7e56390
+->	c_next:loc_7ffff7e5635d 	c_to:loc_7ffff7e56390 
+ */ 
+loc_7ffff7e56358:
+MOVABS          R14, 0x7ffff7e56358
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            RSI, RSI
+JZ              loc_7ffff7e56390
+
+
+/*
+loc_7ffff7e5635d
+MOV        EAX, ECX
+MOV        EDX, ECX
+SAR        EAX, 0x1
+OR         EDX, 0x2
+AND        EAX, 0x1
+MOV        DWORD PTR [RSI], EAX
+CMP        ECX, EDX
+JZ         loc_7ffff7e5634a
+->	c_next:loc_7ffff7e5636f 	c_to:loc_7ffff7e5634a 
+ */ 
+loc_7ffff7e5635d:
+MOVABS          R14, 0x7ffff7e5635d
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, ECX
+MOV             EDX, ECX
+SAR             EAX, 0x1
+OR              EDX, 0x2
+AND             EAX, 0x1
+MOV             DWORD PTR [RSI], EAX
+CMP             ECX, EDX
+JZ              loc_7ffff7e5634a
+
+
+/*
+loc_7ffff7e5636f
+MOV        EAX, ECX
+LOCK CMPXCHG    DWORD PTR [R8 + 0x308], EDX
+CMP        ECX, EAX
+JZ         loc_7ffff7e5633e
+->	c_next:loc_7ffff7e5637e 	c_to:loc_7ffff7e5633e 
+ */ 
+loc_7ffff7e5636f:
+MOVABS          R14, 0x7ffff7e5636f
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, ECX
+LOCK CMPXCHG    DWORD PTR [R8 + 0x308], EDX
+CMP             ECX, EAX
+JZ              loc_7ffff7e5633e
+
+
+/*
+loc_7ffff7e5637e
+MOV        ECX, EAX
+JMP        loc_7ffff7e5635d
+->	c_to:loc_7ffff7e5635d 
+ */ 
+loc_7ffff7e5637e:
+MOVABS          R14, 0x7ffff7e5637e
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             ECX, EAX
+JMP             loc_7ffff7e5635d
+
+
+/*
+loc_7ffff7e56388
+MOV        EAX, 0x16
+RET        
+ */ 
+loc_7ffff7e56388:
+MOV             EAX, 0x16
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+JMP             ij_7ffff7e5638e
+
+
+/*
+loc_7ffff7e5638e
+MOV        ECX, EAX
+->	c_next:loc_7ffff7e56390 
+ */ 
+loc_7ffff7e5638e:
+MOV             ECX, EAX
+
+
+/*
+loc_7ffff7e56390
+MOV        EDX, ECX
+OR         EDX, 0x2
+CMP        ECX, EDX
+JZ         loc_7ffff7e5634a
+->	c_next:loc_7ffff7e56399 	c_to:loc_7ffff7e5634a 
+ */ 
+loc_7ffff7e56390:
+MOVABS          R14, 0x7ffff7e56390
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EDX, ECX
+OR              EDX, 0x2
+CMP             ECX, EDX
+JZ              loc_7ffff7e5634a
+
+
+/*
+loc_7ffff7e56399
+MOV        EAX, ECX
+LOCK CMPXCHG    DWORD PTR [R8 + 0x308], EDX
+CMP        ECX, EAX
+JZ         loc_7ffff7e5633e
+->	c_next:loc_7ffff7e563a8 	c_to:loc_7ffff7e5633e 
+ */ 
+loc_7ffff7e56399:
+MOVABS          R14, 0x7ffff7e56399
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, ECX
+LOCK CMPXCHG    DWORD PTR [R8 + 0x308], EDX
+CMP             ECX, EAX
+JZ              loc_7ffff7e5633e
+
+
+/*
+loc_7ffff7e563a8
+JMP        loc_7ffff7e5638e
+->	c_to:loc_7ffff7e5638e 
+ */ 
+loc_7ffff7e563a8:
+MOVABS          R14, 0x7ffff7e563a8
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e5638e
+
+
+/*
+loc_7ffff7e563b0
+MOV        ECX, EAX
+NOP        WORD PTR [RAX * 0x2]
+->	c_next:loc_7ffff7e563b8 
+ */ 
+loc_7ffff7e563b0:
+MOV             ECX, EAX
+NOP
+
+
+/*
+loc_7ffff7e563b8
+MOV        EDX, ECX
+AND        EDX, 0xFFFFFFFD
+TEST       CL, 0x2
+JZ         loc_7ffff7e5634a
+->	c_next:loc_7ffff7e563c2 	c_to:loc_7ffff7e5634a 
+ */ 
+loc_7ffff7e563b8:
+MOVABS          R14, 0x7ffff7e563b8
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EDX, ECX
+AND             EDX, 0xFFFFFFFD
+TEST            CL, 0x2
+JZ              loc_7ffff7e5634a
+
+
+/*
+loc_7ffff7e563c2
+MOV        EAX, ECX
+LOCK CMPXCHG    DWORD PTR [R8 + 0x308], EDX
+CMP        ECX, EAX
+JZ         loc_7ffff7e5633e
+->	c_next:loc_7ffff7e563d5 	c_to:loc_7ffff7e5633e 
+ */ 
+loc_7ffff7e563c2:
+MOVABS          R14, 0x7ffff7e563c2
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, ECX
+LOCK CMPXCHG    DWORD PTR [R8 + 0x308], EDX
+CMP             ECX, EAX
+JZ              loc_7ffff7e5633e
+
+
+/*
+loc_7ffff7e563d5
+JMP        loc_7ffff7e563b0
+->	c_to:loc_7ffff7e563b0 
+ */ 
+loc_7ffff7e563d5:
+MOVABS          R14, 0x7ffff7e563d5
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e563b0
+
+
+/*
+loc_7ffff7e563e0
+MOV        ECX, EAX
+JMP        loc_7ffff7e56318
+->	c_to:loc_7ffff7e56318 
+ */ 
+loc_7ffff7e563e0:
+MOVABS          R14, 0x7ffff7e563e0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             ECX, EAX
+JMP             loc_7ffff7e56318
+
+
+/*
+loc_7ffff7e563e7
+MOV        QWORD PTR FS:[0x630], 0xFFFFFFFFFFFFFFFF
+MOV        RAX, QWORD PTR FS:[0x10]
+LOCK OR         DWORD PTR [RAX + 0x308], 0x10
+MOV        RDI, QWORD PTR FS:[0x300]
+CALL       loc_7ffff7e57f20
+->	c_next:loc_7ffff7e56413 
+ */ 
+loc_7ffff7e563e7:
+MOV             R14, Stack_RFS
+MOV             QWORD PTR [R14 + 0x630], 0xFFFFFFFFFFFFFFFF
+MOV             RAX, QWORD PTR [R14 + 0x10]
+LOCK OR         DWORD PTR [RAX + 0x308], 0x10
+MOV             RDI, QWORD PTR [R14 + 0x300]
+MOVABS          R15, 0x7FFFF7E56413
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R15
+JMP             loc_7ffff7e57f20
+
+
+/*
+loc_7ffff7e56413
+NOP        WORD PTR CS:[RAX * 0x2]
+NOP        DWORD PTR [RAX]
+->	c_next:loc_7ffff7e56420 
+ */ 
+loc_7ffff7e56413:
+NOP
+NOP
+
+
+/*
+loc_7ffff7e56420
+PUSH       R12
+MOV        R9D, 0xCA
+MOV        R8D, 0x1
+PUSH       RBP
+MOV        RBP, RDI
+PUSH       RBX
+MOV        RBX, RSI
+SUB        RSP, 0x30
+MOV        RAX, QWORD PTR FS:[0x28]
+MOV        QWORD PTR [RSP + 0x28], RAX
+XOR        EAX, EAX
+->	c_next:loc_7ffff7e5644a 
+ */ 
+loc_7ffff7e56420:
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             R14, Stack_R12
+MOV             QWORD PTR [R13], R14
+MOV             R9D, 0xCA
+MOV             R8D, 0x1
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R12
+MOV             R12, RDI
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], RBX
+MOV             RBX, RSI
+SUB             R13, 0x30
+MOV             R15, Stack_RFS
+MOV             RAX, QWORD PTR [R15 + 0x28]
+MOV             QWORD PTR [R13 + 0x28], RAX
+XOR             EAX, EAX
+MOV             Stack_R12, R14
+
+
+/*
+loc_7ffff7e5644a
+MOV        EAX, DWORD PTR [RBP]
+->	c_next:loc_7ffff7e5644d 
+ */ 
+loc_7ffff7e5644a:
+MOV             EAX, DWORD PTR [R12]
+
+
+/*
+loc_7ffff7e5644d
+TEST       AL, 0x2
+JZ         loc_7ffff7e56470
+->	c_next:loc_7ffff7e56451 	c_to:loc_7ffff7e56470 
+ */ 
+loc_7ffff7e5644d:
+MOVABS          R14, 0x7ffff7e5644d
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            AL, 0x2
+JZ              loc_7ffff7e56470
+
+
+/*
+loc_7ffff7e56451
+MOV        RAX, QWORD PTR [RSP + 0x28]
+XOR        RAX, QWORD PTR FS:[0x28]
+JNZ        loc_7ffff7e56520
+->	c_next:loc_7ffff7e56465 	c_to:loc_7ffff7e56520 
+ */ 
+loc_7ffff7e56451:
+MOVABS          R14, 0x7ffff7e56451
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, QWORD PTR [R13 + 0x28]
+MOV             R14, Stack_RFS
+XOR             RAX, QWORD PTR [R14 + 0x28]
+JNZ             loc_7ffff7e56520
+
+
+/*
+loc_7ffff7e56465
+ADD        RSP, 0x30
+XOR        EAX, EAX
+POP        RBX
+POP        RBP
+POP        R12
+RET        
+ */ 
+loc_7ffff7e56465:
+ADD             R13, 0x30
+XOR             EAX, EAX
+MOV             RBX, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             R12, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             R14, Stack_R12
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             R15, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+MOV             Stack_R12, R14
+MOV             R14, R15
+JMP             ij_7ffff7e56470
+
+
+/*
+loc_7ffff7e56470
+MOV        EDX, DWORD PTR [RIP + 0x10FEA]
+OR         EDX, 0x1
+LOCK CMPXCHG    DWORD PTR [RBP], EDX
+JNZ        loc_7ffff7e5644d
+->	c_next:loc_7ffff7e56480 	c_to:loc_7ffff7e5644d 
+ */ 
+loc_7ffff7e56470:
+MOVABS          R14, 0x7ffff7e56470
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOVABS          R14, 0x7ffff7e56476
+MOV             EDX, DWORD PTR [R14 + 0x10FEA]
+OR              EDX, 0x1
+LOCK CMPXCHG    DWORD PTR [R12], EDX
+JNZ             loc_7ffff7e5644d
+
+
+/*
+loc_7ffff7e56480
+CMP        EDX, EAX
+JNZ        loc_7ffff7e564c8
+->	c_next:loc_7ffff7e56484 	c_to:loc_7ffff7e564c8 
+ */ 
+loc_7ffff7e56480:
+MOVABS          R14, 0x7ffff7e56480
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             EDX, EAX
+JNZ             loc_7ffff7e564c8
+
+
+/*
+loc_7ffff7e56484
+TEST       AL, 0x1
+JZ         loc_7ffff7e564c8
+->	c_next:loc_7ffff7e56488 	c_to:loc_7ffff7e564c8 
+ */ 
+loc_7ffff7e56484:
+MOVABS          R14, 0x7ffff7e56484
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+TEST            AL, 0x1
+JZ              loc_7ffff7e564c8
+
+
+/*
+loc_7ffff7e56488
+XOR        R10D, R10D
+MOV        ESI, 0x80
+MOV        RDI, RBP
+MOV        EAX, R9D
+SYSCALL    
+->	c_next:loc_7ffff7e56498 
+ */ 
+loc_7ffff7e56488:
+XOR             R10D, R10D
+MOV             ESI, 0x80
+MOV             RDI, R12
+MOV             EAX, R9D
+MOVABS          R14, 0x7ffff7e56496
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e56498
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JBE        loc_7ffff7e5644a
+->	c_next:loc_7ffff7e564a0 	c_to:loc_7ffff7e5644a 
+ */ 
+loc_7ffff7e56498:
+MOVABS          R14, 0x7ffff7e56498
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JBE             loc_7ffff7e5644a
+
+
+/*
+loc_7ffff7e564a0
+LEA        ECX, DWORD PTR [RAX + 0xB]
+CMP        ECX, 0xB
+JA         loc_7ffff7e564b5
+->	c_next:loc_7ffff7e564a8 	c_to:loc_7ffff7e564b5 
+ */ 
+loc_7ffff7e564a0:
+MOVABS          R14, 0x7ffff7e564a0
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+LEA             ECX, DWORD PTR [RAX + 0xB]
+CMP             ECX, 0xB
+JA              loc_7ffff7e564b5
+
+
+/*
+loc_7ffff7e564a8
+MOV        RAX, R8
+SHL        RAX, CL
+TEST       EAX, 0x881
+JNZ        loc_7ffff7e5644a
+->	c_next:loc_7ffff7e564b5 	c_to:loc_7ffff7e5644a 
+ */ 
+loc_7ffff7e564a8:
+MOVABS          R14, 0x7ffff7e564a8
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             RAX, R8
+SHL             RAX, CL
+TEST            EAX, 0x881
+JNZ             loc_7ffff7e5644a
+
+
+/*
+loc_7ffff7e564b5
+LEA        RDI, QWORD PTR [RIP + 0x5B44]
+CALL       loc_7ffff7e4b630
+->	c_next:loc_7ffff7e564c1 
+ */ 
+loc_7ffff7e564b5:
+MOVABS          R14, 0x7ffff7e564bc
+LEA             RDI, QWORD PTR [R14 + 0x5B44]
+MOVABS          R14, 0x7FFFF7E564C1
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b630
+
+
+/*
+loc_7ffff7e564c1
+NOP        DWORD PTR [RAX]
+->	c_next:loc_7ffff7e564c8 
+ */ 
+loc_7ffff7e564c1:
+NOP
+
+
+/*
+loc_7ffff7e564c8
+MOV        R12, RSP
+MOV        RDX, RBP
+LEA        RSI, QWORD PTR [RIP + 0x5B]
+MOV        RDI, R12
+CALL       loc_7ffff7e57c50
+->	c_next:loc_7ffff7e564dd 
+ */ 
+loc_7ffff7e564c8:
+MOV             R14, Stack_R12
+MOV             R14, R13
+MOV             RDX, R12
+MOVABS          R15, 0x7ffff7e564d5
+LEA             RSI, QWORD PTR [R15 + 0x5B]
+MOV             RDI, R14
+MOVABS          R15, 0x7FFFF7E564DD
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R15
+MOV             Stack_R12, R14
+JMP             loc_7ffff7e57c50
+
+
+/*
+loc_7ffff7e564dd
+CALL       RBX
+->	c_next:loc_7ffff7e564df 
+ */ 
+loc_7ffff7e564dd:
+MOVABS          R14, 0x7FFFF7E564DF
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+MOV             R14, RBX
+JMP             ij_7ffff7e564df
+
+
+/*
+loc_7ffff7e564df
+XOR        ESI, ESI
+MOV        RDI, R12
+CALL       loc_7ffff7e57c80
+->	c_next:loc_7ffff7e564e9 
+ */ 
+loc_7ffff7e564df:
+XOR             ESI, ESI
+MOV             R14, Stack_R12
+MOV             RDI, R14
+MOVABS          R15, 0x7FFFF7E564E9
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R15
+MOV             Stack_R12, R14
+JMP             loc_7ffff7e57c80
+
+
+/*
+loc_7ffff7e564e9
+XOR        R10D, R10D
+MOV        EDX, 0x7FFFFFFF
+MOV        RDI, RBP
+MOV        ESI, 0x81
+MOV        EAX, 0xCA
+MOV        DWORD PTR [RBP], 0x2
+SYSCALL    
+->	c_next:loc_7ffff7e56507 
+ */ 
+loc_7ffff7e564e9:
+XOR             R10D, R10D
+MOV             EDX, 0x7FFFFFFF
+MOV             RDI, R12
+MOV             ESI, 0x81
+MOV             EAX, 0xCA
+MOV             DWORD PTR [R12], 0x2
+MOVABS          R14, 0x7ffff7e56505
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e56507
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JBE        loc_7ffff7e56451
+->	c_next:loc_7ffff7e56513 	c_to:loc_7ffff7e56451 
+ */ 
+loc_7ffff7e56507:
+MOVABS          R14, 0x7ffff7e56507
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JBE             loc_7ffff7e56451
+
+
+/*
+loc_7ffff7e56513
+ADD        EAX, 0x16
+AND        EAX, 0xFFFFFFF7
+JNZ        loc_7ffff7e564b5
+->	c_next:loc_7ffff7e5651b 	c_to:loc_7ffff7e564b5 
+ */ 
+loc_7ffff7e56513:
+MOVABS          R14, 0x7ffff7e56513
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x16
+AND             EAX, 0xFFFFFFF7
+JNZ             loc_7ffff7e564b5
+
+
+/*
+loc_7ffff7e5651b
+JMP        loc_7ffff7e56451
+->	c_to:loc_7ffff7e56451 
+ */ 
+loc_7ffff7e5651b:
+MOVABS          R14, 0x7ffff7e5651b
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e56451
+
+
+/*
+loc_7ffff7e56520
+CALL       loc_7ffff7e4b6d0
+->	c_next:loc_7ffff7e56525 
+ */ 
+loc_7ffff7e56520:
+MOVABS          R14, 0x7FFFF7E56525
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b6d0
+
+
+/*
+loc_7ffff7e56525
+NOP        WORD PTR CS:[RAX * 0x2]
+ENDBR64    
+MOV        DWORD PTR [RDI], 0x0
+XOR        R10D, R10D
+MOV        EDX, 0x7FFFFFFF
+MOV        ESI, 0x81
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e5654e 
+ */ 
+loc_7ffff7e56525:
+NOP
+NOP
+MOV             DWORD PTR [RDI], 0x0
+XOR             R10D, R10D
+MOV             EDX, 0x7FFFFFFF
+MOV             ESI, 0x81
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e5654c
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e5654e
+CMP        RAX, 0xFFFFFFFFFFFFF000
+JA         loc_7ffff7e56560
+->	c_next:loc_7ffff7e56556 	c_to:loc_7ffff7e56560 
+ */ 
+loc_7ffff7e5654e:
+MOVABS          R14, 0x7ffff7e5654e
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+CMP             RAX, 0xFFFFFFFFFFFFF000
+JA              loc_7ffff7e56560
+
+
+/*
+loc_7ffff7e56556
+RET        
+ */ 
+loc_7ffff7e56556:
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+JMP             ij_7ffff7e56557
+
+
+/*
+loc_7ffff7e56560
+ADD        EAX, 0x16
+AND        EAX, 0xFFFFFFF7
+JZ         loc_7ffff7e56556
+->	c_next:loc_7ffff7e56568 	c_to:loc_7ffff7e56556 
+ */ 
+loc_7ffff7e56560:
+MOVABS          R14, 0x7ffff7e56560
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+ADD             EAX, 0x16
+AND             EAX, 0xFFFFFFF7
+JZ              loc_7ffff7e56556
+
+
+/*
+loc_7ffff7e56568
+PUSH       RAX
+LEA        RDI, QWORD PTR [RIP + 0x5A90]
+CALL       loc_7ffff7e4b630
+->	c_next:loc_7ffff7e56575 
+ */ 
+loc_7ffff7e56568:
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], RAX
+MOVABS          R14, 0x7ffff7e56570
+LEA             RDI, QWORD PTR [R14 + 0x5A90]
+MOVABS          R14, 0x7FFFF7E56575
+LEA             R13, QWORD PTR [R13 + 0xFFFFFFFFFFFFFFF8]
+MOV             QWORD PTR [R13], R14
+JMP             loc_7ffff7e4b630
+
+
+/*
+loc_7ffff7e56575
+NOP        WORD PTR CS:[RAX * 0x2]
+ENDBR64    
+MOV        EAX, DWORD PTR [RDI]
+TEST       AL, 0x2
+JZ         loc_7ffff7e56590
+->	c_next:loc_7ffff7e5658a 	c_to:loc_7ffff7e56590 
+ */ 
+loc_7ffff7e56575:
+MOVABS          R14, 0x7ffff7e56575
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+NOP
+NOP
+MOV             EAX, DWORD PTR [RDI]
+TEST            AL, 0x2
+JZ              loc_7ffff7e56590
+
+
+/*
+loc_7ffff7e5658a
+XOR        EAX, EAX
+RET        
+ */ 
+loc_7ffff7e5658a:
+XOR             EAX, EAX
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+JMP             ij_7ffff7e5658d
+
+
+/*
+loc_7ffff7e56590
+JMP        loc_7ffff7e56420
+->	c_to:loc_7ffff7e56420 
+ */ 
+loc_7ffff7e56590:
+MOVABS          R14, 0x7ffff7e56590
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e56420
+
+
+/*
+loc_7ffff7e5814e
+MOV        EAX, 0x2
+XCHG       DWORD PTR [RDI], EAX
+TEST       EAX, EAX
+JZ         loc_7ffff7e58178
+->	c_next:loc_7ffff7e58159 	c_to:loc_7ffff7e58178 
+ */ 
+loc_7ffff7e5814e:
+MOVABS          R14, 0x7ffff7e5814e
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+MOV             EAX, 0x2
+XCHG            DWORD PTR [RDI], EAX
+TEST            EAX, EAX
+JZ              loc_7ffff7e58178
+
+
+/*
+loc_7ffff7e58159
+NOP        
+MOV        ESI, R8D
+XOR        R10D, R10D
+MOV        EDX, 0x2
+MOV        EAX, 0xCA
+XOR        SIL, 0x80
+SYSCALL    
+->	c_next:loc_7ffff7e58170 
+ */ 
+loc_7ffff7e58159:
+NOP
+MOV             ESI, R8D
+XOR             R10D, R10D
+MOV             EDX, 0x2
+MOV             EAX, 0xCA
+XOR             SIL, 0x80
+MOVABS          R14, 0x7ffff7e5816e
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e58170
+JMP        loc_7ffff7e5814e
+->	c_to:loc_7ffff7e5814e 
+ */ 
+loc_7ffff7e58170:
+MOVABS          R14, 0x7ffff7e58170
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e5814e
+
+
+/*
+loc_7ffff7e58178
+RET        
+ */ 
+loc_7ffff7e58178:
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+JMP             ij_7ffff7e58179
+
+
+/*
+loc_7ffff7e5b380
+ENDBR64    
+MOV        EAX, DWORD PTR [RDI]
+TEST       EAX, EAX
+JNZ        loc_7ffff7e5b390
+->	c_next:loc_7ffff7e5b38a 	c_to:loc_7ffff7e5b390 
+ */ 
+loc_7ffff7e5b380:
+MOVABS          R14, 0x7ffff7e5b380
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+NOP
+MOV             EAX, DWORD PTR [RDI]
+TEST            EAX, EAX
+JNZ             loc_7ffff7e5b390
+
+
+/*
+loc_7ffff7e5b38a
+ */ 
+loc_7ffff7e5b38a:
+
+
+/*
+loc_7ffff7e5b38d
+XOR        EAX, EAX
+RET        
+ */ 
+loc_7ffff7e5b38d:
+XOR             EAX, EAX
+MOV             R14, QWORD PTR [R13]
+LEA             R13, QWORD PTR [R13 + 0x8]
+JMP             ij_7ffff7e5b390
+
+
+/*
+loc_7ffff7e5b390
+XOR        EAX, EAX
+XCHG       DWORD PTR [RDI], EAX
+CMP        EAX, 0x1
+JLE        loc_7ffff7e5b38d
+->	c_next:loc_7ffff7e5b399 	c_to:loc_7ffff7e5b38d 
+ */ 
+loc_7ffff7e5b390:
+MOVABS          R14, 0x7ffff7e5b390
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+XOR             EAX, EAX
+XCHG            DWORD PTR [RDI], EAX
+CMP             EAX, 0x1
+JLE             loc_7ffff7e5b38d
+
+
+/*
+loc_7ffff7e5b399
+XOR        SIL, 0x81
+XOR        R10D, R10D
+MOV        EDX, 0x1
+MOV        EAX, 0xCA
+SYSCALL    
+->	c_next:loc_7ffff7e5b3ac 
+ */ 
+loc_7ffff7e5b399:
+XOR             SIL, 0x81
+XOR             R10D, R10D
+MOV             EDX, 0x1
+MOV             EAX, 0xCA
+MOVABS          R14, 0x7ffff7e5b3aa
+JMP             comp_syscall
+
+
+/*
+loc_7ffff7e5b3ac
+JMP        loc_7ffff7e5b38d
+->	c_to:loc_7ffff7e5b38d 
+ */ 
+loc_7ffff7e5b3ac:
+MOVABS          R14, 0x7ffff7e5b3ac
+INC             R11
+TEST            R11, 0x1000000
+JNZ             inst_limit
+JMP             loc_7ffff7e5b38d
+
+
+ij_7ffff7e5428f:
+MOVABS          R15, 0x55555555a4c0
+CMP             R14, R15
+JZ              loc_55555555a4c0
+MOVABS          R15, 0x55555555a1e6
+CMP             R14, R15
+JZ              loc_55555555a1e6
+MOVABS          R15, 0x555555557376
+CMP             R14, R15
+JZ              loc_555555557376
+MOVABS          R15, 0x555555557157
+CMP             R14, R15
+JZ              loc_555555557157
+MOVABS          R15, 0x55555555751b
+CMP             R14, R15
+JZ              loc_55555555751b
+MOVABS          R15, 0x7ffff7e5428f
+JMP             ij_failed
+
+ij_7ffff7e5001c:
+MOVABS          R15, 0x55555555848e
+CMP             R14, R15
+JZ              loc_55555555848e
+MOVABS          R15, 0x555555558630
+CMP             R14, R15
+JZ              loc_555555558630
+MOVABS          R15, 0x5555555570b1
+CMP             R14, R15
+JZ              loc_5555555570b1
+MOVABS          R15, 0x55555555a416
+CMP             R14, R15
+JZ              loc_55555555a416
+MOVABS          R15, 0x5555555572d9
+CMP             R14, R15
+JZ              loc_5555555572d9
+MOVABS          R15, 0x55555555a13c
+CMP             R14, R15
+JZ              loc_55555555a13c
+MOVABS          R15, 0x55555555747e
+CMP             R14, R15
+JZ              loc_55555555747e
+MOVABS          R15, 0x7ffff7e5001c
+JMP             ij_failed
+
+ij_7ffff7e5621f:
+MOVABS          R15, 0x55555555a504
+CMP             R14, R15
+JZ              loc_55555555a504
+MOVABS          R15, 0x555555557198
+CMP             R14, R15
+JZ              loc_555555557198
+MOVABS          R15, 0x55555555a22a
+CMP             R14, R15
+JZ              loc_55555555a22a
+MOVABS          R15, 0x55555555734e
+CMP             R14, R15
+JZ              loc_55555555734e
+MOVABS          R15, 0x55555555712f
+CMP             R14, R15
+JZ              loc_55555555712f
+MOVABS          R15, 0x5555555573ae
+CMP             R14, R15
+JZ              loc_5555555573ae
+MOVABS          R15, 0x5555555574f3
+CMP             R14, R15
+JZ              loc_5555555574f3
+MOVABS          R15, 0x555555557556
+CMP             R14, R15
+JZ              loc_555555557556
+MOVABS          R15, 0x55555555a498
+CMP             R14, R15
+JZ              loc_55555555a498
+MOVABS          R15, 0x55555555a1be
+CMP             R14, R15
+JZ              loc_55555555a1be
+MOVABS          R15, 0x7ffff7e5621f
+JMP             ij_failed
+
+ij_7ffff7e58179:
+MOVABS          R15, 0x7ffff7e5207b
+CMP             R14, R15
+JZ              loc_7ffff7e5207b
+MOVABS          R15, 0x7ffff7e500a3
+CMP             R14, R15
+JZ              loc_7ffff7e500a3
+MOVABS          R15, 0x7ffff7e58179
+JMP             ij_failed
+
+ij_7ffff7e52028:
+MOVABS          R15, 0x7ffff7e54260
+CMP             R14, R15
+JZ              loc_7ffff7e54260
+MOVABS          R15, 0x7ffff7e54608
+CMP             R14, R15
+JZ              loc_7ffff7e54608
+MOVABS          R15, 0x7ffff7e54aeb
+CMP             R14, R15
+JZ              loc_7ffff7e54aeb
+MOVABS          R15, 0x7ffff7e541dd
+CMP             R14, R15
+JZ              loc_7ffff7e541dd
+MOVABS          R15, 0x7ffff7e52028
+JMP             ij_failed
+
+ij_55555555638b:
+MOVABS          R15, 0x7ffff7e55290
+CMP             R14, R15
+JZ              loc_7ffff7e55290
+MOVABS          R15, 0x55555555638b
+JMP             ij_failed
+
+ij_5555555564bb:
+MOVABS          R15, 0x7ffff7e517b0
+CMP             R14, R15
+JZ              loc_7ffff7e517b0
+MOVABS          R15, 0x5555555564bb
+JMP             ij_failed
+
+ij_5555555563bb:
+MOVABS          R15, 0x7ffff7e54160
+CMP             R14, R15
+JZ              loc_7ffff7e54160
+MOVABS          R15, 0x5555555563bb
+JMP             ij_failed
+
+ij_5555555563fb:
+MOVABS          R15, 0x7ffff7e561b0
+CMP             R14, R15
+JZ              loc_7ffff7e561b0
+MOVABS          R15, 0x5555555563fb
+JMP             ij_failed
+
+ij_55555555a712:
+MOVABS          R15, 0x55555555a712
+JMP             ij_failed
+
+ij_5555555587d2:
+MOVABS          R15, 0x5555555587d2
+JMP             ij_failed
+
+ij_5555555575d6:
+MOVABS          R15, 0x5555555575d6
+JMP             ij_failed
+
+ij_7ffff7e51326:
+MOVABS          R15, 0x7ffff7e54608
+CMP             R14, R15
+JZ              loc_7ffff7e54608
+MOVABS          R15, 0x7ffff7e54aeb
+CMP             R14, R15
+JZ              loc_7ffff7e54aeb
+MOVABS          R15, 0x7ffff7e541dd
+CMP             R14, R15
+JZ              loc_7ffff7e541dd
+MOVABS          R15, 0x7ffff7e51326
+JMP             ij_failed
+
+ij_7ffff7e5131f:
+MOVABS          R15, 0x7ffff7e5131f
+JMP             ij_failed
+
+ij_7ffff7e5b390:
+MOVABS          R15, 0x7ffff7e54608
+CMP             R14, R15
+JZ              loc_7ffff7e54608
+MOVABS          R15, 0x7ffff7e54aeb
+CMP             R14, R15
+JZ              loc_7ffff7e54aeb
+MOVABS          R15, 0x7ffff7e541dd
+CMP             R14, R15
+JZ              loc_7ffff7e541dd
+MOVABS          R15, 0x7ffff7e5b390
+JMP             ij_failed
+
+ij_7ffff7e519e3:
+MOVABS          R15, 0x7ffff7e54608
+CMP             R14, R15
+JZ              loc_7ffff7e54608
+MOVABS          R15, 0x7ffff7e54aeb
+CMP             R14, R15
+JZ              loc_7ffff7e54aeb
+MOVABS          R15, 0x7ffff7e541dd
+CMP             R14, R15
+JZ              loc_7ffff7e541dd
+MOVABS          R15, 0x7ffff7e519e3
+JMP             ij_failed
+
+ij_7ffff7e51e74:
+MOVABS          R15, 0x7ffff7e51e74
+JMP             ij_failed
+
+ij_7ffff7e51fa5:
+MOVABS          R15, 0x7ffff7e51fa5
+JMP             ij_failed
+
+ij_7ffff7e517e7:
+MOVABS          R15, 0x7ffff7e54608
+CMP             R14, R15
+JZ              loc_7ffff7e54608
+MOVABS          R15, 0x7ffff7e54aeb
+CMP             R14, R15
+JZ              loc_7ffff7e54aeb
+MOVABS          R15, 0x7ffff7e541dd
+CMP             R14, R15
+JZ              loc_7ffff7e541dd
+MOVABS          R15, 0x7ffff7e517e7
+JMP             ij_failed
+
+ij_7ffff7e554b6:
+MOVABS          R15, 0x7ffff7e54723
+CMP             R14, R15
+JZ              loc_7ffff7e54723
+MOVABS          R15, 0x7ffff7e54d59
+CMP             R14, R15
+JZ              loc_7ffff7e54d59
+MOVABS          R15, 0x7ffff7e542e3
+CMP             R14, R15
+JZ              loc_7ffff7e542e3
+MOVABS          R15, 0x7ffff7e554b6
+JMP             ij_failed
+
+ij_7ffff7e516d7:
+MOVABS          R15, 0x7ffff7e54608
+CMP             R14, R15
+JZ              loc_7ffff7e54608
+MOVABS          R15, 0x7ffff7e54aeb
+CMP             R14, R15
+JZ              loc_7ffff7e54aeb
+MOVABS          R15, 0x7ffff7e541dd
+CMP             R14, R15
+JZ              loc_7ffff7e541dd
+MOVABS          R15, 0x7ffff7e516d7
+JMP             ij_failed
+
+ij_7ffff7e56256:
+MOVABS          R15, 0x7ffff7e56256
+JMP             ij_failed
+
+ij_7ffff7e5638e:
+MOVABS          R15, 0x7ffff7e5638e
+JMP             ij_failed
+
+ij_7ffff7e56351:
+MOVABS          R15, 0x7ffff7e56351
+JMP             ij_failed
+
+ij_7ffff7e56470:
+MOVABS          R15, 0x7ffff7e56470
+JMP             ij_failed
+
+ij_7ffff7e564df:
+MOVABS          R15, 0x7ffff7e564df
+JMP             ij_failed
+
+ij_7ffff7e56557:
+MOVABS          R15, 0x7ffff7e56557
+JMP             ij_failed
+
+ij_7ffff7e5658d:
+MOVABS          R15, 0x7ffff7e5658d
+JMP             ij_failed
+
+ij_7ffff7e546d0:
+MOVABS          R15, 0x7ffff7e546d0
+JMP             ij_failed
+
+ij_7ffff7e54bda:
+MOVABS          R15, 0x7ffff7e54bda
+JMP             ij_failed
+
+ij_7ffff7e55049:
+MOVABS          R15, 0x7ffff7e55049
+JMP             ij_failed
+
+loc_7ffff7e59e00:
+MOVABS          R14, 0x7ffff7e59e00
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_7ffff7e58180:
+MOVABS          R14, 0x7ffff7e58180
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_7ffff7e57c80:
+MOVABS          R14, 0x7ffff7e57c80
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_555555556390:
+MOVABS          R14, 0x555555556390
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_7ffff7e5a210:
+MOVABS          R14, 0x7ffff7e5a210
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_555555561313:
+MOVABS          R14, 0x555555561313
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_55555555b19a:
+MOVABS          R14, 0x55555555b19a
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_5555555565a0:
+MOVABS          R14, 0x5555555565a0
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_7ffff7e57f20:
+MOVABS          R14, 0x7ffff7e57f20
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_7ffff7e580a0:
+MOVABS          R14, 0x7ffff7e580a0
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_7ffff7e4b630:
+MOVABS          R14, 0x7ffff7e4b630
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_5555555565b0:
+MOVABS          R14, 0x5555555565b0
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_555555556430:
+MOVABS          R14, 0x555555556430
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_555555560db1:
+MOVABS          R14, 0x555555560db1
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_7ffff7e4b730:
+MOVABS          R14, 0x7ffff7e4b730
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_5555555594bc:
+MOVABS          R14, 0x5555555594bc
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_7ffff7e58140:
+MOVABS          R14, 0x7ffff7e58140
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_7ffff7e58040:
+MOVABS          R14, 0x7ffff7e58040
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_7ffff7e4b6d0:
+MOVABS          R14, 0x7ffff7e4b6d0
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_5555555563d0:
+MOVABS          R14, 0x5555555563d0
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_5555555619d2:
+MOVABS          R14, 0x5555555619d2
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_7ffff7e57c50:
+MOVABS          R14, 0x7ffff7e57c50
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_55555555f2d9:
+MOVABS          R14, 0x55555555f2d9
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_7ffff7e53e60:
+MOVABS          R14, 0x7ffff7e53e60
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_7ffff7e51fe0:
+MOVABS          R14, 0x7ffff7e51fe0
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_555555558162:
+MOVABS          R14, 0x555555558162
+MOV             Stack_IJ, 0x1
+JMP             exit
+
+loc_5555555565f0:
+MOVABS          R14, 0x5555555565f0
+MOV             Stack_IJ, 0x1
+JMP             exit
+

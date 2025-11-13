@@ -1,0 +1,1300 @@
+[PARSEC] Benchmarks to run:  splash2x.raytrace
+
+[PARSEC] [========== Running benchmark splash2x.raytrace [1] ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simsmall'.
+balls4.env
+car.env
+teapot.env
+balls4.geo
+car.geo
+teapot.geo
+[PARSEC] Running 'time /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/raytrace/inst/amd64-linux.gcc/bin/run.sh 64 simsmall':
+[PARSEC] [---------- Beginning of output ----------]
+Generating input file ...
+Running  /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/raytrace/inst/amd64-linux.gcc/bin/raytrace -s -p64 -a1024 teapot.env:
+Uniform Hierarchy built.
+
+Number of processors:     	64
+Global shared memory size:	32 MB
+Samples per pixel:        	1024
+
+Number of primitive objects: 	101
+Number of primitive elements:	3684
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      14112         14112           144 
+     hashtable entries:          8544          8544             8 
+     emptycell entries:          1560          1560             8 
+     voxel:                    248360        248360            40 
+     bintree_node:            1478280       1478280           120 
+
+     Totals:                  1750856       1750856      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time         1763033884371118
+        Overall end time       1763033904497919
+        Total time with initialization              20126801
+        Total time without initialization              20126640
+
+
+
+PER-PROCESS STATISTICS:
+                Proc                Time
+                            Tracing Rays
+
+                   0            19281199
+                   1            19123104
+                   2            19999995
+                   3            19273852
+                   4            18978817
+                   5            20109634
+                   6            19278834
+                   7            19939821
+                   8            20061875
+                   9            20120985
+                  10            20005569
+                  11            19144377
+                  12            19816231
+                  13            19901206
+                  14            19818976
+                  15            19105179
+                  16            20098898
+                  17            20048139
+                  18            20121020
+                  19            20067623
+                  20            19241747
+                  21            19857503
+                  22            19051708
+                  23            20122131
+                  24            20119226
+                  25            18995275
+                  26            20117637
+                  27            20121982
+                  28            19906400
+                  29            20096495
+                  30            19242019
+                  31            19995582
+                  32            19660937
+                  33            19692091
+                  34            19832277
+                  35            18974741
+                  36            20120530
+                  37            20078858
+                  38            19841301
+                  39            20041958
+                  40            19843557
+                  41            19767650
+                  42            20109890
+                  43            18987245
+                  44            19618149
+                  45            19684217
+                  46            20115539
+                  47            19696333
+                  48            19984282
+                  49            19474393
+                  50            19893089
+                  51            19570991
+                  52            19992386
+                  53            20079280
+                  54            20007380
+                  55            19614431
+                  56            20118413
+                  57            20057297
+                  58            19734197
+                  59            20023243
+                  60            20008688
+                  61            19748710
+                  62            20068179
+                  63            20091824
+
+
+              Max =             20122131
+              Min =             18974741
+              Avg =             19776485
+
+real	0m20.162s
+user	1m0.363s
+sys	19m41.167s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC]
+[PARSEC] BIBLIOGRAPHY
+[PARSEC]
+[PARSEC] [1] Woo et al. The SPLASH-2 Programs: Characterization and Methodological Considerations. ISCA, 1995.
+[PARSEC]
+[PARSEC] Done.
+[PARSEC] Benchmarks to run:  splash2x.raytrace
+
+[PARSEC] [========== Running benchmark splash2x.raytrace [1] ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simsmall'.
+balls4.env
+car.env
+teapot.env
+balls4.geo
+car.geo
+teapot.geo
+[PARSEC] Running 'time /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/raytrace/inst/amd64-linux.gcc/bin/run.sh 64 simsmall':
+[PARSEC] [---------- Beginning of output ----------]
+Generating input file ...
+Running  /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/raytrace/inst/amd64-linux.gcc/bin/raytrace -s -p64 -a1024 teapot.env:
+Uniform Hierarchy built.
+
+Number of processors:     	64
+Global shared memory size:	32 MB
+Samples per pixel:        	1024
+
+Number of primitive objects: 	101
+Number of primitive elements:	3684
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      14112         14112           144 
+     hashtable entries:          8544          8544             8 
+     emptycell entries:          1560          1560             8 
+     voxel:                    248360        248360            40 
+     bintree_node:            1478280       1478280           120 
+
+     Totals:                  1750856       1750856      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time         1763033907153944
+        Overall end time       1763033926560631
+        Total time with initialization              19406687
+        Total time without initialization              19406621
+
+
+
+PER-PROCESS STATISTICS:
+                Proc                Time
+                            Tracing Rays
+
+                   0            18963222
+                   1            19404237
+                   2            18285135
+                   3            18440546
+                   4            18312598
+                   5            18922113
+                   6            19126296
+                   7            18459435
+                   8            18406893
+                   9            19405061
+                  10            18892931
+                  11            18474272
+                  12            18870916
+                  13            19361765
+                  14            19001483
+                  15            19380828
+                  16            19238535
+                  17            18416924
+                  18            18830066
+                  19            19404363
+                  20            19360072
+                  21            18584811
+                  22            19338085
+                  23            18402937
+                  24            19373884
+                  25            19127132
+                  26            19372230
+                  27            19258013
+                  28            19375630
+                  29            19398624
+                  30            19385353
+                  31            19403495
+                  32            19356247
+                  33            18436746
+                  34            19086122
+                  35            19360934
+                  36            19060657
+                  37            19253000
+                  38            19392381
+                  39            19309807
+                  40            19132648
+                  41            19402799
+                  42            19300241
+                  43            19075976
+                  44            19387326
+                  45            19403286
+                  46            19073117
+                  47            19284124
+                  48            18657322
+                  49            18911854
+                  50            18739689
+                  51            19393206
+                  52            19338069
+                  53            19055441
+                  54            18842846
+                  55            18658784
+                  56            19393795
+                  57            18826059
+                  58            19311790
+                  59            18383540
+                  60            18955326
+                  61            19394501
+                  62            19237187
+                  63            19152258
+
+
+              Max =             19405061
+              Min =             18285135
+              Avg =             19055390
+
+real	0m19.434s
+user	0m58.198s
+sys	18m59.179s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC]
+[PARSEC] BIBLIOGRAPHY
+[PARSEC]
+[PARSEC] [1] Woo et al. The SPLASH-2 Programs: Characterization and Methodological Considerations. ISCA, 1995.
+[PARSEC]
+[PARSEC] Done.
+[PARSEC] Benchmarks to run:  splash2x.raytrace
+
+[PARSEC] [========== Running benchmark splash2x.raytrace [1] ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simsmall'.
+balls4.env
+car.env
+teapot.env
+balls4.geo
+car.geo
+teapot.geo
+[PARSEC] Running 'time /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/raytrace/inst/amd64-linux.gcc/bin/run.sh 64 simsmall':
+[PARSEC] [---------- Beginning of output ----------]
+Generating input file ...
+Running  /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/raytrace/inst/amd64-linux.gcc/bin/raytrace -s -p64 -a1024 teapot.env:
+Uniform Hierarchy built.
+
+Number of processors:     	64
+Global shared memory size:	32 MB
+Samples per pixel:        	1024
+
+Number of primitive objects: 	101
+Number of primitive elements:	3684
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      14112         14112           144 
+     hashtable entries:          8544          8544             8 
+     emptycell entries:          1560          1560             8 
+     voxel:                    248360        248360            40 
+     bintree_node:            1478280       1478280           120 
+
+     Totals:                  1750856       1750856      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time         1763033929236982
+        Overall end time       1763033947779543
+        Total time with initialization              18542561
+        Total time without initialization              18542497
+
+
+
+PER-PROCESS STATISTICS:
+                Proc                Time
+                            Tracing Rays
+
+                   0            17779013
+                   1            17706744
+                   2            17861667
+                   3            18476084
+                   4            18509417
+                   5            17564642
+                   6            18517996
+                   7            18469711
+                   8            18446437
+                   9            18246697
+                  10            18353485
+                  11            18143616
+                  12            18458484
+                  13            17669137
+                  14            18403844
+                  15            18384256
+                  16            18339605
+                  17            18533564
+                  18            17726921
+                  19            17956322
+                  20            17574261
+                  21            18524254
+                  22            18501869
+                  23            17587540
+                  24            18369433
+                  25            18494937
+                  26            18294684
+                  27            18418320
+                  28            17717164
+                  29            18311627
+                  30            18503504
+                  31            18223351
+                  32            17590757
+                  33            17963512
+                  34            18539085
+                  35            18217652
+                  36            18435533
+                  37            18072577
+                  38            18534905
+                  39            17609636
+                  40            17927434
+                  41            18262575
+                  42            17993487
+                  43            18531259
+                  44            18147499
+                  45            18517408
+                  46            18537258
+                  47            18536507
+                  48            17607945
+                  49            17922082
+                  50            17835055
+                  51            18521834
+                  52            18459513
+                  53            18294713
+                  54            17927608
+                  55            18534986
+                  56            18292751
+                  57            18491220
+                  58            18421022
+                  59            18527148
+                  60            18049914
+                  61            18530208
+                  62            17818660
+                  63            18535713
+
+
+              Max =             18539085
+              Min =             17564642
+              Avg =             18207125
+
+real	0m18.574s
+user	0m55.752s
+sys	18m8.350s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC]
+[PARSEC] BIBLIOGRAPHY
+[PARSEC]
+[PARSEC] [1] Woo et al. The SPLASH-2 Programs: Characterization and Methodological Considerations. ISCA, 1995.
+[PARSEC]
+[PARSEC] Done.
+[PARSEC] Benchmarks to run:  splash2x.raytrace
+
+[PARSEC] [========== Running benchmark splash2x.raytrace [1] ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simsmall'.
+balls4.env
+car.env
+teapot.env
+balls4.geo
+car.geo
+teapot.geo
+[PARSEC] Running 'time /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/raytrace/inst/amd64-linux.gcc/bin/run.sh 64 simsmall':
+[PARSEC] [---------- Beginning of output ----------]
+Generating input file ...
+Running  /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/raytrace/inst/amd64-linux.gcc/bin/raytrace -s -p64 -a1024 teapot.env:
+Uniform Hierarchy built.
+
+Number of processors:     	64
+Global shared memory size:	32 MB
+Samples per pixel:        	1024
+
+Number of primitive objects: 	101
+Number of primitive elements:	3684
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      14112         14112           144 
+     hashtable entries:          8544          8544             8 
+     emptycell entries:          1560          1560             8 
+     voxel:                    248360        248360            40 
+     bintree_node:            1478280       1478280           120 
+
+     Totals:                  1750856       1750856      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time         1763033950485347
+        Overall end time       1763033969822459
+        Total time with initialization              19337112
+        Total time without initialization              19336985
+
+
+
+PER-PROCESS STATISTICS:
+                Proc                Time
+                            Tracing Rays
+
+                   0            18482980
+                   1            18821169
+                   2            19335474
+                   3            18686828
+                   4            18646101
+                   5            19132406
+                   6            18542427
+                   7            19161507
+                   8            19278207
+                   9            19105046
+                  10            19324078
+                  11            19278738
+                  12            19267055
+                  13            18831919
+                  14            19157937
+                  15            19331542
+                  16            18389617
+                  17            18300645
+                  18            19255884
+                  19            19239657
+                  20            18338545
+                  21            19205536
+                  22            19299115
+                  23            18257989
+                  24            19334762
+                  25            19307946
+                  26            19208921
+                  27            19290677
+                  28            19287179
+                  29            18274965
+                  30            19013613
+                  31            19197299
+                  32            18838623
+                  33            19317121
+                  34            19323862
+                  35            18993807
+                  36            19124005
+                  37            19288759
+                  38            18454973
+                  39            18407145
+                  40            19309536
+                  41            19115022
+                  42            19322984
+                  43            18927143
+                  44            19148532
+                  45            19331831
+                  46            19111842
+                  47            19266797
+                  48            19193065
+                  49            19233404
+                  50            18392850
+                  51            18868713
+                  52            19156378
+                  53            19018221
+                  54            18305617
+                  55            18899061
+                  56            18990456
+                  57            19287187
+                  58            19121201
+                  59            19107061
+                  60            19096745
+                  61            19309922
+                  62            19328318
+                  63            19330061
+
+
+              Max =             19335474
+              Min =             18257989
+              Avg =             19023531
+
+real	0m19.364s
+user	0m57.517s
+sys	18m55.737s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC]
+[PARSEC] BIBLIOGRAPHY
+[PARSEC]
+[PARSEC] [1] Woo et al. The SPLASH-2 Programs: Characterization and Methodological Considerations. ISCA, 1995.
+[PARSEC]
+[PARSEC] Done.
+[PARSEC] Benchmarks to run:  splash2x.raytrace
+
+[PARSEC] [========== Running benchmark splash2x.raytrace [1] ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simsmall'.
+balls4.env
+car.env
+teapot.env
+balls4.geo
+car.geo
+teapot.geo
+[PARSEC] Running 'time /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/raytrace/inst/amd64-linux.gcc/bin/run.sh 64 simsmall':
+[PARSEC] [---------- Beginning of output ----------]
+Generating input file ...
+Running  /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/raytrace/inst/amd64-linux.gcc/bin/raytrace -s -p64 -a1024 teapot.env:
+Uniform Hierarchy built.
+
+Number of processors:     	64
+Global shared memory size:	32 MB
+Samples per pixel:        	1024
+
+Number of primitive objects: 	101
+Number of primitive elements:	3684
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      14112         14112           144 
+     hashtable entries:          8544          8544             8 
+     emptycell entries:          1560          1560             8 
+     voxel:                    248360        248360            40 
+     bintree_node:            1478280       1478280           120 
+
+     Totals:                  1750856       1750856      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time         1763033972464698
+        Overall end time       1763033992196238
+        Total time with initialization              19731540
+        Total time without initialization              19731408
+
+
+
+PER-PROCESS STATISTICS:
+                Proc                Time
+                            Tracing Rays
+
+                   0            18674956
+                   1            19722729
+                   2            19089162
+                   3            19648011
+                   4            19284387
+                   5            19226272
+                   6            19692044
+                   7            19687812
+                   8            18748764
+                   9            19707268
+                  10            19694533
+                  11            19653692
+                  12            19726253
+                  13            19362853
+                  14            19273253
+                  15            19638903
+                  16            19618235
+                  17            19406252
+                  18            18901466
+                  19            18749519
+                  20            19483033
+                  21            18794936
+                  22            18685759
+                  23            19725284
+                  24            19725701
+                  25            19073713
+                  26            19383271
+                  27            19726389
+                  28            19728606
+                  29            19716973
+                  30            19634155
+                  31            19488860
+                  32            18858095
+                  33            19715264
+                  34            19726069
+                  35            19728480
+                  36            19306384
+                  37            19696294
+                  38            19416248
+                  39            19700650
+                  40            18780207
+                  41            18785966
+                  42            19465006
+                  43            19434055
+                  44            19299217
+                  45            19468128
+                  46            19452101
+                  47            19723004
+                  48            19561274
+                  49            19655089
+                  50            19507555
+                  51            19475639
+                  52            19594183
+                  53            19327953
+                  54            18940433
+                  55            19726307
+                  56            19477908
+                  57            18639188
+                  58            19645045
+                  59            19598250
+                  60            19232852
+                  61            19686627
+                  62            19669242
+                  63            19035665
+
+
+              Max =             19728606
+              Min =             18639188
+              Avg =             19406272
+
+real	0m19.757s
+user	0m57.745s
+sys	19m22.116s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC]
+[PARSEC] BIBLIOGRAPHY
+[PARSEC]
+[PARSEC] [1] Woo et al. The SPLASH-2 Programs: Characterization and Methodological Considerations. ISCA, 1995.
+[PARSEC]
+[PARSEC] Done.
+[PARSEC] Benchmarks to run:  splash2x.raytrace
+
+[PARSEC] [========== Running benchmark splash2x.raytrace [1] ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simsmall'.
+balls4.env
+car.env
+teapot.env
+balls4.geo
+car.geo
+teapot.geo
+[PARSEC] Running 'time /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/raytrace/inst/amd64-linux.gcc/bin/run.sh 64 simsmall':
+[PARSEC] [---------- Beginning of output ----------]
+Generating input file ...
+Running  /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/raytrace/inst/amd64-linux.gcc/bin/raytrace -s -p64 -a1024 teapot.env:
+Uniform Hierarchy built.
+
+Number of processors:     	64
+Global shared memory size:	32 MB
+Samples per pixel:        	1024
+
+Number of primitive objects: 	101
+Number of primitive elements:	3684
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      14112         14112           144 
+     hashtable entries:          8544          8544             8 
+     emptycell entries:          1560          1560             8 
+     voxel:                    248360        248360            40 
+     bintree_node:            1478280       1478280           120 
+
+     Totals:                  1750856       1750856      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time         1763033994880055
+        Overall end time       1763034013649136
+        Total time with initialization              18769081
+        Total time without initialization              18769008
+
+
+
+PER-PROCESS STATISTICS:
+                Proc                Time
+                            Tracing Rays
+
+                   0            17706244
+                   1            18762323
+                   2            18613564
+                   3            18362443
+                   4            18567246
+                   5            18646527
+                   6            18750290
+                   7            18571889
+                   8            18107656
+                   9            18766442
+                  10            18178989
+                  11            18679108
+                  12            18596597
+                  13            18558811
+                  14            18555131
+                  15            18764713
+                  16            18754039
+                  17            18097115
+                  18            17940594
+                  19            17846166
+                  20            17849262
+                  21            18732708
+                  22            18722503
+                  23            18567858
+                  24            18766582
+                  25            18697378
+                  26            18677168
+                  27            17692492
+                  28            18750367
+                  29            18282461
+                  30            18744303
+                  31            18015917
+                  32            18658973
+                  33            18765312
+                  34            18765405
+                  35            18155987
+                  36            18418726
+                  37            18198617
+                  38            17690570
+                  39            18739192
+                  40            17876480
+                  41            17895299
+                  42            18461431
+                  43            18301263
+                  44            18418709
+                  45            18762981
+                  46            18754620
+                  47            18332852
+                  48            17789684
+                  49            18754899
+                  50            18090313
+                  51            18692454
+                  52            18024947
+                  53            17789827
+                  54            18138686
+                  55            18750529
+                  56            18710514
+                  57            18346477
+                  58            18717660
+                  59            18750169
+                  60            18553739
+                  61            18733199
+                  62            18618334
+                  63            17819079
+
+
+              Max =             18766582
+              Min =             17690570
+              Avg =             18418778
+
+real	0m18.792s
+user	0m56.824s
+sys	18m20.443s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC]
+[PARSEC] BIBLIOGRAPHY
+[PARSEC]
+[PARSEC] [1] Woo et al. The SPLASH-2 Programs: Characterization and Methodological Considerations. ISCA, 1995.
+[PARSEC]
+[PARSEC] Done.
+[PARSEC] Benchmarks to run:  splash2x.raytrace
+
+[PARSEC] [========== Running benchmark splash2x.raytrace [1] ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simsmall'.
+balls4.env
+car.env
+teapot.env
+balls4.geo
+car.geo
+teapot.geo
+[PARSEC] Running 'time /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/raytrace/inst/amd64-linux.gcc/bin/run.sh 64 simsmall':
+[PARSEC] [---------- Beginning of output ----------]
+Generating input file ...
+Running  /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/raytrace/inst/amd64-linux.gcc/bin/raytrace -s -p64 -a1024 teapot.env:
+Uniform Hierarchy built.
+
+Number of processors:     	64
+Global shared memory size:	32 MB
+Samples per pixel:        	1024
+
+Number of primitive objects: 	101
+Number of primitive elements:	3684
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      14112         14112           144 
+     hashtable entries:          8544          8544             8 
+     emptycell entries:          1560          1560             8 
+     voxel:                    248360        248360            40 
+     bintree_node:            1478280       1478280           120 
+
+     Totals:                  1750856       1750856      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time         1763034016319610
+        Overall end time       1763034035135760
+        Total time with initialization              18816150
+        Total time without initialization              18816052
+
+
+
+PER-PROCESS STATISTICS:
+                Proc                Time
+                            Tracing Rays
+
+                   0            18815288
+                   1            18815577
+                   2            18725131
+                   3            18813674
+                   4            18806883
+                   5            18598990
+                   6            18097874
+                   7            18366602
+                   8            18759100
+                   9            18798972
+                  10            18552458
+                  11            18814427
+                  12            18772652
+                  13            17949507
+                  14            18703999
+                  15            18383062
+                  16            18798174
+                  17            18809738
+                  18            18180722
+                  19            18655238
+                  20            18168386
+                  21            18137840
+                  22            17848391
+                  23            17912167
+                  24            17857140
+                  25            18779694
+                  26            18722902
+                  27            18432634
+                  28            18747562
+                  29            18479343
+                  30            18808188
+                  31            18148690
+                  32            18813275
+                  33            18354535
+                  34            18551132
+                  35            18787472
+                  36            18805696
+                  37            18594253
+                  38            18292831
+                  39            18779591
+                  40            17976796
+                  41            17922542
+                  42            18252127
+                  43            18586986
+                  44            18491231
+                  45            18441842
+                  46            18490519
+                  47            18501005
+                  48            18623672
+                  49            18673967
+                  50            18482800
+                  51            18733255
+                  52            18001762
+                  53            18387093
+                  54            18793111
+                  55            17850009
+                  56            18659929
+                  57            17974167
+                  58            18646489
+                  59            18597572
+                  60            18808008
+                  61            17942635
+                  62            18764129
+                  63            18273820
+
+
+              Max =             18815577
+              Min =             17848391
+              Avg =             18486175
+
+real	0m18.846s
+user	0m56.918s
+sys	18m20.476s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC]
+[PARSEC] BIBLIOGRAPHY
+[PARSEC]
+[PARSEC] [1] Woo et al. The SPLASH-2 Programs: Characterization and Methodological Considerations. ISCA, 1995.
+[PARSEC]
+[PARSEC] Done.
+[PARSEC] Benchmarks to run:  splash2x.raytrace
+
+[PARSEC] [========== Running benchmark splash2x.raytrace [1] ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simsmall'.
+balls4.env
+car.env
+teapot.env
+balls4.geo
+car.geo
+teapot.geo
+[PARSEC] Running 'time /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/raytrace/inst/amd64-linux.gcc/bin/run.sh 64 simsmall':
+[PARSEC] [---------- Beginning of output ----------]
+Generating input file ...
+Running  /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/raytrace/inst/amd64-linux.gcc/bin/raytrace -s -p64 -a1024 teapot.env:
+Uniform Hierarchy built.
+
+Number of processors:     	64
+Global shared memory size:	32 MB
+Samples per pixel:        	1024
+
+Number of primitive objects: 	101
+Number of primitive elements:	3684
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      14112         14112           144 
+     hashtable entries:          8544          8544             8 
+     emptycell entries:          1560          1560             8 
+     voxel:                    248360        248360            40 
+     bintree_node:            1478280       1478280           120 
+
+     Totals:                  1750856       1750856      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time         1763034037812987
+        Overall end time       1763034057242953
+        Total time with initialization              19429966
+        Total time without initialization              19429896
+
+
+
+PER-PROCESS STATISTICS:
+                Proc                Time
+                            Tracing Rays
+
+                   0            19349105
+                   1            18310002
+                   2            18296859
+                   3            18578870
+                   4            18402897
+                   5            18301507
+                   6            18677451
+                   7            19187924
+                   8            19398759
+                   9            19226441
+                  10            19399021
+                  11            19234820
+                  12            19374551
+                  13            19059848
+                  14            19136530
+                  15            18718344
+                  16            19350300
+                  17            19426930
+                  18            18666903
+                  19            19332795
+                  20            18795621
+                  21            19421068
+                  22            18307980
+                  23            19377177
+                  24            19424929
+                  25            19337563
+                  26            19394360
+                  27            19426752
+                  28            19427152
+                  29            18666114
+                  30            19311680
+                  31            19425529
+                  32            19226398
+                  33            19378145
+                  34            18713257
+                  35            19130341
+                  36            19000218
+                  37            19071866
+                  38            18791222
+                  39            19403562
+                  40            18283616
+                  41            18419646
+                  42            19416369
+                  43            19196683
+                  44            19388905
+                  45            19340676
+                  46            19418629
+                  47            19403306
+                  48            18509860
+                  49            19415721
+                  50            19288584
+                  51            18932008
+                  52            19387128
+                  53            18969446
+                  54            18736810
+                  55            19096536
+                  56            19228313
+                  57            19267131
+                  58            18822225
+                  59            19359225
+                  60            19387175
+                  61            19318714
+                  62            19354926
+                  63            19422066
+
+
+              Max =             19427152
+              Min =             18283616
+              Avg =             19091007
+
+real	0m19.462s
+user	0m58.173s
+sys	18m56.423s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC]
+[PARSEC] BIBLIOGRAPHY
+[PARSEC]
+[PARSEC] [1] Woo et al. The SPLASH-2 Programs: Characterization and Methodological Considerations. ISCA, 1995.
+[PARSEC]
+[PARSEC] Done.
+[PARSEC] Benchmarks to run:  splash2x.raytrace
+
+[PARSEC] [========== Running benchmark splash2x.raytrace [1] ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simsmall'.
+balls4.env
+car.env
+teapot.env
+balls4.geo
+car.geo
+teapot.geo
+[PARSEC] Running 'time /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/raytrace/inst/amd64-linux.gcc/bin/run.sh 64 simsmall':
+[PARSEC] [---------- Beginning of output ----------]
+Generating input file ...
+Running  /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/raytrace/inst/amd64-linux.gcc/bin/raytrace -s -p64 -a1024 teapot.env:
+Uniform Hierarchy built.
+
+Number of processors:     	64
+Global shared memory size:	32 MB
+Samples per pixel:        	1024
+
+Number of primitive objects: 	101
+Number of primitive elements:	3684
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      14112         14112           144 
+     hashtable entries:          8544          8544             8 
+     emptycell entries:          1560          1560             8 
+     voxel:                    248360        248360            40 
+     bintree_node:            1478280       1478280           120 
+
+     Totals:                  1750856       1750856      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time         1763034059902272
+        Overall end time       1763034079848651
+        Total time with initialization              19946379
+        Total time without initialization              19946316
+
+
+
+PER-PROCESS STATISTICS:
+                Proc                Time
+                            Tracing Rays
+
+                   0            19788555
+                   1            19942869
+                   2            19865717
+                   3            19743749
+                   4            19151742
+                   5            19736875
+                   6            19944546
+                   7            19380366
+                   8            19881404
+                   9            19673279
+                  10            19457509
+                  11            19937844
+                  12            19940459
+                  13            19858828
+                  14            19601428
+                  15            19620816
+                  16            19842507
+                  17            19372117
+                  18            19761284
+                  19            19050138
+                  20            19008110
+                  21            19836731
+                  22            18970168
+                  23            18994982
+                  24            18959634
+                  25            19906625
+                  26            19812662
+                  27            19875038
+                  28            18929392
+                  29            19916449
+                  30            19509010
+                  31            19040554
+                  32            18904355
+                  33            19885245
+                  34            19900906
+                  35            19784932
+                  36            19648323
+                  37            19879631
+                  38            19942117
+                  39            19942380
+                  40            18805735
+                  41            18810394
+                  42            19908674
+                  43            19582071
+                  44            19642594
+                  45            19934202
+                  46            19683625
+                  47            19655053
+                  48            19093271
+                  49            19942449
+                  50            19211776
+                  51            19301500
+                  52            19810862
+                  53            19390836
+                  54            19910793
+                  55            19940787
+                  56            18768512
+                  57            19501626
+                  58            19908498
+                  59            19882637
+                  60            19928010
+                  61            19564494
+                  62            19930498
+                  63            19829017
+
+
+              Max =             19944546
+              Min =             18768512
+              Avg =             19595893
+
+real	0m19.965s
+user	0m58.498s
+sys	19m30.598s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC]
+[PARSEC] BIBLIOGRAPHY
+[PARSEC]
+[PARSEC] [1] Woo et al. The SPLASH-2 Programs: Characterization and Methodological Considerations. ISCA, 1995.
+[PARSEC]
+[PARSEC] Done.
+[PARSEC] Benchmarks to run:  splash2x.raytrace
+
+[PARSEC] [========== Running benchmark splash2x.raytrace [1] ==========]
+[PARSEC] Deleting old run directory.
+[PARSEC] Setting up run directory.
+[PARSEC] Unpacking benchmark input 'simsmall'.
+balls4.env
+car.env
+teapot.env
+balls4.geo
+car.geo
+teapot.geo
+[PARSEC] Running 'time /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/raytrace/inst/amd64-linux.gcc/bin/run.sh 64 simsmall':
+[PARSEC] [---------- Beginning of output ----------]
+Generating input file ...
+Running  /home/zz/work/new_futex/benchmark/parsec-benchmark/ext/splash2x/apps/raytrace/inst/amd64-linux.gcc/bin/raytrace -s -p64 -a1024 teapot.env:
+Uniform Hierarchy built.
+
+Number of processors:     	64
+Global shared memory size:	32 MB
+Samples per pixel:        	1024
+
+Number of primitive objects: 	101
+Number of primitive elements:	3684
+
+****** Hierarchial uniform grid memory allocation summary ******* 
+
+     < struct >:            < current >   < maximum >    < sizeof > 
+     <  bytes >:             <  bytes >   <   bytes >    <  bytes > 
+
+     grid:                      14112         14112           144 
+     hashtable entries:          8544          8544             8 
+     emptycell entries:          1560          1560             8 
+     voxel:                    248360        248360            40 
+     bintree_node:            1478280       1478280           120 
+
+     Totals:                  1750856       1750856      
+
+TIMING STATISTICS MEASURED BY MAIN PROCESS:
+        Overall start time         1763034082526377
+        Overall end time       1763034101598775
+        Total time with initialization              19072398
+        Total time without initialization              19072324
+
+
+
+PER-PROCESS STATISTICS:
+                Proc                Time
+                            Tracing Rays
+
+                   0            18296880
+                   1            18810152
+                   2            19030647
+                   3            18304012
+                   4            18960906
+                   5            18468031
+                   6            18745305
+                   7            19067465
+                   8            18829708
+                   9            18163077
+                  10            18881162
+                  11            19039815
+                  12            18967843
+                  13            18984303
+                  14            18579797
+                  15            18810992
+                  16            19045659
+                  17            19055969
+                  18            19040975
+                  19            19069712
+                  20            18635505
+                  21            18980439
+                  22            18329246
+                  23            18492637
+                  24            18381250
+                  25            18496661
+                  26            19056776
+                  27            18599690
+                  28            19025258
+                  29            18463824
+                  30            18513179
+                  31            19061057
+                  32            18959135
+                  33            19060892
+                  34            18987086
+                  35            18776340
+                  36            18766982
+                  37            18594192
+                  38            18330166
+                  39            18320651
+                  40            18474657
+                  41            18489791
+                  42            18721096
+                  43            18736668
+                  44            19051613
+                  45            18293589
+                  46            19055817
+                  47            19064321
+                  48            18218702
+                  49            19067922
+                  50            18893628
+                  51            18935224
+                  52            18854478
+                  53            18352843
+                  54            18980885
+                  55            18909885
+                  56            19067499
+                  57            18934852
+                  58            19048789
+                  59            18839205
+                  60            19036121
+                  61            18130419
+                  62            19009586
+                  63            18160362
+
+
+              Max =             19069712
+              Min =             18130419
+              Avg =             18754864
+
+real	0m19.098s
+user	0m57.201s
+sys	18m41.068s
+[PARSEC] [----------    End of output    ----------]
+[PARSEC]
+[PARSEC] BIBLIOGRAPHY
+[PARSEC]
+[PARSEC] [1] Woo et al. The SPLASH-2 Programs: Characterization and Methodological Considerations. ISCA, 1995.
+[PARSEC]
+[PARSEC] Done.

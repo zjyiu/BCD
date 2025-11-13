@@ -1,0 +1,240 @@
+#define _GNU_SOURCE
+#include <linux/futex.h>
+#include <pthread.h>
+#include <signal.h>
+#include <stdint.h>
+#include <stdio.h>
+#include <stdlib.h>	
+#include <sys/mman.h>
+#include <sys/syscall.h>
+#include <sys/time.h>
+#include <time.h>
+#include <unistd.h>
+#include <x86intrin.h>
+#include <sched.h>
+#include <poll.h>
+
+#include "futex.h"
+
+#define CMAX 32
+#define TMAX 256
+#define PRE_TIME 5
+#define TEST_TIME 5
+
+unsigned int TNUM = 32;
+unsigned int CNUM = 1;
+unsigned int NCS = 1000;
+unsigned int core_per_socket = 32;
+int write_radio = 100;
+
+struct share_cnt {
+    volatile int c;
+    struct share_cnt* next;
+    int padding[13];
+}__attribute__((aligned(64)));
+
+pthread_rwlock_t lock;
+struct share_cnt* s_cnt;
+int times = 0;
+long long start[TMAX], end[TMAX];
+volatile int cnt = 0;
+int cnts[32 * CMAX] = { 0 };
+int ops = 0;
+int is_end;;
+
+static inline uint64_t perf_counter(void) {
+    __asm__ __volatile__("" : : : "memory");
+    uint64_t r = __rdtsc();
+    __asm__ __volatile__("" : : : "memory");
+    return r;
+}
+
+static void usage(void) {
+    printf("\t-t threads\tNumber of threads to run\n");
+    // printf("\t-l loops\tNumber of loops to run\n");
+    printf("\t-c cache lines\tNumber of cache lines in a critical section\n");
+    printf("\t-n ncs\tNumber of cycles in non-critical section\n");
+    printf("\t-h help\n");
+    exit(1);
+}
+
+
+int set_cpu(int i) {
+    int cpu;
+    if (TNUM >= core_per_socket)
+        cpu = i;
+    else
+        cpu = (i == 0 || i < TNUM / 2) ? i : i - TNUM / 2 + core_per_socket / 2;
+    cpu_set_t mask;
+    CPU_ZERO(&mask);
+    CPU_SET(cpu, &mask);
+    if (-1 == pthread_setaffinity_np(pthread_self(), sizeof(mask), &mask)) {
+        fprintf(stderr, "pthread_setaffinity_np erro\n");
+        return -1;
+    }
+    return 0;
+}
+
+void* child_thread(void* args) {
+    long long t;
+    int id = *(int*)args;
+    set_cpu(id);
+    struct share_cnt* pre = NULL, * temp;
+#ifdef LIST
+    struct share_cnt* my_cnt = NULL;
+    for (int i = 0;i < CNUM;i++) {
+        temp = (struct share_cnt*)malloc(sizeof(struct share_cnt));
+        temp->c = 0;
+        temp->next = NULL;
+        if (my_cnt == NULL)
+            my_cnt = temp;
+        if (pre != NULL)
+            pre->next = temp;
+        pre = temp;
+    }
+#else
+    int my_cnts[32 * CMAX] = { 0 };
+#endif
+    // start[id] = perf_counter();
+    // volatile long a[4];
+    // for (long i = 0; i < 10; i = i) {
+    int operate = rand() % 100;
+    while (1) {
+        if (is_end == 1)
+            break;
+        if (operate < write_radio) {
+            pthread_rwlock_wrlock(&lock);
+#ifdef LIST
+            temp = s_cnt;
+            while (temp != NULL) {
+                temp->c++;
+                temp = temp->next;
+            }
+#else
+            for (int k = 0;k < CNUM;k++)
+                cnts[k * 32]++;
+#endif
+            pthread_rwlock_unlock(&lock);
+        }
+        else {
+            pthread_rwlock_rdlock(&lock);
+#ifdef LIST
+            temp = my_cnt;
+            pre = s_cnt;
+            while (temp != NULL && pre != NULL) {
+                temp->c = pre->c;
+                temp = temp->next;
+                pre = pre->next;
+            }
+#else
+            for (int k = 0;k < CNUM;k++)
+                my_cnts[k * 32] = cnts[k * 32];
+#endif
+
+            pthread_rwlock_unlock(&lock);
+        }
+        t = perf_counter();
+        operate = (operate + 1) % 100;
+        ops++;
+        while (perf_counter() - t < NCS);
+    }
+    // end[id] = perf_counter();
+    // printf("cnt:%d\n", s_cnt->c);
+}
+
+void printer(void) {
+    pthread_t thread[TNUM];
+    int args[TNUM];
+    struct share_cnt* pre = NULL, * temp;
+    long long start_min = INT64_MAX, end_max = 0;
+    int cnt_begin, cnt_end;
+
+    s_cnt = NULL;
+    for (int i = 0;i < CNUM;i++) {
+        temp = (struct share_cnt*)malloc(sizeof(struct share_cnt));
+        temp->c = 0;
+        temp->next = NULL;
+        if (s_cnt == NULL)
+            s_cnt = temp;
+        if (pre != NULL)
+            pre->next = temp;
+        pre = temp;
+    }
+    // cnts = (int*)malloc(sizeof(int) * CNUM * 32);
+    is_end = 0;
+
+    for (int i = 0; i < TNUM; i++) {
+        times++;
+        args[i] = i;
+        int re = pthread_create(&thread[i], NULL, child_thread, (void*)(args + i));
+        if (re != 0)
+            printf("Error creating thread %d: %d\n", i, re);
+    }
+
+#ifdef LIST
+    sleep(PRE_TIME);
+    cnt_begin = ops;
+    sleep(TEST_TIME);
+    cnt_end = ops;
+#else
+    sleep(PRE_TIME);
+    cnt_begin = ops;
+    sleep(TEST_TIME);
+    cnt_end = ops;
+#endif
+
+    is_end = 1;
+    for (int i = 0; i < TNUM; i++) {
+        pthread_join(thread[i], NULL);
+    }
+
+    // printf("ops: %d\n", (cnt_end - cnt_begin) / TEST_TIME);
+    printf("%d\n", (cnt_end - cnt_begin) / TEST_TIME);
+}
+
+int main(int argc, char* argv[]) {
+    while (1) {
+        signed char c = getopt(argc, argv, "t:c:n:w:h");
+        if (c < 0)
+            break;
+        switch (c) {
+        case 't':
+            TNUM = atoi(optarg);
+            if (TNUM > TMAX) {
+                printf("tasks cannot exceed %d\n", TMAX);
+                exit(1);
+            }
+            break;
+        case 'c':
+            CNUM = atoi(optarg);
+            if (CNUM > CMAX) {
+                printf("cache line cannot exceed %d\n", CMAX);
+                exit(1);
+            }
+            break;
+        case 'n':
+            NCS = atoi(optarg);
+            break;
+        case 'w':
+            write_radio = atoi(optarg);
+            break;
+        default:
+            usage();
+        }
+    }
+
+    pthread_rwlock_init(&lock, NULL);
+    srand((unsigned)time(NULL));
+    printer();
+
+#ifdef LIST
+    struct share_cnt* temp = s_cnt;
+    while (temp != NULL) {
+        if (temp->c != s_cnt->c)
+            printf("something is wrong %d %d\n", temp->c, s_cnt->c);
+        temp = temp->next;
+    }
+#endif
+    // printf("times: %d cacheline: %d ncs %d\n", TNUM, CNUM, NCS);
+    return 0;
+}
