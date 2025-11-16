@@ -134,7 +134,7 @@ void write_sys(int pid, unsigned long RIP) {
 }
 
 int valid_address(unsigned long addr) {
-	long iva[] = { 0x7ffff7fa07e7,0x7ffff7fbd119 };//,0x555555555420 };
+	long iva[] = {};//,0x555555555420 };
 	int length = sizeof(iva) / sizeof(iva[0]);
 	for (int i = 0; i < length; i++) {
 		if (addr == iva[i]) {

@@ -185,7 +185,8 @@ void printer(void) {
 
     is_end = 1;
     for (int i = 0; i < TNUM; i++) {
-        pthread_join(thread[i], NULL);
+        // pthread_join(thread[i], NULL);
+        pthread_cancel(thread[i]);
     }
 
     // printf("ops: %d\n", (cnt_end - cnt_begin) / TEST_TIME);
@@ -226,15 +227,6 @@ int main(int argc, char* argv[]) {
     pthread_rwlock_init(&lock, NULL);
     srand((unsigned)time(NULL));
     printer();
-
-#ifdef LIST
-    struct share_cnt* temp = s_cnt;
-    while (temp != NULL) {
-        if (temp->c != s_cnt->c)
-            printf("something is wrong %d %d\n", temp->c, s_cnt->c);
-        temp = temp->next;
-    }
-#endif
     // printf("times: %d cacheline: %d ncs %d\n", TNUM, CNUM, NCS);
     return 0;
 }

@@ -95,6 +95,7 @@ void* child_thread(void* args) {
 		// );
 
 		// __asm__("int3");
+		// pthread_testcancel();
 		pthread_mutex_lock(&mutex);
 
 #ifdef LIST
@@ -112,6 +113,7 @@ void* child_thread(void* args) {
 		pthread_mutex_unlock(&mutex);
 		t = perf_counter();
 		time_cnt[id * 32]++;
+		// __asm__ __volatile__("" : : : "memory");
 		if (is_end == 1)
 			break;
 		while (perf_counter() - t < NCS);
@@ -165,7 +167,9 @@ void printer(void) {
 	sleep(1);
 	is_end = 1;
 	for (int i = 0; i < TNUM; i++) {
-		pthread_join(thread[i], NULL);
+		// pthread_mutex_unlock(&mutex);
+		// pthread_join(thread[i], NULL);
+		pthread_cancel(thread[i]);
 	}
 
 	// printf("ops: %d\n", (cnt_end - cnt_begin) / TEST_TIME);
