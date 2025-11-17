@@ -1,0 +1,4 @@
+test-libtracefs.c:2:10: fatal error: tracefs/tracefs.h: No such file or directory
+    2 | #include <tracefs/tracefs.h>
+      |          ^~~~~~~~~~~~~~~~~~~
+compilation terminated.

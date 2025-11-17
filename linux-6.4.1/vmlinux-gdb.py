@@ -1,0 +1,1 @@
+/home/zz/work/new_futex/linux-6.4.1/scripts/gdb/vmlinux-gdb.py
