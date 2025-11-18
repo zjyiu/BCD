@@ -1,6 +1,6 @@
 # Binary Compatible Critical Section Delegation
 
-In high-performance applications, critical sections often be come performance bottlenecks due to contention among mul tiple cores. Critical section delegation mitigates this over head by consistently executing critical sections on the same core, thereby reducing contention. Traditional delegation tech niques, however, typically require manual code refactoring, which limits their practicality and adoption. More recent schemes that integrate with existing lock APIs have lowered this barrier, but delegating unsupported critical sections can still cause undefined behavior, including crashes. 
+In high-performance applications, critical sections often be come performance bottlenecks due to contention among mul tiple cores. Critical section delegation mitigates this over head by consistently executing critical sections on the same core, thereby reducing contention. Traditional delegation tech niques, however, typically require manual code refactoring, which limits their practicality and adoption. More recent schemes that integrate with existing lock APIs have lowered this barrier, but delegating unsupported critical sections can still cause undefined behavior, including crashes.
 
 To make delegation broadly accessible—even for end-users without access to or knowledge of source code, we introduce BCD, a binary-compatible delegation mechanism. BCD lever ages kernel support to delegate userspace critical sections at the point of futex_wake. It employs an in-kernel virtual machine to supervise the execution of delegated userspace instructions, eliminating the need for binary modification. Crucially, BCD can detect and safely exclude unsupported critical sections, preserving correctness. This enables exist ing applications to transparently benefit from critical section delegation, without requiring developer intervention.
 
@@ -19,16 +19,27 @@ The following is the artifact evaluation guide
    - memtier_benchmark 2.1.1
    - parsec-benchmark 3.0
 2. Hardware configuration
-   - cpu: Intel(R) Xeon(R) Gold 6438N * 2
+   - cpu: Intel(R) Xeon(R) Gold 6438N * 2, each has 32 physical cores.
    - memory: SK Hynix 16GB DDR5-5600 * 2
+   - hyper-threading disabled
 
 ## Building
 
-1. Enter the **linux-6.4.1** directory ， compile and install this kernel. (FYI: [How to compile and install Linux Kernel 5.16.9 from source code](https://www.cyberciti.biz/tips/compiling-linux-kernel-26.html))
-2. Enter the **kernel_module** directory , compile it using the `make` command.
-3. Enter the **daemon** directory , compile it using the `make` command.
-4. Enter the `TCLocks/src/userspace/litl` directory , compile it using the `make` command.
-5. install python module [miasm v0.1.3](https://github.com/cea-sec/miasm/releases/tag/v0.1.3).
+1. `sudo apt-get update`
+2. `sudo apt-get install build-essential libncurses-dev bison flex libssl-dev libelf-dev coreutils numactl libpapi-dev dwarves zstd` 
+3. Enter the **linux-6.4.1** directory ， compile and install this kernel:
+   - `make menuconfig`
+   - `make -j $(nproc)`
+   - `sudo make modules_install -j $(nproc)`
+   - `sudo make install`
+   - Reboot and switch to the new kernel.
+4. Enter the **kernel_module** directory , compile it using the `make` command and execute `env.sh` .
+5. Enter the **daemon** directory , compile it using the `make` command.
+6. Enter the `TCLocks/src/userspace/litl` directory , compile it using the `make` command.
+7. `sudo apt-get install python3-distutils python3-dev python3-pip msttcorefonts`
+8. `sudo pip install future pyparsing==2.4.7`
+9. `pip install numpy matplotlib`
+10. install python module [miasm v0.1.3](https://github.com/cea-sec/miasm/releases/tag/v0.1.3). Please install the following libraries and modules before installation:
 
 ## Testing
 
@@ -64,19 +75,21 @@ The following is the artifact evaluation guide
 #### Memcached Test (Using Memtier_benchmark)
 
 1. Enter the **benchmark/memcached-1.6.32** directory.
-2. `./configure`
-3. `make`
-4. Enter the **benchmark/memtier_benchmark-2.1.1** directory.
-5. `autoreconf -ivf`
-6. `./configure`
-7. `make`
-8. Executing the script `test_memcached.sh` yields Figure 5k.
+2. `sudo apt-get install autotools-dev automake libevent-dev`
+3. `./configure`
+4. `make`
+5. Enter the **benchmark/memtier_benchmark-2.1.1** directory.
+6. `sudo apt-get install build-essential autoconf automake libevent-dev pkg-config zlib1g-dev libssl-dev libpcre3-dev`
+7. `autoreconf -ivf`
+8. `./configure`
+9. `make`
+10. Executing the script `test_memcached.sh` yields Figure 5k.
 
 #### LevelDB Test (Using Readrandom Benchmark)
 
 1. Enter the **benchmark/leveldb-1.23** directory.
-2. `mkdir build && cd build`
-3. `cmake -DCMAKE_BUILD_TYPE=Release .. && cmake --build . -j $(nproc)`
-4. `cp ../draw.py ../get_ops.py ../test_leveldb.sh .`
-5. Executing the script `test_leveldb.sh` yields Figure 5l.
-
+2. `sudo apt-get install cmake`
+3. `mkdir build && cd build`
+4. `cmake -DCMAKE_BUILD_TYPE=Release .. && cmake --build . -j $(nproc)`
+5. `cp ../draw.py ../get_ops.py ../test_leveldb.sh .`
+6. Executing the script `test_leveldb.sh` yields Figure 5l.
