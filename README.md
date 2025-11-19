@@ -11,7 +11,7 @@ The following is the artifact evaluation guide
 ## Configuration
 
 1. Software configuration
-   - Ubuntu [20.04.2](https://old-releases.ubuntu.com/releases/20.04.2/ubuntu-20.04.2-desktop-amd64.iso) with Kernel version 6.4.1
+   - Ubuntu 20.04
    - python 3.8.10 & module: [miasm v0.1.3](https://github.com/cea-sec/miasm/releases/tag/v0.1.3)
    - gcc 9.4.0
    - leveldb 1.23
