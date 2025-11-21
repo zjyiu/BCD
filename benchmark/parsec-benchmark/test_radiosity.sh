@@ -3,6 +3,7 @@
 echo "Splash2x benchmark"
 echo "Radiosity test"
 
+thread_number=64
 current_dir=$(pwd)
 
 echo "BCD test"
@@ -20,7 +21,7 @@ for ((i=0;i<11;i++))
 do
     ./km.sh radiosity
     sleep 5
-    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.radiosity -i simlarge -n 64 >> result/radiosity/new.txt
+    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.radiosity -i simlarge -n $thread_number >> result/radiosity/new.txt
     sleep 2
 done
 
@@ -36,7 +37,7 @@ echo -n > result/radiosity/old.txt
 
 for ((i=0;i<10;i++))
 do
-    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.radiosity -i simlarge -n 64 >> result/radiosity/old.txt
+    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.radiosity -i simlarge -n $thread_number >> result/radiosity/old.txt
     sleep 2
 done
 
@@ -47,7 +48,7 @@ echo -n > result/radiosity/tcs.txt
 export test_lock="$current_dir/../../TCLocks/src/userspace/litl/libkomb_spinlock.sh"
 for ((i=0;i<10;i++))
 do  
-    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.radiosity -i simlarge -n 64 >> result/radiosity/tcs.txt
+    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.radiosity -i simlarge -n $thread_number >> result/radiosity/tcs.txt
     sleep 2
 done
 export test_lock=""
@@ -59,7 +60,7 @@ echo -n > result/radiosity/tcb.txt
 export test_lock="$current_dir/../../TCLocks/src/userspace/litl/libkombmtx_spin_then_park.sh"
 for ((i=0;i<10;i++))
 do
-    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.radiosity -i simlarge -n 64 >> result/radiosity/tcb.txt
+    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.radiosity -i simlarge -n $thread_number >> result/radiosity/tcb.txt
     sleep 2
 done
 export test_lock=""

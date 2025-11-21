@@ -1,8 +1,6 @@
 import re
 import sys
 
-threads_number = [4, 8, 12, 16, 20, 24, 28, 32, 36, 40, 44, 48, 52, 56, 60, 64]
-
 def extract_readrandom_numbers(file_path):
     numbers = []
     with open(file_path, 'r') as file:
@@ -15,9 +13,7 @@ def extract_readrandom_numbers(file_path):
 
 def main(file_path):
     numbers = extract_readrandom_numbers(file_path)
-    if len(numbers)>len(threads_number):
-        numbers=numbers[1:]
-    for i in range(0,len(threads_number)):
+    for i in range(0,len(numbers)):
         # print('thread ',i,': ',numbers[i],' micros/op')
         print(numbers[i])
 

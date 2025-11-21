@@ -3,6 +3,7 @@
 echo "Splash2x benchmark"
 echo "Volrend test"
 
+thread_number=64
 current_dir=$(pwd)
 
 echo "BCD test"
@@ -20,7 +21,7 @@ for ((i=0;i<11;i++))
 do
     ./km.sh volrend
     sleep 5
-    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.volrend -i native -n 64 >> result/volrend/new.txt
+    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.volrend -i native -n $thread_number >> result/volrend/new.txt
     sleep 2
 done
 
@@ -36,7 +37,7 @@ echo -n > result/volrend/old.txt
 
 for ((i=0;i<10;i++))
 do
-    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.volrend -i native -n 64 >> result/volrend/old.txt
+    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.volrend -i native -n $thread_number >> result/volrend/old.txt
     sleep 2
 done
 
@@ -49,7 +50,7 @@ echo -n > result/volrend/tcs.txt
 export test_lock="$current_dir/../../TCLocks/src/userspace/litl/libkomb_spinlock.sh"
 for ((i=0;i<10;i++))
 do  
-    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.volrend -i native -n 64 >> result/volrend/tcs.txt
+    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.volrend -i native -n $thread_number >> result/volrend/tcs.txt
     sleep 2
 done
 export test_lock=""
@@ -63,7 +64,7 @@ echo -n > result/volrend/tcb.txt
 export test_lock="$current_dir/../../TCLocks/src/userspace/litl/libkombmtx_spin_then_park.sh"
 for ((i=0;i<10;i++))
 do
-    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.volrend -i native -n 64 >> result/volrend/tcb.txt
+    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.volrend -i native -n $thread_number >> result/volrend/tcb.txt
     sleep 2
 done
 export test_lock=""

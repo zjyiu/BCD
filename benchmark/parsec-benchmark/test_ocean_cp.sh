@@ -3,6 +3,7 @@
 echo "Splash2x benchmark"
 echo "Ocean_cp test"
 
+thread_number=64
 current_dir=$(pwd)
 
 echo "BCD test"
@@ -16,7 +17,7 @@ for ((i=0;i<10;i++))
 do
     ./km.sh ocean_cp
     sleep 5
-    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.ocean_cp -i native -n 64 >> result/ocean_cp/new.txt
+    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.ocean_cp -i native -n $thread_number >> result/ocean_cp/new.txt
     sleep 2
 done
 
@@ -30,7 +31,7 @@ echo -n > result/ocean_cp/old.txt
 
 for ((i=0;i<10;i++))
 do
-    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.ocean_cp -i native -n 64 >> result/ocean_cp/old.txt
+    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.ocean_cp -i native -n $thread_number >> result/ocean_cp/old.txt
     sleep 2
 done
 
@@ -41,7 +42,7 @@ echo -n > result/ocean_cp/tcs.txt
 export test_lock="$current_dir/../../TCLocks/src/userspace/litl/libkomb_spinlock.sh"
 for ((i=0;i<10;i++))
 do  
-    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.ocean_cp -i native -n 64 >> result/ocean_cp/tcs.txt
+    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.ocean_cp -i native -n $thread_number >> result/ocean_cp/tcs.txt
     sleep 2
 done
 export test_lock=""
@@ -53,7 +54,7 @@ echo -n > result/ocean_cp/tcb.txt
 export test_lock="$current_dir/../../TCLocks/src/userspace/litl/libkombmtx_spin_then_park.sh"
 for ((i=0;i<10;i++))
 do
-    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.ocean_cp -i native -n 64 >> result/ocean_cp/tcb.txt
+    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.ocean_cp -i native -n $thread_number >> result/ocean_cp/tcb.txt
     sleep 2
 done
 export test_lock=""

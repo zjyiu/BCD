@@ -3,6 +3,7 @@
 echo "Splash2x benchmark"
 echo "raytrace car test"
 
+thread_number=64
 current_dir=$(pwd)
 
 echo "BCD test"
@@ -20,7 +21,7 @@ for ((i=0;i<11;i++))
 do
     ./km.sh raytrace
     sleep 5
-    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.raytrace -i native -n 64 >> result/raytrace/car_new.txt
+    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.raytrace -i native -n $thread_number >> result/raytrace/car_new.txt
     sleep 2
 done
 
@@ -36,7 +37,7 @@ echo -n > result/raytrace/car_old.txt
 
 for ((i=0;i<10;i++))
 do
-    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.raytrace -i native -n 64 >> result/raytrace/car_old.txt
+    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.raytrace -i native -n $thread_number >> result/raytrace/car_old.txt
     sleep 2
 done
 
@@ -47,7 +48,7 @@ echo -n > result/raytrace/car_tcs.txt
 export test_lock="$current_dir/../../TCLocks/src/userspace/litl/libkomb_spinlock.sh"
 for ((i=0;i<10;i++))
 do  
-    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.raytrace -i native -n 64 >> result/raytrace/car_tcs.txt
+    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.raytrace -i native -n $thread_number >> result/raytrace/car_tcs.txt
     sleep 2
 done
 export test_lock=""
@@ -59,7 +60,7 @@ echo -n > result/raytrace/car_tcb.txt
 export test_lock="$current_dir/../../TCLocks/src/userspace/litl/libkombmtx_spin_then_park.sh"
 for ((i=0;i<10;i++))
 do
-    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.raytrace -i native -n 64 >> result/raytrace/car_tcb.txt
+    taskset -c 0-63 ./bin/parsecmgmt -a run -p splash2x.raytrace -i native -n $thread_number >> result/raytrace/car_tcb.txt
     sleep 2
 done
 export test_lock=""
